@@ -16,9 +16,9 @@
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
-.first-section-block--img-container img:hover{
-    transform: scale(1.2);
-}
+/* .first-section--block:hover img{
+    transform: scale(1.1);
+} */
 .first-section-block--content{
     height: 100%;
     display: flex;
@@ -54,4 +54,22 @@
 }
 .first-section-block--content div .button:after{
     box-shadow: none;
+}
+.first-section-block--content div .button:hover{
+    border: none;
+}
+
+@media (max-width:800px) {
+    .first-section--container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:500px) {
+    .first-section{
+        padding: 0 3rem;
+    }
+    .first-section-block--content div h3{
+        font-size: 2rem;
+    }
 }

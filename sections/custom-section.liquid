@@ -1,4 +1,4 @@
-<div>
+<div class="first-section">
     <div><h1>{{ section.settings.heading }}</h1></div>
     {%for block in section.blocks %}
         <div class="first-section--block">
@@ -7,8 +7,8 @@
                 mobileImage: block.settings.image_mobile
             %}
             <div class="first-section-block--content">
-                <div>{{ block.settings.pre_heading }}</div>
-                <div>{{ block.settings.title }}</div>
+                <div><p>{{ block.settings.pre_heading }}</p></div>
+                <div><h2>{{ block.settings.title }}</h2></div>
                 <div><a href="{{ block.settings.button_link }}">{{ block.settings.button_label }}</a></div>
             </div>
         </div>
@@ -61,7 +61,7 @@
           "type": "text",
           "id": "button_label",
           "label": "Button label",
-          "default": "Explore Now"
+          "default": "Explore"
         },
         {
           "type": "url",

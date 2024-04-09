@@ -703,9 +703,9 @@
         "usp_block_jEJHzc": {
           "type": "usp-block",
           "settings": {
-            "heading": "Business Formal Choices",
-            "description": "<p>Business Formal Choices<\/p>",
-            "button_label": "Explore",
+            "heading": "Help center",
+            "description": "<p>Absolutely, providing 24\/7 support is a great way to enhance customer satisfaction.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         }

@@ -669,10 +669,12 @@
         "custom_block_Jr3GJd": {
           "type": "custom-block",
           "settings": {
-            "pre_heading": "Business Formal Choices",
-            "title": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_lable": "Explore Now",
-            "button_link": ""
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4265.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_4265.jpg",
+            "pre_heading": "Fashion",
+            "title": "<h3>Women's Sustainable Style Hub<\/h3>",
+            "button_lable": "Explore",
+            "button_link": "#"
           }
         }
       },

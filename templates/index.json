@@ -651,18 +651,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "custom_section_LYpLMp": {
-      "type": "custom-section",
-      "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/4_cc27b61c-7007-4489-97f1-e5a520261c92.webp",
-        "image_mobile": "shopify:\/\/shop_images\/4_cc27b61c-7007-4489-97f1-e5a520261c92.webp",
-        "heading": "Hello world",
-        "description": "<p>Hello world<\/p>",
-        "button_lable": "Shop",
-        "button_link": "#",
-        "image_position": "left"
-      }
     }
   },
   "order": [
@@ -679,7 +667,6 @@
     "image_banner_kaJN3D",
     "multicolumn_63kjQy",
     "featured_blog_AXCGM8",
-    "collapsible_content_HqAnQH",
-    "custom_section_LYpLMp"
+    "collapsible_content_HqAnQH"
   ]
 }

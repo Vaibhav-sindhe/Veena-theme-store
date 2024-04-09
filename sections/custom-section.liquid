@@ -1,5 +1,18 @@
 <div>
-    <h1>{{ section.settings.heading }}</h1>
+    <div><h1>{{ section.settings.heading }}</h1></div>
+    {%for block in section.blocks %}
+        <div class="first-section--block">
+            {% render 'responsive-picture',
+                desktopImage: block.settings.image_desktop,
+                mobileImage: block.settings.image_mobile
+            %}
+            <div class="first-section-block--content">
+                <div>{{ block.settings.pre_heading }}</div>
+                <div>{{ block.settings.title }}</div>
+                <div><a href="{{ block.settings.button_link }}">{{ block.settings.button_label }}</a></div>
+            </div>
+        </div>
+    {% endfor %}
 </div>
 
 {% schema %}
@@ -46,7 +59,7 @@
         },
         {
           "type": "text",
-          "id": "button_lable",
+          "id": "button_label",
           "label": "Button label",
           "default": "Explore Now"
         },

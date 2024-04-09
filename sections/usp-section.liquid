@@ -1,21 +1,18 @@
-<div class="usp-section" page-width {{ section.settings.image_position }}>
-    <div class="usp-section--container">
+{{ 'usp-section.css' | asset_url | stylesheet_tag }}
+<div class="usp-section">
+    <ul class="usp-section--container">
         {%for block in section.blocks %}
-            <div class="usp-section--block">
-                <div class="usp-section-block--img-container">
+            <li class="usp-section--block">
                     {% render 'responsive-picture',
                         desktopImage: block.settings.image_desktop,
                         mobileImage: block.settings.image_mobile
                     %}
-                </div>
-                <div class="usp-section-block--content">
-                    <div>{{ block.settings.heading }}</div>
+                    <div><h3>{{ block.settings.heading }}</h3></div>
                     <div><p>{{ block.settings.description }}</p></div>
                     {% if block.settings.button_label!=blank%} <div><a class="button" href="{{ block.settings.button_link }}">{{ block.settings.button_label }}</a></div>{% endif %}
-                </div>
-            </div>
+            </li>
         {% endfor %}
-    </div>    
+    </ul>    
 </div>
 
 

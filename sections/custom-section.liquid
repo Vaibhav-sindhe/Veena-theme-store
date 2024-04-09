@@ -2,19 +2,21 @@
 
 <div class="first-section">
     <div><h1>{{ section.settings.heading }}</h1></div>
-    {%for block in section.blocks %}
-        <div class="first-section--block">
-            {% render 'responsive-picture',
-                desktopImage: block.settings.image_desktop,
-                mobileImage: block.settings.image_mobile
-            %}
-            <div class="first-section-block--content">
-                <div><p>{{ block.settings.pre_heading }}</p></div>
-                <div><h2>{{ block.settings.title }}</h2></div>
-                <div><a href="{{ block.settings.button_link }}">{{ block.settings.button_label }}</a></div>
+    <div class="first-section--container">
+        {%for block in section.blocks %}
+            <div class="first-section--block">
+                {% render 'responsive-picture',
+                    desktopImage: block.settings.image_desktop,
+                    mobileImage: block.settings.image_mobile
+                %}
+                <div class="first-section-block--content">
+                    <div><p>{{ block.settings.pre_heading }}</p></div>
+                    <div><h2>{{ block.settings.title }}</h2></div>
+                    <div><a href="{{ block.settings.button_link }}">{{ block.settings.button_label }}</a></div>
+                </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>    
 </div>
 
 {% schema %}

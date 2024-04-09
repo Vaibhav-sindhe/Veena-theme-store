@@ -1,6 +1,6 @@
-.first-section{
-    background-color: red;
+.first-section--container{
+    display:flex
 }
-h2{
-    color: white;
+.first-section--block{
+    width: 50%;
 }

@@ -1,5 +1,20 @@
-<div>
-    <h1>{{ section.settings.heading }}</h1>
+<div class="first-section">
+    {% for block in section.blocks %}
+        <div class="first-section--block">
+            {% render 'responsive-picture',
+                desktopImage: block.image_desktop,
+                mobileImage: block.image_mobile
+            %}
+            <div class="first-section-block--content">
+                <div><p>{{ block.pre_heading }}</p></div>
+                <div><h2>{{ block.title }}</h2></div>
+                <div><h2>{{ block.button_lable }}</h2></div>
+            </div>
+        </div>
+
+        <div class="first-section--block">
+        </div>
+    {%endfor%}
 </div>
 
 {% schema %}

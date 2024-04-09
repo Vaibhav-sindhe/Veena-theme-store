@@ -694,6 +694,8 @@
         "usp_block_eWUyJy": {
           "type": "usp-block",
           "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/svgviewer-output_2.svg",
+            "image_mobile": "shopify:\/\/shop_images\/svgviewer-output_2.svg",
             "heading": "secure payment",
             "description": "<p>We accept a variety of secure payment methods, including major credit cards.<\/p>",
             "button_label": "",
@@ -703,6 +705,8 @@
         "usp_block_jEJHzc": {
           "type": "usp-block",
           "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/svgviewer-output_3.svg",
+            "image_mobile": "shopify:\/\/shop_images\/svgviewer-output_3.svg",
             "heading": "Help center",
             "description": "<p>Absolutely, providing 24\/7 support is a great way to enhance customer satisfaction.<\/p>",
             "button_label": "",
@@ -717,7 +721,7 @@
         "usp_block_jEJHzc"
       ],
       "settings": {
-        "heading": "Business Formal Choices"
+        "heading": ""
       }
     }
   },

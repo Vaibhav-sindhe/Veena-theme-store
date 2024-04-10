@@ -735,6 +735,56 @@
         "button_label": "view product",
         "button_link": "https:\/\/b03-vaibhav.myshopify.com\/products\/tugain-essentials-anti-dandruff-shampoo"
       }
+    },
+    "week_5_assignment_faq_dYkepx": {
+      "type": "week-5-assignment-faq",
+      "blocks": {
+        "assignment_faq_block_a4bkTT": {
+          "type": "assignment-faq-block",
+          "settings": {
+            "question": "How are you",
+            "answer": "<p>i am fine<\/p>"
+          }
+        },
+        "assignment_faq_block_FVzcUB": {
+          "type": "assignment-faq-block",
+          "settings": {
+            "question": "Business Formal Choices",
+            "answer": "<p>Yes Business Formal Choices<\/p>"
+          }
+        },
+        "assignment_faq_block_mJhPwD": {
+          "type": "assignment-faq-block",
+          "settings": {
+            "question": "Business Formal Choices",
+            "answer": "<p>Yes Business Formal Choices<\/p>"
+          }
+        },
+        "assignment_faq_block_BiDht6": {
+          "type": "assignment-faq-block",
+          "settings": {
+            "question": "Business Formal Choices",
+            "answer": "<p>Yes Business Formal Choices<\/p>"
+          }
+        },
+        "assignment_faq_block_QEMgYi": {
+          "type": "assignment-faq-block",
+          "settings": {
+            "question": "Business Formal Choices",
+            "answer": "<p>Yes Business Formal Choices<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "assignment_faq_block_a4bkTT",
+        "assignment_faq_block_FVzcUB",
+        "assignment_faq_block_mJhPwD",
+        "assignment_faq_block_BiDht6",
+        "assignment_faq_block_QEMgYi"
+      ],
+      "settings": {
+        "heading": "FAQ"
+      }
     }
   },
   "order": [
@@ -753,6 +803,7 @@
     "collapsible_content_HqAnQH",
     "custom_section_ehRQ73",
     "usp_section_7dQ83b",
-    "week_5_assignment_GnpJKJ"
+    "week_5_assignment_GnpJKJ",
+    "week_5_assignment_faq_dYkepx"
   ]
 }

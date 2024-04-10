@@ -2,13 +2,27 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "week_5_assignment_KQmBjT": {
+      "type": "week-5-assignment",
+      "settings": {
+        "heading": "Our Products",
+        "product": "tugain-essentials-anti-dandruff-shampoo",
+        "vendor": "vendor",
+        "quantity": "Quantity : 200 ML",
+        "description": "<p>Business Formal Choices<\/p>",
+        "button_label": "view product",
+        "button_link": "https:\/\/b03-vaibhav.myshopify.com\/products\/tugain-essentials-anti-dandruff-shampoo"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "week_5_assignment_KQmBjT"
   ]
 }

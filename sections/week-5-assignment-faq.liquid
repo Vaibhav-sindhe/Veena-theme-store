@@ -1,17 +1,50 @@
+{{ 'assignment-faq.css' | asset_url | stylesheet_tag }}
+
 <div class="assignment-faq">
-    <h1>{{ section.settings.heading }}</h1>
+    <h1 class="assignment-faq--heading">{{ section.settings.heading }}</h1>
     <div class="assignment-faq--container">
         {% for block in section.blocks %}
-            <div class="assignment-faq-container--block">
+                <div class="assignment-faq-container--block">
                 <details>
-                    <summary>{{ block.settings.question }}</summary>
-                    {{ block.settings.answer }}
+                    <summary><div class="assignment-faq-container-block--question"><h5>{{ block.settings.question }}</h5><span class="toggle-icon">+</span></div></summary>
+                    <div class="assignment-faq-container-block--answer">{{ block.settings.answer }}</div>
                 </details>
-            </div>    
+            </div>
         {% endfor %}   
 
     </div>    
-</div>    
+</div> 
+
+
+<script>
+    let summaries = document.querySelectorAll('details summary');
+    let previous=null;
+    let previousIcon=null;
+    let i=0;
+    summaries.forEach(function(summary) {
+        summary.addEventListener('click', function() {
+            var icon = summary.querySelector('.toggle-icon');
+
+
+            if(previous==summary.parentNode){
+                previous.open=previous.open;
+            }
+            else{
+                if(previous){
+                    previous.open=false;
+                    previousIcon.textContent="+"
+                }
+                previous=summary.parentNode;
+                previousIcon=icon;
+            }
+            if (summary.parentNode.open) {
+                icon.textContent = '+';
+            } else {
+                icon.textContent = '-';
+            }
+        });
+    });
+</script>
 
 {% schema %}
 {

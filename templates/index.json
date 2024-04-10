@@ -723,6 +723,77 @@
       "settings": {
         "heading": ""
       }
+    },
+    "featured_product_cAGe7Q": {
+      "type": "featured-product",
+      "blocks": {
+        "text_dTbgw8": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_9Wdr8z": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_4RJdDi": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_jLXGPp": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_H6zzjC": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons_bkxNgq": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_MQRtkf": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_dTbgw8",
+        "title_9Wdr8z",
+        "price_4RJdDi",
+        "variant_picker_jLXGPp",
+        "quantity_selector_H6zzjC",
+        "buy_buttons_bkxNgq",
+        "share_MQRtkf"
+      ],
+      "settings": {
+        "product": "",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -740,6 +811,7 @@
     "featured_blog_AXCGM8",
     "collapsible_content_HqAnQH",
     "custom_section_ehRQ73",
-    "usp_section_7dQ83b"
+    "usp_section_7dQ83b",
+    "featured_product_cAGe7Q"
   ]
 }

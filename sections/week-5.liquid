@@ -1,5 +1,9 @@
 <div>
- <h1>Hello world</h1>
+  {% for bloack in section.block %}
+    {% if block.settings %}
+      <div>{% if block.settings.text %}{{block.settings.text}}{% endif %}</div>
+    {% endif} %}  
+  {% endfor %}
 </div>
 
 {% schema %}
@@ -16,7 +20,7 @@
     },
     {
       "type": "text",
-      "name": "t:sections.featured-product.blocks.text.name",
+      "name": "week-5-text",
       "settings": [
         {
           "type": "inline_richtext",

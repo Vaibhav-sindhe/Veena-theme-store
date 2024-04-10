@@ -19,10 +19,69 @@
         "button_label": "view product",
         "button_link": "https:\/\/b03-vaibhav.myshopify.com\/products\/tugain-essentials-anti-dandruff-shampoo"
       }
+    },
+    "week_5_assignment_faq_npBgXM": {
+      "type": "week-5-assignment-faq",
+      "blocks": {
+        "assignment_faq_block_hKeREy": {
+          "type": "assignment-faq-block",
+          "settings": {
+            "question": "How Long Does An Order Take To Arrive?",
+            "answer": "<p>International orders normally arrive within 2-4 weeks of shipping. Please note that these orders need to pass through the customs office in your country before it will be released for final delivery, which can occasionally cause additional delays. Once an order leaves our warehouse, carrier shipping delays may occur due to factors outside our control. We, unfortunately, can’t control how quickly an order arrives once it has left our warehouse. Contacting the carrier is the best way to get more insight into your package’s location and estimated delivery date.<\/p>"
+          }
+        },
+        "assignment_faq_block_MErXRV": {
+          "type": "assignment-faq-block",
+          "settings": {
+            "question": "How Do I Set Up A Subscription Order?",
+            "answer": "<p>International orders normally arrive within 2-4 weeks of shipping. Please note that these orders need to pass through the customs office in your country before it will be released for final delivery, which can occasionally cause additional delays. Once an order leaves our warehouse, carrier shipping delays may occur due to factors outside our control. We, unfortunately, can’t control how quickly an order arrives once it has left our warehouse. Contacting the carrier is the best way to get more insight into your package’s location and estimated delivery date.<\/p>"
+          }
+        },
+        "assignment_faq_block_PiFmy6": {
+          "type": "assignment-faq-block",
+          "settings": {
+            "question": "How To Return My Items?",
+            "answer": "<p>International orders normally arrive within 2-4 weeks of shipping. Please note that these orders need to pass through the customs office in your country before it will be released for final delivery, which can occasionally cause additional delays. Once an order leaves our warehouse, carrier shipping delays may occur due to factors outside our control. We, unfortunately, can’t control how quickly an order arrives once it has left our warehouse. Contacting the carrier is the best way to get more insight into your package’s location and estimated delivery date.<\/p>"
+          }
+        },
+        "assignment_faq_block_CyLGdr": {
+          "type": "assignment-faq-block",
+          "settings": {
+            "question": "How Can I Choose The Right Size For Me?",
+            "answer": "<p>International orders normally arrive within 2-4 weeks of shipping. Please note that these orders need to pass through the customs office in your country before it will be released for final delivery, which can occasionally cause additional delays. Once an order leaves our warehouse, carrier shipping delays may occur due to factors outside our control. We, unfortunately, can’t control how quickly an order arrives once it has left our warehouse. Contacting the carrier is the best way to get more insight into your package’s location and estimated delivery date.<\/p>"
+          }
+        },
+        "assignment_faq_block_i3UV77": {
+          "type": "assignment-faq-block",
+          "settings": {
+            "question": "Which Payment Methods Do You Accept?",
+            "answer": "<p>International orders normally arrive within 2-4 weeks of shipping. Please note that these orders need to pass through the customs office in your country before it will be released for final delivery, which can occasionally cause additional delays. Once an order leaves our warehouse, carrier shipping delays may occur due to factors outside our control. We, unfortunately, can’t control how quickly an order arrives once it has left our warehouse. Contacting the carrier is the best way to get more insight into your package’s location and estimated delivery date.<\/p>"
+          }
+        },
+        "assignment_faq_block_Hw3D6U": {
+          "type": "assignment-faq-block",
+          "settings": {
+            "question": "How Can I Track My Order?",
+            "answer": "<p>International orders normally arrive within 2-4 weeks of shipping. Please note that these orders need to pass through the customs office in your country before it will be released for final delivery, which can occasionally cause additional delays. Once an order leaves our warehouse, carrier shipping delays may occur due to factors outside our control. We, unfortunately, can’t control how quickly an order arrives once it has left our warehouse. Contacting the carrier is the best way to get more insight into your package’s location and estimated delivery date.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "assignment_faq_block_hKeREy",
+        "assignment_faq_block_MErXRV",
+        "assignment_faq_block_PiFmy6",
+        "assignment_faq_block_CyLGdr",
+        "assignment_faq_block_i3UV77",
+        "assignment_faq_block_Hw3D6U"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions"
+      }
     }
   },
   "order": [
     "main",
-    "week_5_assignment_KQmBjT"
+    "week_5_assignment_KQmBjT",
+    "week_5_assignment_faq_npBgXM"
   ]
 }

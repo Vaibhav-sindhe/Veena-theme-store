@@ -742,36 +742,36 @@
         "assignment_faq_block_a4bkTT": {
           "type": "assignment-faq-block",
           "settings": {
-            "question": "How are you",
-            "answer": "<p>i am fine<\/p>"
+            "question": "How Long Does An Order Take To Arrive?",
+            "answer": "<p>International orders normally arrive within 2-4 weeks of shipping. Please note that these orders need to pass through the customs office in your country before it will be released for final delivery, which can occasionally cause additional delays. Once an order leaves our warehouse, carrier shipping delays may occur due to factors outside our control. We, unfortunately, can’t control how quickly an order arrives once it has left our warehouse. Contacting the carrier is the best way to get more insight into your package’s location and estimated delivery date.<\/p>"
           }
         },
         "assignment_faq_block_FVzcUB": {
           "type": "assignment-faq-block",
           "settings": {
-            "question": "Business Formal Choices",
-            "answer": "<p>Yes Business Formal Choices<\/p>"
+            "question": "How Do I Set Up A Subscription Order?",
+            "answer": "<p>International orders normally arrive within 2-4 weeks of shipping. Please note that these orders need to pass through the customs office in your country before it will be released for final delivery, which can occasionally cause additional delays. Once an order leaves our warehouse, carrier shipping delays may occur due to factors outside our control. We, unfortunately, can’t control how quickly an order arrives once it has left our warehouse. Contacting the carrier is the best way to get more insight into your package’s location and estimated delivery date.<\/p>"
           }
         },
         "assignment_faq_block_mJhPwD": {
           "type": "assignment-faq-block",
           "settings": {
-            "question": "Business Formal Choices",
-            "answer": "<p>Yes Business Formal Choices<\/p>"
+            "question": "How Can I Choose The Right Size For Me?",
+            "answer": "<p>International orders normally arrive within 2-4 weeks of shipping. Please note that these orders need to pass through the customs office in your country before it will be released for final delivery, which can occasionally cause additional delays. Once an order leaves our warehouse, carrier shipping delays may occur due to factors outside our control. We, unfortunately, can’t control how quickly an order arrives once it has left our warehouse. Contacting the carrier is the best way to get more insight into your package’s location and estimated delivery date.<\/p>"
           }
         },
         "assignment_faq_block_BiDht6": {
           "type": "assignment-faq-block",
           "settings": {
-            "question": "Business Formal Choices",
-            "answer": "<p>Yes Business Formal Choices<\/p>"
+            "question": "Which Payment Methods Do You Accept?",
+            "answer": "<p>International orders normally arrive within 2-4 weeks of shipping. Please note that these orders need to pass through the customs office in your country before it will be released for final delivery, which can occasionally cause additional delays. Once an order leaves our warehouse, carrier shipping delays may occur due to factors outside our control. We, unfortunately, can’t control how quickly an order arrives once it has left our warehouse. Contacting the carrier is the best way to get more insight into your package’s location and estimated delivery date.<\/p>"
           }
         },
         "assignment_faq_block_QEMgYi": {
           "type": "assignment-faq-block",
           "settings": {
-            "question": "Business Formal Choices",
-            "answer": "<p>Yes Business Formal Choices<\/p>"
+            "question": "How Can I Track My Order?",
+            "answer": "<p>International orders normally arrive within 2-4 weeks of shipping. Please note that these orders need to pass through the customs office in your country before it will be released for final delivery, which can occasionally cause additional delays. Once an order leaves our warehouse, carrier shipping delays may occur due to factors outside our control. We, unfortunately, can’t control how quickly an order arrives once it has left our warehouse. Contacting the carrier is the best way to get more insight into your package’s location and estimated delivery date.<\/p>"
           }
         }
       },
@@ -783,7 +783,7 @@
         "assignment_faq_block_QEMgYi"
       ],
       "settings": {
-        "heading": "FAQ"
+        "heading": "Frequently Asked Questions"
       }
     }
   },

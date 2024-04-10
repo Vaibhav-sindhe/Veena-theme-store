@@ -1,5 +1,30 @@
-<div>
-  <h1>Hello world</h1>
+{{ 'assignment.css' | asset_url | stylesheet_tag }}
+
+{% assign product = section.settings.product %}
+{% assign price=product.price | divided_by: 100  %}
+<div class="main">
+<div><h1 class="main-heading">{{ section.settings.heading }}</h1></div>
+<div class="assignment">
+  <div class="assignment--imageContainer half">
+    
+    {% render 'responsive-picture',
+      desktopImage:  product.images[0].src, 
+      mobileImage:  product.images[0].src
+
+    %}
+
+  </div>
+  <div class="assignment--content half">
+    <div><p class="assignment-content--vendor">{{ product.vendor }}</p></div>
+    <div><h1>{{ product.title }}</h1></div>
+    <div><p class="assignment-content--quantity">{{ section.settings.quantity }}</p></div>
+    <div><p class="assignment-content--price">Price : {{price}}.00/-</p></div>
+    <div><p class="assignment-content--discription">{{ product.description }}</p></div>
+    <div><a class="assignment-content--button" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a></div>
+
+
+  </div>
+</div>
 </div>
 {% schema %}
 {

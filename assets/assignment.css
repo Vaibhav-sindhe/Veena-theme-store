@@ -1,0 +1,83 @@
+.main{
+    background-color: black; 
+}
+.main-heading{
+    color: white;
+    margin-left: 5rem;
+    font-weight: 900;
+}
+.assignment{
+    padding: 5rem;
+    display: flex;
+    background-color: black;
+}
+.assignment .half{
+    width: 50%;
+}
+.assignment .half img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.assignment--content{
+    padding-top: 3rem;
+}
+.assignment-content--vendor{
+    color: white
+}
+.assignment--content div h1{
+   font-weight: 900;
+   word-spacing: 1rem; 
+   color: #FF98ED;
+   margin: 0;
+   font-size: 6rem;
+}
+.assignment-content--quantity{
+    font-size: 2.5rem;
+    margin: 0;
+    color: white;
+}
+.assignment-content--price{
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 600;
+}
+.assignment-content--discription{
+    color: gray;
+    margin-top: 0.5rem;
+}
+.assignment-content--button{
+    color: black;
+    padding:10px 20px;
+    border-radius: 5px;
+    background: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 0.8rem;
+}
+
+@media (max-width:600px) {
+    .assignment{
+        flex-direction: column;
+    }
+    .assignment .half{
+        width: 100%;
+    }
+    .assignment--content div h1{
+        font-size: 3rem;
+    }
+    .assignment-content--quantity{
+        font-size: 2rem;
+    }
+    .assignment-content--price{
+        font-size: 2.5rem;
+    }
+    .assignment-content--button{
+        padding:8px 15px;
+        font-size: 1.8rem;
+        margin-top: 15px;
+    }
+}
+

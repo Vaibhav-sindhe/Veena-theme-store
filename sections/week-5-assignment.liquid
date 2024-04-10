@@ -1,0 +1,122 @@
+{% schema %}
+{
+  "name": "week-5",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+        "type": "product",
+        "id": "product",
+        "label": "pick product"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Business Formal Choices"
+    }
+  ],
+  "blocks": [
+    {
+        "type": "text",
+        "name": "week-5-block-1",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Business Formal Choices"
+            }
+        ]
+    },
+    {
+        "type": "heading",
+        "name": "week-5-block-2",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "description",
+                "label": "Description",
+                "default": "<p>Business Formal Choices</p>"
+            }
+        ]
+    },
+    {
+        "type": "quantity",
+        "name": "week-5-block-3",
+        "settings": [
+            {
+                "type": "text",
+                "id": "quantity",
+                "label": "quantity",
+                "default": "200"
+            }
+        ]
+    },
+    {
+        "type": "price",
+        "name": "week-5-block-4",
+        "limit": 1
+    },
+    {
+        "type": "description",
+        "name": "week-5-block-5",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "description",
+                "label": "Description",
+                "default": "<p>Business Formal Choices</p>"
+            }
+        ]
+       },
+       {
+        "type": "button",
+        "name": "week-5-block-6",
+        "settings": [
+            {
+                "type": "text",
+                "id": "button_label",
+                "label": "Button label",
+                "default": "Explore"
+              },
+              {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button url"
+              }
+        ]
+        }
+
+  ],
+  "presets": [
+    {
+      "name": "week-5",
+      "blocks": [
+        {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+        }
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "heading"
+        },
+        {
+          "type": "quantity"
+        },
+        {
+          "type": "description"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

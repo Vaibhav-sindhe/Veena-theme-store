@@ -723,6 +723,76 @@
       "settings": {
         "heading": ""
       }
+    },
+    "captivating_collection_DA9fLL": {
+      "type": "captivating-collection",
+      "blocks": {
+        "captivating_block_KJVLrg": {
+          "type": "captivating-block",
+          "settings": {
+            "collection": "accessories",
+            "title": "Accessories",
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "captivating_block_hPVt73": {
+          "type": "captivating-block",
+          "settings": {
+            "collection": "mens-jacket",
+            "title": "Men's Jacket",
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "captivating_block_PMYMpw": {
+          "type": "captivating-block",
+          "settings": {
+            "collection": "shoes",
+            "title": "Shoes",
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "captivating_block_AFM64E": {
+          "type": "captivating-block",
+          "settings": {
+            "collection": "handbags",
+            "title": "Handbags",
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "captivating_block_pniQVU": {
+          "type": "captivating-block",
+          "settings": {
+            "collection": "best-selling",
+            "title": "Best Selling",
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "captivating_block_7xCBbi": {
+          "type": "captivating-block",
+          "settings": {
+            "collection": "t-shirt",
+            "title": "T shirt",
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "captivating_block_KJVLrg",
+        "captivating_block_hPVt73",
+        "captivating_block_PMYMpw",
+        "captivating_block_AFM64E",
+        "captivating_block_pniQVU",
+        "captivating_block_7xCBbi"
+      ],
+      "settings": {
+        "heading": "Heading"
+      }
     }
   },
   "order": [
@@ -740,6 +810,7 @@
     "featured_blog_AXCGM8",
     "collapsible_content_HqAnQH",
     "custom_section_ehRQ73",
-    "usp_section_7dQ83b"
+    "usp_section_7dQ83b",
+    "captivating_collection_DA9fLL"
   ]
 }

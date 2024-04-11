@@ -3,7 +3,10 @@
 }
 .main-heading{
     color: white;
-    margin-left: 5rem;
+    padding: 0 5rem;
+    padding-top: 2rem;
+    margin: 0;
+    margin-left: 15rem;
     font-weight: 900;
 }
 .assignment{
@@ -18,12 +21,14 @@
     width: 100%;
     object-fit: cover;
     height: 100%;
+    background: radial-gradient(#a92ca0 -50%, #000 75%);
 }
 .assignment--content{
-    padding-top: 3rem;
+    padding-top: 3.5rem;
 }
 .assignment-content--vendor{
-    color: white
+    color: white;
+    margin-bottom: 0;
 }
 .assignment--content div h1{
    font-weight: 900;
@@ -46,6 +51,15 @@
 .assignment-content--discription{
     color: gray;
     margin-top: 0.5rem;
+    line-height: 2.5rem;
+}
+.assignment-content-discription--span{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 400;
+}
+.button-div{
+    margin-top: 3rem;
 }
 .assignment-content--button{
     color: black;
@@ -55,12 +69,14 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 2rem;
-    margin-top: 0.8rem;
 }
 
 @media (max-width:600px) {
     .assignment{
         flex-direction: column;
+    }
+    .main-heading{
+        margin-left: 0;
     }
     .assignment .half{
         width: 100%;
@@ -73,6 +89,9 @@
     }
     .assignment-content--price{
         font-size: 2.5rem;
+    }
+    .assignment-content-discription--span{
+        font-size: 2rem;
     }
     .assignment-content--button{
         padding:8px 15px;

@@ -530,7 +530,7 @@ h6:empty {
 }
 
 a:not([href]) {
-  cursor: not-allowed;
+  /* cursor: not-allowed; */
 }
 
 .circle-divider::after {

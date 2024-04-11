@@ -1,54 +1,37 @@
 {{ "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" | stylesheet_tag }}
 <script src={{ "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"}} defer></script>
-
-<div>Hello world</div>
-<div id="slider" class="product-slider">
+{{ 'captivating-section.css' | asset_url | stylesheet_tag }}
+<div id="captivating-slider" class="product-slider">
     <div class="splide">
       <div class="splide__track">
         <ul class="splide__list">
             {% for block in section.blocks %}
                 {% assign collection = block.settings.collection %}
-                <li class="splide__slide">
-                    <div>
+                <li class="splide__slide captivating-splide-item">
+                    <div class="captivating--image-container">
                         {% render 'responsive-picture',
                             desktopImage:  collection.image.src, 
                             mobileImage:  collection.image.src
                       
                         %}
                     </div>
-                    <div>{{ block.settings.title }}</div>
-                    <div>
-                        <div><a class="button" href:{{block.settings.ul}}>{{ block.settings.button_label }}</a></div>
-                    </div>
+                    <div class=captivating--content>
+                        <div><a class="coptivating-content--title">{{ block.settings.title }}</a></div>
+                        <div>
+                            <a class="button coptivating-content--button" href:{{block.settings.ul}}>{{ block.settings.button_label }}</a>
+                        </div>
+                    </div>    
                 </li>
             {% endfor %}
         </ul>
       </div>
     </div>
-
-    <style>
-        .product-slider {
-          margin-top: 20px;
-        }
-      
-        .product-slider .product {
-          text-align: center;
-        }
-  
-        .splide__slide{
-          height: 200px;
-        }
-        .splide__slide img{
-          object-fit: contain;
-        }
-      
-      </style>
-  </div>
+</div>
 
 <script defer src={{"https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"}}></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var splideInstance = new Splide('#slider .splide', {
+      var splideInstance = new Splide('#captivating-slider .splide', {
         type       : 'slide',
         perPage    : 5, 
         autoplay   : false,
@@ -56,11 +39,14 @@
         gap        : 20, // Gap between slides
         pagination : false,
         breakpoints: {
+          1000:{
+            perPage:3
+         },
           768: {
             perPage: 2
           },
           480: {
-            perPage: 1
+            perPage: 2
           }
         }
       }).mount();

@@ -797,6 +797,16 @@
     "customer_review_3ihimd": {
       "type": "customer-review",
       "blocks": {
+        "review_block_kPBkbN": {
+          "type": "review-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/1_2db38707-707e-4fd6-ab12-35397e8935de.webp",
+            "image_mobile": "shopify:\/\/shop_images\/1_662eca0c-26bf-46b1-9154-9a31bc27750f.webp",
+            "name": "Emma Watson",
+            "designation": "Fashion Blogger",
+            "description": "<p>\"Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story. My followers can't get enough. His empathy, patience and expertise in fostering a positive environment is truly commendable.\"<\/p>"
+          }
+        },
         "review_block_HxpTyk": {
           "type": "review-block",
           "settings": {
@@ -804,57 +814,46 @@
             "image_mobile": "shopify:\/\/shop_images\/2_047757ce-e94e-484b-95d5-7e03a88e3733.webp",
             "name": "James Harper",
             "designation": "Fashion Editor",
-            "description": "<p>Business Formal Choices<\/p>"
-          }
-        },
-        "review_block_kPBkbN": {
-          "type": "review-block",
-          "settings": {
-            "name": "Alex",
-            "designation": "Designer",
-            "description": "<p>Business Formal Choices<\/p>"
+            "description": "<p>\"As a fashion editor, I've seen it all. This store stands out with its curated selection and attention to detail. The clothing is not just fashion; it's art in motion. His effective communication and ability to motivate and guide the sales team is second to none.\"<\/p>"
           }
         },
         "review_block_Eem4r3": {
           "type": "review-block",
           "settings": {
-            "name": "Alex",
-            "designation": "Designer",
-            "description": "<p>Business Formal Choices<\/p>"
+            "image_desktop": "shopify:\/\/shop_images\/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
+            "image_mobile": "shopify:\/\/shop_images\/3_47c5310d-0753-4109-8490-b8146533de86.webp",
+            "name": "Sarah Mitchell",
+            "designation": "Stylist",
+            "description": "<p>\"A go-to destination for my clients. The diversity in styles is impressive, catering to every taste. The quality and elegance never disappoint. Her quick response and innovative solutions make him an invaluable asset to our team.\"<\/p>"
           }
         },
         "review_block_ixdKAk": {
           "type": "review-block",
           "settings": {
-            "name": "Alex",
-            "designation": "Designer",
-            "description": "<p>Business Formal Choices<\/p>"
+            "image_desktop": "shopify:\/\/shop_images\/4_e6c9abf8-cab4-4c51-8b5c-b87f6878ea97.webp",
+            "image_mobile": "shopify:\/\/shop_images\/4_b236338e-bd8b-49d2-a369-23fb772dfac3.webp",
+            "name": "Alex Rodriguez",
+            "designation": "Fashion Enthusiast",
+            "description": "<p>\"Being a fashion enthusiast, I'm always on the lookout for unique pieces. This store exceeds expectations with its exceptional customer service. Her attention to detail, and ability to meet deadlines have made every project a success.\"<\/p>"
           }
         },
         "review_block_RHyrVM": {
           "type": "review-block",
           "settings": {
-            "name": "Alex",
-            "designation": "Designer",
-            "description": "<p>Business Formal Choices<\/p>"
-          }
-        },
-        "review_block_8qjmWi": {
-          "type": "review-block",
-          "settings": {
-            "name": "Alex",
-            "designation": "Designer",
-            "description": "<p>Business Formal Choices<\/p>"
+            "image_desktop": "shopify:\/\/shop_images\/5_b78ea225-2e52-4f93-8a24-3db56ef117ee.webp",
+            "image_mobile": "shopify:\/\/shop_images\/5_6b3457ea-8235-4903-9731-132204bab92e.webp",
+            "name": "Grace Turner",
+            "designation": "Influencer",
+            "description": "<p>\"Obsessed with my recent purchases! The store's fashion-forward approach aligns perfectly with my style. The pieces are Instagram-worthy. His commitment to resolving issues have greatly contributed to our customer satisfaction levels.\"<\/p>"
           }
         }
       },
       "block_order": [
-        "review_block_HxpTyk",
         "review_block_kPBkbN",
+        "review_block_HxpTyk",
         "review_block_Eem4r3",
         "review_block_ixdKAk",
-        "review_block_RHyrVM",
-        "review_block_8qjmWi"
+        "review_block_RHyrVM"
       ],
       "settings": {
         "heading": "Our Customers Review"

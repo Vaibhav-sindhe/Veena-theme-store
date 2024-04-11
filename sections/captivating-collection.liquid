@@ -1,14 +1,21 @@
 {{ "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" | stylesheet_tag }}
 <script src={{ "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"}} defer></script>
 
-
 <div>Hello world</div>
 <div id="slider" class="product-slider">
     <div class="splide">
       <div class="splide__track">
         <ul class="splide__list">
             {% for block in section.blocks %}
+                {% assign collection = block.settings.collection %}
                 <li class="splide__slide">
+                    <div>
+                        {% render 'responsive-picture',
+                            desktopImage:  collection.images[0].src, 
+                            mobileImage:  collection.images[0].src
+                      
+                        %}
+                    </div>
                     <div>{{ block.settings.title }}</div>
                     <div>
                         <div><a class="button" href:{{block.settings.ul}}>{{ block.settings.button_label }}</a></div>

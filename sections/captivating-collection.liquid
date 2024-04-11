@@ -1,4 +1,23 @@
 <div>Hello world</div>
+<div id="image-slider" class="splide">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li>
+                hello
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script defer src={{"https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"}}></script>
+<script>
+    new Splide('#image-slider', {
+        type: 'loop',
+        perPage: 1,
+        autoplay: true,
+        interval:5000,
+    }).mount();
+</script>
 
 {% schema %}
 {
@@ -45,7 +64,7 @@
   ],
   "presets": [
     {
-      "name": "captivating Section"
+      "name": "captivating section"
     }
   ]
 }

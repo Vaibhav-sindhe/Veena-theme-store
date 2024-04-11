@@ -2,6 +2,7 @@
 <script src={{ "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"}} defer></script>
 {{ 'captivating-section.css' | asset_url | stylesheet_tag }}
 <div id="captivating-slider" class="product-slider">
+  <div><h1 class="captivating-section-heading">{{ section.settings.heading }}</h1></div>
     <div class="splide">
       <div class="splide__track">
         <ul class="splide__list">

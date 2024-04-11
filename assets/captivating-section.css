@@ -6,6 +6,9 @@
     justify-content: center;
     align-items: center;
 }
+.captivating-section-heading{
+    font-weight: 800;
+}
 .captivating--image-container{
     height: 34rem;
     width: 26rem;

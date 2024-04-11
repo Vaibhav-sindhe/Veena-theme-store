@@ -1,0 +1,52 @@
+<div>Hello world</div>
+
+{% schema %}
+{
+  "name": "captivating section",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "captivating-block",
+      "name": "captivating-block",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "collection"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title",
+          "default": "fashion"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Explore"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "captivating Section"
+    }
+  ]
+}
+{% endschema %}

@@ -793,6 +793,72 @@
       "settings": {
         "heading": "Captivating Collection"
       }
+    },
+    "customer_review_3ihimd": {
+      "type": "customer-review",
+      "blocks": {
+        "review_block_HxpTyk": {
+          "type": "review-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/2_0b300886-b49e-4ef1-a786-f0b7f7ab2f2d.webp",
+            "image_mobile": "shopify:\/\/shop_images\/2_047757ce-e94e-484b-95d5-7e03a88e3733.webp",
+            "name": "James Harper",
+            "designation": "Fashion Editor",
+            "description": "<p>Business Formal Choices<\/p>"
+          }
+        },
+        "review_block_kPBkbN": {
+          "type": "review-block",
+          "settings": {
+            "name": "Alex",
+            "designation": "Designer",
+            "description": "<p>Business Formal Choices<\/p>"
+          }
+        },
+        "review_block_Eem4r3": {
+          "type": "review-block",
+          "settings": {
+            "name": "Alex",
+            "designation": "Designer",
+            "description": "<p>Business Formal Choices<\/p>"
+          }
+        },
+        "review_block_ixdKAk": {
+          "type": "review-block",
+          "settings": {
+            "name": "Alex",
+            "designation": "Designer",
+            "description": "<p>Business Formal Choices<\/p>"
+          }
+        },
+        "review_block_RHyrVM": {
+          "type": "review-block",
+          "settings": {
+            "name": "Alex",
+            "designation": "Designer",
+            "description": "<p>Business Formal Choices<\/p>"
+          }
+        },
+        "review_block_8qjmWi": {
+          "type": "review-block",
+          "settings": {
+            "name": "Alex",
+            "designation": "Designer",
+            "description": "<p>Business Formal Choices<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "review_block_HxpTyk",
+        "review_block_kPBkbN",
+        "review_block_Eem4r3",
+        "review_block_ixdKAk",
+        "review_block_RHyrVM",
+        "review_block_8qjmWi"
+      ],
+      "settings": {
+        "heading": "Our Customers Review"
+      }
     }
   },
   "order": [
@@ -811,6 +877,7 @@
     "collapsible_content_HqAnQH",
     "custom_section_ehRQ73",
     "usp_section_7dQ83b",
-    "captivating_collection_DA9fLL"
+    "captivating_collection_DA9fLL",
+    "customer_review_3ihimd"
   ]
 }

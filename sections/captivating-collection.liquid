@@ -11,8 +11,8 @@
                 <li class="splide__slide">
                     <div>
                         {% render 'responsive-picture',
-                            desktopImage:  collection.images[0].src, 
-                            mobileImage:  collection.images[0].src
+                            desktopImage:  collection.image.src, 
+                            mobileImage:  collection.image.src
                       
                         %}
                     </div>
@@ -50,8 +50,8 @@
     document.addEventListener('DOMContentLoaded', function () {
       var splideInstance = new Splide('#slider .splide', {
         type       : 'slide',
-        perPage    : 2, 
-        autoplay   : true,
+        perPage    : 5, 
+        autoplay   : false,
         interval   : 3000, 
         gap        : 20, // Gap between slides
         pagination : false,

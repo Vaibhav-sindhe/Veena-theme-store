@@ -723,76 +723,6 @@
       "settings": {
         "heading": ""
       }
-    },
-    "captivating_collection_a6VTFH": {
-      "type": "captivating-collection",
-      "blocks": {
-        "captivating_block_y9y8pa": {
-          "type": "captivating-block",
-          "settings": {
-            "collection": "",
-            "title": "fashion",
-            "button_label": "Explore",
-            "button_link": ""
-          }
-        },
-        "captivating_block_7qcfQa": {
-          "type": "captivating-block",
-          "settings": {
-            "collection": "",
-            "title": "fashion",
-            "button_label": "Explore",
-            "button_link": ""
-          }
-        },
-        "captivating_block_x4XaYn": {
-          "type": "captivating-block",
-          "settings": {
-            "collection": "",
-            "title": "fashion",
-            "button_label": "Explore",
-            "button_link": ""
-          }
-        },
-        "captivating_block_M8fihw": {
-          "type": "captivating-block",
-          "settings": {
-            "collection": "",
-            "title": "fashion",
-            "button_label": "Explore",
-            "button_link": ""
-          }
-        },
-        "captivating_block_LeiJq8": {
-          "type": "captivating-block",
-          "settings": {
-            "collection": "",
-            "title": "fashion",
-            "button_label": "Explore",
-            "button_link": ""
-          }
-        },
-        "captivating_block_UawzW7": {
-          "type": "captivating-block",
-          "settings": {
-            "collection": "",
-            "title": "fashion",
-            "button_label": "Explore",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "captivating_block_y9y8pa",
-        "captivating_block_7qcfQa",
-        "captivating_block_x4XaYn",
-        "captivating_block_M8fihw",
-        "captivating_block_LeiJq8",
-        "captivating_block_UawzW7"
-      ],
-      "settings": {
-        "heading": "captivating section"
-      }
     }
   },
   "order": [
@@ -810,7 +740,6 @@
     "featured_blog_AXCGM8",
     "collapsible_content_HqAnQH",
     "custom_section_ehRQ73",
-    "usp_section_7dQ83b",
-    "captivating_collection_a6VTFH"
+    "usp_section_7dQ83b"
   ]
 }

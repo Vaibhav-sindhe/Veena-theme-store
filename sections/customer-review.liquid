@@ -1,5 +1,26 @@
-<div>
-    <h1>Hello world</h1>
+<div id="customer-review-slider" class="product-slider">
+  <div><h1 class="customer-review-heading">{{ section.settings.heading }}</h1></div>
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+            {% for block in section.blocks %}
+                <li class="splide__slide customer-review-splide-item">
+                    <div class="customer-review--image-container">
+                        {% render 'responsive-picture',
+                            desktopImage:  block.settings.image, 
+                            mobileImage:  block.settings.image
+                        %}
+                    </div>
+                    <div class=customer-review--content>
+                        <div><p>{{block.settings.name}}</p></div>
+                        <div><p>{{block.settings.designation}}</p></div>
+                        <div><p>{{block.settings.description}}</p></div>
+                    </div>    
+                </li>
+            {% endfor %}
+        </ul>
+      </div>
+    </div>
 </div>
 
 

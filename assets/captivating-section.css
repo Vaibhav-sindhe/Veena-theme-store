@@ -32,23 +32,23 @@
     justify-content: center;
     gap: 1.5rem;
 }
-.coptivating-content--title{
+.captivating-content--title{
     color: white;
     font-size: 2.5rem;
     transition: all ease-in-out 0.3s;
     cursor: pointer;
 }
-.coptivating-content--button{
+.captivating-content--button{
     background: none;
     color: white;
     border: 0.5px solid white;
     transition: all ease-in-out 0.3s;
     cursor: pointer;
 }
-.coptivating-content--button:hover,.coptivating-content--title:hover{
+.captivating-content--button:hover,.coptivating-content--title:hover{
      color: rgb(208, 60, 63);
 }
-.coptivating-content--button:after{
+.captivating-content--button:after{
     box-shadow: none;
 }
 .splide__arrow {
@@ -96,10 +96,10 @@
         height: 24rem;
         width: 15rem;
     }
-    .coptivating-content--title{
+    .captivating-content--title{
         font-size: 1.8rem;
     }
-    .coptivating-content--button{
+    .captivating-content--button{
         padding:0;
     }
     .splide__arrow--prev{

@@ -2,9 +2,11 @@
 <div id="image-slider" class="splide">
     <div class="splide__track">
         <ul class="splide__list">
-            <li>
-                hello
-            </li>
+            {% for block in section.blocks %}
+                <li>
+                    {{ block.settings.title }}
+                </li>
+            {% endfor %}
         </ul>
     </div>
 </div>

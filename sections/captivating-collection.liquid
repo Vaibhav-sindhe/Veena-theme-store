@@ -9,12 +9,33 @@
         <ul class="splide__list">
             {% for block in section.blocks %}
                 <li class="splide__slide">
-                    {{ block.settings.title }}
+                    <div>{{ block.settings.title }}</div>
+                    <div>
+                        <div><a class="button" href:{{block.settings.ul}}>{{ block.settings.button_label }}</a></div>
+                    </div>
                 </li>
             {% endfor %}
         </ul>
       </div>
     </div>
+
+    <style>
+        .product-slider {
+          margin-top: 20px;
+        }
+      
+        .product-slider .product {
+          text-align: center;
+        }
+  
+        .splide__slide{
+          height: 200px;
+        }
+        .splide__slide img{
+          object-fit: contain;
+        }
+      
+      </style>
   </div>
 
 <script defer src={{"https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"}}></script>

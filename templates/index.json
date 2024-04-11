@@ -748,8 +748,8 @@
         "captivating_block_PMYMpw": {
           "type": "captivating-block",
           "settings": {
-            "collection": "",
-            "title": "fashion",
+            "collection": "shoes",
+            "title": "Shoes",
             "button_label": "Shop Now",
             "button_link": ""
           }
@@ -757,8 +757,8 @@
         "captivating_block_AFM64E": {
           "type": "captivating-block",
           "settings": {
-            "collection": "",
-            "title": "fashion",
+            "collection": "handbags",
+            "title": "Handbags",
             "button_label": "Shop Now",
             "button_link": ""
           }
@@ -766,8 +766,8 @@
         "captivating_block_pniQVU": {
           "type": "captivating-block",
           "settings": {
-            "collection": "",
-            "title": "fashion",
+            "collection": "best-selling",
+            "title": "Best Selling",
             "button_label": "Shop Now",
             "button_link": ""
           }
@@ -775,8 +775,8 @@
         "captivating_block_7xCBbi": {
           "type": "captivating-block",
           "settings": {
-            "collection": "",
-            "title": "fashion",
+            "collection": "t-shirt",
+            "title": "T shirt",
             "button_label": "Shop Now",
             "button_link": ""
           }

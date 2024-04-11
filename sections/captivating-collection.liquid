@@ -1,25 +1,43 @@
+{{ "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" | stylesheet_tag }}
+<script src={{ "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"}} defer></script>
+
+
 <div>Hello world</div>
-<div id="image-slider" class="splide">
-    <div class="splide__track">
+<div id="slider" class="product-slider">
+    <div class="splide">
+      <div class="splide__track">
         <ul class="splide__list">
             {% for block in section.blocks %}
-                <li>
+                <li class="splide__slide">
                     {{ block.settings.title }}
                 </li>
             {% endfor %}
         </ul>
+      </div>
     </div>
-</div>
+  </div>
 
 <script defer src={{"https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"}}></script>
 <script>
-    new Splide('#image-slider', {
-        type: 'loop',
-        perPage: 1,
-        autoplay: true,
-        interval:5000,
-    }).mount();
-</script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var splideInstance = new Splide('#slider .splide', {
+        type       : 'slide',
+        perPage    : 2, 
+        autoplay   : true,
+        interval   : 3000, 
+        gap        : 20, // Gap between slides
+        pagination : false,
+        breakpoints: {
+          768: {
+            perPage: 2
+          },
+          480: {
+            perPage: 1
+          }
+        }
+      }).mount();
+    });
+  </script>
 
 {% schema %}
 {
@@ -71,3 +89,4 @@
   ]
 }
 {% endschema %}
+

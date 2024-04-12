@@ -858,6 +858,46 @@
       "settings": {
         "heading": "Our Customers Review"
       }
+    },
+    "custom_slideshow_Rg36EQ": {
+      "type": "custom-slideshow",
+      "blocks": {
+        "slide_cCcwdL": {
+          "type": "Slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/download.webp",
+            "mobile": "shopify:\/\/shop_images\/download_42cf83ab-4299-473b-8c9a-b1bb55047ec2.webp"
+          }
+        },
+        "slide_UNiHqY": {
+          "type": "Slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/download_18878673-abc0-46a1-8c73-831a25238876.webp",
+            "mobile": "shopify:\/\/shop_images\/download_dd843d2e-0a17-4f6f-abc3-476fd9492793.webp"
+          }
+        },
+        "slide_awPGH6": {
+          "type": "Slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/download_0d521f42-6e8c-41b2-aeda-1c6951a329a1.webp",
+            "mobile": "shopify:\/\/shop_images\/download_f09de8bc-4995-45fd-99ce-0eb67071be1e.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slide_cCcwdL",
+        "slide_UNiHqY",
+        "slide_awPGH6"
+      ],
+      "settings": {
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": false,
+        "auto_play_duration": 2000,
+        "Slide_animation": "slide",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -877,6 +917,7 @@
     "custom_section_ehRQ73",
     "usp_section_7dQ83b",
     "captivating_collection_DA9fLL",
-    "customer_review_3ihimd"
+    "customer_review_3ihimd",
+    "custom_slideshow_Rg36EQ"
   ]
 }

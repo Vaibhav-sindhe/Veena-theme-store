@@ -13,13 +13,16 @@
     height: 34rem;
     width: 26rem;
     object-fit: cover;
-
+    border-radius: 10px;
+    overflow: hidden;
 }
 .captivating--image-container img{
-    height: 34rem;
-    width: 26rem;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
     object-fit: cover;
+    transition: all ease-in-out 0.5s;
+
 }
 .captivating--content{
     position: absolute;
@@ -31,6 +34,11 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+}
+.captivating-splide-item:hover .captivating--image-container img{
+    transform: scale(1.1);
+    overflow: hidden;
+
 }
 .captivating-content--title{
     color: white;

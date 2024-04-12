@@ -45,8 +45,12 @@
     transition: all ease-in-out 0.3s;
     cursor: pointer;
 }
-.captivating-content--button:hover,.coptivating-content--title:hover{
-     color: rgb(208, 60, 63);
+.captivating-content--button:hover{
+    color: rgb(208, 60, 63);
+}
+.captivating-content--title:hover{
+    color: rgb(208, 60, 63);
+
 }
 .captivating-content--button:after{
     box-shadow: none;

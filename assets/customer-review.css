@@ -69,8 +69,6 @@
     fill: white;
     font-size: 10px;
 }
-
-
 @media (max-width: 900px) {
     #customer-review-slider{
         padding:3rem 4rem;

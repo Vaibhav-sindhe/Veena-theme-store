@@ -7,6 +7,18 @@
     align-items: center;
 }
 .captivating-section-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.captivating-section-heading--button{
+    margin: 33px 0;
+    background: rgb(208, 60, 63);
+    border: none;
+}
+.captivating-section-heading--button:after{
+    box-shadow: none;
+}
+.captivating-section-heading{
     font-weight: 800;
 }
 .captivating--image-container{

@@ -791,7 +791,9 @@
         "captivating_block_7xCBbi"
       ],
       "settings": {
-        "heading": "Captivating Collection"
+        "heading": "Captivating Collection",
+        "button_label": "View  All",
+        "button_link": "#"
       }
     },
     "customer_review_3ihimd": {
@@ -866,21 +868,30 @@
           "type": "Slide",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/download.webp",
-            "mobile": "shopify:\/\/shop_images\/download_42cf83ab-4299-473b-8c9a-b1bb55047ec2.webp"
+            "mobile": "shopify:\/\/shop_images\/download_42cf83ab-4299-473b-8c9a-b1bb55047ec2.webp",
+            "heading": "<p>Elevate your wardrobe with our limited-time fashion offer!<\/p>",
+            "button_laberl": "Explore more",
+            "button_link": ""
           }
         },
         "slide_UNiHqY": {
           "type": "Slide",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/download_18878673-abc0-46a1-8c73-831a25238876.webp",
-            "mobile": "shopify:\/\/shop_images\/download_dd843d2e-0a17-4f6f-abc3-476fd9492793.webp"
+            "mobile": "shopify:\/\/shop_images\/download_dd843d2e-0a17-4f6f-abc3-476fd9492793.webp",
+            "heading": "<p>Elevate your wardrobe with our limited-time fashion offer!<\/p>",
+            "button_laberl": "Explore more",
+            "button_link": ""
           }
         },
         "slide_awPGH6": {
           "type": "Slide",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/download_0d521f42-6e8c-41b2-aeda-1c6951a329a1.webp",
-            "mobile": "shopify:\/\/shop_images\/download_f09de8bc-4995-45fd-99ce-0eb67071be1e.webp"
+            "mobile": "shopify:\/\/shop_images\/download_f09de8bc-4995-45fd-99ce-0eb67071be1e.webp",
+            "heading": "<p>Elevate your wardrobe with our limited-time fashion offer!<\/p>",
+            "button_laberl": "Explore more",
+            "button_link": ""
           }
         }
       },

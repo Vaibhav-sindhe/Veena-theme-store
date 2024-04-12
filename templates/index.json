@@ -733,7 +733,7 @@
             "collection": "accessories",
             "title": "Accessories",
             "button_label": "Shop Now",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/accessories"
           }
         },
         "captivating_block_hPVt73": {
@@ -742,7 +742,7 @@
             "collection": "mens-jacket",
             "title": "Men's Jacket",
             "button_label": "Shop Now",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/mens-jacket"
           }
         },
         "captivating_block_PMYMpw": {
@@ -760,7 +760,7 @@
             "collection": "handbags",
             "title": "Handbags",
             "button_label": "Shop Now",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/handbags"
           }
         },
         "captivating_block_pniQVU": {
@@ -769,7 +769,7 @@
             "collection": "best-selling",
             "title": "Best Selling",
             "button_label": "Shop Now",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/t-shirt"
           }
         },
         "captivating_block_7xCBbi": {
@@ -778,7 +778,7 @@
             "collection": "t-shirt",
             "title": "T shirt",
             "button_label": "Shop Now",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/t-shirt"
           }
         }
       },

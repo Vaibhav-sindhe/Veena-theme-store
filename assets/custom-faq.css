@@ -43,9 +43,20 @@
     font-weight: 500;
     margin-top: 0;
 }
-@media (max-width:600px) {
+@media (max-width:900px) {
+    .custom-faq-heading-container{
+        width: 80%;
+    };
+}
+@media (max-width:1200px) {
+    .custom-faq-heading-container{
+        width: 100%;
+    }
     .custom-faq--heading{
        font-size: 2.5rem;
+    }
+    .custom-faq-heading-container--description{
+        font-size: 1.2rem;
     }
     .custom-faq-container-block--question h5{
         font-size: 1.5rem;
@@ -53,4 +64,5 @@
     .custom-faq-container-block--answer p{
         font-size: 1.2rem;
     }
+    
 }

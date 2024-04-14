@@ -868,21 +868,30 @@
           "type": "Slide",
           "settings": {
             "desktop_image": "shopify://shop_images/download.webp",
-            "mobile": "shopify://shop_images/download_42cf83ab-4299-473b-8c9a-b1bb55047ec2.webp"
+            "mobile": "shopify://shop_images/download_42cf83ab-4299-473b-8c9a-b1bb55047ec2.webp",
+            "heading": "<p>Elevate your wardrobe with our limited-time fashion offer!</p>",
+            "button_laberl": "Explore more",
+            "button_link": ""
           }
         },
         "slide_UNiHqY": {
           "type": "Slide",
           "settings": {
             "desktop_image": "shopify://shop_images/download_18878673-abc0-46a1-8c73-831a25238876.webp",
-            "mobile": "shopify://shop_images/download_dd843d2e-0a17-4f6f-abc3-476fd9492793.webp"
+            "mobile": "shopify://shop_images/download_dd843d2e-0a17-4f6f-abc3-476fd9492793.webp",
+            "heading": "<p>Elevate your wardrobe with our limited-time fashion offer!</p>",
+            "button_laberl": "Explore more",
+            "button_link": ""
           }
         },
         "slide_awPGH6": {
           "type": "Slide",
           "settings": {
             "desktop_image": "shopify://shop_images/download_0d521f42-6e8c-41b2-aeda-1c6951a329a1.webp",
-            "mobile": "shopify://shop_images/download_f09de8bc-4995-45fd-99ce-0eb67071be1e.webp"
+            "mobile": "shopify://shop_images/download_f09de8bc-4995-45fd-99ce-0eb67071be1e.webp",
+            "heading": "<p>Elevate your wardrobe with our limited-time fashion offer!</p>",
+            "button_laberl": "Explore more",
+            "button_link": ""
           }
         }
       },
@@ -899,6 +908,57 @@
         "Slide_animation": "slide",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "custom_faq_section_ALBUqa": {
+      "type": "custom-faq-section",
+      "blocks": {
+        "custom_faq_block_YcH3ay": {
+          "type": "custom-faq-block",
+          "settings": {
+            "question": "How can I track my order?",
+            "answer": "<p>Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and location of your package through our shipping carrier's website.</p>"
+          }
+        },
+        "custom_faq_block_L7Cigz": {
+          "type": "custom-faq-block",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "<p>We offer a hassle-free return policy. If you're not completely satisfied with your purchase, you can return it within 30 days for a full refund or exchange. Please visit our Returns & Exchanges page for more details on the process and any eligibility criteria.</p>"
+          }
+        },
+        "custom_faq_block_3azGz6": {
+          "type": "custom-faq-block",
+          "settings": {
+            "question": "Are the product images accurate representations of the items?",
+            "answer": "<p>Yes, we strive to provide accurate and high-quality images of our products. However, please note that colors may vary slightly due to differences in monitor settings. If you have any specific questions about a product, feel free to contact our customer support team.</p>"
+          }
+        },
+        "custom_faq_block_Jn9tHw": {
+          "type": "custom-faq-block",
+          "settings": {
+            "question": "How do I determine my size?",
+            "answer": "<p>To find the right size, please refer to our detailed size guide available on each product page. Measurements may vary by product, so it's essential to check the specific sizing information provided. If you have further questions or need assistance, our customer support team is here to help.</p>"
+          }
+        },
+        "custom_faq_block_jp6bfD": {
+          "type": "custom-faq-block",
+          "settings": {
+            "question": "What payment methods do you accept?",
+            "answer": "<p>We accept a variety of payment methods, including major credit cards (Visa, MasterCard, American Express), PayPal, and other secure payment options. During the checkout process, you can choose the payment method that suits you best.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "custom_faq_block_YcH3ay",
+        "custom_faq_block_L7Cigz",
+        "custom_faq_block_3azGz6",
+        "custom_faq_block_Jn9tHw",
+        "custom_faq_block_jp6bfD"
+      ],
+      "settings": {
+        "heading": "FAQ",
+        "description": "Ensure that your FAQs are regularly updated based on common customer queries and changes in your business operations."
       }
     }
   },
@@ -920,6 +980,7 @@
     "usp_section_7dQ83b",
     "captivating_collection_DA9fLL",
     "customer_review_3ihimd",
-    "custom_slideshow_Rg36EQ"
+    "custom_slideshow_Rg36EQ",
+    "custom_faq_section_ALBUqa"
   ]
 }

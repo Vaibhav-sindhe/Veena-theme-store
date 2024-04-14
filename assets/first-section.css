@@ -8,17 +8,19 @@
 .first-section--block{
     position: relative;
 }
+.first-section-block--img-container{
+    overflow: hidden;
+    border-radius: 10px;
+    height: 95%;
+}
 .first-section--block,.first-section-block--img-container img,.first-section-block--content {
     width: 100%;
 }
 .first-section-block--img-container img{
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: all ease-in-out 0.5s;
 }
-/* .first-section--block:hover img{
-    transform: scale(1.1);
-} */
 .first-section-block--content{
     height: 100%;
     display: flex;
@@ -27,6 +29,9 @@
     align-items: center;
     position: absolute;
     top: 0;
+}
+.first-section--block:hover .first-section-block--img-container img{
+    transform: scale(1.1);
 }
 .first-section-block--content div{
    text-align: center;

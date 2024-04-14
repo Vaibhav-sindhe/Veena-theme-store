@@ -1,12 +1,12 @@
 {{ 'custom-faq.css' | asset_url | stylesheet_tag }}
 
 <div class="custom-faq">
-    <h1 class="custom-faq--heading">{{ section.settings.heading }}</h1>
+    <div class="custom-faq-heading-container"><h1 class="custom-faq-heading-container--heading">{{ section.settings.heading }}</h1><p  class="custom-faq-heading-container--description">{{ section.settings.description }}</p></div>
     <div class="custom-faq--container">
         {% for block in section.blocks %}
-                <div class="custom-faq-container--block">
-                <details>
-                    <summary><div class="custom-faq-container-block--question"><h5>{{ block.settings.question }}</h5><span class="toggle-icon">+</span></div></summary>
+            <div class="custom-faq-container--block">
+                <details >
+                    <summary><div class="custom-faq-container-block--question"><h5>{{ forloop.index }} . {{ block.settings.question }}</h5><span class="toggle-icon">+</span></div></summary>
                     <div class="custom-faq-container-block--answer">{{ block.settings.answer }}</div>
                 </details>
             </div>
@@ -71,8 +71,8 @@
   ],
   "blocks": [
     {
-      "type": "assignment-faq-block",
-      "name": "assignment-faq-block",
+      "type": "custom-faq-block",
+      "name": "custom-faq-block",
       "settings": [
         {
            "type": "text",

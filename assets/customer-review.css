@@ -51,6 +51,18 @@
     color: white;
     height: 4rem;
     width: 4rem;
+
+
+    background: linear-gradient(to right, rgb(208, 60, 63) 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.4s ease;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+#customer-review-slider .splide__arrow:hover{
+    background-position: left bottom;
 }
 #customer-review-slider .splide__arrow--next {
     right: 3.5px;

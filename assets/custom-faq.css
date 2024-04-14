@@ -49,6 +49,9 @@
     };
 }
 @media (max-width:1200px) {
+    .custom-faq{
+        padding: 1.8rem;
+    }
     .custom-faq-heading-container{
         width: 100%;
     }

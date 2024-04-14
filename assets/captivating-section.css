@@ -119,22 +119,14 @@
     fill: white;
     font-size: 10px;
 }
-
-@media (max-width:1000px) {
-    #captivating-slider .splide__arrow--prev{
-        left: 0;
-    }
-    #captivating-slider .splide__arrow--next {
-        right: 0;
-    }
-}
 @media (max-width:480px) {
     .captivating-section-heading{
       flex-direction: column;
       align-items: flex-start;
+      margin-bottom: 1.2rem;
     }
     .captivating-section-heading h1{
-        margin-bottom: 8px;
+        margin: 8px 0;
         font-size: 2.5rem;
     }
     .captivating-section-heading--button{
@@ -142,7 +134,6 @@
         min-height: 10px;
         height: 4rem;
         width: 10rem;
-        
     }
     #captivating-slider{
         padding: 1.8rem;

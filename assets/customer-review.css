@@ -83,7 +83,7 @@
 }
 @media (max-width: 900px) {
     #customer-review-slider{
-        padding:3rem 4rem;
+        padding:3rem 1.8rem;
     }
     .customer-review-heading{
         font-size: 2.5rem;

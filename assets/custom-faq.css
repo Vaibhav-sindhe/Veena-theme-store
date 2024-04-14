@@ -3,7 +3,6 @@
 }
 .custom-faq--heading{
     margin: 0;
-    color: white;
     text-align: center;
     font-weight: 900;
     border-bottom: 0.5px solid gray;
@@ -18,12 +17,10 @@
     justify-content: space-between;
 }
 .custom-faq-container-block--question h5{
-    color: black;
     font-size: 1.8rem;
     margin: 20px 0;
 }
 .toggle-icon{
-    color: black;
     width: 5rem;
     display: flex;
     align-items: center;

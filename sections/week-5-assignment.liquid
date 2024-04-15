@@ -1,7 +1,7 @@
 {{ 'assignment.css' | asset_url | stylesheet_tag }}
 
 {% assign product = section.settings.product %}
-{% assign price=product.price | divided_by: 100  %}
+{% assign price=product.price | money_with_currency %}
 <div class="main">
 <div><h1 class="main-heading">{{ section.settings.heading }}</h1></div>
 <div class="assignment">

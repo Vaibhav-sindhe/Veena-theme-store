@@ -17,7 +17,7 @@
   <div class="assignment--content half">
     <div><p class="assignment-content--vendor">{{ product.vendor }}</p></div>
     <div><h1>{{ product.title }}</h1></div>
-    <div><p class="assignment-content--quantity">{{ product.options_with_values.first.name }}{{ product.first_available_variant.title }}</p></div>
+    <div><p class="assignment-content--quantity">{{ product.options_with_values.first.name | append: product.options_with_values.first.selected_value }}</p></div>
     <div><p class="assignment-content--price">Price : {{price}}/-</p></div>
     <div><p class="assignment-content--discription"><span class="assignment-content-discription--span">How it works : </span>{{ product.description }}</p></div>
     <div class="button-div"><a class="assignment-content--button" href="{{ product.url }}">{{ section.settings.button_label }}</a></div>

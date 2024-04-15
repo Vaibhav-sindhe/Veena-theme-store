@@ -1,31 +1,40 @@
 {{ 'assignment.css' | asset_url | stylesheet_tag }}
 
 {% assign product = section.settings.product %}
-{% assign price=product.price | money_with_currency %}
+{% assign price = product.price | money_with_currency %}
 <div class="main">
-<div><h1 class="main-heading">{{ section.settings.heading }}</h1></div>
-<div class="assignment">
-  <div class="assignment--imageContainer half">
-    
-    {% render 'responsive-picture',
-      desktopImage:  product.images[0].src, 
-      mobileImage:  product.images[0].src
-
-    %}
-
+  <div>
+    <h1 class="main-heading">{{ section.settings.heading }}</h1>
   </div>
-  <div class="assignment--content half">
-    <div><p class="assignment-content--vendor">{{ product.vendor }}</p></div>
-    <div><h1>{{ product.title }}</h1></div>
-    <div><p class="assignment-content--quantity">{{ product.options_with_values.first.name | append: product.options_with_values.first.selected_value }}</p></div>
-    <div><p class="assignment-content--price">Price : {{price}}/-</p></div>
-    <div><p class="assignment-content--discription"><span class="assignment-content-discription--span">How it works : </span>{{ product.description }}</p></div>
-     {% if section.settings.button_label %}
-    <div class="button-div"><a class="assignment-content--button" href="{{ product.url }}"> View product </a></div>
-    {% endif %}
-
+  <div class="assignment">
+    <div class="assignment--imageContainer half">
+      {% render 'responsive-picture', desktopImage: product.featured_image %}
+    </div>
+    <div class="assignment--content half">
+      <div>
+        <p class="assignment-content--vendor">{{ product.vendor }}</p>
+      </div>
+      <div>
+        <h1>{{ product.title }}</h1>
+      </div>
+      <div>
+        <p class="assignment-content--quantity">
+          {{ product.options_with_values.first.name | append: product.options_with_values.first.selected_value }}
+        </p>
+      </div>
+      <div>
+        <p class="assignment-content--price">Price : {{ price }}/-</p>
+      </div>
+      <div>
+        <p class="assignment-content--discription">
+          <span class="assignment-content-discription--span">How it works : </span>{{ product.description }}
+        </p>
+      </div>
+      {% if section.settings.button_label %}
+        <div class="button-div"><a class="assignment-content--button" href="{{ product.url }}"> View product </a></div>
+      {% endif %}
+    </div>
   </div>
-</div>
 </div>
 {% schema %}
 {
@@ -47,13 +56,13 @@
       "id": "product",
       "label": "t:sections.featured-product.settings.product.label"
     },
- 
+
      {
       "type": "checkbox",
       "id": "button_label",
       "label": "Show quick view button",
       "default": true
-    }   
+    }
   ],
   "presets": [
     {

@@ -3,13 +3,9 @@
     {% for block in section.blocks %}
         {% assign blog = block.settings.blog %}
          <h2>{{ blog.title }}</h2>
-         {% render 'responsive-picture',
-            desktopImage:  {{ blog.image.src }}, 
-      
-        %}
-        <h3>{{ blog.description }}</h3>
+         <a href="{{ blog.url }}">url</a>
+         
     {% endfor %}
-      
 </div>    
 {% schema %}
 {

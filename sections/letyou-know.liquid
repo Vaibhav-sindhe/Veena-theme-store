@@ -3,8 +3,6 @@
     {% for block in section.blocks %}
         {% assign blog = block.settings.blog %}
          <h2>{{ blog.title }}</h2>
-         <a href="{{ blog.url }}">url</a>
-         
     {% endfor %}
 </div>    
 {% schema %}
@@ -18,19 +16,11 @@
       "id": "heading",
       "label": "Heading",
       "default": "Heading"
-    }
-  ],
-  "blocks": [
+    },
     {
-      "type": "blog",
-      "name": "blog",
-      "settings": [
-        {
-            "type": "blog",
-            "label": "Blog ",
-            "id": "blog"
-        }
-      ]
+        "type": "blog",
+        "label": "Blog ",
+        "id": "blog"
     }
   ],
   "presets": [

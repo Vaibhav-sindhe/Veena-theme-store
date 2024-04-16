@@ -1,9 +1,37 @@
+<script src="{{ 'letyou-know.js' | asset_url }}" defer></script>
 <div class="letyou_know">
     <div class="letyou_know--heading_container"><h1>{{ section.settings.heading }}</h1></div>
-    {% for block in section.blocks %}
-        {% assign blog = block.settings.blog %}
-         <h2>{{ blog.title }}</h2>
-    {% endfor %}
+    {% assign blog = section.settings.blog %}
+    <h2>{{ blog.title }}</h2>
+
+    {% liquid
+        assign type =section.settings.Slide_animation
+        assign pagination = section.settings.show_pagination
+      %}
+    {%- capture splide_option -%}
+        {
+            "type": "{{ type }}",
+            "pagination": {{ pagination }}
+        }
+    {% endcapture %}
+
+    <blog-component>
+        <div class="splide" data-slider-settings='{{ splide_option }}'>
+            <div class="splide__track">
+              <ul class="splide__list">
+                 {% for article in blog.articles %}
+                    <li class="splide__slide ">
+                        <h3>{{ article.tags }}</h3>
+                    </li>    
+                 {% endfor %}   
+              </ul>
+            </div>  
+        </div>      
+    </blog-component>
+
+    {% comment %} {% for article in blog.articles %}
+        <h3>{{ article.tags }}</h3>
+    {% endfor %} {% endcomment %}
 </div>    
 {% schema %}
 {
@@ -21,6 +49,34 @@
         "type": "blog",
         "label": "Blog ",
         "id": "blog"
+    },
+    {
+        "type": "checkbox",
+        "id":"auto_play",
+        "label":"Enable auto play",
+        "default":false
+    },
+    {
+        "type": "checkbox",
+        "id":"show_pagination",
+        "label":"Show dots",
+        "default":false
+    },
+    {
+        "type": "checkbox",
+        "id":"show_arrows",
+        "label":"Show arrows",
+        "default":false
+    },
+    {
+        "type": "range",
+        "id": "auto_play_duration",
+        "min": 1000,
+        "max": 5000,
+        "step": 1000,
+        "unit": "sec",
+        "label": "Autoplay duration",
+        "default": 2000
     }
   ],
   "presets": [

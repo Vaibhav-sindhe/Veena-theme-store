@@ -1,8 +1,15 @@
 <div class="letyou_know">
     <div class="letyou_know--heading_container"><h1>{{ section.settings.heading }}</h1></div>
     {% for block in section.blocks %}
-        <div class="letyou_know--inside">{{ block.heading }}</div>
+        {% assign blog = block.settings.blog %}
+         <h2>{{ blog.title }}</h2>
+         {% render 'responsive-picture',
+            desktopImage:  {{ blog.image.src }}, 
+      
+        %}
+        <h3>{{ blog.description }}</h3>
     {% endfor %}
+      
 </div>    
 {% schema %}
 {

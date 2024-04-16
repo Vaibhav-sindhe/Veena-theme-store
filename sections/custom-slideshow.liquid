@@ -1,5 +1,17 @@
-<div class="custom-slideshow">
+<script src="{{ 'custom-slideshow.js' | asset_url }}" defer></script>
 
+<div class="custom-slideshow">
+    <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+             {% for block in section.blocks %}
+                <li class="splide__slide captivating-splide-item">
+                    {{ block.settings.heading }}
+                </li>    
+             {% endfor %}   
+          </ul>
+        </div>  
+    </div>      
 </div>    
 
 {% schema %}

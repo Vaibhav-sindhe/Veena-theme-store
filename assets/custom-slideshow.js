@@ -1,4 +1,3 @@
-{{ 'custom-slideshow.js' | asset_url | script_tag }}
 class CustomSlider extends HTMLElement {
     constructor() {
       super();
@@ -12,4 +11,8 @@ class CustomSlider extends HTMLElement {
     }
   }
   
+
   customElements.define("splider-component", CustomSlider);
+
+
+  console.log("hello");

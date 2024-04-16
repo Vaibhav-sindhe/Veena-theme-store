@@ -1,5 +1,48 @@
 {
   "sections": {
+    "custom_slideshow_9x8xx6": {
+      "type": "custom-slideshow",
+      "blocks": {
+        "slide_YYXGmV": {
+          "type": "Slide",
+          "settings": {
+            "heading": "Womens",
+            "button_laberl": "Explore more",
+            "button_link": "#"
+          }
+        },
+        "slide_iqqnDH": {
+          "type": "Slide",
+          "settings": {
+            "heading": "Fashion",
+            "button_laberl": "Explore more",
+            "button_link": "#"
+          }
+        },
+        "slide_iVqhFj": {
+          "type": "Slide",
+          "settings": {
+            "heading": "slide show",
+            "button_laberl": "Explore more",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "slide_YYXGmV",
+        "slide_iqqnDH",
+        "slide_iVqhFj"
+      ],
+      "settings": {
+        "auto_play": true,
+        "show_pagination": true,
+        "show_arrows": true,
+        "auto_play_duration": 2000,
+        "Slide_animation": "slide",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "slideshow_DChLY6": {
       "type": "slideshow",
       "blocks": {
@@ -63,6 +106,7 @@
         "slide_YpRyFx",
         "slide_ECnakm"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -880,6 +924,7 @@
     }
   },
   "order": [
+    "custom_slideshow_9x8xx6",
     "slideshow_DChLY6",
     "custom_section_ehRQ73",
     "captivating_collection_DA9fLL",

@@ -8,12 +8,14 @@
         assign type =section.settings.Slide_animation
         assign pagination = section.settings.show_pagination
         assign perpage=section.settings.perpage
+        assign gap=section.settings.gap
       %}
     {%- capture splide_option -%}
         {
             "type": "{{ type }}",
             "pagination": {{ pagination }},
-            "perPage":{{ perpage }}
+            "perPage":{{ perpage }},
+            "gap":{{gap}}
         }
     {% endcapture %}
 

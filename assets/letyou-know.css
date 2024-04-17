@@ -3,4 +3,18 @@
 }
 .letyou_know .letyou_know--article{
     display: flex;
+    width: 50%;
+    height: 30rem;
+    border-radius:20px ;
+    border: 1px solid gray;
+}
+.letyou_know-article--image_container{
+    border-radius: 20px;
+    height: 100%;
+}
+.letyou_know-article--image_container picture img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }

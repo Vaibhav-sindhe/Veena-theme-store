@@ -7,11 +7,13 @@
     {% liquid
         assign type =section.settings.Slide_animation
         assign pagination = section.settings.show_pagination
+        assign perpage=section.settings.perpage
       %}
     {%- capture splide_option -%}
         {
             "type": "{{ type }}",
-            "pagination": {{ pagination }}
+            "pagination": {{ pagination }},
+            "perPage":{{ perpage }}
         }
     {% endcapture %}
 
@@ -95,6 +97,15 @@
         "step": 1,
         "label": "perpage",
         "default": 2
+    },
+    {
+        "type": "range",
+        "id": "gap",
+        "min": 5,
+        "max": 30,
+        "step": 5,
+        "label": "gap",
+        "default": 5
     },
     {
         "type": "select",

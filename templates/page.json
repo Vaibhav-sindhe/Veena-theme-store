@@ -6,9 +6,54 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "week_6_PqL8mz": {
+      "type": "week-6",
+      "blocks": {
+        "slide_Q7CHmx": {
+          "type": "Slide",
+          "settings": {
+            "productImage": "shopify:\/\/shop_images\/3c925eb803f7e78c0ac68f2596c8e058_a692c407-6c20-4ba7-87e7-d8aa264cfd2f.jpg",
+            "authorImage": "shopify:\/\/shop_images\/d79701ab8c86c3f9d226d6384ec13c8d_4ca7721c-5873-4f76-a81e-e0b78bf93681.jpg",
+            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
+            "authorName": "Mr. John Doe",
+            "authorTitle": "clients",
+            "card-bg": "",
+            "card-active-bg": ""
+          }
+        },
+        "slide_KFk4PC": {
+          "type": "Slide",
+          "settings": {
+            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
+            "authorName": "Mr. John Doe",
+            "authorTitle": "clients",
+            "card-bg": "",
+            "card-active-bg": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_Q7CHmx",
+        "slide_KFk4PC"
+      ],
+      "settings": {
+        "heading": "Testimonials",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "color-bg": "",
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": false,
+        "auto_play_duration": 2000,
+        "perpage": 1,
+        "Slide_animation": "slide",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "week_6_PqL8mz"
   ]
 }

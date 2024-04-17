@@ -1,0 +1,32 @@
+<div>
+    <h1>Hello</h1>
+</div>    
+  {% schema %}
+    {
+        "name":"week-6-email",
+        "tag":"section",
+        "class":"Section",
+        "settings":[
+            {
+                "type": "checkbox",
+                "id": "newsletter_enable",
+                "default": true,
+                "label": "Enable news letter"
+              },
+              {
+                "type": "inline_richtext",
+                "id": "newsletter_heading",
+                "default": "Subscribe to our emails",
+                "label": "Subscribe"
+              }
+        ],
+        "presets": [
+            {
+                "name":"week-6"
+            }
+        ]
+    }
+    
+
+
+{% endschema %}

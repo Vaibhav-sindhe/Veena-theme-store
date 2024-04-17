@@ -28,12 +28,16 @@
     assign type =section.settings.Slide_animation
     assign pagination = section.settings.show_pagination
     assign perpage=section.settings.perpage
+    assign arrows=section.settings.show_arrows
+    assign pagination=section.settings.show_pagination
   %}
 {%- capture splide_option -%}
     {
         "type": "{{ type }}",
         "pagination": {{ pagination }},
-        "perPage":{{ perpage }}
+        "perPage":{{ perpage }},
+        "arrows":{{ arrows }},
+        "pagination":{{ pagination }}
     }
 {% endcapture %}
 

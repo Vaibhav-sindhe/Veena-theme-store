@@ -37,6 +37,8 @@
         "slide_gfDCBL": {
           "type": "Slide",
           "settings": {
+            "productImage": "shopify:\/\/shop_images\/download.jpg",
+            "authorImage": "shopify:\/\/shop_images\/5_6b3457ea-8235-4903-9731-132204bab92e.webp",
             "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",

@@ -110,10 +110,6 @@
                 "label": "padding bottom",
                 "default": 0
             }
-            
-
-            
-    
         ],
         "blocks": [
             {
@@ -126,37 +122,39 @@
                     },
                     {
                         "type": "image_picker",
-                        "id": "desktop_image",
-                        "label": "desktop_image",
+                        "id": "product-image",
+                        "label": "Product image",
                         "info": "Recommended size :1360  x 633 px."
                     },
                     {
                         "type": "image_picker",
-                        "id": "mobile",
-                        "label": "mobile",
-                        "info": "Recommended size :360  x 282 px."
+                        "id": "author-image",
+                        "label": "Author image",
+                        "info": "Recommended size :1360  x 633 px."
                     },
                     {
                         "type": "header",
                         "content": "Text customization"
                     },
                     {
-                        "type": "text",
-                        "id": "heading",
-                        "label": "Heading",
-                        "default": "<p>Elevate your wardrobe with our limited-time fashion offer!</p>"
+                        "type": "richtext",
+                        "id": "testimonial-text",
+                        "label": "Testimonial text",
+                        "default": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>"
                     },
                     {
                         "type": "text",
-                        "id": "button_laberl",
-                        "label": "Button label",
-                        "default": "Explore more"
+                        "id": "author-name",
+                        "label": "Author name",
+                        "placeholder": "Alex"
                     },
                     {
-                        "type": "url",
-                        "id": "button_link",
-                        "label": "Button link"
-                    }                                 
+                        "type": "text",
+                        "id": "author-title",
+                        "label": "Author title",
+                        "default":"clients",
+                        "placeholder": "clients"
+                    }                              
                 ]
             }
         ],

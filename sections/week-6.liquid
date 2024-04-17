@@ -3,6 +3,7 @@
     <h2>{{ section.settings.heading }}</h2>
 </div>    
 
+
 {% schema %}
     {
         "name":"week-6",
@@ -159,7 +160,17 @@
                         "label": "Author title",
                         "default":"clients",
                         "placeholder": "clients"
-                    }                              
+                    },
+                    {
+                        "type": "color_background",
+                        "id": "card-bg",
+                        "label": "Card background"
+                    },
+                    {
+                        "type": "color_background",
+                        "id": "card-active-bg",
+                        "label": "Active card background"
+                    }                             
                 ]
             }
         ],

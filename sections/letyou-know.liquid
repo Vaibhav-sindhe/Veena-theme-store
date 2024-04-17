@@ -1,9 +1,9 @@
-<script src="{{ 'letyou-know.js' | asset_url }}" defer></script>
+{{ 'letyou-know.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'custom-slideshow.js' | asset_url }}" defer></script>
 <div class="letyou_know">
     <div class="letyou_know--heading_container"><h1>{{ section.settings.heading }}</h1></div>
     {% assign blog = section.settings.blog %}
-    <h2>{{ blog.title }}</h2>
-
     {% liquid
         assign type =section.settings.Slide_animation
         assign pagination = section.settings.show_pagination
@@ -15,19 +15,28 @@
         }
     {% endcapture %}
 
-    <blog-component>
+    <splider-component>
         <div class="splide" data-slider-settings='{{ splide_option }}'>
             <div class="splide__track">
               <ul class="splide__list">
                  {% for article in blog.articles %}
-                    <li class="splide__slide ">
-                        <h3>{{ article.tags }}</h3>
+                    <li class="splide__slide letyou_know--article ">
+                        <div class="letyou_know-article--image_container">
+                            {% render 'responsive-picture',
+                                desktopImage:  article.image, 
+                            %}
+                        </div> 
+                        <div class="letyou_know-article--content">   
+                            <h3>{{ article.tags }}</h3>
+                            <p>{{ article.author }}</p>
+                            <p>{{ article.excerpt }}</p>
+                        </div>    
                     </li>    
                  {% endfor %}   
               </ul>
             </div>  
         </div>      
-    </blog-component>
+    </splider-component>
 
     {% comment %} {% for article in blog.articles %}
         <h3>{{ article.tags }}</h3>
@@ -77,6 +86,35 @@
         "unit": "sec",
         "label": "Autoplay duration",
         "default": 2000
+    },
+    {
+        "type": "range",
+        "id": "perpage",
+        "min": 1,
+        "max": 4,
+        "step": 1,
+        "label": "perpage",
+        "default": 2
+    },
+    {
+        "type": "select",
+        "id": "Slide_animation",
+        "label": "Slide animation",
+        "options": [
+            {
+                "value": "fade",
+                "label": "Fade"
+            },
+            {
+                "value": "slide",
+                "label": "slide"
+            },
+            {
+                "value": "loop",
+                "label": "Loop"
+            }
+        ],
+        "default": "slide"
     }
   ],
   "presets": [

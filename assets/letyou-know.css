@@ -1,0 +1,6 @@
+.letyou_know{
+    padding: 5rem;
+}
+.letyou_know .letyou_know--article{
+    display: flex;
+}

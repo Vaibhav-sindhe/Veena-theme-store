@@ -37,6 +37,7 @@
         "slide_EX9NVm": {
           "type": "Slide",
           "settings": {
+            "authorImage": "shopify:\/\/shop_images\/d79701ab8c86c3f9d226d6384ec13c8d_4ca7721c-5873-4f76-a81e-e0b78bf93681.jpg",
             "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
@@ -47,6 +48,7 @@
         "slide_X6LgNU": {
           "type": "Slide",
           "settings": {
+            "authorImage": "shopify:\/\/shop_images\/48fd745fbd3a6ce8ce273f8b6fb14567_b7fa9c6a-4c35-45c0-a609-c09aef9a3274.jpg",
             "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",

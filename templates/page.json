@@ -71,7 +71,7 @@
         "show_pagination": true,
         "show_arrows": true,
         "auto_play_duration": 2000,
-        "perpage": 2,
+        "perpage": 1,
         "Slide_animation": "slide",
         "padding_top": 10,
         "padding_bottom": 10

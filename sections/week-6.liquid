@@ -1,8 +1,19 @@
-<div class="week-6">
-    <h1>Hello world</h1>
-    <h2>{{ section.settings.heading }}</h2>
-</div>    
+{% style %}
+    .custom-padding--{{ section.id }}{
+        padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+        padding-bottom: {{ section.settings.padding_bottom | divided_by: 2  }}px;
+    }
+    @media screen and (min-width: 749px){
+        .custom-section-padding--{{ section.id }}{
+            padding-top: {{ section.settings.padding_top }}px;
+            padding-bottom: {{ section.settings.padding_bottom }}px;
+        }
+    }
+{% endstyle %}
 
+<div class="week-6 page-width custom-section-padding--{{ section.id }}">
+    
+</div>
 
 {% schema %}
     {

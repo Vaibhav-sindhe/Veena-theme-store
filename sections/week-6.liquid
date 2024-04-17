@@ -1,3 +1,4 @@
+{{ 'week-6.css' | asset_url | stylesheet_tag }}
 {% style %}
     .custom-padding--{{ section.id }}{
         padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
@@ -11,10 +12,60 @@
     }
 {% endstyle %}
 
+<script src="{{ 'custom-slideshow.js' | asset_url }}" defer></script>
+{% liquid
+    assign type =section.settings.Slide_animation
+    assign pagination = section.settings.show_pagination
+    assign perpage=section.settings.perpage
+    assign gap=section.settings.gap
+  %}
+{%- capture splide_option -%}
+    {
+        "type": "{{ type }}",
+        "pagination": {{ pagination }},
+        "perPage":{{ perpage }}
+    }
+{% endcapture %}
 
 <div class="week-6 page-width custom-section-padding--{{ section.id }}">
-    <h1>Hello world</h1>
-    <h2>{{ section.settings.heading }}</h2>
+    <div class="week-6-product">
+        {% render 'responsive-picture',
+            desktopImage:  section.blocks[0].settings.productImage, 
+        %} 
+    </div>
+    <div class="week-6--content">
+        <h1 class="week-6-content--heading">{{ section.settings.heading }}</h1>
+        <p class="week-6-content--description">{{ section.settings.description }}</p>
+
+        <splider-component>
+            <div class="splide" data-slider-settings='{{ splide_option }}'>
+                <div class="splide__track">
+                  <ul class="splide__list">
+                     {% for block in section.blocks %}
+                        <li class="splide__slide week-6-content--block ">
+                            <div>
+                                <span class="week-6-content-block--testimonialText">{{ block.settings.testimonialText}}</span>
+                                <div class="week-6-content-block--author">
+                                    <div class="week-6-content-block-author--imageContainer">
+                                        {% render 'responsive-picture',
+                                            desktopImage:  block.settings.authorImage, 
+                                        %} 
+                                    </div> 
+                                    <div class=" week-6-content-block-author--details">
+                                        <h4>{{ block.settings.authorName }}</h4>
+                                        <p>{{ block.settings.authorTitle }}</p>
+                                    </div>                          
+                                </div>
+  
+                            </div>
+                        </li>    
+                     {% endfor %}   
+                  </ul>
+                </div>  
+            </div>      
+        </splider-component>
+
+    </div>
 </div>    
 
 
@@ -142,13 +193,13 @@
                     },
                     {
                         "type": "image_picker",
-                        "id": "product-image",
+                        "id": "productImage",
                         "label": "Product image",
                         "info": "Recommended size :1360  x 633 px."
                     },
                     {
                         "type": "image_picker",
-                        "id": "author-image",
+                        "id": "authorImage",
                         "label": "Author image",
                         "info": "Recommended size :1360  x 633 px."
                     },
@@ -158,24 +209,24 @@
                     },
                     {
                         "type": "richtext",
-                        "id": "testimonial-text",
+                        "id": "testimonialText",
                         "label": "Testimonial text",
                         "default": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>"
                     },
                     {
                         "type": "text",
-                        "id": "author-name",
+                        "id": "authorName",
                         "label": "Author name",
-                        "default":"Alex"
+                        "default":"Mr. John Doe"
                     },
                     {
                         "type": "text",
-                        "id": "author-title",
+                        "id": "authorTitle",
                         "label": "Author title",
                         "default":"clients",
                         "placeholder": "clients"
                     },
-                                        {
+                    {
                         "type": "header",
                         "content": "Background customization"
                     },

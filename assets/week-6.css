@@ -1,0 +1,64 @@
+.week-6{
+    padding: 0 3rem;
+}
+.week-6-product ,.week-6-product img{
+    object-fit: cover;
+    height: 30rem;
+    width: 100%;
+}
+.week-6--content{
+    width: 100%;
+}
+.week-6-content--heading{
+    font-weight: 600;
+    font-size: 5rem;
+    text-align: center;
+}
+.week-6-content--description{
+    color: black;
+}
+.week-6-content--block{
+    padding: 3rem;
+}
+.week-6-content-block--testimonialText p{
+    margin: 0 0 10px 0;
+    color: black;
+    font-size: 1.5rem;
+}
+.week-6-content-block--author{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.week-6-content-block-author--imageContainer , .week-6-content-block-author--imageContainer img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.week-6-content-block-author--details h4{
+    color: #5C6E4A;
+    font-size: 1.8rem;
+    margin: 0;
+    line-height: 1.8rem;
+}
+.week-6-content-block-author--details p{
+    margin: 0;
+    line-height: 1.8rem;
+}
+.splide__pagination {
+    bottom: 0.5rem;
+}
+.week-6--content .splide__pagination__page{
+    height: 0.5rem;
+    width: 2rem;
+    border-radius: 20px;
+    margin: 6px;
+}
+.week-6--content .splide__pagination__page.is-active{
+    height: 0.5rem;
+    width: 3.5rem;
+    background: #5C6E4A;
+}
+

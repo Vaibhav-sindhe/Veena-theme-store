@@ -8,6 +8,37 @@
     border-radius:20px ;
     border: 1px solid gray;
 }
+.letyou_know-article--content{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.letyou_know-article--content p{
+    line-height: 20px;
+}
+.letyou_know-article-content-first--tags{
+    color:rgb(208, 60, 63);
+    margin:0 0 15px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.letyou_know-article-content-first--title{
+    margin: 10px 0;
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.letyou_know-article-content-first--author{
+    margin: 0 0 10px 0;
+    font-size:1.4rem ;
+    color: black;
+}
+.letyou_know-article-content-first--excerpt{
+    margin: 10px 0;
+}
+.letyou_know-article-content--second{
+    display: flex;
+}
 .letyou_know-article--image_container{
     border-radius: 20px;
     height: 100%;

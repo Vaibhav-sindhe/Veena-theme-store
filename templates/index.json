@@ -881,7 +881,14 @@
         "auto_play": true,
         "show_pagination": true,
         "show_arrows": true,
+<<<<<<< HEAD
         "auto_play_duration": 2000
+=======
+        "auto_play_duration": 2000,
+        "perpage": 2,
+        "gap": 30,
+        "Slide_animation": "slide"
+>>>>>>> f27c2a1c783d38c73abdadb353a902cdae6824a6
       }
     }
   },

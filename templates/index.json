@@ -883,6 +883,7 @@
         "show_arrows": true,
         "auto_play_duration": 2000,
         "perpage": 2,
+        "gap": 30,
         "Slide_animation": "slide"
       }
     }

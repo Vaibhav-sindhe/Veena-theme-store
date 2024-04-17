@@ -12,12 +12,12 @@
     }
 {% endstyle %}
 
+
 <script src="{{ 'custom-slideshow.js' | asset_url }}" defer></script>
 {% liquid
     assign type =section.settings.Slide_animation
     assign pagination = section.settings.show_pagination
     assign perpage=section.settings.perpage
-    assign gap=section.settings.gap
   %}
 {%- capture splide_option -%}
     {
@@ -30,7 +30,7 @@
 <div class="week-6 page-width custom-section-padding--{{ section.id }}">
     <div class="week-6-product">
         {% render 'responsive-picture',
-            desktopImage:  section.blocks[0].settings.productImage, 
+             desktopImage:  section.blocks[0].settings.productImage,
         %} 
     </div>
     <div class="week-6--content">
@@ -42,7 +42,7 @@
                 <div class="splide__track">
                   <ul class="splide__list">
                      {% for block in section.blocks %}
-                        <li class="splide__slide week-6-content--block ">
+                        <li class="splide__slide week-6-content--block " data-productImg="{{ block.settings.productImage }}" >
                             <div>
                                 <span class="week-6-content-block--testimonialText">{{ block.settings.testimonialText}}</span>
                                 <div class="week-6-content-block--author">

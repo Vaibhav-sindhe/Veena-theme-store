@@ -56,7 +56,7 @@
                 <div class="splide__track">
                   <ul class="splide__list">
                      {% for block in section.blocks %}
-                        <li class="splide__slide week-6-content--block " data-productImg="{{ block.settings.productImage }}" >
+                        <li class="splide__slide week-6-content--block " data-product-img="{{ block.settings.productImage | image_url }}" >
                             <div>
                                 <span class="week-6-content-block--testimonialText">{{ block.settings.testimonialText}}</span>
                                 <div class="week-6-content-block--author">

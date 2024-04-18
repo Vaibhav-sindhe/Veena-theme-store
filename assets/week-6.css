@@ -21,7 +21,7 @@
 }
 .week-6-content--block{
     padding: 3rem;
-    width: 28rem !important;
+    width: 28.5rem !important;
     border: 1px solid #5C6E4A;
 }
 .week-6-content-block--testimonialText p{
@@ -76,6 +76,7 @@
     }
     .week-6-content--heading{
         text-align: start;
+        margin-bottom: 5px;
     }
     .week-6>div{
         width: 50%;
@@ -83,7 +84,11 @@
     .week-6-product ,.week-6-product img{
         height: 100%;
     }
+    .week-6-content--description {
+        margin-top: 0;
+    }
     .week-6-content--block{
         width: 35rem !important;
     }
+    
 }

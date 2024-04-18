@@ -1,7 +1,7 @@
 <h2>
   {% for product in section.settings.product_list %}
   {% render
-     "custom-product-cart", varname:section.settings.name
+     "custom-product-cart", product:product
   %}
   {% endfor %}
 </h2>

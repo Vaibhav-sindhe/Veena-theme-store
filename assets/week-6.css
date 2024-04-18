@@ -81,6 +81,9 @@
     .week-6>div{
         width: 50%;
     }
+    .week-6-product{
+        height: 50rem;
+    }
     .week-6-product ,.week-6-product img{
         height: 100%;
     }

@@ -17,14 +17,7 @@
     <h1>{{ section.settings.heading }}</h1>
 {% form 'customer', class: 'newsletter-form' %}
     <input type="hidden" name="contact[tags]" value="newsletter">
-    <div
-      class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-      {% if settings.animations_reveal_on_scroll %}
-        data-cascade
-        style="--animation-order: {{ forloop.index }};"
-      {% endif %}
-    >
-      <div class="field">
+      <div>
         <input
           id="NewsletterForm--{{ section.id }}"
           type="email"
@@ -45,7 +38,7 @@
           placeholder="{{ 'newsletter.label' | t }}"
           required
         >
-        <label class="field__label" for="NewsletterForm--{{ section.id }}">
+        <label  for="NewsletterForm--{{ section.id }}">
           {{ 'newsletter.label' | t }}
         </label>
       </div>
@@ -65,7 +58,6 @@
           {{ form.errors.messages.email -}}
         </small>
       {%- endif -%}
-    </div>
     {%- if form.posted_successfully? -%}
       <h3
         class="newsletter-form__message newsletter-form__message--success form__message"

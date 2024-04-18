@@ -18,7 +18,7 @@
     border-radius:18px;
     width:45%;
 }
-.men-women-banner-content--image-container{
+.men-women-section .men-women-banner-content--image-container{
     position:absolute;
     height: 100%;
    object-fit:cover;
@@ -28,10 +28,10 @@
     overflow-y:hidden;
 }
 
-.men-women-banner-content--image-container:hover {
+.men-women-section .men-women-banner-content--image-container:hover {
     transform: scale(1.1);
 }
-.men-women-banner-content--text-container{
+.men-women-section .men-women-banner-content--text-container{
     z-index:2;
     display:flex;
     flex-direction:column;
@@ -40,7 +40,7 @@
     color:#fff;
     margin-bottom:20px;
 }
-.men-women-banner-content--text-container a{
+.men-women-section .men-women-banner-content--text-container a{
         color:#fff;
         width:150px;
         border-radius:50px;
@@ -53,23 +53,23 @@
         background: transparent;
 }
 
-.men-women-banner-content--text-container a{
+.men-women-section .men-women-banner-content--text-container a{
     border: 1px solid #FFFFFF;
 }
-.men-women-banner-content--text-container a span{
+.men-women-section .men-women-banner-content--text-container a span{
     font-size:16px;
     color:#FFFFFF;
     width:150px;
 }
-.men-women-banner-content--text-container a:hover span{
+.men-women-section .men-women-banner-content--text-container a:hover span{
     color: rgb(208, 60, 63);
 }
-.men-women-banner-content--text-container a:hover{
+.men-women-section .men-women-banner-content--text-container a:hover{
     background:#FFFFFF;
     border: none;
     box-shadow: none;
 }
-.men-women-banner-content--text-container p{
+.men-women-section .men-women-banner-content--text-container p{
     color:#FFFFFFCC;
     font-size:14px;
     width:490px;
@@ -77,20 +77,20 @@
     line-height:1;
 }
 
-.men-women-banner-content--text-container ul>li{
+.men-women-section .men-women-banner-content--text-container ul>li{
     color:#fff;
     list-style-type:none;
     font-size:14px;
     box-sizing:border-box;
 }
-.men-women-banner-content--text-container ul{
+.men-women-section .men-women-banner-content--text-container ul{
     border: 1px solid #FFFFFF;
     border-radius: 24px;
     padding: 2px;
     width: 100px;
     text-align: center;
 }
-.men-women-banner-content--text-container h3 {
+.men-women-section .men-women-banner-content--text-container h3 {
     color:#fff;
     font-size:44px;
     width:490px;
@@ -197,7 +197,7 @@
     }
 }
 
-@media only screen and (min-width: 1025px) {
+/* @media only screen and (min-width: 1025px) {
 }
 .first-section{
     width:93%;
@@ -271,4 +271,4 @@
     color: rgb(208, 60, 63);
     background: white;
     box-shadow: none;
-}
+} */

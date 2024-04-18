@@ -49,8 +49,8 @@ c.week-6{
     margin: 0;
     line-height: 1.8rem;
 }
-.splide__pagination {
-    bottom: 0.5rem;
+.week-6--content .splide__pagination {
+    bottom: -20px;
 }
 .week-6--content .splide__pagination__page{
     height: 0.5rem;

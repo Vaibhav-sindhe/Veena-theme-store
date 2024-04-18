@@ -39,7 +39,7 @@
           "type": "Slide",
           "settings": {
             "productImage": "shopify:\/\/shop_images\/images_a5161b4a-aed6-4079-a966-d0723ba7e90e.jpg",
-            "authorImage": "shopify:\/\/shop_images\/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
+            "authorImage": "shopify:\/\/shop_images\/2_047757ce-e94e-484b-95d5-7e03a88e3733.webp",
             "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
@@ -69,12 +69,12 @@
       "settings": {
         "heading": "Testimonials",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "color-bg": "",
+        "color-bg": "linear-gradient(259deg, rgba(251, 249, 186, 0.39) 100%, rgba(114, 255, 179, 1) 100%)",
         "auto_play": false,
         "show_pagination": true,
         "show_arrows": false,
-        "auto_play_duration": 2000,
         "perpage": 1,
+        "gap": 10,
         "Slide_animation": "slide",
         "padding_top": 30,
         "padding_bottom": 30

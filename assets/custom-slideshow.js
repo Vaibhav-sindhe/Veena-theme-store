@@ -43,13 +43,39 @@
           var blocks = blocksData;
           var productImage = document.querySelector('.week-6-product img');
           function updateProductImage(slideIndex) {
-            console.log(slideIndex);
+            // console.log(slideIndex);
             // Get the product image URL from the block settings corresponding to the current slide index
-            var productImageURL = blocks[slideIndex].settings.productImage;
-            console.log(productImageURL);
+            // var productImageURL = blocks[slideIndex].settings.productImage;
+
+            var resizedImageUrl = getImageUrlWithSize( blocks[slideIndex].settings.productImage, '300x300');
+            console.log({resizedImageUrl});
+
             // Update the src attribute of the product image
-            productImage.src = productImageURL;
+            productImage.src = resizedImageUrl;
+          }
+
+          function getImageUrlWithSize(imageUrl, size) {
+            if (!imageUrl) return null;
+        
+            // Insert the size parameter before the file extension
+            let parts = imageUrl.split('?'); // Separate URL from query strings
+            let urlPart = parts[0];
+            let extensionIndex = urlPart.lastIndexOf('.');
+            let base = urlPart.substring(0, extensionIndex);
+            let extension = urlPart.substring(extensionIndex);
+        
+            // Create a new URL with size
+            let newSizeUrl = `${base}_${size}${extension}`;
+            if (parts.length > 1) {
+                newSizeUrl += `?${parts[1]}`; // Append the original query strings
+            }
+        
+            return newSizeUrl;
         }
+        
+        // Example usage:
+
+        
         
         // Listen for slide change event
         splide.on('moved', function (newIndex) {

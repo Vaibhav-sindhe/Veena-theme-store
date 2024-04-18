@@ -33,7 +33,6 @@
         "announcement_j4EMBD",
         "announcement-bar-0"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "show_line_separator": true,
@@ -46,7 +45,6 @@
     },
     "header": {
       "type": "header",
-      "disabled": true,
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",

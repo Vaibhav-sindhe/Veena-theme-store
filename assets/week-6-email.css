@@ -34,7 +34,9 @@
         position: absolute;
         bottom: 8px;
     }
-    
+    form{
+        display: flex;
+    }
 
 @media (min-width:800px) {
     .week-6-email{

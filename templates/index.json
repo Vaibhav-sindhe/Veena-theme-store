@@ -1,5 +1,59 @@
 {
   "sections": {
+    "hero_slider_DJLNRU": {
+      "type": "hero-slider",
+      "blocks": {
+        "slide_dkHGtU": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/1.webp",
+            "heading": "Women's Apparel",
+            "description": "Elevate your wardrobe with our limited-time fashion offer!",
+            "button_label": "Explore Now",
+            "text_alignment": "center",
+            "content_position": "center"
+          }
+        },
+        "slide_pRdBfP": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/download_18878673-abc0-46a1-8c73-831a25238876.webp",
+            "heading": "Trendy Classics",
+            "description": "Discover Signature Look: Fashion Forward and Fabulous!",
+            "button_label": "Shop Now",
+            "text_alignment": "center",
+            "content_position": "center"
+          }
+        },
+        "slide_ajtFnT": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/download_f09de8bc-4995-45fd-99ce-0eb67071be1e.webp",
+            "heading": "Modern Elegance",
+            "description": "Step into the World of Style with the Latest Fashion Trends Unveiled!",
+            "button_label": "Explore Now",
+            "text_alignment": "center",
+            "content_position": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_dkHGtU",
+        "slide_pRdBfP",
+        "slide_ajtFnT"
+      ],
+      "settings": {
+      }
+    },
+    "animated_rich_text_TxFtP9": {
+      "type": "animated-rich-text",
+      "settings": {
+        "small_heading": "What You Wear",
+        "description": "Fashion Emerges As A Universal",
+        "button_label": "Explore Mare",
+        "button_link": "#"
+      }
+    },
     "custom_slideshow_9x8xx6": {
       "type": "custom-slideshow",
       "blocks": {
@@ -33,6 +87,7 @@
         "slide_iqqnDH",
         "slide_iVqhFj"
       ],
+      "disabled": true,
       "settings": {
         "auto_play": true,
         "show_pagination": true,
@@ -314,6 +369,80 @@
         "padding_bottom": 36
       }
     },
+    "marquee_collections_HDpU8k": {
+      "type": "marquee-collections",
+      "blocks": {
+        "custom_block_Bj7Vcr": {
+          "type": "custom-block",
+          "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_4.svg",
+            "pre_heading": "MEN'S CLOTHING COLLECTION",
+            "button_label": "Explore",
+            "button_link": "#"
+          }
+        },
+        "custom_block_egW9rM": {
+          "type": "custom-block",
+          "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_4.svg",
+            "pre_heading": "WOMEN'S CLOTHING COLLECTION",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "custom_block_BtrVm3": {
+          "type": "custom-block",
+          "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_5.svg",
+            "pre_heading": "NEW COLLECTION",
+            "button_label": "GRAB THIS OFFER",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "custom_block_Bj7Vcr",
+        "custom_block_egW9rM",
+        "custom_block_BtrVm3"
+      ],
+      "settings": {
+        "heading": "Marquee Collections"
+      }
+    },
+    "men_women_image_with_text_A6rQxL": {
+      "type": "men-women-image-with-text",
+      "blocks": {
+        "custom_block_n8A44j": {
+          "type": "custom-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/download_55c8d8a7-47f2-42ee-a6be-d84df8ecfe2f.webp",
+            "image_mobile": "shopify:\/\/shop_images\/download_55c8d8a7-47f2-42ee-a6be-d84df8ecfe2f.webp",
+            "pre_heading": "Men's",
+            "title": "<h3>Introducing Our Distinguished Men's Clothing Collection<\/h3>",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "custom_block_9E6Edr": {
+          "type": "custom-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/download_3f70f98f-e7dd-44ee-be4f-3d9a36079fa0.webp",
+            "image_mobile": "shopify:\/\/shop_images\/download_3f70f98f-e7dd-44ee-be4f-3d9a36079fa0.webp",
+            "pre_heading": "Women's",
+            "title": "<h3>Elevate Your Wardrobe With Our Women's Clothing Collection<\/h3>",
+            "button_label": "Explore",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "custom_block_n8A44j",
+        "custom_block_9E6Edr"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "multicolumn_MY6e9w": {
       "type": "multicolumn",
       "blocks": {
@@ -342,6 +471,7 @@
         "column_D8ajQJ",
         "column_DHyhC4"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -371,8 +501,18 @@
         "padding_bottom": 36
       }
     },
+    "featured_custom_collection_z8mRYN": {
+      "type": "featured-custom-collection",
+      "settings": {
+        "heading": "Heading",
+        "collection": "featured-collection",
+        "button_label": "See All Product",
+        "button_link": "shopify:\/\/collections\/featured-collection"
+      }
+    },
     "featured_collection_UNa7Fy": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
@@ -578,6 +718,29 @@
         "padding_bottom": 36
       }
     },
+    "bottom_banner_a4zm9F": {
+      "type": "bottom-banner",
+      "blocks": {
+        "custom_block_zGcQej": {
+          "type": "custom-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/4_0d5cc573-820a-4e7b-8f22-af8438216522.webp",
+            "image_mobile": "shopify:\/\/shop_images\/4_0d5cc573-820a-4e7b-8f22-af8438216522.webp",
+            "pre_heading": "Introduce",
+            "title": "<h3>We Believe in the Power of Fashion<\/h3>",
+            "description": "<p>fashion emerges as the universal language that speaks volumes without words.<\/p>",
+            "button_label": "Show More",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "custom_block_zGcQej"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "image_banner_kaJN3D": {
       "type": "image-banner",
       "blocks": {
@@ -612,6 +775,7 @@
         "text_wPm8Uz",
         "buttons_6LgbmT"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/4_cc27b61c-7007-4489-97f1-e5a520261c92.webp",
         "image_overlay_opacity": 0,
@@ -745,8 +909,23 @@
         "padding_bottom": 36
       }
     },
+    "letyou_know_8DGxVc": {
+      "type": "letyou-know",
+      "settings": {
+        "heading": "Let You Know",
+        "blog": "veena-blog",
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": true,
+        "auto_play_duration": 2000,
+        "perpage": 2,
+        "gap": 20,
+        "Slide_animation": "slide"
+      }
+    },
     "featured_blog_AXCGM8": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h1",
@@ -884,207 +1063,33 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "letyou_know_8DGxVc": {
-      "type": "letyou-know",
-      "settings": {
-        "heading": "Let You Know",
-        "blog": "veena-blog",
-        "auto_play": false,
-        "show_pagination": false,
-        "show_arrows": true,
-        "auto_play_duration": 2000,
-        "perpage": 2,
-        "gap": 20,
-        "Slide_animation": "slide"
-      }
-    },
-    "men_women_image_with_text_A6rQxL": {
-      "type": "men-women-image-with-text",
-      "blocks": {
-        "custom_block_n8A44j": {
-          "type": "custom-block",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/download_55c8d8a7-47f2-42ee-a6be-d84df8ecfe2f.webp",
-            "image_mobile": "shopify:\/\/shop_images\/download_55c8d8a7-47f2-42ee-a6be-d84df8ecfe2f.webp",
-            "pre_heading": "Men's",
-            "title": "<h3>Introducing Our Distinguished Men's Clothing Collection<\/h3>",
-            "button_label": "Explore",
-            "button_link": ""
-          }
-        },
-        "custom_block_9E6Edr": {
-          "type": "custom-block",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/download_3f70f98f-e7dd-44ee-be4f-3d9a36079fa0.webp",
-            "image_mobile": "shopify:\/\/shop_images\/download_3f70f98f-e7dd-44ee-be4f-3d9a36079fa0.webp",
-            "pre_heading": "Women's",
-            "title": "<h3>Elevate Your Wardrobe With Our Women's Clothing Collection<\/h3>",
-            "button_label": "Explore",
-            "button_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "custom_block_n8A44j",
-        "custom_block_9E6Edr"
-      ],
-      "settings": {
-        "heading": ""
-      }
-    },
-    "marquee_collections_HDpU8k": {
-      "type": "marquee-collections",
-      "blocks": {
-        "custom_block_Bj7Vcr": {
-          "type": "custom-block",
-          "settings": {
-            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_4.svg",
-            "pre_heading": "MEN'S CLOTHING COLLECTION",
-            "button_label": "Explore",
-            "button_link": "#"
-          }
-        },
-        "custom_block_egW9rM": {
-          "type": "custom-block",
-          "settings": {
-            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_4.svg",
-            "pre_heading": "WOMEN'S CLOTHING COLLECTION",
-            "button_label": "Explore",
-            "button_link": ""
-          }
-        },
-        "custom_block_BtrVm3": {
-          "type": "custom-block",
-          "settings": {
-            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_5.svg",
-            "pre_heading": "NEW COLLECTION",
-            "button_label": "GRAB THIS OFFER",
-            "button_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "custom_block_Bj7Vcr",
-        "custom_block_egW9rM",
-        "custom_block_BtrVm3"
-      ],
-      "settings": {
-        "heading": "Marquee Collections"
-      }
-    },
-    "featured_custom_collection_z8mRYN": {
-      "type": "featured-custom-collection",
-      "settings": {
-        "heading": "Heading",
-        "collection": "featured-collection",
-        "button_label": "See All Product",
-        "button_link": "shopify:\/\/collections\/featured-collection"
-      }
-    },
-    "animated_rich_text_TxFtP9": {
-      "type": "animated-rich-text",
-      "settings": {
-        "small_heading": "What You Wear",
-        "description": "Fashion Emerges As A Universal",
-        "button_label": "Explore Mare",
-        "button_link": "#"
-      }
-    },
-    "hero_slider_DJLNRU": {
-      "type": "hero-slider",
-      "blocks": {
-        "slide_dkHGtU": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/1.webp",
-            "heading": "Women's Apparel",
-            "description": "Elevate your wardrobe with our limited-time fashion offer!",
-            "button_label": "Explore Now",
-            "text_alignment": "center",
-            "content_position": "center"
-          }
-        },
-        "slide_pRdBfP": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/download_18878673-abc0-46a1-8c73-831a25238876.webp",
-            "heading": "Trendy Classics",
-            "description": "Discover Signature Look: Fashion Forward and Fabulous!",
-            "button_label": "Shop Now",
-            "text_alignment": "center",
-            "content_position": "center"
-          }
-        },
-        "slide_ajtFnT": {
-          "type": "slide",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/download_f09de8bc-4995-45fd-99ce-0eb67071be1e.webp",
-            "heading": "Modern Elegance",
-            "description": "Step into the World of Style with the Latest Fashion Trends Unveiled!",
-            "button_label": "Explore Now",
-            "text_alignment": "center",
-            "content_position": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_dkHGtU",
-        "slide_pRdBfP",
-        "slide_ajtFnT"
-      ],
-      "settings": {
-      }
-    },
-    "bottom_banner_a4zm9F": {
-      "type": "bottom-banner",
-      "blocks": {
-        "custom_block_zGcQej": {
-          "type": "custom-block",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/4_0d5cc573-820a-4e7b-8f22-af8438216522.webp",
-            "image_mobile": "shopify:\/\/shop_images\/4_0d5cc573-820a-4e7b-8f22-af8438216522.webp",
-            "pre_heading": "Introduce",
-            "title": "<h3>We Believe in the Power of Fashion<\/h3>",
-            "description": "<p>fashion emerges as the universal language that speaks volumes without words.<\/p>",
-            "button_label": "Show More",
-            "button_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "custom_block_zGcQej"
-      ],
-      "settings": {
-        "heading": ""
-      }
     }
   },
   "order": [
+    "hero_slider_DJLNRU",
+    "animated_rich_text_TxFtP9",
     "custom_slideshow_9x8xx6",
     "slideshow_DChLY6",
     "custom_section_ehRQ73",
     "captivating_collection_DA9fLL",
     "collection_list_neQ7DV",
     "featured_collection_aFRbqt",
+    "marquee_collections_HDpU8k",
+    "men_women_image_with_text_A6rQxL",
     "multicolumn_MY6e9w",
     "custom_countdown_timer_48gxrq",
+    "featured_custom_collection_z8mRYN",
     "featured_collection_UNa7Fy",
     "usp_section_7dQ83b",
     "multicolumn_aGEbGn",
     "multicolumn_EmEHwx",
+    "bottom_banner_a4zm9F",
     "image_banner_kaJN3D",
     "customer_review_3ihimd",
     "multicolumn_63kjQy",
+    "letyou_know_8DGxVc",
     "featured_blog_AXCGM8",
     "custom_faq_section_ALBUqa",
-    "collapsible_content_HqAnQH",
-    "letyou_know_8DGxVc",
-    "men_women_image_with_text_A6rQxL",
-    "marquee_collections_HDpU8k",
-    "featured_custom_collection_z8mRYN",
-    "animated_rich_text_TxFtP9",
-    "hero_slider_DJLNRU",
-    "bottom_banner_a4zm9F"
+    "collapsible_content_HqAnQH"
   ]
 }

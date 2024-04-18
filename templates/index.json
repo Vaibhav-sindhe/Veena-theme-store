@@ -314,6 +314,40 @@
         "padding_bottom": 36
       }
     },
+    "men_women_image_with_text_nh94CV": {
+      "type": "men-women-image-with-text",
+      "blocks": {
+        "custom_block_awxD9K": {
+          "type": "custom-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/download_b38e273a-c867-4410-838d-11a3be112fc0.webp",
+            "image_mobile": "shopify:\/\/shop_images\/download_55c8d8a7-47f2-42ee-a6be-d84df8ecfe2f.webp",
+            "pre_heading": "Men's",
+            "title": "<h3>Introducing Our Distinguished Men's Clothing Collection<\/h3>",
+            "button_label": "Explore",
+            "button_link": "#"
+          }
+        },
+        "custom_block_mJHwr9": {
+          "type": "custom-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/download_79f5c510-77e3-4ffb-bc85-fa60eb87d506.webp",
+            "image_mobile": "shopify:\/\/shop_images\/download_3f70f98f-e7dd-44ee-be4f-3d9a36079fa0.webp",
+            "pre_heading": "Women's",
+            "title": "<h3>Elevate Your Wardrobe With Our Women's Clothing Collection<\/h3>",
+            "button_label": "Explore",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "custom_block_awxD9K",
+        "custom_block_mJHwr9"
+      ],
+      "settings": {
+        "heading": "Business Formal Choices"
+      }
+    },
     "multicolumn_MY6e9w": {
       "type": "multicolumn",
       "blocks": {
@@ -899,40 +933,6 @@
         ],
         "name": ""
       }
-    },
-    "men_women_image_with_text_nh94CV": {
-      "type": "men-women-image-with-text",
-      "blocks": {
-        "custom_block_awxD9K": {
-          "type": "custom-block",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/download_b38e273a-c867-4410-838d-11a3be112fc0.webp",
-            "image_mobile": "shopify:\/\/shop_images\/download_55c8d8a7-47f2-42ee-a6be-d84df8ecfe2f.webp",
-            "pre_heading": "Men's",
-            "title": "<h3>Introducing Our Distinguished Men's Clothing Collection<\/h3>",
-            "button_label": "Explore",
-            "button_link": "#"
-          }
-        },
-        "custom_block_mJHwr9": {
-          "type": "custom-block",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/download_79f5c510-77e3-4ffb-bc85-fa60eb87d506.webp",
-            "image_mobile": "shopify:\/\/shop_images\/download_3f70f98f-e7dd-44ee-be4f-3d9a36079fa0.webp",
-            "pre_heading": "Women's",
-            "title": "<h3>Elevate Your Wardrobe With Our Women's Clothing Collection<\/h3>",
-            "button_label": "Explore",
-            "button_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "custom_block_awxD9K",
-        "custom_block_mJHwr9"
-      ],
-      "settings": {
-        "heading": "Business Formal Choices"
-      }
     }
   },
   "order": [
@@ -942,6 +942,7 @@
     "captivating_collection_DA9fLL",
     "collection_list_neQ7DV",
     "featured_collection_aFRbqt",
+    "men_women_image_with_text_nh94CV",
     "multicolumn_MY6e9w",
     "featured_collection_UNa7Fy",
     "usp_section_7dQ83b",
@@ -954,7 +955,6 @@
     "custom_faq_section_ALBUqa",
     "collapsible_content_HqAnQH",
     "letyou_know_8DGxVc",
-    "demo_productcart_QGbWWx",
-    "men_women_image_with_text_nh94CV"
+    "demo_productcart_QGbWWx"
   ]
 }

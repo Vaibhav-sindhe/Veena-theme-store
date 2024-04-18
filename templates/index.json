@@ -940,6 +940,7 @@
         "custom_block_W8L38t": {
           "type": "custom-block",
           "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_4.svg",
             "pre_heading": "MEN'S CLOTHING COLLECTION",
             "button_label": "Explore",
             "button_link": ""
@@ -948,6 +949,7 @@
         "custom_block_ekptAh": {
           "type": "custom-block",
           "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_4.svg",
             "pre_heading": "WOMEN'S CLOTHING COLLECTION",
             "button_label": "Explore",
             "button_link": ""
@@ -956,8 +958,9 @@
         "custom_block_pgzGiX": {
           "type": "custom-block",
           "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_5.svg",
             "pre_heading": "NEW COLLECTION",
-            "button_label": "Explore",
+            "button_label": "GRAB THIS OFFER",
             "button_link": ""
           }
         }

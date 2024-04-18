@@ -11,6 +11,8 @@
         }
     }
 {% endstyle %}
+
+
 <div class="week-6-email custom-section-padding--{{ section.id }}">
     <h1>{{ section.settings.heading }}</h1>
 {% form 'customer', class: 'newsletter-form' %}
@@ -46,16 +48,16 @@
         <label class="field__label" for="NewsletterForm--{{ section.id }}">
           {{ 'newsletter.label' | t }}
         </label>
-        <button
+      </div>
+              <button
           type="submit"
           class="newsletter-form__button field__button"
           name="commit"
           id="Subscribe"
           aria-label="{{ 'newsletter.button_label' | t }}"
         >
-          {% render 'icon-arrow' %}
+         {{ section.settings.button_label }}
         </button>
-      </div>
       {%- if form.errors -%}
         <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
           {%- render 'icon-error' -%}

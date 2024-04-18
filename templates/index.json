@@ -946,7 +946,7 @@
       "settings": {
         "heading": "Testimonials",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "color-bg": "linear-gradient(354deg, rgba(255, 254, 227, 1) 100%, rgba(114, 255, 179, 1) 100%)",
+        "color-bg": "linear-gradient(354deg, rgba(245, 245, 218, 1) 100%, rgba(114, 255, 179, 1) 100%)",
         "auto_play": false,
         "show_pagination": true,
         "show_arrows": true,

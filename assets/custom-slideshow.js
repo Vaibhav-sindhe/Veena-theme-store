@@ -46,7 +46,7 @@
             console.log(slideIndex);
             // Get the product image URL from the block settings corresponding to the current slide index
             var productImageURL = blocks[slideIndex].settings.productImage;
-        
+            console.log(productImageURL);
             // Update the src attribute of the product image
             productImage.src = productImageURL;
         }

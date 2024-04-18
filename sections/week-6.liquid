@@ -30,6 +30,7 @@
     assign perpage=section.settings.perpage
     assign arrows=section.settings.show_arrows
     assign pagination=section.settings.show_pagination
+    assign gap=section.settings.gap
   %}
 {%- capture splide_option -%}
     {
@@ -37,13 +38,14 @@
         "pagination": {{ pagination }},
         "perPage":{{ perpage }},
         "arrows":{{ arrows }},
+        "gap":{{gap}},
         "pagination":{{ pagination }}
     }
 {% endcapture %}
 
 <div class="week-6 page-width custom-section-padding--{{ section.id }}" style="background: {{section.settings.color-bg}};">
     <div class="week-6-product">
-       <img src="{{section.blocks[1].settings.productImage|image_url}}" alt="img" width="20" height="20">
+       <img src="{{section.blocks[2].settings.productImage|image_url}}" alt="img" width="20" height="20">
     </div>
     <div class="week-6--content">
         <h1 class="week-6-content--heading">{{ section.settings.heading }}</h1>
@@ -128,22 +130,21 @@
             },
             {
                 "type": "range",
-                "id": "auto_play_duration",
-                "min": 1000,
-                "max": 5000,
-                "step": 1000,
-                "unit": "sec",
-                "label": "Autoplay duration",
-                "default": 2000
-            },
-            {
-                "type": "range",
                 "id": "perpage",
                 "min": 1,
                 "max": 4,
                 "step": 1,
                 "label": "perpage",
                 "default": 2
+            },
+            {
+                "type": "range",
+                "id": "gap",
+                "min": 5,
+                "max": 50,
+                "step": 5,
+                "label": "gap",
+                "default": 10
             },
             {
                 "type": "header",

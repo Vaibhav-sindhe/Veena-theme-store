@@ -973,6 +973,15 @@
         ],
         "name": ""
       }
+    },
+    "featured_custom_collection_ryXKVh": {
+      "type": "featured-custom-collection",
+      "settings": {
+        "heading": "Featured Collection",
+        "collection": "featured-collection",
+        "button_label": "See All Product",
+        "button_link": "shopify:\/\/collections\/featured-collection"
+      }
     }
   },
   "order": [
@@ -996,6 +1005,7 @@
     "custom_faq_section_ALBUqa",
     "collapsible_content_HqAnQH",
     "letyou_know_8DGxVc",
-    "demo_productcart_QGbWWx"
+    "demo_productcart_QGbWWx",
+    "featured_custom_collection_ryXKVh"
   ]
 }

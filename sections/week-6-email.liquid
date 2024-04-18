@@ -1,4 +1,4 @@
-{% comment %} {{ 'week-6.css' | asset_url | stylesheet_tag }} {% endcomment %}
+{{ 'week-6-email.css' | asset_url | stylesheet_tag }}
 {% style %}
     .custom-padding--{{ section.id }}{
         padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
@@ -14,59 +14,62 @@
 
 
 <div class="week-6-email custom-section-padding--{{ section.id }}">
-    <h1>{{ section.settings.heading }}</h1>
-{% form 'customer', class: 'newsletter-form' %}
-    <input type="hidden" name="contact[tags]" value="newsletter">
-      <div>
-        <input
-          id="NewsletterForm--{{ section.id }}"
-          type="email"
-          name="contact[email]"
-          {% comment %} class="field__input" {% endcomment %}
-          placeholder="Email address"
-          value="{{ form.email }}"
-          aria-required="true"
-          autocorrect="off"
-          autocapitalize="off"
-          autocomplete="email"
-          {% if form.errors %}
+    <h1 class="week-6-email--heading">{{ section.settings.heading }}</h1>
+    <div class="week-6-email--inputContainer">
+        {% form 'customer', class: 'newsletter-form' %}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <div>
+            <input
+            id="NewsletterForm--{{ section.id }}"
+            type="email"
+            name="contact[email]"
+            class="week-6-email--input"
+            placeholder="Email address"
+            value="{{ form.email }}"
+            aria-required="true"
+            autocorrect="off"
+            autocapitalize="off"
+            autocomplete="email"
+            {% if form.errors %}
+                autofocus
+                aria-invalid="true"
+                aria-describedby="Newsletter-error--{{ section.id }}"
+            {% elsif form.posted_successfully? %}
+                aria-describedby="Newsletter-success--{{ section.id }}"
+            {% endif %}
+            required
+            >
+        </div>
+            <button
+            type="submit"
+            class="week-6-email--button"
+            name="commit"
+            id="Subscribe"
+            aria-label="{{ 'newsletter.button_label' | t }}"
+            >
+            {{ section.settings.button_label }}
+            </button>
+        {%- if form.errors -%}
+            <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+            {%- render 'icon-error' -%}
+            {{- form.errors.translated_fields.email | capitalize }}
+            {{ form.errors.messages.email -}}
+            </small>
+        {%- endif -%}
+        {%- if form.posted_successfully? -%}
+        <h3
+            class="newsletter-form__message newsletter-form__message--success form__message"
+            id="Newsletter-success--{{ section.id }}"
+            tabindex="-1"
             autofocus
-            aria-invalid="true"
-            aria-describedby="Newsletter-error--{{ section.id }}"
-          {% elsif form.posted_successfully? %}
-            aria-describedby="Newsletter-success--{{ section.id }}"
-          {% endif %}
-          required
         >
-      </div>
-        <button
-          type="submit"
-          class="newsletter-form__button field__button"
-          name="commit"
-          id="Subscribe"
-          aria-label="{{ 'newsletter.button_label' | t }}"
-        >
-         {{ section.settings.button_label }}
-        </button>
-      {%- if form.errors -%}
-        <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
-          {%- render 'icon-error' -%}
-          {{- form.errors.translated_fields.email | capitalize }}
-          {{ form.errors.messages.email -}}
-        </small>
-      {%- endif -%}
-    {%- if form.posted_successfully? -%}
-      <h3
-        class="newsletter-form__message newsletter-form__message--success form__message"
-        id="Newsletter-success--{{ section.id }}"
-        tabindex="-1"
-        autofocus
-      >
-        {% render 'icon-success' -%}
-        {{- 'newsletter.success' | t }}
-      </h3>
-    {%- endif -%}
-  {% endform %} 
+            {% render 'icon-success' -%}
+            {{- 'newsletter.success' | t }}
+        </h3>
+        {%- endif -%}
+        {% endform %} 
+</div>
+   
   
 </div>
   {% schema %}

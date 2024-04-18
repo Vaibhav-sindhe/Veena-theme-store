@@ -1,0 +1,30 @@
+.week-6-email{
+    padding: 0 5rem;
+    background: #EDFF84;
+}
+.week-6-email--heading{
+    text-align: center;
+    color: #282824;
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+.week-6-email--inputContainer .newsletter-form {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.week-6-email--inputContainer .newsletter-form .week-6-email--input{
+    width: 35rem;
+    border-radius: 25px;
+    padding: 1rem ;
+    border: 1px solid #5C6E4A;
+}
+.week-6-email--inputContainer .newsletter-form .week-6-email--button{
+    width: 25rem;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    border: none;
+    background: #5C6E4A;
+}

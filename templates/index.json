@@ -905,14 +905,9 @@
         "slide_44Bzm3": {
           "type": "Slide",
           "settings": {
-<<<<<<< HEAD
-            "authorImage": "shopify://shop_images/48fd745fbd3a6ce8ce273f8b6fb14567_00043ce7-15c6-44e0-8212-9196c2be4cff.jpg",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
-=======
             "productImage": "shopify:\/\/shop_images\/5_3c698faf-b95c-4672-b508-5b1ce3e04cc9.webp",
             "authorImage": "shopify:\/\/shop_images\/48fd745fbd3a6ce8ce273f8b6fb14567_00043ce7-15c6-44e0-8212-9196c2be4cff.jpg",
             "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
->>>>>>> 126b5b7af2522cbb96e800074ec44c08d2d863a1
             "authorName": "Alex",
             "authorTitle": "clients",
             "card-bg": "",
@@ -934,14 +929,9 @@
         "slide_86bKfC": {
           "type": "Slide",
           "settings": {
-<<<<<<< HEAD
-            "authorImage": "shopify://shop_images/48fd745fbd3a6ce8ce273f8b6fb14567_b7fa9c6a-4c35-45c0-a609-c09aef9a3274.jpg",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
-=======
             "productImage": "shopify:\/\/shop_images\/4_648c1e79-7c42-45b3-bcd2-894619f0fbf8.webp",
             "authorImage": "shopify:\/\/shop_images\/48fd745fbd3a6ce8ce273f8b6fb14567_b7fa9c6a-4c35-45c0-a609-c09aef9a3274.jpg",
             "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
->>>>>>> 126b5b7af2522cbb96e800074ec44c08d2d863a1
             "authorName": "Alex",
             "authorTitle": "clients",
             "card-bg": "",
@@ -968,6 +958,15 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "week_6_email_LBrHNp": {
+      "type": "week-6-email",
+      "settings": {
+        "heading": "Subscribe to our Newsletter",
+        "button_label": "subscribe",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -989,6 +988,7 @@
     "custom_faq_section_ALBUqa",
     "collapsible_content_HqAnQH",
     "letyou_know_8DGxVc",
-    "week_6_XUqETB"
+    "week_6_XUqETB",
+    "week_6_email_LBrHNp"
   ]
 }

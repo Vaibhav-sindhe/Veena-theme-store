@@ -18,7 +18,12 @@
             "type": "{{ type }}",
             "pagination": {{ pagination }},
             "perPage":{{ perpage }},
-            "gap":{{gap}}
+            "gap":{{gap}},
+            "breakpoints": {
+                768: {
+                  perPage: 2
+                }
+            }
         }
     {% endcapture %}
 

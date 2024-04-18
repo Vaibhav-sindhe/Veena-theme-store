@@ -22,7 +22,7 @@
           id="NewsletterForm--{{ section.id }}"
           type="email"
           name="contact[email]"
-          class="field__input"
+          {% comment %} class="field__input" {% endcomment %}
           placeholder="Email address"
           value="{{ form.email }}"
           aria-required="true"

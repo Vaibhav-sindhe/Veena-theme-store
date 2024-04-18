@@ -14,9 +14,9 @@
         "slide_VTm83t": {
           "type": "Slide",
           "settings": {
-            "productImage": "shopify://shop_images/3c925eb803f7e78c0ac68f2596c8e058_a692c407-6c20-4ba7-87e7-d8aa264cfd2f.jpg",
-            "authorImage": "shopify://shop_images/d79701ab8c86c3f9d226d6384ec13c8d_140e9b03-ef64-42ad-8ccf-5597f517c75f.jpg",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
+            "productImage": "shopify:\/\/shop_images\/3c925eb803f7e78c0ac68f2596c8e058_a692c407-6c20-4ba7-87e7-d8aa264cfd2f.jpg",
+            "authorImage": "shopify:\/\/shop_images\/d79701ab8c86c3f9d226d6384ec13c8d_140e9b03-ef64-42ad-8ccf-5597f517c75f.jpg",
+            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
             "card-bg": "",
@@ -26,9 +26,9 @@
         "slide_QHWFHe": {
           "type": "Slide",
           "settings": {
-            "productImage": "shopify://shop_images/images.jpg",
-            "authorImage": "shopify://shop_images/48fd745fbd3a6ce8ce273f8b6fb14567_b7fa9c6a-4c35-45c0-a609-c09aef9a3274.jpg",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
+            "productImage": "shopify:\/\/shop_images\/images.jpg",
+            "authorImage": "shopify:\/\/shop_images\/48fd745fbd3a6ce8ce273f8b6fb14567_b7fa9c6a-4c35-45c0-a609-c09aef9a3274.jpg",
+            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
             "card-bg": "",
@@ -38,9 +38,9 @@
         "slide_x9XG6m": {
           "type": "Slide",
           "settings": {
-            "productImage": "shopify://shop_images/images_a5161b4a-aed6-4079-a966-d0723ba7e90e.jpg",
-            "authorImage": "shopify://shop_images/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
+            "productImage": "shopify:\/\/shop_images\/images_a5161b4a-aed6-4079-a966-d0723ba7e90e.jpg",
+            "authorImage": "shopify:\/\/shop_images\/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
+            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
             "card-bg": "",
@@ -50,9 +50,9 @@
         "slide_BwB7F3": {
           "type": "Slide",
           "settings": {
-            "productImage": "shopify://shop_images/download.jpg",
-            "authorImage": "shopify://shop_images/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
+            "productImage": "shopify:\/\/shop_images\/download.jpg",
+            "authorImage": "shopify:\/\/shop_images\/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
+            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
             "card-bg": "",

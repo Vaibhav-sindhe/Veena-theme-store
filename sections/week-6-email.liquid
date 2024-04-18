@@ -11,7 +11,7 @@
         }
     }
 {% endstyle %}
-<div>
+<div class="week-6-email custom-section-padding--{{ section.id }}">
     <h1>{{ section.settings.heading }}</h1>
 {% form 'customer', class: 'newsletter-form' %}
     <input type="hidden" name="contact[tags]" value="newsletter">

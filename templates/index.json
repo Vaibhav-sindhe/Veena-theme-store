@@ -890,6 +890,12 @@
     "demo_productcart_QGbWWx": {
       "type": "demo-productcart",
       "settings": {
+        "product_list": [
+          "classic-baseball-hat",
+          "corben-shoulder-bag",
+          "cotton-style-bucket-hat",
+          "full-sleeve-high-neck-t-shirt"
+        ],
         "name": ""
       }
     }

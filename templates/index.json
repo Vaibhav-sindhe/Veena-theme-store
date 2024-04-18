@@ -879,87 +879,18 @@
         "heading": "Let You Know",
         "blog": "veena-blog",
         "auto_play": true,
-        "show_pagination": true,
+        "show_pagination": false,
         "show_arrows": true,
         "auto_play_duration": 2000,
         "perpage": 2,
-<<<<<<< HEAD
-        "gap": 5,
+        "gap": 15,
         "Slide_animation": "slide"
       }
     },
-    "week_6_XUqETB": {
-      "type": "week-6",
-      "blocks": {
-        "slide_x3n3pb": {
-          "type": "Slide",
-          "settings": {
-            "productImage": "shopify://shop_images/3c925eb803f7e78c0ac68f2596c8e058.jpg",
-            "authorImage": "shopify://shop_images/d79701ab8c86c3f9d226d6384ec13c8d_32aa8e4f-f004-4e51-95f6-da17875c8ad6.jpg",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
-            "authorName": "Alex",
-            "authorTitle": "clients",
-            "card-bg": "",
-            "card-active-bg": ""
-          }
-        },
-        "slide_44Bzm3": {
-          "type": "Slide",
-          "settings": {
-            "authorImage": "shopify://shop_images/48fd745fbd3a6ce8ce273f8b6fb14567_00043ce7-15c6-44e0-8212-9196c2be4cff.jpg",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
-            "authorName": "Alex",
-            "authorTitle": "clients",
-            "card-bg": "",
-            "card-active-bg": ""
-          }
-        },
-        "slide_4HNReH": {
-          "type": "Slide",
-          "settings": {
-            "productImage": "shopify://shop_images/3c925eb803f7e78c0ac68f2596c8e058_c10446ac-32df-49bf-afcf-3425d712c363.jpg",
-            "authorImage": "shopify://shop_images/d79701ab8c86c3f9d226d6384ec13c8d_140e9b03-ef64-42ad-8ccf-5597f517c75f.jpg",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
-            "authorName": "Alex",
-            "authorTitle": "clients",
-            "card-bg": "",
-            "card-active-bg": ""
-          }
-        },
-        "slide_86bKfC": {
-          "type": "Slide",
-          "settings": {
-            "authorImage": "shopify://shop_images/48fd745fbd3a6ce8ce273f8b6fb14567_b7fa9c6a-4c35-45c0-a609-c09aef9a3274.jpg",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
-            "authorName": "Alex",
-            "authorTitle": "clients",
-            "card-bg": "",
-            "card-active-bg": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_x3n3pb",
-        "slide_44Bzm3",
-        "slide_4HNReH",
-        "slide_86bKfC"
-      ],
+    "demo_productcart_QGbWWx": {
+      "type": "demo-productcart",
       "settings": {
-        "heading": "Testimonials",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "color-bg": "",
-        "auto_play": false,
-        "show_pagination": true,
-        "show_arrows": true,
-        "auto_play_duration": 2000,
-        "perpage": 1,
-        "Slide_animation": "slide",
-        "padding_top": 0,
-        "padding_bottom": 0
-=======
-        "gap": 15,
-        "Slide_animation": "slide"
->>>>>>> d3c8d3382e86313c12a27cdc034c71663e3d2404
+        "name": ""
       }
     }
   },
@@ -982,6 +913,6 @@
     "custom_faq_section_ALBUqa",
     "collapsible_content_HqAnQH",
     "letyou_know_8DGxVc",
-    "week_6_XUqETB"
+    "demo_productcart_QGbWWx"
   ]
 }

@@ -74,7 +74,7 @@
         "show_pagination": true,
         "show_arrows": false,
         "perpage": 1,
-        "gap": 10,
+        "gap": 20,
         "Slide_animation": "slide",
         "padding_top": 30,
         "padding_bottom": 30

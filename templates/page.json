@@ -79,10 +79,20 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "week_6_email_nyKdYx": {
+      "type": "week-6-email",
+      "settings": {
+        "heading": "Subscribe to our Newsletter",
+        "button_label": "Explore",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
     }
   },
   "order": [
     "main",
-    "week_6_DpfgYP"
+    "week_6_DpfgYP",
+    "week_6_email_nyKdYx"
   ]
 }

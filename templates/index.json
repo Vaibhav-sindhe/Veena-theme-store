@@ -948,7 +948,8 @@
         "custom_block_egW9rM": {
           "type": "custom-block",
           "settings": {
-            "pre_heading": "Business Formal Choices",
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_4.svg",
+            "pre_heading": "WOMEN'S CLOTHING COLLECTION",
             "button_label": "Explore",
             "button_link": ""
           }

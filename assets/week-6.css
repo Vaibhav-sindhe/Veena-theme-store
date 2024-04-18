@@ -8,7 +8,7 @@
 }
 .week-6--content{
     width: 100%;
-    padding: 4rem;
+    padding:2rem  1rem;
 }
 .week-6-content--heading{
     font-weight: 600;
@@ -70,6 +70,9 @@
     .week-6{
         padding: 2rem 5rem;
         display: flex;
+    }
+    .week-6--content{
+        padding: 4rem;
     }
     .week-6-content--heading{
         text-align: start;

@@ -890,6 +890,7 @@
     "custom_countdown_timer_48gxrq": {
       "type": "custom-countdown-timer",
       "settings": {
+<<<<<<< HEAD
         "heading": "Our Women's Clothing Collection.",
         "description": "<p>where fashion meets flair, and every outfit becomes a statement.</p>",
         "button_label": "View All",
@@ -897,6 +898,28 @@
         "text_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+=======
+        "heading": "Testimonials",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "color-bg": "",
+        "auto_play": false,
+        "show_pagination": true,
+        "show_arrows": true,
+        "auto_play_duration": 2000,
+        "perpage": 1,
+        "Slide_animation": "slide",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "week_6_email_JdNHgN": {
+      "type": "week-6-email",
+      "settings": {
+        "heading": "Subscribe to our Newsletter",
+        "button_label": "Subscribe",
+        "padding_top": 40,
+        "padding_bottom": 40
+>>>>>>> 2ac44773ab2621c1ee78e1d039b9e4ff49e426d3
       }
     }
   },

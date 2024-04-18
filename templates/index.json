@@ -45,6 +45,15 @@
       "settings": {
       }
     },
+    "animated_rich_text_TxFtP9": {
+      "type": "animated-rich-text",
+      "settings": {
+        "small_heading": "What You Wear",
+        "description": "Fashion Emerges As A Universal",
+        "button_label": "Explore Mare",
+        "button_link": "#"
+      }
+    },
     "custom_slideshow_9x8xx6": {
       "type": "custom-slideshow",
       "blocks": {
@@ -462,6 +471,7 @@
         "column_D8ajQJ",
         "column_DHyhC4"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -491,8 +501,18 @@
         "padding_bottom": 36
       }
     },
+    "featured_custom_collection_z8mRYN": {
+      "type": "featured-custom-collection",
+      "settings": {
+        "heading": "Heading",
+        "collection": "featured-collection",
+        "button_label": "See All Product",
+        "button_link": "shopify:\/\/collections\/featured-collection"
+      }
+    },
     "featured_collection_UNa7Fy": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
@@ -698,6 +718,29 @@
         "padding_bottom": 36
       }
     },
+    "bottom_banner_a4zm9F": {
+      "type": "bottom-banner",
+      "blocks": {
+        "custom_block_zGcQej": {
+          "type": "custom-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/4_0d5cc573-820a-4e7b-8f22-af8438216522.webp",
+            "image_mobile": "shopify:\/\/shop_images\/4_0d5cc573-820a-4e7b-8f22-af8438216522.webp",
+            "pre_heading": "Introduce",
+            "title": "<h3>We Believe in the Power of Fashion<\/h3>",
+            "description": "<p>fashion emerges as the universal language that speaks volumes without words.<\/p>",
+            "button_label": "Show More",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "custom_block_zGcQej"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "image_banner_kaJN3D": {
       "type": "image-banner",
       "blocks": {
@@ -732,6 +775,7 @@
         "text_wPm8Uz",
         "buttons_6LgbmT"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/4_cc27b61c-7007-4489-97f1-e5a520261c92.webp",
         "image_overlay_opacity": 0,
@@ -865,8 +909,23 @@
         "padding_bottom": 36
       }
     },
+    "letyou_know_8DGxVc": {
+      "type": "letyou-know",
+      "settings": {
+        "heading": "Let You Know",
+        "blog": "veena-blog",
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": true,
+        "auto_play_duration": 2000,
+        "perpage": 2,
+        "gap": 20,
+        "Slide_animation": "slide"
+      }
+    },
     "featured_blog_AXCGM8": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h1",
@@ -1004,65 +1063,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "letyou_know_8DGxVc": {
-      "type": "letyou-know",
-      "settings": {
-        "heading": "Let You Know",
-        "blog": "veena-blog",
-        "auto_play": false,
-        "show_pagination": false,
-        "show_arrows": true,
-        "auto_play_duration": 2000,
-        "perpage": 2,
-        "gap": 20,
-        "Slide_animation": "slide"
-      }
-    },
-    "featured_custom_collection_z8mRYN": {
-      "type": "featured-custom-collection",
-      "settings": {
-        "heading": "Heading",
-        "collection": "featured-collection",
-        "button_label": "See All Product",
-        "button_link": "shopify:\/\/collections\/featured-collection"
-      }
-    },
-    "animated_rich_text_TxFtP9": {
-      "type": "animated-rich-text",
-      "settings": {
-        "small_heading": "What You Wear",
-        "description": "Fashion Emerges As A Universal",
-        "button_label": "Explore Mare",
-        "button_link": "#"
-      }
-    },
-    "bottom_banner_a4zm9F": {
-      "type": "bottom-banner",
-      "blocks": {
-        "custom_block_zGcQej": {
-          "type": "custom-block",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/4_0d5cc573-820a-4e7b-8f22-af8438216522.webp",
-            "image_mobile": "shopify:\/\/shop_images\/4_0d5cc573-820a-4e7b-8f22-af8438216522.webp",
-            "pre_heading": "Introduce",
-            "title": "<h3>We Believe in the Power of Fashion<\/h3>",
-            "description": "<p>fashion emerges as the universal language that speaks volumes without words.<\/p>",
-            "button_label": "Show More",
-            "button_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "custom_block_zGcQej"
-      ],
-      "settings": {
-        "heading": ""
-      }
     }
   },
   "order": [
     "hero_slider_DJLNRU",
+    "animated_rich_text_TxFtP9",
     "custom_slideshow_9x8xx6",
     "slideshow_DChLY6",
     "custom_section_ehRQ73",
@@ -1073,19 +1078,18 @@
     "men_women_image_with_text_A6rQxL",
     "multicolumn_MY6e9w",
     "custom_countdown_timer_48gxrq",
+    "featured_custom_collection_z8mRYN",
     "featured_collection_UNa7Fy",
     "usp_section_7dQ83b",
     "multicolumn_aGEbGn",
     "multicolumn_EmEHwx",
+    "bottom_banner_a4zm9F",
     "image_banner_kaJN3D",
     "customer_review_3ihimd",
     "multicolumn_63kjQy",
+    "letyou_know_8DGxVc",
     "featured_blog_AXCGM8",
     "custom_faq_section_ALBUqa",
-    "collapsible_content_HqAnQH",
-    "letyou_know_8DGxVc",
-    "featured_custom_collection_z8mRYN",
-    "animated_rich_text_TxFtP9",
-    "bottom_banner_a4zm9F"
+    "collapsible_content_HqAnQH"
   ]
 }

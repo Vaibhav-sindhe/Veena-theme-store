@@ -26,6 +26,8 @@
         "slide_kgNRnQ": {
           "type": "Slide",
           "settings": {
+            "productImage": "shopify:\/\/shop_images\/images.jpg",
+            "authorImage": "shopify:\/\/shop_images\/48fd745fbd3a6ce8ce273f8b6fb14567_b7fa9c6a-4c35-45c0-a609-c09aef9a3274.jpg",
             "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
@@ -36,6 +38,8 @@
         "slide_WhgL3X": {
           "type": "Slide",
           "settings": {
+            "productImage": "shopify:\/\/shop_images\/download.jpg",
+            "authorImage": "shopify:\/\/shop_images\/5_5da99d8b-2aa8-4ce2-89d5-25b1a178d8ee.webp",
             "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
@@ -46,6 +50,8 @@
         "slide_yjRrKK": {
           "type": "Slide",
           "settings": {
+            "productImage": "shopify:\/\/shop_images\/images_a5161b4a-aed6-4079-a966-d0723ba7e90e.jpg",
+            "authorImage": "shopify:\/\/shop_images\/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
             "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
@@ -68,7 +74,7 @@
         "show_pagination": true,
         "show_arrows": false,
         "auto_play_duration": 2000,
-        "perpage": 2,
+        "perpage": 1,
         "Slide_animation": "slide",
         "padding_top": 20,
         "padding_bottom": 20

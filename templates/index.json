@@ -879,11 +879,11 @@
         "heading": "Let You Know",
         "blog": "veena-blog",
         "auto_play": true,
-        "show_pagination": false,
+        "show_pagination": true,
         "show_arrows": true,
         "auto_play_duration": 2000,
         "perpage": 2,
-        "gap": 5,
+        "gap": 15,
         "Slide_animation": "slide"
       }
     }

@@ -1,4 +1,4 @@
-.week-6{
+c.week-6{
     padding: 2rem 3rem;
 }
 .week-6-product ,.week-6-product img{
@@ -68,6 +68,9 @@
     .week-6{
         padding: 0 3rem;
         display: flex;
+    }
+    .week-6-content--heading{
+        text-align: none;
     }
     .week-6>div{
         width: 50%;

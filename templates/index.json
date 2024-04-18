@@ -388,6 +388,18 @@
         "heading": "Business Formal Choices"
       }
     },
+    "custom_countdown_timer_m8tzib": {
+      "type": "custom-countdown-timer",
+      "settings": {
+        "heading": "Our Women's Clothing Collection.",
+        "description": "<p>where fashion meets flair, and every outfit becomes a statement.<\/p>",
+        "button_label": "View All",
+        "button_link": "#",
+        "text_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
     "multicolumn_MY6e9w": {
       "type": "multicolumn",
       "blocks": {
@@ -983,18 +995,6 @@
         ],
         "name": ""
       }
-    },
-    "custom_countdown_timer_m8tzib": {
-      "type": "custom-countdown-timer",
-      "settings": {
-        "heading": "Our Women's Clothing Collection.",
-        "description": "<p>where fashion meets flair, and every outfit becomes a statement.<\/p>",
-        "button_label": "View All",
-        "button_link": "#",
-        "text_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -1006,6 +1006,7 @@
     "featured_collection_aFRbqt",
     "marquee_collections_zR8yLz",
     "men_women_image_with_text_nh94CV",
+    "custom_countdown_timer_m8tzib",
     "multicolumn_MY6e9w",
     "featured_custom_collection_ryXKVh",
     "featured_collection_UNa7Fy",
@@ -1019,7 +1020,6 @@
     "custom_faq_section_ALBUqa",
     "collapsible_content_HqAnQH",
     "letyou_know_8DGxVc",
-    "demo_productcart_QGbWWx",
-    "custom_countdown_timer_m8tzib"
+    "demo_productcart_QGbWWx"
   ]
 }

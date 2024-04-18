@@ -8,51 +8,51 @@
         "padding_bottom": 28
       }
     },
-    "week_6_DpfgYP": {
+    "week_6_7wV7K6": {
       "type": "week-6",
       "blocks": {
-        "slide_w6QeJ4": {
+        "slide_VTm83t": {
           "type": "Slide",
           "settings": {
-            "productImage": "shopify:\/\/shop_images\/3c925eb803f7e78c0ac68f2596c8e058_a692c407-6c20-4ba7-87e7-d8aa264cfd2f.jpg",
-            "authorImage": "shopify:\/\/shop_images\/d79701ab8c86c3f9d226d6384ec13c8d_4ca7721c-5873-4f76-a81e-e0b78bf93681.jpg",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
+            "productImage": "shopify://shop_images/3c925eb803f7e78c0ac68f2596c8e058_a692c407-6c20-4ba7-87e7-d8aa264cfd2f.jpg",
+            "authorImage": "shopify://shop_images/d79701ab8c86c3f9d226d6384ec13c8d_140e9b03-ef64-42ad-8ccf-5597f517c75f.jpg",
+            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
             "card-bg": "",
             "card-active-bg": ""
           }
         },
-        "slide_kgNRnQ": {
+        "slide_QHWFHe": {
           "type": "Slide",
           "settings": {
-            "productImage": "shopify:\/\/shop_images\/images.jpg",
-            "authorImage": "shopify:\/\/shop_images\/48fd745fbd3a6ce8ce273f8b6fb14567_b7fa9c6a-4c35-45c0-a609-c09aef9a3274.jpg",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
+            "productImage": "shopify://shop_images/images.jpg",
+            "authorImage": "shopify://shop_images/48fd745fbd3a6ce8ce273f8b6fb14567_b7fa9c6a-4c35-45c0-a609-c09aef9a3274.jpg",
+            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
             "card-bg": "",
             "card-active-bg": ""
           }
         },
-        "slide_WhgL3X": {
+        "slide_x9XG6m": {
           "type": "Slide",
           "settings": {
-            "productImage": "shopify:\/\/shop_images\/download.jpg",
-            "authorImage": "shopify:\/\/shop_images\/5_5da99d8b-2aa8-4ce2-89d5-25b1a178d8ee.webp",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
+            "productImage": "shopify://shop_images/images_a5161b4a-aed6-4079-a966-d0723ba7e90e.jpg",
+            "authorImage": "shopify://shop_images/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
+            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
             "card-bg": "",
             "card-active-bg": ""
           }
         },
-        "slide_yjRrKK": {
+        "slide_BwB7F3": {
           "type": "Slide",
           "settings": {
-            "productImage": "shopify:\/\/shop_images\/images_a5161b4a-aed6-4079-a966-d0723ba7e90e.jpg",
-            "authorImage": "shopify:\/\/shop_images\/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “<\/p>",
+            "productImage": "shopify://shop_images/download.jpg",
+            "authorImage": "shopify://shop_images/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
+            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
             "authorName": "Mr. John Doe",
             "authorTitle": "clients",
             "card-bg": "",
@@ -61,10 +61,10 @@
         }
       },
       "block_order": [
-        "slide_w6QeJ4",
-        "slide_kgNRnQ",
-        "slide_WhgL3X",
-        "slide_yjRrKK"
+        "slide_VTm83t",
+        "slide_QHWFHe",
+        "slide_x9XG6m",
+        "slide_BwB7F3"
       ],
       "settings": {
         "heading": "Testimonials",
@@ -76,23 +76,23 @@
         "auto_play_duration": 2000,
         "perpage": 1,
         "Slide_animation": "slide",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 30,
+        "padding_bottom": 30
       }
     },
-    "week_6_email_nyKdYx": {
+    "week_6_email_6bnr8e": {
       "type": "week-6-email",
       "settings": {
         "heading": "Subscribe to our Newsletter",
-        "button_label": "Explore",
-        "padding_top": 30,
-        "padding_bottom": 30
+        "button_label": "Subscribe",
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     }
   },
   "order": [
     "main",
-    "week_6_DpfgYP",
-    "week_6_email_nyKdYx"
+    "week_6_7wV7K6",
+    "week_6_email_6bnr8e"
   ]
 }

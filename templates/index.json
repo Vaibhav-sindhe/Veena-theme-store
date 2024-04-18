@@ -433,8 +433,18 @@
         "padding_bottom": 36
       }
     },
+    "featured_custom_collection_ryXKVh": {
+      "type": "featured-custom-collection",
+      "settings": {
+        "heading": "Featured Collection",
+        "collection": "featured-collection",
+        "button_label": "See All Product",
+        "button_link": "shopify:\/\/collections\/featured-collection"
+      }
+    },
     "featured_collection_UNa7Fy": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
@@ -985,6 +995,7 @@
     "marquee_collections_zR8yLz",
     "men_women_image_with_text_nh94CV",
     "multicolumn_MY6e9w",
+    "featured_custom_collection_ryXKVh",
     "featured_collection_UNa7Fy",
     "usp_section_7dQ83b",
     "multicolumn_aGEbGn",

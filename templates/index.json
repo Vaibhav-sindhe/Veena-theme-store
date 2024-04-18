@@ -933,6 +933,43 @@
         ],
         "name": ""
       }
+    },
+    "marquee_collections_zR8yLz": {
+      "type": "marquee-collections",
+      "blocks": {
+        "custom_block_W8L38t": {
+          "type": "custom-block",
+          "settings": {
+            "pre_heading": "MEN'S CLOTHING COLLECTION",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "custom_block_ekptAh": {
+          "type": "custom-block",
+          "settings": {
+            "pre_heading": "WOMEN'S CLOTHING COLLECTION",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "custom_block_pgzGiX": {
+          "type": "custom-block",
+          "settings": {
+            "pre_heading": "NEW COLLECTION",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom_block_W8L38t",
+        "custom_block_ekptAh",
+        "custom_block_pgzGiX"
+      ],
+      "settings": {
+        "heading": "Marquee Collections"
+      }
     }
   },
   "order": [
@@ -955,6 +992,7 @@
     "custom_faq_section_ALBUqa",
     "collapsible_content_HqAnQH",
     "letyou_know_8DGxVc",
-    "demo_productcart_QGbWWx"
+    "demo_productcart_QGbWWx",
+    "marquee_collections_zR8yLz"
   ]
 }

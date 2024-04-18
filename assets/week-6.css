@@ -70,7 +70,7 @@ c.week-6{
         display: flex;
     }
     .week-6-content--heading{
-        text-align: none;
+        text-align: start;
     }
     .week-6>div{
         width: 50%;

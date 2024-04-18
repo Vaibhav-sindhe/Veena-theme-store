@@ -80,8 +80,7 @@
     .week-6-product ,.week-6-product img{
         height: 100%;
     }
-    .temp{
-        height: 5rem;
-        width: 5rem;
+    .week-6-content--block{
+        width: 25rem !important;
     }
 }

@@ -990,6 +990,51 @@
         "button_label": "Explore Mare",
         "button_link": "#"
       }
+    },
+    "hero_slider_DJLNRU": {
+      "type": "hero-slider",
+      "blocks": {
+        "slide_dkHGtU": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/1.webp",
+            "heading": "Women's Apparel",
+            "description": "Elevate your wardrobe with our limited-time fashion offer!",
+            "button_label": "Explore Now",
+            "text_alignment": "center",
+            "content_position": "center"
+          }
+        },
+        "slide_pRdBfP": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/download_18878673-abc0-46a1-8c73-831a25238876.webp",
+            "heading": "Trendy Classics",
+            "description": "Discover Signature Look: Fashion Forward and Fabulous!",
+            "button_label": "Shop Now",
+            "text_alignment": "center",
+            "content_position": "center"
+          }
+        },
+        "slide_ajtFnT": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/download_f09de8bc-4995-45fd-99ce-0eb67071be1e.webp",
+            "heading": "Modern Elegance",
+            "description": "Step into the World of Style with the Latest Fashion Trends Unveiled!",
+            "button_label": "Explore Now",
+            "text_alignment": "center",
+            "content_position": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_dkHGtU",
+        "slide_pRdBfP",
+        "slide_ajtFnT"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -1015,6 +1060,7 @@
     "men_women_image_with_text_A6rQxL",
     "marquee_collections_HDpU8k",
     "featured_custom_collection_z8mRYN",
-    "animated_rich_text_TxFtP9"
+    "animated_rich_text_TxFtP9",
+    "hero_slider_DJLNRU"
   ]
 }

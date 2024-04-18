@@ -961,15 +961,9 @@
       "type": "week-6-email",
       "settings": {
         "heading": "Subscribe to our Newsletter",
-<<<<<<< HEAD
         "button_label": "Subscribe",
         "padding_top": 40,
         "padding_bottom": 40
-=======
-        "button_label": "subscribe",
-        "padding_top": 20,
-        "padding_bottom": 60
->>>>>>> 82416baed8543f28e104912ad376865b62623977
       }
     }
   },

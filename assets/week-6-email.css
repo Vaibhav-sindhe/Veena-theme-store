@@ -13,6 +13,7 @@
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+  height: 10rem;
 }
 .week-6-email--inputContainer .newsletter-form .week-6-email--input{
     width: 35rem;
@@ -27,4 +28,18 @@
     border-radius: 25px;
     border: none;
     background: #5C6E4A;
+}
+.newsletter-form__message {
+    position: absolute;
+    bottom: 8px;
+}
+
+@media (max-width:749px) {
+    .week-6-email--heading{
+        text-align: center;
+        color: #282824;
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 0 0 20px 0;
+    }
 }

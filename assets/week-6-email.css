@@ -47,9 +47,11 @@
     }
     .week-6-email--inputContainer .newsletter-form {
       flex-direction: row;
+      align-items: center;
+      justify-content: center;
     }
     .week-6-email--inputContainer .newsletter-form .week-6-email--input{
-        width: 35rem;
+        width: 40rem;
     }
     .week-6-email--inputContainer .newsletter-form .week-6-email--button{
         width: 25rem;

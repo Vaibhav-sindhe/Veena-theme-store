@@ -1,4 +1,8 @@
 {% assign cardProduct=product %}
 
+<div>
+<a href="{{ cardProduct.url }}">
+  <img src="{{ cardProduct.featured_image|image_url:"master" }}" height="100%" width="100%">
+  {{ cardProduct.title }}</a>
 
-<a href="{{ cardProduct.url }}">{{ cardProduct.title }}</a>
+</div>

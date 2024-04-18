@@ -314,6 +314,46 @@
         "padding_bottom": 36
       }
     },
+    "marquee_collections_zR8yLz": {
+      "type": "marquee-collections",
+      "blocks": {
+        "custom_block_W8L38t": {
+          "type": "custom-block",
+          "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_4.svg",
+            "pre_heading": "MEN'S CLOTHING COLLECTION",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "custom_block_ekptAh": {
+          "type": "custom-block",
+          "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_4.svg",
+            "pre_heading": "WOMEN'S CLOTHING COLLECTION",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "custom_block_pgzGiX": {
+          "type": "custom-block",
+          "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_5.svg",
+            "pre_heading": "NEW COLLECTION",
+            "button_label": "GRAB THIS OFFER",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom_block_W8L38t",
+        "custom_block_ekptAh",
+        "custom_block_pgzGiX"
+      ],
+      "settings": {
+        "heading": "Marquee Collections"
+      }
+    },
     "men_women_image_with_text_nh94CV": {
       "type": "men-women-image-with-text",
       "blocks": {
@@ -942,6 +982,7 @@
     "captivating_collection_DA9fLL",
     "collection_list_neQ7DV",
     "featured_collection_aFRbqt",
+    "marquee_collections_zR8yLz",
     "men_women_image_with_text_nh94CV",
     "multicolumn_MY6e9w",
     "featured_collection_UNa7Fy",

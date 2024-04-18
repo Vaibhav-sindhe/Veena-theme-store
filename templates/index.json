@@ -932,6 +932,44 @@
       "settings": {
         "heading": ""
       }
+    },
+    "marquee_collections_HDpU8k": {
+      "type": "marquee-collections",
+      "blocks": {
+        "custom_block_Bj7Vcr": {
+          "type": "custom-block",
+          "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_4.svg",
+            "pre_heading": "MEN'S CLOTHING COLLECTION",
+            "button_label": "Explore",
+            "button_link": "#"
+          }
+        },
+        "custom_block_egW9rM": {
+          "type": "custom-block",
+          "settings": {
+            "pre_heading": "Business Formal Choices",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        },
+        "custom_block_BtrVm3": {
+          "type": "custom-block",
+          "settings": {
+            "pre_heading": "Business Formal Choices",
+            "button_label": "Explore",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "custom_block_Bj7Vcr",
+        "custom_block_egW9rM",
+        "custom_block_BtrVm3"
+      ],
+      "settings": {
+        "heading": "Marquee Collections"
+      }
     }
   },
   "order": [
@@ -954,6 +992,7 @@
     "custom_faq_section_ALBUqa",
     "collapsible_content_HqAnQH",
     "letyou_know_8DGxVc",
-    "men_women_image_with_text_A6rQxL"
+    "men_women_image_with_text_A6rQxL",
+    "marquee_collections_HDpU8k"
   ]
 }

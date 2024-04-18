@@ -1,5 +1,5 @@
 .week-6{
-    padding: 2rem 5rem;
+    padding: 0 3rem;
 }
 .week-6-product ,.week-6-product img{
     object-fit: cover;
@@ -68,7 +68,7 @@
 
 @media (min-width:760px) {
     .week-6{
-        padding: 0 3rem;
+        padding: 2rem 5rem;
         display: flex;
     }
     .week-6-content--heading{

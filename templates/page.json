@@ -69,12 +69,12 @@
       "settings": {
         "heading": "Testimonials",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "color-bg": "",
+        "color-bg": "linear-gradient(259deg, rgba(251, 249, 186, 0.39) 100%, rgba(114, 255, 179, 1) 100%)",
         "auto_play": false,
         "show_pagination": true,
         "show_arrows": false,
-        "auto_play_duration": 2000,
         "perpage": 1,
+        "gap": 10,
         "Slide_animation": "slide",
         "padding_top": 30,
         "padding_bottom": 30

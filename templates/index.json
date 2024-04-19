@@ -994,78 +994,6 @@
         "heading": "FAQ",
         "description": "Ensure that your FAQs are regularly updated based on common customer queries and changes in your business operations."
       }
-    },
-    "collapsible_content_HqAnQH": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_Gq6WzU": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "1. How can I track my order?",
-            "icon": "none",
-            "row_content": "<p>Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and location of your package through our shipping carrier's website.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_DfYPEe": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "2.What is your return policy?",
-            "icon": "none",
-            "row_content": "<p>We offer a hassle-free return policy. If you're not completely satisfied with your purchase, you can return it within 30 days for a full refund or exchange. Please visit our Returns & Exchanges page for more details on the process and any eligibility criteria.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_cr8QcN": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "3. Are the product images accurate representations of the items?",
-            "icon": "none",
-            "row_content": "<p>Yes, we strive to provide accurate and high-quality images of our products. However, please note that colors may vary slightly due to differences in monitor settings. If you have any specific questions about a product, feel free to contact our customer support team.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_VePFDp": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "4. How do I determine my size?",
-            "icon": "none",
-            "row_content": "<p>To find the right size, please refer to our detailed size guide available on each product page. Measurements may vary by product, so it's essential to check the specific sizing information provided. If you have further questions or need assistance, our customer support team is here to help.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_FTzP9n": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "5. What payment methods do you accept?",
-            "icon": "none",
-            "row_content": "<p>We accept a variety of payment methods, including major credit cards (Visa, MasterCard, American Express), PayPal, and other secure payment options. During the checkout process, you can choose the payment method that suits you best.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_Gq6WzU",
-        "collapsible_row_DfYPEe",
-        "collapsible_row_cr8QcN",
-        "collapsible_row_VePFDp",
-        "collapsible_row_FTzP9n"
-      ],
-      "disabled": true,
-      "settings": {
-        "caption": "",
-        "heading": "FAQ",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -1092,7 +1020,6 @@
     "multicolumn_63kjQy",
     "letyou_know_8DGxVc",
     "featured_blog_AXCGM8",
-    "custom_faq_section_ALBUqa",
-    "collapsible_content_HqAnQH"
+    "custom_faq_section_ALBUqa"
   ]
 }

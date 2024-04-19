@@ -11,7 +11,7 @@
           <h3>{{ block.settings.heading }}</h3>
         </div>
         <div class="usp-section--block-description">
-          <p>{{ block.settings.description }}</p>
+          <p>{{ block.settings.description | replace: '<strong','<strong class="text-red"' }}</p>
         </div>
         {% if block.settings.button_label != blank %}
           <div class="usp-section--block-button">

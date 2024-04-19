@@ -1545,7 +1545,7 @@ customElements.define("product-recommendations", ProductRecommendations);
 class CustomSlider extends HTMLElement {
   constructor() {
     super();
-    this.element = this.querySelector(".splide");
+    this.element = this;
     this.options = JSON.parse(this.element.dataset.sliderSettings);
     this.mountSplider();
   }

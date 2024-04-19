@@ -10,11 +10,11 @@
         <div class="usp-section--block-heading">
           <h3>{{ block.settings.heading }}</h3>
         </div>
-        <div>
+        <div class="usp-section--block-description">
           <p>{{ block.settings.description }}</p>
         </div>
         {% if block.settings.button_label != blank %}
-          <div>
+          <div class="usp-section--block-button">
             <a class="button" href="{{ block.settings.button_link }}">{{ block.settings.button_label }}</a>
           </div>
         {% endif %}
@@ -47,12 +47,7 @@
           "label": "Desktop image",
           "info": "Recommended dimensions: 1440 x 600"
         },
-        {
-          "type": "image_picker",
-          "id": "image_mobile",
-          "label": "Mobile image",
-          "info": "Recommended dimensions: 600 x 400"
-        },
+        
         {
            "type": "text",
            "id": "heading",

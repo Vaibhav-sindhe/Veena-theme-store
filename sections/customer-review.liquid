@@ -1,45 +1,52 @@
 {{ 'customer-review.css' | asset_url | stylesheet_tag }}
-<div id="customer-review-slider" class="product-slider">
-  <div><h1 class="customer-review-heading">{{ section.settings.heading }}</h1></div>
-    <div class="splide">
-      <div class="splide__track">
-        <ul class="splide__list">
-            {% for block in section.blocks %}
-                <li class="splide__slide customer-review-splide-item">
-                    <div class="customer-review--image-container">
-                        {% render 'responsive-picture',
-                            desktopImage:  block.settings.image_desktop, 
-                            mobileImage:  block.settings.image_mobile
-                        %}
-                    </div>
-                        <div class="customer-review-splide-item--name"><p>{{block.settings.name}}</p></div>
-                        <div class="customer-review-splide-item--designation"><p>{{block.settings.designation}}</p></div>
-                        <div class="customer-review-splide-item--description">{{block.settings.description}}</div>
-                </li>
-            {% endfor %}
-        </ul>
-      </div>
+<div id="customer-review-slider" class="customer-review-wrapper product-slider">
+  <div>
+    <h1 class="customer-review--heading">{{ section.settings.heading }}</h1>
+    s
+  </div>
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for block in section.blocks %}
+          <li class="splide__slide customer-review-splide-item">
+            <div class="customer-review--image-container">
+              {% render 'responsive-picture',
+                desktopImage: block.settings.image_desktop,
+                mobileImage: block.settings.image_mobile
+              %}
+            </div>
+            <div class="customer-review-splide-item--name">
+              <p>{{ block.settings.name }}</p>
+            </div>
+            <div class="customer-review-splide-item--designation">
+              <p>{{ block.settings.designation }}</p>
+            </div>
+            <div class="customer-review-splide-item--description">{{ block.settings.description }}</div>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
+  </div>
 </div>
-<script defer src={{"https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"}}></script>
+<script defer src="{{"https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"}}"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
       var splideInstance = new Splide('#customer-review-slider .splide', {
-        type       : 'slide',
-        perPage    : 3, 
-        autoplay   : false,
-        interval   : 3000, 
-        gap        : 20, // Gap between slides
-        pagination : false,
-        perMove    : 1,
-        breakpoints: {
-          780: {
-            perPage: 1
-          }
+      type       : 'slide',
+      perPage    : 3,
+      autoplay   : false,
+      interval   : 3000,
+      gap        : 20, // Gap between slides
+      pagination : false,
+      perMove    : 1,
+      breakpoints: {
+        780: {
+          perPage: 1
         }
-      }).mount();
-    });
-  </script>
+      }
+    }).mount();
+  });
+</script>
 
 {% schema %}
 {
@@ -74,7 +81,7 @@
         {
            "type": "text",
            "id": "name",
-           "label": "name",
+           "label": "Name",
            "default": "Alex"
         },
         {

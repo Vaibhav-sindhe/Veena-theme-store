@@ -592,6 +592,9 @@
         "usp_block_eWUyJy",
         "usp_block_jEJHzc"
       ],
+      "custom_css": [
+        "strong.text-red {color: red;}"
+      ],
       "settings": {
         "heading": ""
       }

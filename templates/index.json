@@ -560,7 +560,7 @@
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/svgviewer-output_1.svg",
             "heading": "Return Shipping",
-            "description": "<p>Business Formal Choicesreturn shipping costs unless the item received is damaged, defective, or incorrect.<\/p>",
+            "description": "<p><strong>Business Formal Choicesreturn <\/strong>shipping costs unless the item received is <a href=\"\/pages\/week-5\" title=\"week-5\">damaged<\/a>, <strong>defective,<\/strong> or incorrect.<\/p>",
             "button_label": "",
             "button_link": ""
           }

@@ -549,9 +549,8 @@
           "type": "usp-block",
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/svgviewer-output.svg",
-            "image_mobile": "shopify:\/\/shop_images\/svgviewer-output.svg",
             "heading": "Daily deals",
-            "description": "<p>that bring a touch of excitement to your everyday shopping experience.<\/p>",
+            "description": "<p>that bring a touch of excitement to your everyday <strong>shopping experience.<\/strong><\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -560,7 +559,6 @@
           "type": "usp-block",
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/svgviewer-output_1.svg",
-            "image_mobile": "shopify:\/\/shop_images\/svgviewer-output_1.svg",
             "heading": "Return Shipping",
             "description": "<p>Business Formal Choicesreturn shipping costs unless the item received is damaged, defective, or incorrect.<\/p>",
             "button_label": "",
@@ -571,7 +569,6 @@
           "type": "usp-block",
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/svgviewer-output_2.svg",
-            "image_mobile": "shopify:\/\/shop_images\/svgviewer-output_2.svg",
             "heading": "secure payment",
             "description": "<p>We accept a variety of secure payment methods, including major credit cards.<\/p>",
             "button_label": "",
@@ -582,7 +579,6 @@
           "type": "usp-block",
           "settings": {
             "image_desktop": "shopify:\/\/shop_images\/svgviewer-output_3.svg",
-            "image_mobile": "shopify:\/\/shop_images\/svgviewer-output_3.svg",
             "heading": "Help center",
             "description": "<p>Absolutely, providing 24\/7 support is a great way to enhance customer satisfaction.<\/p>",
             "button_label": "",

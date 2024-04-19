@@ -617,7 +617,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/svgviewer-output_1.svg",
             "title": "Return Shipping",
-            "text": "<p>return shipping costs unless the item received is damaged, defective, or incorrect.<\/p>",
+            "text": "<p><strong>return shipping costs unless the <\/strong>item received is damaged, defective, <strong>or incorrect.<\/strong><\/p>",
             "link_label": "",
             "link": ""
           }

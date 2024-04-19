@@ -420,7 +420,7 @@
             "pre_heading": "Men's",
             "title": "<h3>Introducing Our Distinguished Men's Clothing Collection<\/h3>",
             "button_label": "Explore",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections"
           }
         },
         "custom_block_9E6Edr": {
@@ -431,7 +431,7 @@
             "pre_heading": "Women's",
             "title": "<h3>Elevate Your Wardrobe With Our Women's Clothing Collection<\/h3>",
             "button_label": "Explore",
-            "button_link": "#"
+            "button_link": "shopify:\/\/collections"
           }
         }
       },

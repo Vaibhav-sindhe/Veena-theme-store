@@ -14,12 +14,10 @@
     assign gap = section.settings.gap
   %}
   {%- capture splide_option -%}
-        {% comment %} {
+        {
             "type": "{{ type }}",
-            "pagination": {{ pagination }},
-            "perPage":{{ perpage }},
-            "gap":{{gap}}
-        } {% endcomment %}
+            "pagination": {{ pagination }}
+        }
     {% endcapture %} 
   <splider-component>
     <div class="splide" id="letyou-know-splid" data-slider-settings="{{ splide_option }}">

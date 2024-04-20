@@ -1542,17 +1542,17 @@ customElements.define("product-recommendations", ProductRecommendations);
  For more changes : https://splidejs.com/
 */
 
-// class CustomSlider extends HTMLElement {
-//   constructor() {
-//     super();
-//     this.element = this.querySelector(".splide");
-//     this.options = JSON.parse(this.element.dataset.sliderSettings);
-//     this.mountSplider();
-//     console.log(this);
-//   }
+class CustomSlider extends HTMLElement {
+  constructor() {
+    super();
+    this.element = this.querySelector(".splide");
+    this.options = JSON.parse(this.element.dataset.sliderSettings);
+    this.mountSplider();
+    console.log(this);
+  }
 
-//   mountSplider() {
-//     new Splide(this.element, this.options).mount();
-//   }
-// }
-// customElements.define("splider-component", CustomSlider);
+  mountSplider() {
+    new Splide(this.element, this.options).mount();
+  }
+}
+customElements.define("splider-component", CustomSlider);

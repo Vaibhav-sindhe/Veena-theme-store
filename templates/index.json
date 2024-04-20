@@ -899,7 +899,7 @@
             "authorName": "Alex",
             "authorTitle": "clients",
             "card-bg": "",
-            "card-active-bg": ""
+            "card-active-bg": "linear-gradient(210deg, rgba(255, 145, 129, 1), rgba(254, 91, 124, 1) 100%, rgba(255, 140, 162, 1) 100%)"
           }
         },
         "slide_44Bzm3": {
@@ -911,7 +911,7 @@
             "authorName": "Alex",
             "authorTitle": "clients",
             "card-bg": "",
-            "card-active-bg": ""
+            "card-active-bg": "linear-gradient(180deg, rgba(240, 69, 87, 1) 100%, rgba(221, 39, 57, 1) 100%)"
           }
         },
         "slide_4HNReH": {

@@ -31,7 +31,7 @@
         });
       }
     }
-    customElements.define("CustomSlider", CustomSlider);
+    customElements.define("splider-component", CustomSlider);
   
   
   

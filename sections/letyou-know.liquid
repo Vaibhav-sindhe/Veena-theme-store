@@ -4,8 +4,8 @@
 <div class="letyou_know">
   {% assign blog = section.settings.blog %}
   <div class="letyou_know--heading_container">
-    <h1>{{ section.settings.heading }}</h1>
-    <a class="button" href="{{ blog.url }}">Read all</a>
+    {% if section.settings.heading %}<h1>{{ section.settings.heading }}</h1>{% endif %}
+    {% if blog.url %}<a class="button" href="{{ blog.url }}">Read all</a>{% endif %}
   </div>
   {% liquid
     assign type = section.settings.Slide_animation
@@ -27,19 +27,21 @@
         <ul class="splide__list">
           {% for article in blog.articles %}
             <li class="splide__slide letyou_know--article ">
-              <div class="letyou_know-article--image_container">
-                {% render 'responsive-picture', desktopImage: article.image %}
-              </div>
+              {% if article.image %}
+                <div class="letyou_know-article--image_container">
+                  {% render 'responsive-picture', desktopImage: article.image %}
+                </div>
+              {% endif %}  
               <div class="letyou_know-article--content">
                 <div class="letyou_know-article-content--first">
-                  <p class="letyou_know-article-content-first--tags">{{ article.tags }}</p>
-                  <p class="letyou_know-article-content-first--title">{{ article.title }}</p>
-                  <p class="letyou_know-article-content-first--author">Published by:{{ article.author }}</p>
-                  <p class="letyou_know-article-content-first--excerpt">{{ article.excerpt }}</p>
+                  {% if article.tags %}<p class="letyou_know-article-content-first--tags">{{ article.tags }}</p>{% endif %}
+                  {% if article.title %}<p class="letyou_know-article-content-first--title">{{ article.title }}</p>{% endif %}
+                  {% if article.author %}<p class="letyou_know-article-content-first--author">Published by:{{ article.author }}</p>{% endif %}
+                  {% if article.excerpt %}<p class="letyou_know-article-content-first--excerpt">{{ article.excerpt }}</p>{% endif %}
                 </div>
                 <div class="letyou_know-article-content--second">
                   <a href="{{ article.url }}">Read more</a>
-                  <p>{{ article.published_at | date: '%B %d, %Y' }}</p>
+                  {% if article.published_at %}<p>{{ article.published_at | date: '%B %d, %Y' }}</p>{% endif %}
                 </div>
               </div>
             </li>
@@ -48,12 +50,6 @@
       </div>
     </div>
   </splider-component>
-
-  {% comment %}
-    {% for article in blog.articles %}
-        <h3>{{ article.tags }}</h3>
-    {% endfor %}
-  {% endcomment %}
 </div>
 {% schema %}
 {

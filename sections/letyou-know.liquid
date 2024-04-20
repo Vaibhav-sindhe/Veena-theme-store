@@ -1,28 +1,27 @@
 {{ 'letyou-know.css' | asset_url | stylesheet_tag }}
 
 <script src="{{ 'custom-slideshow.js' | asset_url }}" defer></script>
-
-{% liquid
-  assign type = section.settings.Slide_animation
-  assign pagination = section.settings.show_pagination
-  assign perpage = section.settings.perpage
-  assign gap = section.settings.gap
-%}
-{%- capture splide_option -%}
-    {
-      "type": "{{ type }}",
-      "pagination": {{ pagination }},
-      "perPage":{{ perpage }},
-      "gap":{{gap}}
-    } 
-{% endcapture %}
-
 <div class="letyou_know">
   {% assign blog = section.settings.blog %}
   <div class="letyou_know--heading_container">
     <h1>{{ section.settings.heading }}</h1>
     <a class="button" href="{{ blog.url }}">Read all</a>
   </div>
+  {% liquid
+    assign type = section.settings.Slide_animation
+    assign pagination = section.settings.show_pagination
+    assign perpage = section.settings.perpage
+    assign gap = section.settings.gap
+  %}
+  {%- capture splide_option -%}
+        {
+            "type": "{{ type }}",
+            "pagination": {{ pagination }},
+            "perPage":{{ perpage }},
+            "gap":{{gap}}
+        }
+    {% endcapture %}
+
   <splider-component>
     <div class="splide" id="letyou-know-splid" data-slider-settings="{{ splide_option }}">
       <div class="splide__track">
@@ -50,10 +49,16 @@
       </div>
     </div>
   </splider-component>
+
+  {% comment %}
+    {% for article in blog.articles %}
+        <h3>{{ article.tags }}</h3>
+    {% endfor %}
+  {% endcomment %}
 </div>
 {% schema %}
 {
-  "name": "Custom blog list",
+  "name": "letyou-know section",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -137,7 +142,7 @@
   ],
   "presets": [
     {
-      "name": "Custom blog list"
+      "name": "letyou-know  Section"
     }
   ]
 }

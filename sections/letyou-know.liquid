@@ -1,6 +1,6 @@
 {{ 'letyou-know.css' | asset_url | stylesheet_tag }}
 
-<script src="{{ 'custom-slideshow.js' | asset_url }}" defer></script>
+{% comment %} <script src="{{ 'custom-slideshow.js' | asset_url }}" defer></script> {% endcomment %}
 <div class="letyou_know">
   {% assign blog = section.settings.blog %}
   <div class="letyou_know--heading_container">

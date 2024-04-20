@@ -92,7 +92,30 @@
 
     </div>
 </div>    
+<script>
+    const splide;
+    const slides;
+    var productImage = document.querySelector('.week-6-product img');
+          
+    function updateProductImage(slideIndex) {
+      if(prevSlide){
+        prevSlide.classList.remove("card-active");
+      }
+        var slideElement = slides[slideIndex];
+        slideElement.classList.add("card-active");
+        prevSlide=slideElement;
+        var productImageURL = slideElement.dataset.productImg;
+        productImage.src = productImageURL;
+    }
+    
+  
+  splide.on('moved', function (newIndex) {
+      if (!isNaN(newIndex) && newIndex >= 0 && newIndex < slides.length) {
+          updateProductImage(newIndex);
+      }
+  });
 
+</script>
 
 {% schema %}
     {

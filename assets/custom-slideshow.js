@@ -6,28 +6,9 @@
         this.mountSplider(this.element.querySelectorAll('.splide__slide'))
       }
     
-      mountSplider(slides) {
-        let splide=new Splide(this.element,this.options).mount();
-          var productImage = document.querySelector('.week-6-product img');
-          let prevSlide;
-          
-          function updateProductImage(slideIndex) {
-            if(prevSlide){
-              prevSlide.classList.remove("card-active");
-            }
-              var slideElement = slides[slideIndex];
-              slideElement.classList.add("card-active");
-              prevSlide=slideElement;
-              var productImageURL = slideElement.dataset.productImg;
-              productImage.src = productImageURL;
-          }
-          
-        
-        splide.on('moved', function (newIndex) {
-            if (!isNaN(newIndex) && newIndex >= 0 && newIndex < slides.length) {
-                updateProductImage(newIndex);
-            }
-        });
+      mountSplider(slideList) {
+          splide=new Splide(this.element,this.options).mount();
+          slides=slideList;
       }
     }
     customElements.define("splider-component", CustomSlider);

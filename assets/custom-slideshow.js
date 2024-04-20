@@ -9,13 +9,16 @@
       mountSplider(slides) {
         let splide=new Splide(this.element,this.options).mount();
           var productImage = document.querySelector('.week-6-product img');
-          
+          let prevSlide;
           
           function updateProductImage(slideIndex) {
+            if(prevSlide){
+              prevSlide.classList.remove("card-active");
+            }
               var slideElement = slides[slideIndex];
               slideElement.classList.add("card-active");
+              prevSlide=slideElement;
               var productImageURL = slideElement.dataset.productImg;
-              console.log(slideElement);
               productImage.src = productImageURL;
           }
           

@@ -4,7 +4,6 @@
         this.element = this.querySelector(".splide");
         this.options = JSON.parse(this.element.dataset.sliderSettings);
         this.mountSplider(this.element.querySelectorAll('.splide__slide'))
-        console.log(this);
       }
     
       mountSplider(slides) {
@@ -14,6 +13,7 @@
           
           function updateProductImage(slideIndex) {
               var slideElement = slides[slideIndex];
+              slideElement.classList.add(".card-active");
               var productImageURL = slideElement.dataset.productImg;
               console.log(slideElement);
               productImage.src = productImageURL;

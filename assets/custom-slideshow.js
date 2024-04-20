@@ -9,11 +9,12 @@
       mountSplider(slides) {
         let splide=new Splide(this.element,this.options).mount();
           var productImage = document.querySelector('.week-6-product img');
-          let prevSlide;
+          let prevSlide=document.querySelector('card-active');
           
           function updateProductImage(slideIndex) {
             if(prevSlide){
               prevSlide.classList.remove("card-active");
+              prevSlide.classList.add("card");
             }
               var slideElement = slides[slideIndex];
               slideElement.classList.add("card-active");

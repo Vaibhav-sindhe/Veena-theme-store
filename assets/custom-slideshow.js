@@ -1,4 +1,3 @@
-console.log("Hello World!");
 class CustomSlider extends HTMLElement {
   constructor() {
     super();

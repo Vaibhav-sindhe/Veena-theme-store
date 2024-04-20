@@ -4,15 +4,17 @@
   <ul class="usp-section--container">
     {% for block in section.blocks %}
       <li class="usp-section--block">
-        {% render 'responsive-picture',
-          desktopImage: block.settings.image_desktop,
-          class:"usp-section--image-wrapper image"
-        %}
+        {% if block.settings.image_desktop!=blank %}
+          {% render 'responsive-picture',
+            desktopImage: block.settings.image_desktop,
+            class:"usp-section--image-wrapper image"
+          %}
+        {% endif %}
         <div class="usp-section--block-heading">
-          <h3>{{ block.settings.heading }}</h3>
+          {% if block.settings.heading %}<h3>{{ block.settings.heading }}</h3>{% endif %}
         </div>
         <div class="usp-section--block-description">
-          <p>{{ block.settings.description | replace: '<strong','<strong class="text-red"' }}</p>
+          {% if block.settings.description %}<p>{{ block.settings.description | replace: '<strong','<strong class="text-red"' }}</p>{% endif %}
         </div>
         {% if block.settings.button_label != blank %}
           <div class="usp-section--block-button">

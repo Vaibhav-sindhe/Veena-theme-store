@@ -1555,4 +1555,4 @@ class CustomSlider extends HTMLElement {
     new Splide(this.element, this.options).mount();
   }
 }
-customElements.define("custom-slider", CustomSlider);
+customElements.define("splider-component", CustomSlider);

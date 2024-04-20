@@ -13,7 +13,7 @@
           
           function updateProductImage(slideIndex) {
               var slideElement = slides[slideIndex];
-              slideElement.classList.add(".card-active");
+              slideElement.classList.add("card-active");
               var productImageURL = slideElement.dataset.productImg;
               console.log(slideElement);
               productImage.src = productImageURL;

@@ -10,7 +10,7 @@
         let splide=new Splide(this.element,this.options).mount();
           var productImage = document.querySelector('.week-6-product img');
           let prevSlide=document.querySelector('.card-active');
-          
+          console.log(prevSlide);
           function updateProductImage(slideIndex) {
             if(prevSlide){
               prevSlide.classList.remove("card-active");

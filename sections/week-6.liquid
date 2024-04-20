@@ -35,11 +35,22 @@
 
 <div class="week-6 page-width custom-section-padding--{{ section.id }}">
     <div class="week-6-product">
+        {% if section.blocks[0].settings.productImage!=blank %}
        <img src="{{section.blocks[0].settings.productImage|image_url}}" alt="img" width="20" height="20">
+       {% endif %}
     </div>
     <div class="week-6--content">
-        <h1 class="week-6-content--heading">{{ section.settings.heading }}</h1>
-        <p class="week-6-content--description">{{ section.settings.description }}</p>
+        <h1 class="week-6-content--heading">
+            {% if  section.settings.heading != blank %}
+                {{ section.settings.heading }}
+            {% endif %}
+        </h1>
+        
+        <p class="week-6-content--description">
+            {% if section.settings.description!=blank %}
+            {{ section.settings.description }}
+            {% endif %}
+        </p>
 
         <splider-component>
             <div class="splide" data-slider-settings='{{ splide_option }}'>
@@ -48,16 +59,18 @@
                      {% for block in section.blocks %}
                         <li class="splide__slide week-6-content--block {% if forloop.index==1 %}card-active{% else %}card{% endif %} " data-product-img="{{ block.settings.productImage | image_url }}" >
                             <div>
-                                <span class="week-6-content-block--testimonialText">{{ block.settings.testimonialText}}</span>
+                                <span class="week-6-content-block--testimonialText">{%if block.settings.testimonialText!=blank%}{{ block.settings.testimonialText}}{% endif %}</span>
                                 <div class="week-6-content-block--author">
                                     <div class="week-6-content-block-author--imageContainer">
-                                        {% render 'responsive-picture',
-                                            desktopImage:  block.settings.authorImage, 
-                                        %} 
+                                        {% if block.settings.authorImage!=blank %}
+                                            {% render 'responsive-picture',
+                                                desktopImage:  block.settings.authorImage, 
+                                            %}
+                                        {% endif %} 
                                     </div> 
                                     <div class=" week-6-content-block-author--details">
-                                        <h4>{{ block.settings.authorName }}</h4>
-                                        <p>{{ block.settings.authorTitle }}</p>
+                                        <h4>{%if block.settings.authorName%}{{ block.settings.authorName }}{% endif %}</h4>
+                                        <p>{%if block.settings.authorTitle%}{{ block.settings.authorTitle }}{% endif %}</p>
                                     </div>                          
                                 </div>
   

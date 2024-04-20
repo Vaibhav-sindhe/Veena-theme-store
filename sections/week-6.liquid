@@ -43,7 +43,12 @@
     }
 {% endcapture %}
 
-<div class="week-6 page-width custom-section-padding--{{ section.id }}" style="background: {{section.settings.color-bg}};">
+<div class="week-6 page-width custom-section-padding--{{ section.id }}">
+    {% style %}
+        .week-6{
+            background:{{section.settings.color-bg}};
+        }
+    {% endstyle %}
     <div class="week-6-product">
        <img src="{{section.blocks[0].settings.productImage|image_url}}" alt="img" width="20" height="20">
     </div>

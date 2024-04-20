@@ -25,8 +25,7 @@
 
         let splide;
         let slides;
-        var productImage = document.querySelector('.week-6-product img');
-              
+        var productImage = document.querySelector('.week-6-product img');   
         function updateProductImage(slideIndex) {
           if(prevSlide){
             prevSlide.classList.remove("card-active");
@@ -42,6 +41,7 @@
       splide.on('moved', function (newIndex) {
           if (!isNaN(newIndex) && newIndex >= 0 && newIndex < slides.length) {
               updateProductImage(newIndex);
+              console.log("moved");
           }
       });
     

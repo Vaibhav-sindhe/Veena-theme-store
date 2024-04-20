@@ -839,15 +839,6 @@
             "designation": "Influencer",
             "description": "<p>\"Obsessed with my recent purchases! The store's fashion-forward approach aligns perfectly with my style. The pieces are Instagram-worthy. His commitment to resolving issues have greatly contributed to our customer satisfaction levels.\"<\/p>"
           }
-        },
-        "review_block_h9yPba": {
-          "type": "review-block",
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/f95f7fdbbfc4dd291173284893687a4c_dc806876-cbef-49a8-b818-85e9f767bf5f.jpg",
-            "name": "jjd",
-            "designation": "jjdjd",
-            "description": "<p>Business Formal Choices<\/p>"
-          }
         }
       },
       "block_order": [
@@ -855,8 +846,7 @@
         "review_block_HxpTyk",
         "review_block_Eem4r3",
         "review_block_ixdKAk",
-        "review_block_RHyrVM",
-        "review_block_h9yPba"
+        "review_block_RHyrVM"
       ],
       "settings": {
         "heading": "Our Customers Review"

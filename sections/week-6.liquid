@@ -1,26 +1,27 @@
 {{ 'week-6.css' | asset_url | stylesheet_tag }}
 {% style %}
-  .custom-padding--{{ section.id }}{
-      padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | divided_by: 2  }}px;
-  }
-  @media screen and (min-width: 749px){
-      .custom-section-padding--{{ section.id }}{
-          padding-top: {{ section.settings.padding_top }}px;
-          padding-bottom: {{ section.settings.padding_bottom }}px;
-            }
-  }
+    .custom-padding--{{ section.id }}{
+        padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+        padding-bottom: {{ section.settings.padding_bottom | divided_by: 2  }}px;
+    }
+    @media screen and (min-width: 749px){
+        .custom-section-padding--{{ section.id }}{
+            padding-top: {{ section.settings.padding_top }}px;
+            padding-bottom: {{ section.settings.padding_bottom }}px;
+        }
+    }
 {% endstyle %}
+
 
 <script src="{{ 'custom-slideshow.js' | asset_url }}" defer></script>
 {% liquid
-  assign type = section.settings.Slide_animation
-  assign pagination = section.settings.show_pagination
-  assign perpage = section.settings.perpage
-  assign arrows = section.settings.show_arrows
-  assign pagination = section.settings.show_pagination
-  assign gap = section.settings.gap
-%}
+    assign type =section.settings.Slide_animation
+    assign pagination = section.settings.show_pagination
+    assign perpage=section.settings.perpage
+    assign arrows=section.settings.show_arrows
+    assign pagination=section.settings.show_pagination
+    assign gap=section.settings.gap
+  %}
 {%- capture splide_option -%}
     {
         "type": "{{ type }}",
@@ -33,249 +34,247 @@
 {% endcapture %}
 
 <div class="week-6 page-width custom-section-padding--{{ section.id }}">
-  <div class="week-6-product">
-    {% if section.blocks[0].settings.productImage != blank %}
-      <img src="{{section.blocks[0].settings.productImage|image_url}}" alt="img" width="20" height="20">
-    {% endif %}
-  </div>
-  <div class="week-6--content">
-    <h1 class="week-6-content--heading">
-      {% if section.settings.heading != blank %}
-        {{ section.settings.heading }}
-      {% endif %}
-    </h1>
+    <div class="week-6-product">
+        {% if section.blocks[0].settings.productImage!=blank %}
+       <img src="{{section.blocks[0].settings.productImage|image_url}}" alt="img" width="20" height="20">
+       {% endif %}
+    </div>
+    <div class="week-6--content">
+        <h1 class="week-6-content--heading">
+            {% if  section.settings.heading != blank %}
+                {{ section.settings.heading }}
+            {% endif %}
+        </h1>
+        
+        <p class="week-6-content--description">
+            {% if section.settings.description!=blank %}
+            {{ section.settings.description }}
+            {% endif %}
+        </p>
 
-    <p class="week-6-content--description">
-      {% if section.settings.description != blank %}
-        {{ section.settings.description }}
-      {% endif %}
-    </p>
+        <splider-component>
+            <div class="splide" data-slider-settings='{{ splide_option }}'>
+                <div class="splide__track">
+                  <ul class="splide__list">
+                     {% for block in section.blocks %}
+                        <li class="splide__slide week-6-content--block {% if forloop.index==1 %}card-active{% else %}card{% endif %} " data-product-img="{{ block.settings.productImage | image_url }}" >
+                            <div>
+                                <span class="week-6-content-block--testimonialText">{%if block.settings.testimonialText!=blank%}{{ block.settings.testimonialText}}{% endif %}</span>
+                                <div class="week-6-content-block--author">
+                                    <div class="week-6-content-block-author--imageContainer">
+                                        {% if block.settings.authorImage!=blank %}
+                                            {% render 'responsive-picture',
+                                                desktopImage:  block.settings.authorImage, 
+                                            %}
+                                        {% endif %} 
+                                    </div> 
+                                    <div class=" week-6-content-block-author--details">
+                                        <h4>{%if block.settings.authorName%}{{ block.settings.authorName }}{% endif %}</h4>
+                                        <p>{%if block.settings.authorTitle%}{{ block.settings.authorTitle }}{% endif %}</p>
+                                    </div>                          
+                                </div>
+  
+                            </div>
+                        </li> 
+                        {% style %}
+                            .week-6{
+                                background:{{section.settings.color-bg}};
+                            }
+                            .card{
+                                background:{{ block.settings.card-bg}}
+                            }
+                            .card-active{
+                                background:{{ block.settings.card-active-bg }}
+                            }
+                        {% endstyle %}   
+                     {% endfor %}   
+                  </ul>
+                </div>  
+            </div>      
+        </splider-component>
 
-    <splider-component>
-      <div class="splide" data-slider-settings="{{ splide_option }}">
-        <div class="splide__track">
-          <ul class="splide__list">
-            {% for block in section.blocks %}
-              <li
-                class="splide__slide week-6-content--block {% if forloop.index==1 %}card-active{% else %}card{% endif %} "
-                data-product-img="{{ block.settings.productImage | image_url }}"
-              >
-                <div>
-                  <span class="week-6-content-block--testimonialText">
-                    {%- if block.settings.testimonialText != blank %}{{ block.settings.testimonialText }}{% endif -%}
-                  </span>
-                  <div class="week-6-content-block--author">
-                    <div class="week-6-content-block-author--imageContainer">
-                      {% if block.settings.authorImage != blank %}
-                        {% render 'responsive-picture', desktopImage: block.settings.authorImage %}
-                      {% endif %}
-                    </div>
-                    <div class=" week-6-content-block-author--details">
-                      <h4>
-                        {% if block.settings.authorName %}{{ block.settings.authorName }}{% endif %}
-                      </h4>
-                      <p>
-                        {% if block.settings.authorTitle %}{{ block.settings.authorTitle }}{% endif %}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              {% style %}
-                .week-6{
-                    background:{{section.settings.color-bg}};
-                }
-                .card{
-                    background:{{ block.settings.card-bg}}
-                }
-                .card-active{
-                    background:{{ block.settings.card-active-bg }}
-                }
-              {% endstyle %}
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </splider-component>
-  </div>
-</div>
+    </div>
+</div>    
+
 
 {% schema %}
-{
-    "name":"week-6",
-    "tag":"section",
-    "class":"Section",
-    "settings":[
-        {
-            "type": "text",
-            "id": "heading",
-            "label": "Heading",
-            "default": "Testimonials"
-        },
-        {
-            "type": "textarea",
-            "id": "description",
-            "label": "description",
-            "default": "describe"
-        },
-        {
-            "type": "color_background",
-            "id": "color-bg",
-            "label": "Background"
-        },
-        {
-            "type": "header",
-            "content": "splider options"
-        },
-        {
-            "type": "checkbox",
-            "id":"auto_play",
-            "label":"Enable auto play",
-            "default":false
-        },
-        {
-            "type": "checkbox",
-            "id":"show_pagination",
-            "label":"Show dots",
-            "default":false
-        },
-        {
-            "type": "checkbox",
-            "id":"show_arrows",
-            "label":"Show arrows",
-            "default":false
-        },
-        {
-            "type": "range",
-            "id": "perpage",
-            "min": 1,
-            "max": 4,
-            "step": 1,
-            "label": "perpage",
-            "default": 2
-        },
-        {
-            "type": "range",
-            "id": "gap",
-            "min": 5,
-            "max": 50,
-            "step": 5,
-            "label": "gap",
-            "default": 10
-        },
-        {
-            "type": "header",
-            "content": "Animation options"
-        },
-        {
-            "type": "select",
-            "id": "Slide_animation",
-            "label": "Slide animation",
-            "options": [
-                {
-                "value": "fade",
-                "label": "Fade"
-                },
-                {
-                    "value": "slide",
-                    "label": "slide"
-                },
-                {
-                        "value": "loop",
-                        "label": "Loop"
-                }
-            ],
-            "default": "slide"
-        },
-        {
-            "type": "header",
-            "content": "Section padding"
-        },
-        {
-            "type": "range",
-            "id": "padding_top",
-            "min": 0,
-            "max": 100,
-            "step": 10,
-            "unit": "px",
-            "label": "padding top",
-            "default": 0
-        },
-        {
-            "type": "range",
-            "id": "padding_bottom",
-            "min": 0,
-            "max": 100,
-            "step": 10,
-            "unit": "px",
-            "label": "padding bottom",
-            "default": 0
-        }
-    ],
-    "blocks": [
-        {
-            "type": "Slide",
-            "name": "Slide",
-            "settings": [
-                {
-                    "type": "header",
-                    "content":"Media positions"
-                },
-                {
-                    "type": "image_picker",
-                    "id": "productImage",
-                    "label": "Product image",
-                    "info": "Recommended size :1360  x 633 px."
-                },
-                {
-                    "type": "image_picker",
-                    "id": "authorImage",
-                    "label": "Author image"
-                },
-                {
-                    "type": "header",
-                    "content": "Text customization"
-                },
-                {
-                    "type": "richtext",
-                    "id": "testimonialText",
-                    "label": "Testimonial text",
-                    "default": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>"
-                },
-                {
-                    "type": "text",
-                    "id": "authorName",
-                    "label": "Author name",
-                    "default":"Mr. John Doe"
-                },
-                {
-                    "type": "text",
-                    "id": "authorTitle",
-                    "label": "Author title",
-                    "default":"clients",
-                    "placeholder": "clients"
-                },
-                {
-                    "type": "header",
-                    "content": "Background customization"
-                },
-                {
-                    "type": "color_background",
-                    "id": "card-bg",
-                    "label": "Card background"
-                },
-                {
-                    "type": "color_background",
-                    "id": "card-active-bg",
-                    "label": "Active card background"
-                }
-            ]
-        }
-    ],
-    "presets": [
-        {
-            "name":"week-6"
-        }
-    ]
-}
+    {
+        "name":"week-6",
+        "tag":"section",
+        "class":"Section",
+        "settings":[
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Testimonials"
+            },
+            {
+                "type": "textarea",
+                "id": "description",
+                "label": "description",
+                "default": "describe"
+            },
+            {
+                "type": "color_background",
+                "id": "color-bg",
+                "label": "Background"
+            },
+            {
+                "type": "header",
+                "content": "splider options"
+            },
+            {
+                "type": "checkbox",
+                "id":"auto_play",
+                "label":"Enable auto play",
+                "default":false
+            },
+            {
+                "type": "checkbox",
+                "id":"show_pagination",
+                "label":"Show dots",
+                "default":false
+            },
+            {
+                "type": "checkbox",
+                "id":"show_arrows",
+                "label":"Show arrows",
+                "default":false
+            },
+            {
+                "type": "range",
+                "id": "perpage",
+                "min": 1,
+                "max": 4,
+                "step": 1,
+                "label": "perpage",
+                "default": 2
+            },
+            {
+                "type": "range",
+                "id": "gap",
+                "min": 5,
+                "max": 50,
+                "step": 5,
+                "label": "gap",
+                "default": 10
+            },
+            {
+                "type": "header",
+                "content": "Animation options"
+            },
+            {
+                "type": "select",
+                "id": "Slide_animation",
+                "label": "Slide animation",
+                "options": [
+                    {
+                    "value": "fade",
+                    "label": "Fade"
+                    },
+                    {
+                        "value": "slide",
+                        "label": "slide"
+                    },
+                    {
+                            "value": "loop",
+                            "label": "Loop"
+                    }
+                ],
+                "default": "slide"
+            },
+            {
+                "type": "header",
+                "content": "Section padding"
+            },
+            {
+                "type": "range",
+                "id": "padding_top",
+                "min": 0,
+                "max": 100,
+                "step": 10,
+                "unit": "px",
+                "label": "padding top",
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "padding_bottom",
+                "min": 0,
+                "max": 100,
+                "step": 10,
+                "unit": "px",
+                "label": "padding bottom",
+                "default": 0
+            }
+        ],
+        "blocks": [
+            {
+                "type": "Slide",
+                "name": "Slide",
+                "settings": [
+                    {
+                        "type": "header",
+                        "content":"Media positions"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "productImage",
+                        "label": "Product image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "authorImage",
+                        "label": "Author image"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Text customization"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "testimonialText",
+                        "label": "Testimonial text",
+                        "default": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>"
+                    },
+                    {
+                        "type": "text",
+                        "id": "authorName",
+                        "label": "Author name",
+                        "default":"Mr. John Doe"
+                    },
+                    {
+                        "type": "text",
+                        "id": "authorTitle",
+                        "label": "Author title",
+                        "default":"clients",
+                        "placeholder": "clients"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Background customization"
+                    },
+                    {
+                        "type": "color_background",
+                        "id": "card-bg",
+                        "label": "Card background"
+                    },
+                    {
+                        "type": "color_background",
+                        "id": "card-active-bg",
+                        "label": "Active card background"
+                    }                             
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name":"week-6"
+            }
+        ]
+    }
+    
+
+
 {% endschema %}

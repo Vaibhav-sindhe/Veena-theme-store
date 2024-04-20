@@ -13,6 +13,7 @@
     assign perpage = section.settings.perpage
     assign gap = section.settings.gap
   %}
+<<<<<<< HEAD
  {%-capture -%}
    {
     "type": "{{ type }}",
@@ -21,8 +22,18 @@
     "gap": {{ gap }}
    }
  {% endcapture %}
+=======
+  {%- capture splide_option -%}
+        {
+            "type": "{{ type }}",
+            "pagination": {{ pagination }},
+            "perPage":{{ perpage }},
+            "gap":{{gap}}
+        }
+    {% endcapture %}
+>>>>>>> 97f6f6cc4ac4fe3b04408275bb4bd8f911cccb6e
   <splider-component>
-    <div class="splide" id="letyou-know-splid" >
+    <div class="splide" id="letyou-know-splid" data-slider-settings="{{ splide_option }}">
       <div class="splide__track">
         <ul class="splide__list">
           {% for article in blog.articles %}

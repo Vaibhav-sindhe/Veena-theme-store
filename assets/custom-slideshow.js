@@ -1,30 +1,14 @@
-// class CustomSlider extends HTMLElement {
-//   constructor() {
-//     super();
-//     console.log("entered");
-//     this.element = this.querySelector(".splide");
-//     this.options = JSON.parse(this.element.dataset.sliderSettings);
-//     this.mountSplider();
-//   }
-
-//   mountSplider() {
-//     new Splide(this.element, this.options).mount();
-//   }
-// }
-// customElements.define("splider-component", CustomSlider); 
-
-
 class CustomSlider extends HTMLElement {
   constructor() {
     super();
     this.element = this.querySelector(".splide");
+    console.log(this.element);
     this.options = JSON.parse(this.element.dataset.sliderSettings);
-    this.mountSplider()
+    this.mountSplider();
   }
 
   mountSplider() {
-    new Splide(this.element,this.options).mount();
+    new Splide(this.element, this.options).mount();
   }
 }
-
 customElements.define("splider-component", CustomSlider);

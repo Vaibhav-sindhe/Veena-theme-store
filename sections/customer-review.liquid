@@ -1,8 +1,7 @@
 {{ 'customer-review.css' | asset_url | stylesheet_tag }}
 <div id="customer-review-slider" class="customer-review-wrapper product-slider">
   <div>
-    <h1 class="customer-review--heading">{{ section.settings.heading }}</h1>
-    s
+    {% if section.settings.heading %}<h1 class="customer-review--heading">{{ section.settings.heading }}</h1>{% endif %}
   </div>
   <div class="splide">
     <div class="splide__track">
@@ -10,18 +9,19 @@
         {% for block in section.blocks %}
           <li class="splide__slide customer-review-splide-item">
             <div class="customer-review--image-container">
-              {% render 'responsive-picture',
-                desktopImage: block.settings.image_desktop,
-                mobileImage: block.settings.image_mobile
-              %}
+              {% if block.settings.image_desktop %}
+                {% render 'responsive-picture',
+                  desktopImage: block.settings.image_desktop,
+                %}
+              {% endif %}  
             </div>
             <div class="customer-review-splide-item--name">
-              <p>{{ block.settings.name }}</p>
+              {% if block.settings.name %}<p>{{ block.settings.name }}</p>{% endif %}
             </div>
             <div class="customer-review-splide-item--designation">
-              <p>{{ block.settings.designation }}</p>
+              {% if block.settings.designation %}<p>{{ block.settings.designation }}</p>{%  endif %}
             </div>
-            <div class="customer-review-splide-item--description">{{ block.settings.description }}</div>
+            {% if block.settings.description %}<div class="customer-review-splide-item--description">{{ block.settings.description }}</div>{% endif %}
           </li>
         {% endfor %}
       </ul>
@@ -36,7 +36,7 @@
       perPage    : 3,
       autoplay   : false,
       interval   : 3000,
-      gap        : 20, // Gap between slides
+      gap        : 20,
       pagination : false,
       perMove    : 1,
       breakpoints: {
@@ -69,15 +69,8 @@
         {
           "type": "image_picker",
           "id": "image_desktop",
-          "label": "Desktop image",
-          "info": "Recommended dimensions: 1440 x 600"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_mobile",
-          "label": "Mobile image",
-          "info": "Recommended dimensions: 600 x 400"
-        },
+          "label": "Desktop image"
+        },      
         {
            "type": "text",
            "id": "name",

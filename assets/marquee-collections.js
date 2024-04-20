@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     var marquee = document.querySelector('.custom-marquee div');
-    var contentWidth = marquee.offsetWidth;
+    // var contentWidth = marquee.offsetWidth;
 
     function startAnimation() {
         var animationDuration = contentWidth / 50; // Adjust the speed of animation

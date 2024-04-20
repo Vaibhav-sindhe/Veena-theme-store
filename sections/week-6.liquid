@@ -12,17 +12,7 @@
     }
 {% endstyle %}
 
-<script>
-    var blocksData = [
-        {% for block in section.blocks %}
-            {
-                "settings": {
-                    "productImage": "{{ block.settings.productImage }}"
-                }
-            }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-    ];
-</script>
+
 <script src="{{ 'custom-slideshow.js' | asset_url }}" defer></script>
 {% liquid
     assign type =section.settings.Slide_animation

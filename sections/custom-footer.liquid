@@ -2,9 +2,9 @@
 <div>
    {% for block in section.blocks %}
      <p>{{ block.settings.title }}</p>
-     {% for item in block.settings.link_list %}
-        <p>{{ item }}</p>
-     {% endfor %}
+     <script>
+        console.log( block.settings.link_list);
+     </script>   
    {% endfor %}    
 </div>
 {% schema %}

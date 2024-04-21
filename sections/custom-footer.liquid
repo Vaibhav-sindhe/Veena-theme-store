@@ -1,10 +1,7 @@
 <h1>Hello world</h1>
 <div>
     {% for block in section.settings.blocks %}
-        <script>
-            console.log({{block}});
-
-        </script>      
+        <h1>{{ block.settings.link_list }}</h1>      
     {% endfor %}    
 </div>
 {% schema %}

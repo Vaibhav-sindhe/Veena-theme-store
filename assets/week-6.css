@@ -100,5 +100,11 @@
         margin: auto;
         padding: 1rem;
     }
-    
+    .week-6-login h2{
+        text-align: center;
+        font-weight: 600;
+    }
+    .week-6-login a{
+        text-align: center;
+    }
 }

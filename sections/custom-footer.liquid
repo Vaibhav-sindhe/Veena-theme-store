@@ -1,8 +1,8 @@
 <h1>Hello world</h1>
 <div>
-    {% for block in section.settings.blocks %}
-        <h1>{{ block.settings.title }}</h1>
-    {% endfor %}    
+   {% for block in section.settings.blocks %}
+     <p>{{ block.title }}</p>
+   {% endfor %}    
 </div>
 {% schema %}
 {

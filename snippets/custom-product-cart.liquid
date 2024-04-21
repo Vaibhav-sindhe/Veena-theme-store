@@ -1,12 +1,13 @@
-{% assign cardProduct=product %}
+{% assign cardProduct = product %}
 
 <div>
-<a href="{{ cardProduct.url }}">
   <!-- <img src="{{ cardProduct.featured_image|image_url:"master" }}" height="100%" width="100%"> -->
 
-  {% render 'responsive-picture',
-    desktopImage:cardProduct.featured_image, 
-  %}
-  {{ cardProduct.title }}</a>
-
+  {% render 'responsive-picture', desktopImage: cardProduct.featured_image %}
+  <h1>{{ product.title }}</h1>
+  <p>{{ product.description }}</p>
+  <p>{{ product.price }}</p>
+  <p>{{ product.compare_at_price }}</p>
+  <p>{{ product.tags }}</p>
+  <p>{{ product.variants }}</p>
 </div>

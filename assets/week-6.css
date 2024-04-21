@@ -93,5 +93,10 @@
     .week-6-content--block{
         width: 35rem !important;
     }
+    .week-6-login{
+        width: 20%;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
     
 }

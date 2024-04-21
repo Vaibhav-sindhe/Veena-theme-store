@@ -1,7 +1,7 @@
 <h1>Hello world</h1>
 <div>
     {% for block in section.settings.blocks %}
-        <h1>{{ block.settings.link_list }}</h1>      
+        <h1>{{ block.settings.title }}</h1>
     {% endfor %}    
 </div>
 {% schema %}
@@ -21,6 +21,12 @@
       "type": "footer-block",
       "name": "Footer block",
       "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "placeholder": "Contact"
+        },
         {
             "type": "link_list",
             "id": "link-list",

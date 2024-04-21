@@ -8,12 +8,14 @@
         "footer_block_M7GjpV": {
           "type": "footer-block",
           "settings": {
+            "title": "hmkkkkkk",
             "link-list": "footer"
           }
         },
         "footer_block_8UFLgC": {
           "type": "footer-block",
           "settings": {
+            "title": "",
             "link-list": "main-menu"
           }
         }

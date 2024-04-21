@@ -2,6 +2,29 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_footer_9rc8KU": {
+      "type": "custom-footer",
+      "blocks": {
+        "footer_block_M7GjpV": {
+          "type": "footer-block",
+          "settings": {
+            "link-list": "footer"
+          }
+        },
+        "footer_block_8UFLgC": {
+          "type": "footer-block",
+          "settings": {
+            "link-list": "main-menu"
+          }
+        }
+      },
+      "block_order": [
+        "footer_block_M7GjpV",
+        "footer_block_8UFLgC"
+      ],
+      "settings": {
+      }
+    },
     "footer": {
       "type": "footer",
       "disabled": true,
@@ -22,6 +45,7 @@
     }
   },
   "order": [
+    "custom_footer_9rc8KU",
     "footer"
   ]
 }

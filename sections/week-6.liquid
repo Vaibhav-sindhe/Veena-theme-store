@@ -34,6 +34,7 @@
 {% endcapture %}
 
 <div class="week-6 page-width custom-section-padding--{{ section.id }}">
+   {% if customer %} 
     <div class="week-6-product">
         {% if section.blocks[0].settings.productImage!=blank %}
        <img src="{{section.blocks[0].settings.productImage|image_url}}" alt="img" width="20" height="20">
@@ -94,6 +95,11 @@
         </splider-component>
 
     </div>
+   {% else %}
+     <div class="week-6-login">
+        <h2>Please login</h2>
+     </div>
+   {% endif %} 
 </div>    
 
 

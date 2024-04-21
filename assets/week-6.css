@@ -66,7 +66,6 @@
     background: #5C6E4A;
 }
 .week-6-login{
-    width: 12%;
     border: 2px solid black;
     border-radius: 20px;
     margin: auto;
@@ -107,5 +106,8 @@
     }
     .week-6-content--block{
         width: 35rem !important;
+    }
+    .week-6-login{
+        width: 12%;
     }
 }

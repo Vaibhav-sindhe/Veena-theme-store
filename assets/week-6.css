@@ -97,6 +97,8 @@
         width: 12%;
         border: 2px solid black;
         border-radius: 20px;
+        margin: auto;
+        padding: 1rem;
     }
     
 }

@@ -856,7 +856,14 @@
         "review_block_RHyrVM"
       ],
       "settings": {
-        "heading": "Our Customers Review"
+        "heading": "Our Customers Review",
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": true,
+        "auto_play_duration": 2000,
+        "perpage": 3,
+        "gap": 15,
+        "Slide_animation": "slide"
       }
     },
     "multicolumn_63kjQy": {

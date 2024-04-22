@@ -1,10 +1,26 @@
 {{ 'captivating-section.css' | asset_url | stylesheet_tag }}
+{% liquid
+  assign type = section.settings.Slide_animation
+  assign pagination = section.settings.show_pagination
+  assign perpage = section.settings.perpage
+  assign gap = section.settings.gap
+%}
+{%- capture splide_option -%}
+      {
+          "type": "slide",
+          "pagination":false,
+          "perPage":5,
+      }
+{% endcapture %}
+
+
 <div id="captivating-slider" class="product-slider">
   <div class="captivating-section-heading">
     <h1 class="captivating-section-heading">{{ section.settings.heading }}</h1>
     <a class="button captivating-section-heading--button" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
   </div>
-    <div class="splide">
+  <splider-component>
+    <div class="splide" data-slider-settings='{{ splide_option }}'>
       <div class="splide__track">
         <ul class="splide__list">
             {% for block in section.blocks %}
@@ -26,10 +42,12 @@
         </ul>
       </div>
     </div>
+  </splider-component>
+
 </div>
 
-<script defer src={{"https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"}}></script>
-<script>
+{% comment %} <script defer src={{"https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"}}></script> {% endcomment %}
+{% comment %} <script>
     document.addEventListener('DOMContentLoaded', function () {
       var splideInstance = new Splide('#captivating-slider .splide', {
         type       : 'slide',
@@ -52,9 +70,11 @@
         }
       }).mount();
     });
-  </script>
+</script> {% endcomment %}
 
-{% schema %}
+
+
+  {% schema %}
 {
   "name": "captivating section",
   "tag": "section",

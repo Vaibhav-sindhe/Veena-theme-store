@@ -1006,7 +1006,9 @@
     "demo_productcart_itU7Fh": {
       "type": "demo-productcart",
       "settings": {
-        "product": "",
+        "product_list": [
+          "classic-baseball-hat"
+        ],
         "name": ""
       }
     }

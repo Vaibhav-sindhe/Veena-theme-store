@@ -1,40 +1,59 @@
 {{ 'customer-review.css' | asset_url | stylesheet_tag }}
+{% liquid
+  assign autoPlay=section.settings.auto_play
+  assign type = section.settings.Slide_animation
+  assign pagination = section.settings.show_pagination
+  assign perpage = section.settings.perpage
+  assign gap = section.settings.gap
+%}
+{%- capture splide_option -%}
+      {
+          "type": "{{ type }}",
+          "pagination": {{ pagination }},
+          "perPage":{{ perpage }},
+          "autoplay":{{ autoPlay }},
+          "gap":{{gap}}
+      }
+  {% endcapture %}
 <div id="customer-review-slider" class="customer-review-wrapper product-slider">
   <div>
     {% if section.settings.heading %}
       <h1 class="customer-review--heading">{{ section.settings.heading }}</h1>
     {% endif %}
   </div>
-  <div class="splide">
-    <div class="splide__track">
-      <ul class="splide__list">
-        {% for block in section.blocks %}
-          <li class="splide__slide customer-review-splide-item">
-            <div class="customer-review--image-container">
-              {% if block.settings.image_desktop %}
-                {% render 'responsive-picture', desktopImage: block.settings.image_desktop %}
+  <splider-component>
+    <div class="splide" data-slider-settings='{{ splide_option }}'>
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for block in section.blocks %}
+            <li class="splide__slide customer-review-splide-item">
+              <div class="customer-review--image-container">
+                {% if block.settings.image_desktop %}
+                  {% render 'responsive-picture', desktopImage: block.settings.image_desktop %}
+                {% endif %}
+              </div>
+              <div class="customer-review-splide-item--name">
+                {% if block.settings.name %}
+                  <p>{{ block.settings.name }}</p>
+                {% endif %}
+              </div>
+              <div class="customer-review-splide-item--designation">
+                {% if block.settings.designation %}
+                  <p>{{ block.settings.designation }}</p>
+                {% endif %}
+              </div>
+              {% if block.settings.description %}
+                <div class="customer-review-splide-item--description">{{ block.settings.description }}</div>
               {% endif %}
-            </div>
-            <div class="customer-review-splide-item--name">
-              {% if block.settings.name %}
-                <p>{{ block.settings.name }}</p>
-              {% endif %}
-            </div>
-            <div class="customer-review-splide-item--designation">
-              {% if block.settings.designation %}
-                <p>{{ block.settings.designation }}</p>
-              {% endif %}
-            </div>
-            {% if block.settings.description %}
-              <div class="customer-review-splide-item--description">{{ block.settings.description }}</div>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
-  </div>
+  </splider-component>
+
 </div>
-<script defer src="{{"https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"}}"></script>
+{% comment %} <script defer src="{{"https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"}}"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
       var splideInstance = new Splide('#customer-review-slider .splide', {
@@ -52,7 +71,7 @@
       }
     }).mount();
   });
-</script>
+</script> {% endcomment %}
 
 {% schema %}
 {
@@ -65,7 +84,73 @@
       "id": "heading",
       "label": "Heading",
       "default": "Review"
-    }
+    },
+    {
+      "type": "checkbox",
+      "id":"auto_play",
+      "label":"Enable auto play",
+      "default":false
+  },
+  {
+      "type": "checkbox",
+      "id":"show_pagination",
+      "label":"Show dots",
+      "default":false
+  },
+  {
+      "type": "checkbox",
+      "id":"show_arrows",
+      "label":"Show arrows",
+      "default":false
+  },
+  {
+      "type": "range",
+      "id": "auto_play_duration",
+      "min": 1000,
+      "max": 5000,
+      "step": 1000,
+      "unit": "sec",
+      "label": "Autoplay duration",
+      "default": 2000
+  },
+  {
+      "type": "range",
+      "id": "perpage",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Perpage",
+      "default": 2
+  },
+  {
+      "type": "range",
+      "id": "gap",
+      "min": 5,
+      "max": 40,
+      "step": 5,
+      "label": "Gap",
+      "default": 5
+  },
+  {
+      "type": "select",
+      "id": "Slide_animation",
+      "label": "Slide animation",
+      "options": [
+          {
+              "value": "fade",
+              "label": "Fade"
+          },
+          {
+              "value": "slide",
+              "label": "Slide"
+          },
+          {
+              "value": "loop",
+              "label": "Loop"
+          }
+      ],
+      "default": "slide"
+  }
   ],
   "blocks": [
     {

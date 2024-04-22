@@ -6,12 +6,11 @@
   assign gap = section.settings.gap
 %}
 {%- capture splide_option -%}
-    {
-      "type": "{{ type }}",
-      "pagination": {{ pagination }},
-      "perPage":{{ perpage }},
-      "gap":{{gap}}
-    }
+      {
+          "type": "slide",
+          "pagination":false,
+          "perPage":5
+      }
 {% endcapture %}
 
 

@@ -1,5 +1,5 @@
 {{ 'usp-section.css' | asset_url | stylesheet_tag }}
-<div class="usp-section">
+<div class="usp-section" id="{{ section.id }}">
   {%if section.settings.heading %} <h1>{{ section.settings.heading }}</h1>{% endif %}
   <ul class="usp-section--container">
     {% for block in section.blocks %}

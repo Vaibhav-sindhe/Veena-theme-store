@@ -988,6 +988,15 @@
         "heading": "FAQ",
         "description": "Ensure that your FAQs are regularly updated based on common customer queries and changes in your business operations."
       }
+    },
+    "demo_productcart_itU7Fh": {
+      "type": "demo-productcart",
+      "settings": {
+        "product_list": [
+
+        ],
+        "name": ""
+      }
     }
   },
   "order": [
@@ -1014,6 +1023,7 @@
     "multicolumn_63kjQy",
     "letyou_know_8DGxVc",
     "featured_blog_AXCGM8",
-    "custom_faq_section_ALBUqa"
+    "custom_faq_section_ALBUqa",
+    "demo_productcart_itU7Fh"
   ]
 }

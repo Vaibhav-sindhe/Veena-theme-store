@@ -5,12 +5,28 @@
   %}
   {% endfor %}
   <button class="generate">Generate</button>
+  <div id="appendContainer"></div>
 </h2>
 <script>
   let btn=document.querySelector(".generate");
   btn.addEventListener("click",()=>{
     console.log("clicked");
+    append();
   });
+
+
+  function append(){
+    fetch("/?section_id=template--14907459665984__customer_review_3ihimd")
+    .then(response=>response.text())
+    .then((responseText) => {
+        const html = new DOMParser().parseFromString(responseText,'text/html');
+        const container = document.getElementById("appendContainer");
+        const content = html.querySelector("body")
+        console.log(content);
+        container.innerHTML = content.innerHTML;
+    })
+}
+
 </script>  
 {% schema %}
   {

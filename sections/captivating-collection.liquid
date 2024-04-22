@@ -9,7 +9,18 @@
       {
           "type": "slide",
           "pagination":false,
-          "perPage":5
+          "perPage":5,
+          "breakpoints": {
+            1000:{
+              "perPage":3
+           },
+            768: {
+              "perPage": 2
+            },
+            480: {
+              "perPage": 2
+            }
+          }
       }
 {% endcapture %}
 

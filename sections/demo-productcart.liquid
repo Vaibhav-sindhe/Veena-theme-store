@@ -1,12 +1,12 @@
-<h2>
-  {% for product in section.settings.product_list %}
+<div>
+{% for product in section.settings.product_list %}
   {% render
      "custom-product-cart", product:product
   %}
   {% endfor %}
   <button class="generate">Generate</button>
   <div id="appendContainer"></div>
-</h2>
+</div>
 <script>
   let btn=document.querySelector(".generate");
   btn.addEventListener("click",()=>{
@@ -16,7 +16,7 @@
 
 
   function append(){
-    fetch("/?section_id=template--14907459665984__customer_review_3ihimd")
+    fetch("/?section_id=MainProduct-template--14907460059200__main")
     .then(response=>response.text())
     .then((responseText) => {
         const html = new DOMParser().parseFromString(responseText,'text/html');
@@ -33,9 +33,9 @@
     "name": "demo productcart section",
     "settings": [
       {
-        "type": "product_list",
-        "id":"product_list",
-        "label":"Product list"
+        "type": "product",
+        "id": "product",
+        "label": "Product"
       },
       {
         "type":"text",

@@ -2,6 +2,20 @@
   <h1>Hello world</h1>
   {% for block in section.blocks %}
     {{ block.settings.title }}
+    {%- if block.settings.list != blank -%}
+      <ul class="footer-block">
+        {%- for link in block.settings.list.links -%}
+          <li>
+            <a
+              href="{{ link.url }}"
+              class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+            >
+              {{ link.title }}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {% endif %}  
   {% endfor %}  
 </div>  
 
@@ -31,7 +45,7 @@
         },
         {
             "type": "link_list",
-            "id": "link-list",
+            "id": "list",
             "label": "options"
         }
       ]

@@ -1,7 +1,9 @@
 {{ 'customer-review.css' | asset_url | stylesheet_tag }}
 <div id="customer-review-slider" class="customer-review-wrapper product-slider">
   <div>
-    {% if section.settings.heading %}<h1 class="customer-review--heading">{{ section.settings.heading }}</h1>{% endif %}
+    {% if section.settings.heading %}
+      <h1 class="customer-review--heading">{{ section.settings.heading }}</h1>
+    {% endif %}
   </div>
   <div class="splide">
     <div class="splide__track">
@@ -10,18 +12,22 @@
           <li class="splide__slide customer-review-splide-item">
             <div class="customer-review--image-container">
               {% if block.settings.image_desktop %}
-                {% render 'responsive-picture',
-                  desktopImage: block.settings.image_desktop,
-                %}
-              {% endif %}  
+                {% render 'responsive-picture', desktopImage: block.settings.image_desktop %}
+              {% endif %}
             </div>
             <div class="customer-review-splide-item--name">
-              {% if block.settings.name %}<p>{{ block.settings.name }}</p>{% endif %}
+              {% if block.settings.name %}
+                <p>{{ block.settings.name }}</p>
+              {% endif %}
             </div>
             <div class="customer-review-splide-item--designation">
-              {% if block.settings.designation %}<p>{{ block.settings.designation }}</p>{%  endif %}
+              {% if block.settings.designation %}
+                <p>{{ block.settings.designation }}</p>
+              {% endif %}
             </div>
-            {% if block.settings.description %}<div class="customer-review-splide-item--description">{{ block.settings.description }}</div>{% endif %}
+            {% if block.settings.description %}
+              <div class="customer-review-splide-item--description">{{ block.settings.description }}</div>
+            {% endif %}
           </li>
         {% endfor %}
       </ul>
@@ -70,7 +76,7 @@
           "type": "image_picker",
           "id": "image_desktop",
           "label": "Desktop image"
-        },      
+        },
         {
            "type": "text",
            "id": "name",

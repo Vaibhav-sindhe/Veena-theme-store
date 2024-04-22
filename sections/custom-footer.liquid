@@ -3,12 +3,11 @@
   {% for block in section.blocks %}
     {{ block.settings.title }}
     {%- if block.settings.list != blank -%}
-      <ul class="footer-block">
+      <ul class="footer-block" >
         {%- for link in block.settings.list.links -%}
-          <li>
+          <li style="list-style: none;">
             <a
               href="{{ link.url }}"
-              class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
             >
               {{ link.title }}
             </a>

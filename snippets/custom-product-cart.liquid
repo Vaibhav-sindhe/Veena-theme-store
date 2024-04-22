@@ -3,12 +3,13 @@
 <div>
   <!-- <img src="{{ cardProduct.featured_image|image_url:"master" }}" height="100%" width="100%"> -->
 
-  {% render 'responsive-picture', desktopImage: cardProduct.featured_image %}
-  <h1>{{ product.title }}</h1>
+  {% comment %} {% render 'responsive-picture', desktopImage: cardProduct.featured_image %} {% endcomment %}
+  {% render "card-product" product%}
+  {% comment %} <h1>{{ product.title }}</h1>
   <p>{{ product.description }}</p>
   <p>{{ product.price }}</p>
   <p>{{ product.compare_at_price }}</p>
   <p>{{ product.tags }}</p>
   <p>{{ product.variants }}</p>
-  <a href="{{ product.url }}" class="button">Shop now</a>
+  <a href="{{ product.url }}" class="button">Shop now</a> {% endcomment %}
 </div>

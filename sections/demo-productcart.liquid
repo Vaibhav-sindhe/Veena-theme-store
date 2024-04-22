@@ -4,8 +4,14 @@
      "custom-product-cart", product:product
   %}
   {% endfor %}
-  <button>Generate</button>
+  <button class="generate">Generate</button>
 </h2>
+<script>
+  let btn=document.querySelector(".generate");
+  btn.addEventListner(("click")=>{
+    console.log("clicked");
+  })
+</script>  
 {% schema %}
   {
     "name": "demo productcart section",

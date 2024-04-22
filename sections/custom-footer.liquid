@@ -2,11 +2,17 @@
 <div>
    {% for block in section.blocks %}
      <p>{{ block.settings.title }}</p>
-     {% for link in block.settings['link-list'] %}
-        <a href="{{ link.url }}">{{ link.title }}</a>
-    {% endfor %}
+     {% if block.settings.link_list.size > 0 %}
+       <ul>
+       {% for link in block.settings.link_list %}
+         <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+       {% endfor %}
+       </ul>
+     {% endif %}
    {% endfor %}    
 </div>
+
+
 {% schema %}
 {
   "name": "custom Footer section",

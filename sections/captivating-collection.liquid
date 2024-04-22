@@ -6,11 +6,12 @@
   assign gap = section.settings.gap
 %}
 {%- capture splide_option -%}
-      {
-          "type": "slide",
-          "pagination":false,
-          "perPage":5
-      }
+{
+  "type": "{{ type }}",
+  "pagination": {{ pagination }},
+  "perPage":{{ perpage }},
+  "gap":{{gap}}
+}
 {% endcapture %}
 
 
@@ -87,6 +88,72 @@
       "default": "Heading"
     },
     {
+      "type": "checkbox",
+      "id":"auto_play",
+      "label":"Enable auto play",
+      "default":false
+    },
+    {
+      "type": "checkbox",
+      "id":"show_pagination",
+      "label":"Show dots",
+      "default":false
+    },
+    {
+      "type": "checkbox",
+      "id":"show_arrows",
+      "label":"Show arrows",
+      "default":false
+    },
+    {
+      "type": "range",
+      "id": "auto_play_duration",
+      "min": 1000,
+      "max": 5000,
+      "step": 1000,
+      "unit": "sec",
+      "label": "Autoplay duration",
+      "default": 2000
+    },
+    {
+      "type": "range",
+      "id": "perpage",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Perpage",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 5,
+      "max": 40,
+      "step": 5,
+      "label": "Gap",
+      "default": 5
+    },
+    {
+      "type": "select",
+      "id": "Slide_animation",
+      "label": "Slide animation",
+      "options": [
+          {
+              "value": "fade",
+              "label": "Fade"
+          },
+          {
+              "value": "slide",
+              "label": "Slide"
+          },
+          {
+              "value": "loop",
+              "label": "Loop"
+          }
+      ],
+      "default": "slide"
+    },
+    {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
@@ -113,12 +180,6 @@
           "id": "title",
           "label": "title",
           "default": "fashion"
-        },
-        {
-          "type": "checkbox",
-          "id": "auto_play",
-          "label": "Enable auto play",
-          "default": false
         },
         {
           "type": "text",

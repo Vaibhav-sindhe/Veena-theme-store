@@ -9,20 +9,28 @@
           "type": "footer-block",
           "settings": {
             "title": "hmkkkkkk",
-            "link-list": "footer"
+            "list": "quick-links"
           }
         },
         "footer_block_8UFLgC": {
           "type": "footer-block",
           "settings": {
-            "title": "",
-            "link-list": "main-menu"
+            "title": "Information",
+            "list": "information"
+          }
+        },
+        "footer_block_DtJ4cz": {
+          "type": "footer-block",
+          "settings": {
+            "title": "Extras",
+            "list": "extra"
           }
         }
       },
       "block_order": [
         "footer_block_M7GjpV",
-        "footer_block_8UFLgC"
+        "footer_block_8UFLgC",
+        "footer_block_DtJ4cz"
       ],
       "settings": {
       }

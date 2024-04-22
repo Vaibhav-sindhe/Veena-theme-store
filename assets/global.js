@@ -1542,7 +1542,7 @@ customElements.define("product-recommendations", ProductRecommendations);
  For more changes : https://splidejs.com/
 */
 
-class CustomSlider extends HTMLElement {
+class spliderComponent extends HTMLElement {
   constructor() {
     super();
     this.element = this.querySelector(".splide");
@@ -1554,4 +1554,4 @@ class CustomSlider extends HTMLElement {
     new Splide(this.element, this.options).mount();
   }
 }
-customElements.define("splider-component", CustomSlider);
+customElements.define("splider-component", spliderComponent);

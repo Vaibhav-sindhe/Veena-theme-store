@@ -5,6 +5,7 @@
      {% if block.settings.link_list.size > 0 %}
        <ul>
        {% for link in block.settings.link_list %}
+         <li>in</li>
          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
        {% endfor %}
        </ul>

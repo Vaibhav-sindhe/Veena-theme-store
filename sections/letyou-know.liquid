@@ -8,6 +8,7 @@
     {% if blog.url %}<a class="button" href="{{ blog.url }}">Read all</a>{% endif %}
   </div>
   {% liquid
+    assign autoPlay=section.settings.auto_play
     assign type = section.settings.Slide_animation
     assign pagination = section.settings.show_pagination
     assign perpage = section.settings.perpage
@@ -18,6 +19,7 @@
             "type": "{{ type }}",
             "pagination": {{ pagination }},
             "perPage":{{ perpage }},
+            "autoplay":{{ autoPlay }},
             "gap":{{gap}}
         }
     {% endcapture %}

@@ -142,60 +142,10 @@
               "gradient_color_name": "pink",
               "gradient_color": "#ea0de7"
             }
-          },
-          "solid_color_KL93xQ": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "",
-              "solid_color": "",
-              "gradient_color_name": "",
-              "gradient_color": ""
-            }
-          },
-          "solid_color_F8BhWm": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "",
-              "solid_color": "",
-              "gradient_color_name": "",
-              "gradient_color": ""
-            }
-          },
-          "solid_color_YjfBtk": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "",
-              "solid_color": "",
-              "gradient_color_name": "",
-              "gradient_color": ""
-            }
-          },
-          "solid_color_LQATqm": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "",
-              "solid_color": "",
-              "gradient_color_name": "",
-              "gradient_color": ""
-            }
-          },
-          "solid_color_dReFdi": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "",
-              "solid_color": "",
-              "gradient_color_name": "",
-              "gradient_color": ""
-            }
           }
         },
         "block_order": [
-          "solid_color_VR8KYi",
-          "solid_color_KL93xQ",
-          "solid_color_F8BhWm",
-          "solid_color_YjfBtk",
-          "solid_color_LQATqm",
-          "solid_color_dReFdi"
+          "solid_color_VR8KYi"
         ],
         "settings": {
           "heading": ""

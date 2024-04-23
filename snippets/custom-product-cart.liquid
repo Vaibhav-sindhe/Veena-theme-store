@@ -69,9 +69,9 @@
           desktopImage: featured_image,
           class: 'media media--portrait'
         %}
-        <div class="product-card__secondary-image">
+        {% comment %} <div class="product-card__secondary-image">
           {% render "image", desktopImage: secondary_image, class:"media media--portrait" %}
-        </div>
+        </div> {% endcomment %}
       </div>
       
       {% if current_variant.inventory_quantity != 0 %}

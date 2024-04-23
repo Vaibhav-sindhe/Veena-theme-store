@@ -134,6 +134,13 @@
       "swatches": {
         "type": "swatches",
         "blocks": {
+          "solid_color_Hq8Dkp": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "black",
+              "solid_color": "#100000"
+            }
+          },
           "solid_color_VR8KYi": {
             "type": "solid-color",
             "settings": {
@@ -150,6 +157,7 @@
           }
         },
         "block_order": [
+          "solid_color_Hq8Dkp",
           "solid_color_VR8KYi",
           "solid_color_XKq3Dx"
         ],

@@ -62,7 +62,7 @@
       <a href="{{ product.url }}" 
          class="media media--portrait"
          style="padding-bottom: 150%;">
-         {% render 'responsive-picture' , product.featured_image %}
+         <img src="{{ featured_media |img_url }}" height="100" width="200">
       </a>
     
     

@@ -137,15 +137,65 @@
           "solid_color_VR8KYi": {
             "type": "solid-color",
             "settings": {
+              "solid_color_name": "pink",
+              "solid_color": "#ea0de7",
+              "gradient_color_name": "",
+              "gradient_color": "#130f0f"
+            }
+          },
+          "solid_color_KL93xQ": {
+            "type": "solid-color",
+            "settings": {
               "solid_color_name": "",
               "solid_color": "",
               "gradient_color_name": "",
-              "gradient_color": "#f42d2d"
+              "gradient_color": ""
+            }
+          },
+          "solid_color_F8BhWm": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "",
+              "solid_color": "",
+              "gradient_color_name": "",
+              "gradient_color": ""
+            }
+          },
+          "solid_color_YjfBtk": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "",
+              "solid_color": "",
+              "gradient_color_name": "",
+              "gradient_color": ""
+            }
+          },
+          "solid_color_LQATqm": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "",
+              "solid_color": "",
+              "gradient_color_name": "",
+              "gradient_color": ""
+            }
+          },
+          "solid_color_dReFdi": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "",
+              "solid_color": "",
+              "gradient_color_name": "",
+              "gradient_color": ""
             }
           }
         },
         "block_order": [
-          "solid_color_VR8KYi"
+          "solid_color_VR8KYi",
+          "solid_color_KL93xQ",
+          "solid_color_F8BhWm",
+          "solid_color_YjfBtk",
+          "solid_color_LQATqm",
+          "solid_color_dReFdi"
         ],
         "settings": {
           "heading": ""

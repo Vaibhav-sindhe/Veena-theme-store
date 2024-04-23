@@ -1,7 +1,7 @@
 <style>
   {% for block in section.settings.blocks%}
     .custom .color-swatch--{{block.settings.title | handleize}}{
-      background:{{block.settings.title}}
+      background:{{block.settings.solid_color}}
     }
   {% endfor %}
 </style>

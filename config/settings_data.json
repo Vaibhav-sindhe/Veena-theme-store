@@ -138,14 +138,20 @@
             "type": "solid-color",
             "settings": {
               "solid_color_name": "pink",
-              "solid_color": "#ea0de7",
-              "gradient_color_name": "pink",
-              "gradient_color": "#ea0de7"
+              "solid_color": "#ea0de7"
+            }
+          },
+          "solid_color_XKq3Dx": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "blue",
+              "solid_color": "#0061ff"
             }
           }
         },
         "block_order": [
-          "solid_color_VR8KYi"
+          "solid_color_VR8KYi",
+          "solid_color_XKq3Dx"
         ],
         "settings": {
           "heading": ""

@@ -1,3 +1,10 @@
+<style>
+    {% for block in section.blocks %}
+      .custom .color-swatch--{{ block.settings.title | handleize }}{
+        background:{{ block.settings.solid_color }};
+      }
+    {% endfor %}
+  </style>
 {% schema %}
 {
     "name":"Swatches",

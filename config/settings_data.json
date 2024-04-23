@@ -139,8 +139,8 @@
             "settings": {
               "solid_color_name": "pink",
               "solid_color": "#ea0de7",
-              "gradient_color_name": "",
-              "gradient_color": "#130f0f"
+              "gradient_color_name": "pink",
+              "gradient_color": "#ea0de7"
             }
           },
           "solid_color_KL93xQ": {

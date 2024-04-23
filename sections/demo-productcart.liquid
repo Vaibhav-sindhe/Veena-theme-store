@@ -1,7 +1,7 @@
 <div>
 {% for product in section.settings.product_list %}
   {% render
-     "custom-product-cart", product:product
+     "custom-product-card", product:product
   %}
   {% endfor %}
   <button class="generate">Generate</button>

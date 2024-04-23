@@ -1,7 +1,14 @@
 <style>
   {% for block in section.blocks %}
     .custom .color-swatch--{{ block.settings.solid_color_name }}{
+      height:5rem;
+      width:5rem;
+      border-radius:50%;
+      {% if block.settings.swatch-image != blank %}
+      background:url("{{ block.settings.swatch-image | img_url:"small" }}") fixed no-repeat center/cover;
+      {% else %}
       background:{{ block.settings.solid_color }}!important;
+      {% endif %}
     }
   {% endfor %}
 </style>

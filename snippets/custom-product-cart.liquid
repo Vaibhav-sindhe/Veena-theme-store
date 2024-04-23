@@ -7,35 +7,37 @@
       {% render 'responsive-picture', desktopImage: cardProduct.featured_image %}
     </div>
     <div class="custom-product-card--media-collection">
-      {% for image in product.images %}
+       {% for image in product.images %}
         <div>{% render 'responsive-picture', desktopImage: image.src %}</div>
-      {% endfor %}
-    </div>
+       {% endfor %} 
+    </div>  
   </div>
   <div class="custom-product-card--content">
     <h1>{{ product.title }}</h1>
-    <p>{{ product.price | money }}</p>
+    <p>{{ product.price | money}}</p>
     {% for variant in product.variants %}
       <p>{{ variant.title }}</p>
-    {% endfor %}
+    {% endfor %} 
     <a class="button">Add to cart</a>
-    <a href="{{ product.url }}" class="button">Buy It now</a>
+    <a href="{{ product.url }}" class="button">Buy It now</a> 
     <div id="usp-container"></div>
     <p>{{ product.description }}</p>
   </div>
 </div>
 
+
 <script>
-    window.onload = append();
-    function append(){
-      fetch("/?section_id=template--14907459665984__usp_section_7dQ83b")
-      .then(response=>response.text())
-      .then((responseText) => {
-          const html = new DOMParser().parseFromString(responseText,'text/html');
-          const container = document.getElementById("usp-container");
-          const content = html.querySelector("body")
-          console.log(content);
-          container.innerHTML = content.innerHTML;
-      })
-  }
-</script>
+  window.onload = append();
+  function append(){
+    fetch("/?section_id=template--14907243724864__usp_section_7dQ83b")
+    .then(response=>response.text())
+    .then((responseText) => {
+        const html = new DOMParser().parseFromString(responseText,'text/html');
+        const container = document.getElementById("usp-container");
+        const content = html.querySelector("body")
+        console.log(content);
+        container.innerHTML = content.innerHTML;
+    })
+}
+
+</script>  

@@ -1,7 +1,13 @@
 {% schema %}
 {
     "name":"Swatches",
-    "settings": [],
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        }
+    ],
     "blocks": [
         {
             "name":"solid color",
@@ -29,6 +35,11 @@
                 }
             ]
         }
-    ]
+    ],
+    "presets": [
+        {
+          "name": "Swatches"
+        }
+      ]
 }
 {% endschema %}

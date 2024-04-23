@@ -134,18 +134,32 @@
       "swatches": {
         "type": "swatches",
         "blocks": {
+          "solid_color_Hq8Dkp": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "black",
+              "solid_color": "#100000"
+            }
+          },
           "solid_color_VR8KYi": {
             "type": "solid-color",
             "settings": {
               "solid_color_name": "pink",
-              "solid_color": "#ea0de7",
-              "gradient_color_name": "pink",
-              "gradient_color": "#ea0de7"
+              "solid_color": "#ea0de7"
+            }
+          },
+          "solid_color_XKq3Dx": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "blue",
+              "solid_color": "#0061ff"
             }
           }
         },
         "block_order": [
-          "solid_color_VR8KYi"
+          "solid_color_Hq8Dkp",
+          "solid_color_VR8KYi",
+          "solid_color_XKq3Dx"
         ],
         "settings": {
           "heading": ""

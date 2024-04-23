@@ -290,7 +290,7 @@
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
-
+    {% sections 'Swatches' %}
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
@@ -349,6 +349,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    <script src="{{ "splide.min.js" | asset_url }}" ></script>
+    <script src="{{ "splide.min.js" | asset_url }}"></script>
   </body>
 </html>

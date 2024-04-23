@@ -282,7 +282,7 @@
         "show_pagination": false,
         "show_arrows": true,
         "auto_play_duration": 2000,
-        "perpage": 3,
+        "perpage": 5,
         "gap": 5,
         "Slide_animation": "slide",
         "button_label": "View  All",
@@ -866,60 +866,6 @@
         "Slide_animation": "slide"
       }
     },
-    "multicolumn_63kjQy": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_mpk3my": {
-          "type": "column",
-          "settings": {
-            "title": "Emma Watson",
-            "text": "<p>\"Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story. My followers can't get enough. His empathy, patience and expertise in fostering a positive environment is truly commendable.\"<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_QKbWQK": {
-          "type": "column",
-          "settings": {
-            "title": "James Harper",
-            "text": "<p>\"As a fashion editor, I've seen it all. This store stands out with its curated selection and attention to detail. The clothing is not just fashion; it's art in motion. His effective communication and ability to motivate and guide the sales team is second to none.\"<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_nrheeQ": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Sarah Mitchell<\/strong>",
-            "text": "<p>\"A go-to destination for my clients. The diversity in styles is impressive, catering to every taste. The quality and elegance never disappoint. Her quick response and innovative solutions make him an invaluable asset to our team.\"<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_mpk3my",
-        "column_QKbWQK",
-        "column_nrheeQ"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Our Customers Review",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "letyou_know_8DGxVc": {
       "type": "letyou-know",
       "settings": {
@@ -1034,7 +980,6 @@
     "bottom_banner_a4zm9F",
     "image_banner_kaJN3D",
     "customer_review_3ihimd",
-    "multicolumn_63kjQy",
     "letyou_know_8DGxVc",
     "featured_blog_AXCGM8",
     "custom_faq_section_ALBUqa",

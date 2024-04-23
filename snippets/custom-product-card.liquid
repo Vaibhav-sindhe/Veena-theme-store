@@ -52,13 +52,13 @@
 
         <div class="product-card__form">
           {% form 'product', product %}
-            <input type="hidden" name="id" value="{{ current_variant.id }}">          
+            <input type="hidden" name="id" value="{{ current_variant.id}}">          
               {% if product.options_with_values %}
                   <div class="product-card__options">
                       {% for product_option in product.options_with_values %}
                           {% if product_option.name == "Color" %}
                               <div class="product-card__option">
-                                  <ul class="product-card__list">
+                                  <ul class="custom product-card__list">
                                     {% for option_value in product_option.values %}
                                       {% assign isOptionOutOfStock = false %}
                                       
@@ -66,7 +66,7 @@
                                           {% assign isOptionOutOfStock = true %}
                                       {% endif %}
                                       
-                                      <li data-value={{ option_value }} class="product-card__color-dot item-swatch{% if isOptionOutOfStock %} out-of-stock{% endif %}" style="{% if product_option.selected_value == option_value %}border: 1px solid red;{% endif %}">
+                                      <li data-value={{ option_value }} class="color-swatch--{{ option_value | handleize }} product-card__color-dot item-swatch{% if isOptionOutOfStock %} out-of-stock{% endif %}" style="{% if product_option.selected_value == option_value %}border: 1px solid red;{% endif %}">
                                           <input 
                                               id="{{ current_variant.id | append: option_value }}"
                                               type="radio" 

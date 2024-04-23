@@ -282,7 +282,7 @@
         "show_pagination": false,
         "show_arrows": true,
         "auto_play_duration": 2000,
-        "perpage": 5,
+        "perpage": 3,
         "gap": 5,
         "Slide_animation": "slide",
         "button_label": "View  All",

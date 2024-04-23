@@ -130,6 +130,26 @@
         "settings": {
           "color_scheme": "scheme-1"
         }
+      },
+      "swatches": {
+        "type": "swatches",
+        "blocks": {
+          "solid_color_VR8KYi": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "",
+              "solid_color": "",
+              "gradient_color_name": "",
+              "gradient_color": "#f42d2d"
+            }
+          }
+        },
+        "block_order": [
+          "solid_color_VR8KYi"
+        ],
+        "settings": {
+          "heading": ""
+        }
       }
     },
     "content_for_index": [

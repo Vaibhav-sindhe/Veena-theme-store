@@ -1,6 +1,6 @@
 {{ 'custom-hotspot.css' | asset_url | stylesheet_tag }}
 
-{% comment %} {% style %}
+{% style %}
     .padding-{{ section.id }} {
       padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
       padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
@@ -161,7 +161,7 @@
         {% endfor %}
       </div>
     </div>
-  </div> {% endcomment %}
+  </div>
 
   {% schema %}
   {

@@ -162,13 +162,21 @@
               "solid_color_name": "lightslategray",
               "solid_color": "#547f9b"
             }
+          },
+          "solid_color_4x3EfM": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "peachpuff",
+              "solid_color": "#d1cd97"
+            }
           }
         },
         "block_order": [
           "solid_color_Hq8Dkp",
           "solid_color_VR8KYi",
           "solid_color_XKq3Dx",
-          "solid_color_JafHAh"
+          "solid_color_JafHAh",
+          "solid_color_4x3EfM"
         ],
         "settings": {
           "heading": ""

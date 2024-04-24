@@ -138,8 +138,7 @@
             "type": "solid-color",
             "settings": {
               "solid_color_name": "black",
-              "solid_color": "#000000",
-              "swatch-image": "shopify:\/\/shop_images\/1_3fab3b03-7c09-4682-8dc5-063f0d445ead.webp"
+              "solid_color": "#000000"
             }
           },
           "solid_color_VR8KYi": {
@@ -159,8 +158,22 @@
           "solid_color_JafHAh": {
             "type": "solid-color",
             "settings": {
-              "solid_color_name": "",
-              "solid_color": ""
+              "solid_color_name": "lightslategray",
+              "solid_color": "#547f9b"
+            }
+          },
+          "solid_color_4x3EfM": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "peachpuff",
+              "solid_color": "#d1cd97"
+            }
+          },
+          "solid_color_qGTaFL": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "moccasin",
+              "solid_color": "#fff12e"
             }
           }
         },
@@ -168,7 +181,9 @@
           "solid_color_Hq8Dkp",
           "solid_color_VR8KYi",
           "solid_color_XKq3Dx",
-          "solid_color_JafHAh"
+          "solid_color_JafHAh",
+          "solid_color_4x3EfM",
+          "solid_color_qGTaFL"
         ],
         "settings": {
           "heading": ""

@@ -269,14 +269,20 @@
 
 /* assignment css */
 
-.product-card-container{
+.splide-card-container{
     padding:0 5rem;
     display:flex;
-    gap:2rem
-  }
-  .product-card-container .splide__slide{
-    width: 50rem;
-  }  
+    gap:2rem;
+    width:50rem;
+    border: 2px solid red;
+    position: relative;
+}
+.product-card{
+    padding:0 5rem;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
   .product-card__image{
     height:38rem;
     width:30rem;

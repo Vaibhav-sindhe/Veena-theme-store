@@ -179,13 +179,13 @@
     "gap":{{gap}}
   }
   {% endcapture %}
-  <div class="product-card-container">
+  <div class="splide-card-container product-card page-width">
     <splider-component>
       <div class="splide" data-slider-settings='{{ splide_option }}'>
         <div class="splide__track">
           <ul class="splide__list">
             {% for product in section.settings.product_list %}
-              <li class="splide__slide captivating-splide-item">
+              <li class="splide__slide">
                 {% render
                   "custom-product-card", product:product
                 %}

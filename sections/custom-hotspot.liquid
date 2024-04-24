@@ -35,17 +35,33 @@
     }
 {% endstyle %}
 
+{% liquid
+  assign autoPlay=section.settings.auto_play
+  assign type = section.settings.Slide_animation
+  assign pagination = section.settings.show_pagination
+  assign perpage = section.settings.perpage
+  assign gap = section.settings.gap
+%}
+{%- capture splide_option -%}
+{
+  "type": "{{ type }}",
+  "pagination": {{ pagination }},
+  "perPage":{{ perpage }},
+  "autoplay":{{ autoPlay }},
+  "gap":{{gap}}
+}
+{% endcapture %} 
 <div class="shop-the-look padding-{{ section.id }}">
     <div class="page-width">
       <div class="shop-the-look--box">
             <div class="shop-the-look__poster">
                 {% for block in section.blocks %}
-              <div class="shop-the-look__dots shop-the-look-primary-{{ block.id }}">
+              <div id="dot-{{ forloop.index }}" class="shop-the-look__dots  shop-the-look-primary-{{ block.id }}">
                   <svg class="shop-the-look__dot" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
                       <circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="currentColor"></circle>
                   </svg>
                   {% if block.settings.dot_product != blank %}
-                    <div class="shop-the-look__product tr1">
+                    <div id="hotspot-product" class="shop-the-look__product tr1 hotspot-product">
                     <div class="shop-the-look__product-image">
                       {% render 'responsive-picture', desktopImage:block.settings.dot_product.featured_image %}
                     </div>
@@ -64,7 +80,7 @@
 
                       <div>
                         <a href="{{ block.settings.dot_product.url }}" class="view-product">
-                            View Product 
+                            Add to bag
                             <span><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 1L5 5L1 9" stroke="#8d5d48" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg></span>
@@ -87,42 +103,38 @@
               {% endif %}
             </div>
       </div>
+      <div class="splide-card-container product-card ">
+        <splider-component>
+          <div class="splide" data-slider-settings='{{ splide_option }}'>
+            <div class="splide__track">
+              <ul class="splide__list">
+                {% for product in section.settings.product_list %}
+                  <li class="splide__slide">
+                    {% render
+                      "custom-product-card", product:product
+                    %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </splider-component>
+      </div>
     </div>
   </div>
 
-  {% liquid
-    assign autoPlay=section.settings.auto_play
-    assign type = section.settings.Slide_animation
-    assign pagination = section.settings.show_pagination
-    assign perpage = section.settings.perpage
-    assign gap = section.settings.gap
-  %}
-  {%- capture splide_option -%}
-  {
-    "type": "{{ type }}",
-    "pagination": {{ pagination }},
-    "perPage":{{ perpage }},
-    "autoplay":{{ autoPlay }},
-    "gap":{{gap}}
-  }
-  {% endcapture %}
-  <div class="splide-card-container product-card ">
-    <splider-component>
-      <div class="splide" data-slider-settings='{{ splide_option }}'>
-        <div class="splide__track">
-          <ul class="splide__list">
-            {% for product in section.settings.product_list %}
-              <li class="splide__slide">
-                {% render
-                  "custom-product-card", product:product
-                %}
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </splider-component>
-  </div>
+
+  <script>
+    let dot=document.querySelector("#dot-1");
+    console.log("hello");
+    console.log(dot);
+    dot.addEventListener("click",()=>{
+      product=dot.querySelector('.hotspot-product');
+      console.log(product);
+      product.classList.toggle("display-prodct");
+    })
+  </script> 
+
 
   {% schema %}
   {

@@ -104,10 +104,10 @@
     width: 314px;
 }
 
-.shop-the-look_dots:hover .shop-the-look--box .shop-the-look_product {
+.shop-the-look_dots:hover .shop-the-look__product {
     left: 3rem;
-    opacity: 1;
-    visibility: unset;
+    opacity: 1 !important;
+    visibility: unset !important;
 }
 
 .shop-the-look__product a {
@@ -621,4 +621,22 @@
     .splide-card-container .product-card__quick-view-button {
       display: none;
     }
+  }
+
+
+
+
+
+
+  .page-width{
+    display: flex;
+  }
+  .splide-card-container{
+    right: 30px;
+    top: 30px;
+    background: white;
+  }
+  .display-prodct{
+    visibility: unset !important;
+    opacity: 1 !important;
   }

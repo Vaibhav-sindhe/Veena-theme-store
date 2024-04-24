@@ -962,27 +962,8 @@
     },
     "custom_hotspot_fBwpnV": {
       "type": "custom-hotspot",
-      "blocks": {
-        "product_rRtrDN": {
-          "type": "product",
-          "settings": {
-            "desktop_image": "shopify:\/\/shop_images\/4bc2e7575e888685a5e58e845af2c7b4.png",
-            "primary_left_position": 76,
-            "primary_top_position": 0,
-            "primary_product": "",
-            "secondary_left_position": 20,
-            "secondary_top_position": 20,
-            "secondary_product": "",
-            "third_left_position": 20,
-            "third_top_position": 20,
-            "third_product": "classic-baseball-hat"
-          }
-        }
-      },
-      "block_order": [
-        "product_rRtrDN"
-      ],
       "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/4bc2e7575e888685a5e58e845af2c7b4.png",
         "product_list": [
           "high-performance-snow-goggles",
           "winter-snow-cap",

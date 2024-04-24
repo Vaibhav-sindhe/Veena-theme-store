@@ -301,110 +301,45 @@
     ],
     "blocks": [
       {
-        "name":"Hotspot block",
-        "type": "product",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "header",
-            "content":"Product"
-          },
-          {
-            "type": "image_picker",
-            "id":"desktop_image",
-            "label": "Desktop Image",
-            "info": "Recommended size: 1440 x 600 px"
-          },
-          {
-            "type": "header",
-            "content":"First Dot"
-          },
-          {
-            "type": "range",
-            "id":"primary_left_position",
-            "label": "Distance from left",
-            "min":0,
-            "max":100,
-            "step": 1,
-            "default":20,
-            "info": "Distance is measured in percentage(%)"
-        },
-        {
-            "type": "range",
-            "id":"primary_top_position",
-            "label": "Distance from top",
-            "min":0,
-            "max":100,
-            "step": 1,
-            "default":20,
-            "info": "Distance is measured in percentage(%)"
-        },
-        {
-          "type": "product",
-          "id": "primary_product",
-          "label": "First Product"
-        },
-        {
-          "type": "header",
-          "content":"Second Dot"
-        },
-        {
-            "type": "range",
-            "id":"secondary_left_position",
-            "label": "Distance from left",
-            "min":10,
-            "max":100,
-            "step": 1,
-            "default":20,
-            "info": "Distance is measured in percentage(%)"
-        },
-        {
-            "type": "range",
-            "id":"secondary_top_position",
-            "label": "Distance from top",
-            "min":10,
-            "max":100,
-            "step": 1,
-            "default":20,
-            "info": "Distance is measured in percentage(%)"
-        },
-        {
-          "type": "product",
-          "id": "secondary_product",
-          "label": "Second Product"
-        },
-        {
-          "type": "header",
-          "content":"Third Dot"
-        },
-        {
-            "type": "range",
-            "id":"third_left_position",
-            "label": "Distance from left",
-            "min":10,
-            "max":100,
-            "step": 1,
-            "default":20,
-            "info": "Distance is measured in percentage(%)"
-        },
-        {
-            "type": "range",
-            "id":"third_top_position",
-            "label": "Distance from top",
-            "min":10,
-            "max":100,
-            "step": 1,
-            "default":20,
-            "info": "Distance is measured in percentage(%)"
-        },
-        {
-          "type": "product",
-          "id": "third_product",
-          "label": "Third Product"
-        }
-        ]
+          "name": "Block",
+          "type": "Dots",
+          "settings": [
+              {
+                  "type": "header",
+                  "content":"Dot position"
+              },
+              {
+                  "type": "range",
+                  "id":"primary_left_position",
+                  "label": "Distance from left",
+                  "min":0,
+                  "max":100,
+                  "step": 1,
+                  "default":20,
+                  "info": "Distance is measured in percentage(%)"
+              },
+              {
+                  "type": "range",
+                  "id":"primary_top_position",
+                  "label": "Distance from top",
+                  "min":0,
+                  "max":100,
+                  "step": 1,
+                  "default":20,
+                  "info": "Distance is measured in percentage(%)"
+              },
+              {
+                  "type": "header",
+                  "content":"Product"
+              },
+              {
+                "type": "product",
+                "id": "dot_product",
+                "label": "Product"
+              }
+          ]
       }
-    ],
+  ],
     "presets": [
       {
         "name": "Hotspot section"

@@ -360,7 +360,7 @@
   .splide-card-container .product-card__price-amount {
     font-size: 18px;
     font-weight: 700;
-    color: #000;
+    color: red;
   }
   .splide-card-container .product-card__stock {
     font-size: 14px;

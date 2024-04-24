@@ -51,56 +51,53 @@
   "gap":{{gap}}
 }
 {% endcapture %} 
-<div class="shop-the-look padding-{{ section.id }}">
-    <div class="page-width">
-      <div class="shop-the-look--box">
-            <div class="shop-the-look__poster">
+<div class="hotspot padding-{{ section.id }} page-width">
+    <div class="hotspot-section">
+      <div class="hotspot-section--container">
+            <div class="hotspot-section-container--poster">
+              {% if section.settings.desktop_image != blank %}
+                <div class="media">
+                  {% render 'responsive-picture', desktopImage:section.settings.desktop_image %}
+                </div>
+              {% endif %}
                 {% for block in section.blocks %}
-              <div id="dot-{{ forloop.index }}" class="shop-the-look__dots  shop-the-look-primary-{{ block.id }}">
-                  <svg class="shop-the-look__dot" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
+              <div id="dot-{{ forloop.index }}" class="hotspot-section-container-poster--dots  shop-the-look-primary-{{ block.id }}">
+                  <svg class="hotspot-section-container-poster-dots--dot" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
                       <circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="currentColor"></circle>
                   </svg>
                   {% if block.settings.dot_product != blank %}
-                    <div id="hotspot-product" class="shop-the-look__product tr1 hotspot-product">
-                    <div class="shop-the-look__product-image">
+                    <div id="hotspot-product" class="hotspot-section-container-poster--product tr1 hotspot-product">
+                    <div class="hotspot-section-container-poster--product-image">
                       {% render 'responsive-picture', desktopImage:block.settings.dot_product.featured_image %}
                     </div>
-                    <div class="shop-the-look-product-details">
+                    <div class="hotspot-section-container-poster--product-details">
                       {% if block.settings.dot_product.title != blank and block.settings.dot_product.url != blank %}
-                        <h2 class="h5">
+                        <p>
                           <a href="{{ block.settings.dot_product.url }}">
                           {{ block.settings.dot_product.title }}
                           </a>
-                        </h2>
+                        </p>
                       {% endif %}
-                    
-                      {% if block.settings.dot_product.price != blank %}
-                        <s>{{ block.settings.dot_product.price | money_without_trailing_zeros }}.00</s>                    
-                      {% endif %}
+                      <div class="product-details--amountDiv">
+                        {% if block.settings.dot_product.compare_at_price !=blank %}
+                          <p class="product-details--compPrice">{{block.settings.dot_product.compare_at_price | money }}</p>
+                        {% endif %} 
+                        {% if block.settings.dot_product.price != blank %}
+                          <p class="product-details--price">{{ block.settings.dot_product.price | money }}.00</p>                    
+                        {% endif %}
+                    </div> 
 
                       <div>
-                        <a href="{{ block.settings.dot_product.url }}" class="view-product">
-                            Add to bag
-                            <span><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L5 5L1 9" stroke="#8d5d48" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg></span>
-                          </a>
+                        <form action="/cart/add" method="post">
+                          <input type="hidden" name="id" value="{{ block.settings.dot_product.variants.first.id }}">
+                          <button type="submit" class="btn btn--small">Add to bag</button>
+                      </form>
                     </div>
                     </div>
                     </div>
                   {% endif %}
               </div>
               {% endfor %}
-
-              {% if section.settings.desktop_image != blank %}
-                <div class="media">
-                  {% render 'responsive-picture', desktopImage:section.settings.desktop_image %}
-                </div>
-              {% else %}
-                <div class="media">
-                  {{ 'collection-1' | placeholder_svg_tag }}
-                </div>
-              {% endif %}
             </div>
       </div>
       <div class="splide-card-container product-card ">
@@ -125,14 +122,21 @@
 
 
   <script>
-    let dot=document.querySelector("#dot-1");
-    console.log("hello");
-    console.log(dot);
-    dot.addEventListener("click",()=>{
+    
+    let prev=null
+    for(let i=1;i<4;i++){
+     let dot=document.querySelector(`#dot-${i}`);
+     {% comment %} console.log(dot); {% endcomment %}
+     dot.addEventListener("click",()=>{
       product=dot.querySelector('.hotspot-product');
-      console.log(product);
-      product.classList.toggle("display-prodct");
+      if(prev && prev!=product){
+        prev.classList.remove('display-prodct')
+      }
+      product.classList.toggle("display-prodct");  
+      prev=product;
     })
+
+    }
   </script> 
 
 

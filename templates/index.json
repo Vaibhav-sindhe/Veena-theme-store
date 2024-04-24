@@ -975,7 +975,7 @@
           "type": "Dots",
           "settings": {
             "primary_left_position": 41,
-            "primary_top_position": 12,
+            "primary_top_position": 5,
             "dot_product": "winter-snow-cap"
           }
         },

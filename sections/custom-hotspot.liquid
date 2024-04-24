@@ -185,9 +185,11 @@
         <div class="splide__track">
           <ul class="splide__list">
             {% for product in section.settings.product_list %}
-              {% render
-                 "custom-product-card", product:product
-              %}
+              <li class="splide__slide captivating-splide-item">
+                {% render
+                  "custom-product-card", product:product
+                %}
+              </li>
             {% endfor %}
           </ul>
         </div>

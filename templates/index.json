@@ -984,11 +984,10 @@
       ],
       "settings": {
         "product_list": [
-          "classic-baseball-hat",
-          "corben-shoulder-bag",
           "cotton-style-bucket-hat",
           "full-sleeve-high-neck-t-shirt",
-          "full-sleeve-high-neck-t-shirt-1"
+          "full-sleeve-high-neck-t-shirt-1",
+          "high-performance-snow-goggles"
         ],
         "auto_play": false,
         "show_pagination": true,

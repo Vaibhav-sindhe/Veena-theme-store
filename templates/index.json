@@ -984,10 +984,10 @@
       ],
       "settings": {
         "product_list": [
-          "cotton-style-bucket-hat",
-          "full-sleeve-high-neck-t-shirt",
-          "full-sleeve-high-neck-t-shirt-1",
-          "high-performance-snow-goggles"
+          "high-performance-snow-goggles",
+          "winter-snow-cap",
+          "winter-snow-jacket",
+          "snow-board"
         ],
         "auto_play": false,
         "show_pagination": true,

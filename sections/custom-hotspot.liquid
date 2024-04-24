@@ -29,42 +29,41 @@
 
     @media screen and (min-width: 750px) {
         .padding-{{ section.id }} {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
+            padding-top: {{ section.settings.padding_top }}px;
+            padding-bottom: {{ section.settings.padding_bottom }}px;
         }
     }
 {% endstyle %}
 
 <div class="shop-the-look padding-{{ section.id }}">
     <div class="page-width">
-      <div class="shop-the-look__grid">
-        {% for block in section.blocks %}
-          <div class="">
-            <div class="shop-the-look__image">
+      <div class="shop-the-look--box">
+            <div class="shop-the-look__poster">
+                {% for block in section.blocks %}
               <div class="shop-the-look__dots shop-the-look-primary-{{ block.id }}">
                   <svg class="shop-the-look__dot" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
                       <circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="currentColor"></circle>
                   </svg>
-                  {% if block.settings.primary_product != blank %}
+                  {% if block.settings.dot_product != blank %}
                     <div class="shop-the-look__product tr1">
                     <div class="shop-the-look__product-image">
-                      {% render 'responsive-picture', desktopImage:block.settings.primary_product.featured_image %}
+                      {% render 'responsive-picture', desktopImage:block.settings.dot_product.featured_image %}
                     </div>
                     <div class="shop-the-look-product-details">
-                      {% if block.settings.primary_product.title != blank and block.settings.primary_product.url != blank %}
+                      {% if block.settings.dot_product.title != blank and block.settings.dot_product.url != blank %}
                         <h2 class="h5">
-                          <a href="{{ block.settings.primary_product.url }}">
-                          {{ block.settings.primary_product.title }}
+                          <a href="{{ block.settings.dot_product.url }}">
+                          {{ block.settings.dot_product.title }}
                           </a>
                         </h2>
                       {% endif %}
                     
-                      {% if block.settings.primary_product.price != blank %}
-                        <s>{{ block.settings.primary_product.price | money_without_trailing_zeros }}.00</s>                    
+                      {% if block.settings.dot_product.price != blank %}
+                        <s>{{ block.settings.dot_product.price | money_without_trailing_zeros }}.00</s>                    
                       {% endif %}
 
                       <div>
-                        <a href="{{ block.settings.primary_product.url }}" class="view-product">
+                        <a href="{{ block.settings.dot_product.url }}" class="view-product">
                             View Product 
                             <span><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 1L5 5L1 9" stroke="#8d5d48" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -75,90 +74,18 @@
                     </div>
                   {% endif %}
               </div>
+              {% endfor %}
 
-              <div class="shop-the-look__dots shop-the-look-secondary-{{ block.id }}">
-                  <svg class="shop-the-look__dot" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
-                      <circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="currentColor"></circle>
-                  </svg>
-                  {% if block.settings.secondary_product != blank %}
-                    <div class="shop-the-look__product tr2">
-                    <div class="shop-the-look__product-image">
-                      {% render 'responsive-picture', desktopImage:block.settings.secondary_product.featured_image %}
-                    </div>
-                    <div class="shop-the-look-product-details">
-                      {% if block.settings.secondary_product.title != blank and block.settings.secondary_product.url != blank %}
-                        <h2 class="h5">
-                          <a href="{{ block.settings.secondary_product.url }}">
-                          {{ block.settings.secondary_product.title }}
-                          </a>
-                        </h2>
-                      {% endif %}
-
-                      {% if block.settings.secondary_product.price != blank %}
-                        <s>{{ block.settings.secondary_product.price | money_without_trailing_zeros }}.00</s>                    
-                      {% endif %}
-
-                      <div>
-                        <a href="{{ block.settings.secondary_product.url }}" class="view-product">
-                            View Product 
-                            <span><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L5 5L1 9" stroke="#8d5d48" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg></span>
-                          </a>
-                    </div>
-                    </div>
-                    </div>
-                  {% endif %}
-              </div>
-
-              <div class="shop-the-look__dots shop-the-look-third-{{ block.id }}">
-                  <svg class="shop-the-look__dot" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
-                      <circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="currentColor"></circle>
-                  </svg>
-                  {% if block.settings.third_product != blank %}
-                    <div class="shop-the-look__product tr3">
-                    <div class="shop-the-look__product-image">
-                      {% render 'responsive-picture', desktopImage:block.settings.third_product.featured_image %}
-                    </div>
-                    <div class="shop-the-look-product-details">
-                      {% if block.settings.third_product.title != blank and block.settings.third_product.url != blank %}
-                        <h2 class="h5">
-                          <a href="{{ block.settings.third_product.url }}">
-                          {{ block.settings.third_product.title }}
-                          </a>
-                        </h2>
-                      {% endif %}
-
-                      {% if block.settings.third_product.price != blank %}
-                        <s>{{ block.settings.third_product.price | money_without_trailing_zeros }}.00</s>                    
-                      {% endif %}
-
-                      <div>
-                        <a href="{{ block.settings.third_product.url }}" class="view-product">
-                            View Product 
-                            <span><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L5 5L1 9" stroke="#8d5d48" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg></span>
-                          </a>
-                    </div>
-                    </div>
-                    </div>
-                  {% endif %}
-              </div>
-
-              {% if block.settings.desktop_image != blank %}
-                <div class="media media--portrait">
-                  {% render 'responsive-picture', desktopImage:block.settings.desktop_image %}
+              {% if section.settings.desktop_image != blank %}
+                <div class="media">
+                  {% render 'responsive-picture', desktopImage:section.settings.desktop_image %}
                 </div>
               {% else %}
-                <div class="media media--portrait">
+                <div class="media">
                   {{ 'collection-1' | placeholder_svg_tag }}
                 </div>
               {% endif %}
             </div>
-            
-          </div>
-        {% endfor %}
       </div>
     </div>
   </div>

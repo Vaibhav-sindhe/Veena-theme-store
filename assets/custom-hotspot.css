@@ -104,7 +104,7 @@
     width: 314px;
 }
 
-.shop-the-look_dots:hover .shop-the-look_product {
+.shop-the-look_dots:hover .shop-the-look--box .shop-the-look_product {
     left: 3rem;
     opacity: 1;
     visibility: unset;

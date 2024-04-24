@@ -962,6 +962,19 @@
     },
     "custom_hotspot_fBwpnV": {
       "type": "custom-hotspot",
+      "blocks": {
+        "dots_ynPUe6": {
+          "type": "Dots",
+          "settings": {
+            "primary_left_position": 31,
+            "primary_top_position": 19,
+            "dot_product": "high-performance-snow-goggles"
+          }
+        }
+      },
+      "block_order": [
+        "dots_ynPUe6"
+      ],
       "settings": {
         "desktop_image": "shopify:\/\/shop_images\/4bc2e7575e888685a5e58e845af2c7b4.png",
         "product_list": [

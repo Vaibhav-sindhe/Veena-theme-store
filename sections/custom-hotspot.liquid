@@ -39,7 +39,7 @@
     <div class="page-width">
       <div class="shop-the-look--box">
             <div class="shop-the-look__poster">
-                {% for block in section.blocks %}
+                {% comment %} {% for block in section.blocks %}
               <div class="shop-the-look__dots shop-the-look-primary-{{ block.id }}">
                   <svg class="shop-the-look__dot" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon-circle">
                       <circle class="icon-circle" cx="5.5" cy="5.5" r="5.5" fill="currentColor"></circle>
@@ -74,7 +74,7 @@
                     </div>
                   {% endif %}
               </div>
-              {% endfor %}
+              {% endfor %} {% endcomment %}
 
               {% if section.settings.desktop_image != blank %}
                 <div class="media">

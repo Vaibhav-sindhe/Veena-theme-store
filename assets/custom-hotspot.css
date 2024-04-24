@@ -306,6 +306,9 @@
     line-height: 23.4px;
     color: black;
   }
+  .product-card__vendor{
+    color: lightskyblue;
+  }
   .product-card__title:hover {
     color: #d03c3f;
   }

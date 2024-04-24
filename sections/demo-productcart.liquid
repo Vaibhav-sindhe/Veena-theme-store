@@ -1,4 +1,4 @@
-<div>
+<div class="product-card-container">
 {% for product in section.settings.product_list %}
   {% render
      "custom-product-card", product:product
@@ -8,9 +8,12 @@
   <div id="appendContainer"></div>
 </div> 
 <style>
+.product-card-container{
+  padding:0 5rem;
+}
 .product-card__image{
-  height:10rem;
-  width:10rem;
+  height:30rem;
+  width:25rem;
   object-fit:cover;
   overflow:hidden;
 }  

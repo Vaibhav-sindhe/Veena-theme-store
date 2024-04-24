@@ -951,7 +951,6 @@
     },
     "demo_productcart_itU7Fh": {
       "type": "demo-productcart",
-      "disabled": true,
       "settings": {
         "product_list": [
           "travel-handy-hiking-zip-pouch",

@@ -990,7 +990,7 @@
           "snow-board"
         ],
         "auto_play": false,
-        "show_pagination": true,
+        "show_pagination": false,
         "show_arrows": true,
         "auto_play_duration": 2000,
         "perpage": 1,

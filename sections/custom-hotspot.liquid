@@ -163,6 +163,15 @@
     </div>
   </div>
 
+
+  <div>
+    {% for product in section.settings.product_list %}
+      {% render
+         "custom-product-card", product:product
+      %}
+    {% endfor %}
+  </div>
+
   {% schema %}
   {
     "name": "Hotspot section",
@@ -172,6 +181,11 @@
       {
         "type": "header",
         "content": "Section padding"
+      },
+      {
+        "type": "product_list",
+        "id": "product_list",
+        "label": "Product list"
       },
       {
         "type": "range",

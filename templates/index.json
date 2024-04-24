@@ -959,6 +959,33 @@
         ],
         "name": ""
       }
+    },
+    "custom_hotspot_fBwpnV": {
+      "type": "custom-hotspot",
+      "blocks": {
+        "product_rRtrDN": {
+          "type": "product",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/f95f7fdbbfc4dd291173284893687a4c_dc806876-cbef-49a8-b818-85e9f767bf5f.jpg",
+            "primary_left_position": 76,
+            "primary_top_position": 0,
+            "primary_product": "",
+            "secondary_left_position": 20,
+            "secondary_top_position": 20,
+            "secondary_product": "",
+            "third_left_position": 20,
+            "third_top_position": 20,
+            "third_product": "classic-baseball-hat"
+          }
+        }
+      },
+      "block_order": [
+        "product_rRtrDN"
+      ],
+      "settings": {
+        "padding_top": 25,
+        "padding_bottom": 30
+      }
     }
   },
   "order": [
@@ -985,6 +1012,7 @@
     "letyou_know_8DGxVc",
     "featured_blog_AXCGM8",
     "custom_faq_section_ALBUqa",
-    "demo_productcart_itU7Fh"
+    "demo_productcart_itU7Fh",
+    "custom_hotspot_fBwpnV"
   ]
 }

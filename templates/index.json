@@ -966,8 +966,8 @@
         "dots_ynPUe6": {
           "type": "Dots",
           "settings": {
-            "primary_left_position": 31,
-            "primary_top_position": 19,
+            "primary_left_position": 40,
+            "primary_top_position": 10,
             "dot_product": "high-performance-snow-goggles"
           }
         },

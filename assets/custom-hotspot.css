@@ -270,29 +270,65 @@
 /* assignment css */
 
 .splide-card-container{
-    padding:0 5rem;
     display:flex;
     gap:2rem;
-    width:50rem;
-    border: 2px solid red;
+    width:32rem;
+    border: 2px solid black;
+    border-radius: 40px 40px 10px 10px;
     position: relative;
+    margin-bottom: 100px;
+    padding: 2rem;
+}
+.splide-card-container .splide__arrow{
+    background: white;
+}
+.splide-card-container .splide__arrow--prev{
+    left: 27.8rem;
+    top: 23rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius:5px 5px 50% 50%;
+    border: 1px solid black;
+    opacity: 1;
+}
+.splide-card-container .splide__arrow--next {
+    right:-4rem;
+    height: 4rem;
+    width: 4rem;
+    top: 18rem;
+    border: 1.5px solid black;
+    border-radius:50% 50% 5px 5px;
+    opacity: 1;
+}
+.splide-card-container .splide__arrow svg{
+    fill:#000 !important;
+} 
+.splide-card-container .splide__arrow:disabled{
+    opacity: 0.5;
+    background: gray;
+}
+.splide-card-container .product-card__form{
+    display: none;
 }
 .product-card{
-    padding:0 5rem;
     display:flex;
     flex-direction: column;
     gap:2rem;
 }
   .product-card__image{
-    height:38rem;
-    width:30rem;
+    width: 100%;
+    height:35rem;
+    /* width:30rem; */
     object-fit:cover;
     overflow:hidden;
+    border-radius: 40px 40px 10px 10px;
+
   }  
   .product-card__image img{
     height:10rem;
     width:10rem;
     object-fit:cover;
+    /* border-radius: 20% 20% 10px 10px; */
   }  
   .product-card__vendor {
     font-size: 14px;

@@ -159,8 +159,8 @@
           "solid_color_JafHAh": {
             "type": "solid-color",
             "settings": {
-              "solid_color_name": "",
-              "solid_color": ""
+              "solid_color_name": "lightslategray",
+              "solid_color": "#547f9b"
             }
           }
         },

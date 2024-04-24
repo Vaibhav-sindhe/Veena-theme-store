@@ -105,7 +105,7 @@
           {% endif %}                
 
           {% if current_variant.compare_at_price > current_variant.price %}
-          <s class="product-card__compareprice">{{ current_variant.compare_at_price | money_without_trailing_zeros }}</s>
+          <s class="product-card__compareprice">{{ current_variant.compare_at_price | money_with_currency }}</s>
           {% endif %}
         </div>
        

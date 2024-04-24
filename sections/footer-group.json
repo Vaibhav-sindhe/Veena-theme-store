@@ -8,7 +8,7 @@
         "footer_block_M7GjpV": {
           "type": "footer-block",
           "settings": {
-            "title": "hmkkkkkk",
+            "title": "Quick links",
             "list": "quick-links"
           }
         },
@@ -32,7 +32,6 @@
         "footer_block_8UFLgC",
         "footer_block_DtJ4cz"
       ],
-      "disabled": true,
       "settings": {
         "button_label": "Subscribe",
         "description": "",

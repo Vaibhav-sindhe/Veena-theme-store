@@ -274,6 +274,9 @@
     display:flex;
     gap:2rem
   }
+  .product-card-container .splide__slide{
+    width: 50rem;
+  }  
   .product-card__image{
     height:38rem;
     width:30rem;

@@ -169,6 +169,13 @@
               "solid_color_name": "peachpuff",
               "solid_color": "#d1cd97"
             }
+          },
+          "solid_color_qGTaFL": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "moccasin",
+              "solid_color": "#fff12e"
+            }
           }
         },
         "block_order": [
@@ -176,7 +183,8 @@
           "solid_color_VR8KYi",
           "solid_color_XKq3Dx",
           "solid_color_JafHAh",
-          "solid_color_4x3EfM"
+          "solid_color_4x3EfM",
+          "solid_color_qGTaFL"
         ],
         "settings": {
           "heading": ""

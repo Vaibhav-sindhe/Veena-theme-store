@@ -72,11 +72,8 @@
 }
 
 .hotspot-section--container .hotspot-section-container-poster--product {
-    /* border: 1px solid rgb(0, 255, 4); */
     padding: 0.6rem;
     background-color: #fff;
-    /* min-width: 9rem; */
-    /* min-height: 17rem; */
     border-radius: 1rem;
     position: absolute;
     top: 0rem;
@@ -87,11 +84,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
     gap: 2rem;
     transform: translate(-5%) translateY(40px);
-    height: 134px;
-    width: 314px;
+    width: 25rem;
 }
 
 .shop-the-look_dots:hover .shop-the-look_product {
@@ -109,11 +104,6 @@
     font-size: 1.2rem;
     font-weight: 600;
 }
-
-.hotspot-section-container-poster--product a:hover {
-    /* color: #D03C3F; */
-}
-
 .hotspot-section-container-poster--product-image {
     width: 100%;
     max-height: 100%;
@@ -133,18 +123,18 @@
     justify-content: center;
     align-items: start;
 }
-.hotspot-section-container-poster--product .view-product {
+.hotspot-section-container-poster--product .add-to-cart {
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
-    padding: 0 5rem;
+    padding: 0 2rem;
     border: 1.5px solid black;
     border-radius: 5px;
 }
 
 .hotspot-section-container-poster--product-image img {
     width: 100%;
-    height: auto;
+    height: 10rem;
     border-radius: 0.6rem
 }
 .hotspot-section-container-poster--product-details{
@@ -154,6 +144,7 @@
 .hotspot-section-container-poster--product-details p{
     margin: 0;
     font-size: 1rem;
+    font-family: 'Harmonia Sans', sans-serif;;
 }
 .product-details--amountDiv{
     display:flex;

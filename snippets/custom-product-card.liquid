@@ -95,7 +95,8 @@
         <p class="product-tag">{{ product.tags }}</p>
         <span class = "product-card__vendor">{{ product.vendor }}</span>
 
-        <a href="{{ product.url }}" class="product-card__title">{{ product.title }}</a>     
+        <a href="{{ product.url }}" class="product-card__title">{{ product.title }}</a> 
+        <div class="rating-{{ product.id }}">{{ product.metafields.custom.ratings }}</div>    
   
         <div class="product-card__prices">
           {% if product.price_varies %}

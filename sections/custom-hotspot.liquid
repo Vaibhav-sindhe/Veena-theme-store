@@ -33,6 +33,20 @@
             padding-bottom: {{ section.settings.padding_bottom }}px;
         }
     }
+
+    {% for product in section.settings.product_list %}
+      .rating-{{product.id}}:before {
+        content: "\2605\2605\2605\2605\2605";
+        background: linear-gradient(90deg, #FFAA47 calc({{product.metafields.custom.ratings}}/5 * 100%), #E1E1E1 calc({{product.metafields.custom.ratings}}/5 * 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+        .splide-card-container .product-card__info .rating-{{ forloop.index }} {
+            font-size: 2rem;
+            display:block;
+        }
+    {% endfor %}
 {% endstyle %}
 
 {% liquid

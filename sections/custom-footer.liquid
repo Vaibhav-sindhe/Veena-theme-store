@@ -91,7 +91,7 @@
           {%- if block.settings.list != blank -%}
             <ul class="custom-footer-navContainer--block" >
               {%- for link in block.settings.list.links -%}
-                <li style="list-style: none;">
+                <li>
                   <a
                     href="{{ link.url }}"
                   >
@@ -104,10 +104,11 @@
         {% endfor %}  
       </div>
       <div class="custom-footer-bottom--store-info">
+        <p>Contact Info</p>
         <ul>
           <li>{{ section.settings.address }}</li> 
           <li>{{ section.settings.contact-no }}</li> 
-          <li>Email : <a href="mailto:demo@demo.com">{{ section.settings.store-email}}</a></li> 
+          <li>Email : <a href="mailto:{{section.settings.store-email}}">{{ section.settings.store-email}}</a></li> 
           <li>{{ section.settings.additional-info }}</li> 
         </ul>  
       </div>  

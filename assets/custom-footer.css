@@ -2,3 +2,44 @@
     background: black;
     color: white;
 }
+.custom-footer--top-bar{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.custom-footer--top-bar>div{
+    width: 28rem;
+}
+.custom-footer-top-bar--store-image ,.custom-footer-top-bar--social-media , .custom-footer-top-bar--contact{
+    display: flex;
+    justify-content: center;
+}
+.custom-footer-top-bar--contact{
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.5rem;
+}
+.custom-footer-top-bar--contact span{
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    gap: 1rem;
+}
+.custom-footer-top-bar--contact span p{
+    font-weight: 600;
+    margin: 0;
+}
+
+@media (max-width:750px) {
+    .custom-footer--top-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .custom-footer-top-bar--contact span{
+        font-size: 1.5rem;
+    }
+    
+}

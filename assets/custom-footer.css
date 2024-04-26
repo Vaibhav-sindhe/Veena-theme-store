@@ -2,6 +2,9 @@
     background: black;
     color: white;
 }
+.custom-footer li{
+    list-style: none;
+}
 .custom-footer--top-bar{
     padding: 1rem 0;
     display: flex;

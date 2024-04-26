@@ -1,4 +1,20 @@
 <div class="custom-footer">
+  <div class="custom-footer--top-bar">
+    <div class="custom-footer-top-bar--social-media">
+      {% render 'responsive-picture',
+        desktopImage:section.settings.icon-1, 
+      %}
+      {% render 'responsive-picture',
+        desktopImage:section.settings.icon-2, 
+      %}
+      {% render 'responsive-picture',
+        desktopImage:section.settings.icon-3, 
+      %}
+      {% render 'responsive-picture',
+        desktopImage:section.settings.icon-4, 
+      %}
+    </div>
+  </div>  
   <div class="custom-footer--email-inputContainer">
           {% form 'customer', class: 'newsletter-form' %}
           <input type="hidden" name="contact[tags]" value="newsletter">
@@ -71,6 +87,9 @@
       {% endif %}  
     {% endfor %}  
   </div>
+  <div class="custom-footer--contact-container">
+
+  </div>  
 </div>  
 
 
@@ -81,25 +100,53 @@
   "class": "section",
   "settings": [
     {
+      "type": "header",
+      "content": "Social media"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon-1",
+      "label": "Media icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon-2",
+      "label": "Media icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon-3",
+      "label": "Media icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon-4",
+      "label": "Media icon"
+    },
+    {
+      "type": "header",
+      "content": "Store  information"
+    },
+    {
         "type": "image_picker",
         "id": "desktop_image",
         "label": "Store image"
+    },
+    {
+      "type": "image_picker",
+      "id": "contact-logo",
+      "label": "Contact logo"
+    },
+    {
+      "type": "text",
+      "id": "information",
+      "label": "Contact number"
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
       "default": "Subscribe"
-    },
-    {
-      "type": "richtext",
-      "id": "description",
-      "label": "Description"
-    },
-    {
-      "type": "text",
-      "id": "information",
-      "label": "Information"
     }
   ],
   "blocks": [

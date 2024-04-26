@@ -19,6 +19,12 @@
         desktopImage:section.settings.store-image, 
       %}
     </div>  
+    <div class="custom-footer-top-bar--cobtact">
+      {% render 'responsive-picture',
+        desktopImage:section.settings.contact-logo, 
+      %}
+      <p>Call us:{{ section.settings.contact-no }}</p>
+    </div>  
   </div>  
   <div class="custom-footer--email-inputContainer">
           {% form 'customer', class: 'newsletter-form' %}
@@ -144,7 +150,7 @@
     },
     {
       "type": "text",
-      "id": "information",
+      "id": "contact-no",
       "label": "Contact number"
     },
     {

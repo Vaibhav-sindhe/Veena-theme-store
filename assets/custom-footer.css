@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 0.1px solid gray;
 }
 .custom-footer--top-bar>div{
     width: 28rem;
@@ -33,6 +34,81 @@
     font-weight: 600;
     margin: 0;
 }
+
+.custom-footer--bottom{
+    display: flex;
+    padding: 3rem 0;
+}
+.custom-footer--email-inputContainer{
+    width: 30%;
+}
+.custom-footer--email-inputContainer p{
+    margin: 0;
+}
+.custom-footer-email-inputContainer-heading{
+    color: white;
+    margin-top: 6px;
+    font-size: 2.5rem;
+    font-weight: 600;    
+}
+.custom-footer--email-inputContainer .newsletter-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    height: 10rem;
+}
+.custom-footer--email-inputContainer .newsletter-form .week-6-email--input{
+    width: 25rem;
+    border-radius: 25px;
+    padding: 1.7rem ;
+    border: 1px solid white;
+    background: black;
+}
+.custom-footer--email-inputContainer .newsletter-form .week-6-email--button{
+    width: 15rem;
+    color: white;
+    padding: 1.7rem 2rem;
+    border-radius: 25px;
+    border: none;
+    background:rgb(208, 60, 63);
+}
+.newsletter-form__message {
+    position: absolute;
+    bottom: 8px;
+}
+
+.custom-footer-bottom--navContainer{
+    display: flex;
+    gap: 12rem;
+    align-items: baseline;
+    padding-left: 5rem;
+}
+.custom-footer-navContainer--block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.custom-footer-navContainer--block ul{
+    padding: 0;
+}
+.custom-footer-navContainer-block--heading{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+.custom-footer-navContainer--block ul li a{
+    color: gray;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    line-height: 5rem;
+}
+.store-info li {
+    color: gray;
+}
+
+
+
 
 @media (max-width:750px) {
     .custom-footer--top-bar{

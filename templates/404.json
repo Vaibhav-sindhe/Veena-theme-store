@@ -4,9 +4,31 @@
       "type": "main-404",
       "settings": {
       }
+    },
+    "custom_hotspot_LgHNre": {
+      "type": "custom-hotspot",
+      "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/4bc2e7575e888685a5e58e845af2c7b4.png",
+        "product_list": [
+          "high-performance-snow-goggles",
+          "winter-snow-cap",
+          "winter-snow-jacket",
+          "snow-board"
+        ],
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": true,
+        "auto_play_duration": 2000,
+        "perpage": 1,
+        "gap": 5,
+        "Slide_animation": "slide",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_hotspot_LgHNre"
   ]
 }

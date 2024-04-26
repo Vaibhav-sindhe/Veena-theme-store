@@ -33,14 +33,17 @@
         "footer_block_DtJ4cz"
       ],
       "settings": {
-        "icon-1": "shopify:\/\/shop_images\/svgviewer-output_6.svg",
-        "icon-2": "shopify:\/\/shop_images\/svgviewer-output_8.svg",
-        "icon-3": "shopify:\/\/shop_images\/svgviewer-output_6.svg",
-        "icon-4": "shopify:\/\/shop_images\/svgviewer-output_8.svg",
         "store-image": "shopify:\/\/shop_images\/W_n_Veena.webp",
         "contact-logo": "shopify:\/\/shop_images\/svgviewer-output_6.svg",
         "contact-no": "+0123-456-789",
-        "button_label": "Subscribe"
+        "address": "4800 San Mateo Ln NE",
+        "store-email": "demo@demo.com",
+        "additional-info": "Find a nearest Store location",
+        "enable-email-sub": true,
+        "icon-1": "shopify:\/\/shop_images\/svgviewer-output_6.svg",
+        "icon-2": "shopify:\/\/shop_images\/svgviewer-output_8.svg",
+        "icon-3": "shopify:\/\/shop_images\/svgviewer-output_6.svg",
+        "icon-4": "shopify:\/\/shop_images\/svgviewer-output_8.svg"
       }
     },
     "footer": {

@@ -13,23 +13,23 @@
           "type": "Dots",
           "settings": {
             "primary_left_position": 32,
-            "primary_top_position": 20,
+            "primary_top_position": 10,
             "dot_product": "high-performance-snow-goggles"
           }
         },
         "dots_RUiYwj": {
           "type": "Dots",
           "settings": {
-            "primary_left_position": 20,
-            "primary_top_position": 20,
+            "primary_left_position": 41,
+            "primary_top_position": 5,
             "dot_product": "winter-snow-cap"
           }
         },
         "dots_7xfCDC": {
           "type": "Dots",
           "settings": {
-            "primary_left_position": 20,
-            "primary_top_position": 20,
+            "primary_left_position": 67,
+            "primary_top_position": 55,
             "dot_product": "snow-board"
           }
         }

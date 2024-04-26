@@ -436,8 +436,6 @@
         "custom_block_9E6Edr": {
           "type": "custom-block",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/download_3f70f98f-e7dd-44ee-be4f-3d9a36079fa0.webp",
-            "image_mobile": "shopify:\/\/shop_images\/download_3f70f98f-e7dd-44ee-be4f-3d9a36079fa0.webp",
             "pre_heading": "Women's",
             "title": "<h3>Elevate Your Wardrobe With Our Women's Clothing Collection<\/h3>",
             "button_label": "Explore",
@@ -953,9 +951,7 @@
       "type": "demo-productcart",
       "settings": {
         "product_list": [
-          "travel-handy-hiking-zip-pouch",
-          "cotton-style-bucket-hat",
-          "men-winter-jacket"
+          "travel-handy-hiking-zip-pouch"
         ],
         "name": ""
       }

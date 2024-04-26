@@ -2,11 +2,43 @@
   "sections": {
     "main": {
       "type": "main-404",
+      "disabled": true,
       "settings": {
       }
     },
     "custom_hotspot_LgHNre": {
       "type": "custom-hotspot",
+      "blocks": {
+        "dots_6KqFfF": {
+          "type": "Dots",
+          "settings": {
+            "primary_left_position": 20,
+            "primary_top_position": 20,
+            "dot_product": "high-performance-snow-goggles"
+          }
+        },
+        "dots_RUiYwj": {
+          "type": "Dots",
+          "settings": {
+            "primary_left_position": 20,
+            "primary_top_position": 20,
+            "dot_product": "winter-snow-cap"
+          }
+        },
+        "dots_7xfCDC": {
+          "type": "Dots",
+          "settings": {
+            "primary_left_position": 20,
+            "primary_top_position": 20,
+            "dot_product": "snow-board"
+          }
+        }
+      },
+      "block_order": [
+        "dots_6KqFfF",
+        "dots_RUiYwj",
+        "dots_7xfCDC"
+      ],
       "settings": {
         "desktop_image": "shopify:\/\/shop_images\/4bc2e7575e888685a5e58e845af2c7b4.png",
         "product_list": [

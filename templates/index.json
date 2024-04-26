@@ -1,5 +1,57 @@
 {
   "sections": {
+    "custom_hotspot_fBwpnV": {
+      "type": "custom-hotspot",
+      "blocks": {
+        "dots_ynPUe6": {
+          "type": "Dots",
+          "settings": {
+            "primary_left_position": 32,
+            "primary_top_position": 10,
+            "dot_product": "high-performance-snow-goggles"
+          }
+        },
+        "dots_K6V7KW": {
+          "type": "Dots",
+          "settings": {
+            "primary_left_position": 41,
+            "primary_top_position": 5,
+            "dot_product": "winter-snow-cap"
+          }
+        },
+        "dots_H3mTHT": {
+          "type": "Dots",
+          "settings": {
+            "primary_left_position": 67,
+            "primary_top_position": 65,
+            "dot_product": "snow-board"
+          }
+        }
+      },
+      "block_order": [
+        "dots_ynPUe6",
+        "dots_K6V7KW",
+        "dots_H3mTHT"
+      ],
+      "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/4bc2e7575e888685a5e58e845af2c7b4.png",
+        "product_list": [
+          "high-performance-snow-goggles",
+          "winter-snow-cap",
+          "winter-snow-jacket",
+          "snow-board"
+        ],
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": true,
+        "auto_play_duration": 2000,
+        "perpage": 1,
+        "gap": 5,
+        "Slide_animation": "slide",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    },
     "hero_slider_DJLNRU": {
       "type": "hero-slider",
       "blocks": {
@@ -955,61 +1007,10 @@
         ],
         "name": ""
       }
-    },
-    "custom_hotspot_fBwpnV": {
-      "type": "custom-hotspot",
-      "blocks": {
-        "dots_ynPUe6": {
-          "type": "Dots",
-          "settings": {
-            "primary_left_position": 32,
-            "primary_top_position": 10,
-            "dot_product": "high-performance-snow-goggles"
-          }
-        },
-        "dots_K6V7KW": {
-          "type": "Dots",
-          "settings": {
-            "primary_left_position": 41,
-            "primary_top_position": 5,
-            "dot_product": "winter-snow-cap"
-          }
-        },
-        "dots_H3mTHT": {
-          "type": "Dots",
-          "settings": {
-            "primary_left_position": 67,
-            "primary_top_position": 65,
-            "dot_product": "snow-board"
-          }
-        }
-      },
-      "block_order": [
-        "dots_ynPUe6",
-        "dots_K6V7KW",
-        "dots_H3mTHT"
-      ],
-      "settings": {
-        "desktop_image": "shopify:\/\/shop_images\/4bc2e7575e888685a5e58e845af2c7b4.png",
-        "product_list": [
-          "high-performance-snow-goggles",
-          "winter-snow-cap",
-          "winter-snow-jacket",
-          "snow-board"
-        ],
-        "auto_play": false,
-        "show_pagination": false,
-        "show_arrows": true,
-        "auto_play_duration": 2000,
-        "perpage": 1,
-        "gap": 5,
-        "Slide_animation": "slide",
-        "padding_top": 30,
-        "padding_bottom": 30
-      }
     }
   },
   "order": [
+    "custom_hotspot_fBwpnV",
     "hero_slider_DJLNRU",
     "animated_rich_text_TxFtP9",
     "custom_slideshow_9x8xx6",
@@ -1033,7 +1034,6 @@
     "letyou_know_8DGxVc",
     "featured_blog_AXCGM8",
     "custom_faq_section_ALBUqa",
-    "demo_productcart_itU7Fh",
-    "custom_hotspot_fBwpnV"
+    "demo_productcart_itU7Fh"
   ]
 }

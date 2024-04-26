@@ -14,6 +14,11 @@
         desktopImage:section.settings.icon-4, 
       %}
     </div>
+    <div class="custom-footer-top-bar--store-image">
+      {% render 'responsive-picture',
+        desktopImage:section.settings.store-image, 
+      %}
+    </div>  
   </div>  
   <div class="custom-footer--email-inputContainer">
           {% form 'customer', class: 'newsletter-form' %}
@@ -129,7 +134,7 @@
     },
     {
         "type": "image_picker",
-        "id": "desktop_image",
+        "id": "store-image",
         "label": "Store image"
     },
     {

@@ -1,4 +1,6 @@
-<div class="custom-footer">
+{{ 'custom-footer.css' | asset_url | stylesheet_tag }}
+
+<div class="custom-footer page-width">
   <div class="custom-footer--top-bar">
     <div class="custom-footer-top-bar--social-media">
       {% render 'responsive-picture',
@@ -26,7 +28,7 @@
       <p>Call us:{{ section.settings.contact-no }}</p>
     </div>  
   </div>  
-  <div class="custom-footer--email-inputContainer">
+  {% comment %} <div class="custom-footer--email-inputContainer">
           {% form 'customer', class: 'newsletter-form' %}
           <input type="hidden" name="contact[tags]" value="newsletter">
           <div>
@@ -100,7 +102,7 @@
   </div>
   <div class="custom-footer--contact-container">
 
-  </div>  
+  </div>   {% endcomment %}
 </div>  
 
 

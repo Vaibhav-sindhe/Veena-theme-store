@@ -1,75 +1,122 @@
-<div class="custom-footer">
-  <div class="custom-footer--email-inputContainer">
-          {% form 'customer', class: 'newsletter-form' %}
-          <input type="hidden" name="contact[tags]" value="newsletter">
-          <div>
-              <input
-              id="NewsletterForm--{{ section.id }}"
-              type="email"
-              name="contact[email]"
-              class="custom-footer-email-inputContainer--input"
-              placeholder="Email address"
-              value="{{ form.email }}"
-              aria-required="true"
-              autocorrect="off"
-              autocapitalize="off"
-              autocomplete="email"
-              {% if form.errors %}
-                  autofocus
-                  aria-invalid="true"
-                  aria-describedby="Newsletter-error--{{ section.id }}"
-              {% elsif form.posted_successfully? %}
-                  aria-describedby="Newsletter-success--{{ section.id }}"
-              {% endif %}
-              required
-              >
-          </div>
-              <button
-              type="submit"
-              class="custom-footer--email-inputContainer--button button"
-              name="commit"
-              id="Subscribe"
-              aria-label="{{ 'newsletter.button_label' | t }}"
-              >
-              {{ section.settings.button_label }}
-              </button>
-          {%- if form.errors -%}
-              <small class="newsletter-form_message form_message" id="Newsletter-error--{{ section.id }}">
-              {%- render 'icon-error' -%}
-              {{- form.errors.translated_fields.email | capitalize }}
-              {{ form.errors.messages.email -}}
-              </small>
-          {%- endif -%}
-          {%- if form.posted_successfully? -%}
-          <h3
-              class="newsletter-form_message newsletter-formmessage--success form_message"
-              id="Newsletter-success--{{ section.id }}"
-              tabindex="-1"
-              autofocus
-          >
-              {% render 'icon-success' -%}
-              {{- 'newsletter.success' | t }}
-          </h3>
-          {%- endif -%}
-          {% endform %} 
-  </div>
-  <div class="custom-footer--navContainer">
-    {% for block in section.blocks %}
-      {{ block.settings.title }}
-      {%- if block.settings.list != blank -%}
-        <ul class="custom-footer-navContainer--block" >
-          {%- for link in block.settings.list.links -%}
-            <li style="list-style: none;">
-              <a
-                href="{{ link.url }}"
-              >
-                {{ link.title }}
-              </a>
-            </li>
-          {%- endfor -%}
-        </ul>
-      {% endif %}  
-    {% endfor %}  
+{{ 'custom-footer.css' | asset_url | stylesheet_tag }}
+
+<div class="custom-footer page-width">
+  <div class="custom-footer--top-bar">
+    <div class="custom-footer-top-bar--social-media">
+      {% render 'responsive-picture',
+        desktopImage:section.settings.icon-1, 
+      %}
+      {% render 'responsive-picture',
+        desktopImage:section.settings.icon-2, 
+      %}
+      {% render 'responsive-picture',
+        desktopImage:section.settings.icon-3, 
+      %}
+      {% render 'responsive-picture',
+        desktopImage:section.settings.icon-4, 
+      %}
+    </div>
+    <div class="custom-footer-top-bar--store-image">
+      {% render 'responsive-picture',
+        desktopImage:section.settings.store-image, 
+      %}
+    </div>  
+    <div class="custom-footer-top-bar--contact">
+      {% render 'responsive-picture',
+        desktopImage:section.settings.contact-logo, 
+      %}
+      <span>Call us:<p>{{ section.settings.contact-no }}</p></span>
+    </div>  
+  </div>  
+  <div class="custom-footer--bottom"> 
+      {% if section.settings.enable-email-sub %} 
+        <div class="custom-footer--email-inputContainer">
+                <h3 class="custom-footer-email-inputContainer-heading">SIGN UP TO OUR NEWSLETTER</h3>
+                <p>Visit the website offering the newsletter and follow their sign-up instructions</p>
+                {% form 'customer', class: 'newsletter-form' %}
+                  <input type="hidden" name="contact[tags]" value="newsletter">
+                  <div>
+                      <input
+                      id="NewsletterForm--{{ section.id }}"
+                      type="email"
+                      name="contact[email]"
+                      class="week-6-email--input"
+                      placeholder="Email address"
+                      value="{{ form.email }}"
+                      aria-required="true"
+                      autocorrect="off"
+                      autocapitalize="off"
+                      autocomplete="email"
+                      {% if form.errors %}
+                          autofocus
+                          aria-invalid="true"
+                          aria-describedby="Newsletter-error--{{ section.id }}"
+                      {% elsif form.posted_successfully? %}
+                          aria-describedby="Newsletter-success--{{ section.id }}"
+                      {% endif %}
+                      required
+                      >
+                  </div>
+                      <button
+                      type="submit"
+                      class="week-6-email--button"
+                      name="commit"
+                      id="Subscribe"
+                      aria-label="{{ 'newsletter.button_label' | t }}"
+                      >
+                      Subscribe
+                      </button>
+                  {%- if form.errors -%}
+                      <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                      {%- render 'icon-error' -%}
+                      {{- form.errors.translated_fields.email | capitalize }}
+                      {{ form.errors.messages.email -}}
+                      </small>
+                  {%- endif -%}
+                  {%- if form.posted_successfully? -%}
+                  <h3
+                      class="newsletter-form__message newsletter-form__message--success form__message"
+                      id="Newsletter-success--{{ section.id }}"
+                      tabindex="-1"
+                      autofocus
+                  >
+                      {% render 'icon-success' -%}
+                      {{- 'newsletter.success' | t }}
+                  </h3>
+                  {%- endif -%}
+                  {% endform %} 
+                <p>By subscribing you agree to with our Privacy Policy</p>
+        </div>
+      {% endif %}
+      <div class="custom-footer-bottom--navContainer">
+        {% for block in section.blocks %}
+          <div class="custom-footer-navContainer--block">
+          <p class="custom-footer-navContainer-block--heading">{{ block.settings.title }}</p>
+          {%- if block.settings.list != blank -%}
+            <ul>
+              {%- for link in block.settings.list.links -%}
+                <li>
+                  <a
+                    href="{{ link.url }}"
+                  >
+                    {{ link.title }}
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          {% endif %} 
+          </div> 
+        {% endfor %}  
+        <div class="custom-footer-navContainer--block store-info">
+          <p class="custom-footer-navContainer-block--heading">Contact Info</p>
+          <ul>
+            <li>{{ section.settings.address }}</li> 
+            <li>{{ section.settings.contact-no }}</li> 
+            <li>Email : <a href="mailto:{{section.settings.store-email}}">{{ section.settings.store-email}}</a></li> 
+            <li>{{ section.settings.additional-info }}</li> 
+          </ul>  
+        </div>  
+      </div>
   </div>
 </div>  
 
@@ -81,25 +128,68 @@
   "class": "section",
   "settings": [
     {
-        "type": "image_picker",
-        "id": "desktop_image",
-        "label": "Store image"
+      "type": "header",
+      "content": "Store  information"
+    },
+    {
+      "type": "image_picker",
+      "id": "store-image",
+      "label": "Store logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "contact-logo",
+      "label": "Contact logo"
     },
     {
       "type": "text",
-      "id": "button_label",
-      "label": "Button label",
-      "default": "Subscribe"
-    },
-    {
-      "type": "richtext",
-      "id": "description",
-      "label": "Description"
+      "id": "contact-no",
+      "label": "Contact number"
     },
     {
       "type": "text",
-      "id": "information",
-      "label": "Information"
+      "id": "address",
+      "label": "Store address"
+    },
+    {
+      "type": "text",
+      "id": "store-email",
+      "label": "Store's email id"
+    },
+    {
+      "type": "text",
+      "id": "additional-info",
+      "label": "Additional info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable-email-sub",
+      "label": "Enable email signup",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Social media"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon-1",
+      "label": "Media icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon-2",
+      "label": "Media icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon-3",
+      "label": "Media icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon-4",
+      "label": "Media icon"
     }
   ],
   "blocks": [

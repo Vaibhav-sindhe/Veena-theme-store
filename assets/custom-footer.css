@@ -15,6 +15,10 @@
 .custom-footer--top-bar>div{
     width: 28rem;
 }
+.custom-footer--top-bar .social-media-icon{
+    height: 2rem;
+    width: 2rem;
+}
 .custom-footer-top-bar--store-image ,.custom-footer-top-bar--social-media , .custom-footer-top-bar--contact{
     display: flex;
     justify-content: center;

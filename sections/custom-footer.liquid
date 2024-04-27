@@ -5,8 +5,9 @@
     <div class="custom-footer-top-bar--social-media">
       {% for i in (1..4) %}
         <span class="social-media-icon">
+          {% assign url=section.settings.icon-forloop.index %}
           {% render 'responsive-picture',
-            desktopImage:section.settings.icon-{{forloop.index}}, 
+            desktopImage:url, 
           %}
         </span>
       {% endfor %} 

@@ -4,6 +4,7 @@
 .hotspot-title{
   font-weight: 600;
   text-align: center;
+  margin: 0 0 25px 0;
 }
 .hotspot-section--container{
     gap: 2rem;

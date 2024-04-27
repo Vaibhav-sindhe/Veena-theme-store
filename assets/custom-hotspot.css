@@ -1,6 +1,10 @@
 .hotspot-section{
     display: flex;
 }
+.hotspot-title{
+  font-weight: 600;
+  text-align: center;
+}
 .hotspot-section--container{
     gap: 2rem;
     overflow: hidden;

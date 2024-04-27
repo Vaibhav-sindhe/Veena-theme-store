@@ -6,6 +6,9 @@
       {% for i in (1..4) %}
         <span class="social-media-icon">
           {% assign url=section.settings.icon-forloop.index %}
+          <script>
+            console.log(url);
+          </script>  
           {% render 'responsive-picture',
             desktopImage:url, 
           %}

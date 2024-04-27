@@ -207,7 +207,6 @@
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
         <small class="copyright__content">{{ powered_by_link }}</small>
-        {%- if section.settings.show_policy  -%}
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
               {%- if policy != blank -%}
@@ -219,7 +218,6 @@
               {%- endif -%}
             {%- endfor -%}
           </ul>
-        {%- endif -%}
       </div>
       <div class="footer__column footer__column--info">
         {%- if section.settings.payment_enable -%}
@@ -299,12 +297,6 @@
       "type": "checkbox",
       "id": "enable_language_selector",
       "label": "Enable language selector",
-      "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "show_policy",
-      "label": "Show policy",
       "default": false
     },
     {

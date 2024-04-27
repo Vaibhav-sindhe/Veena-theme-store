@@ -207,7 +207,7 @@
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
         <small class="copyright__content">{{ powered_by_link }}</small>
-        {% comment %} {%- if section.settings.show_policy -%} {% endcomment %}
+        {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
               {%- if policy != blank -%}
@@ -219,10 +219,10 @@
               {%- endif -%}
             {%- endfor -%}
           </ul>
-        {% comment %} {%- endif -%} {% endcomment %}
+        {%- endif -%}
       </div>
       <div class="footer__column footer__column--info">
-        {% comment %} {%- if section.settings.payment_enable -%} {% endcomment %}
+        {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
             <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
             <ul class="list list-payment" role="list">
@@ -233,7 +233,7 @@
               {%- endfor -%}
             </ul>
           </div>
-        {% comment %} {%- endif -%} {% endcomment %}
+        {%- endif -%}
       </div>
     </div>  
   </div>  
@@ -299,6 +299,18 @@
       "type": "checkbox",
       "id": "enable_language_selector",
       "label": "Enable language selector",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_policy",
+      "label": "Show policy",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "payment_enable",
+      "label": "Show payment",
       "default": false
     },
     {

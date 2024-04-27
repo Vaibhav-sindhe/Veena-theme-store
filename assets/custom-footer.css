@@ -110,6 +110,44 @@
 
 
 
+.custom-footer-bottom-bar--copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.5px solid gray;
+}
+.custom-footer-bottom-bar--copyright .footer__copyright a{
+    color: gray;
+    font-size: 1.8rem;
+}
+.custom-footer-bottom-bar--copyright .copyright__content{
+    color: gray;
+    font-size: 1.8rem;
+}
+.footer__column--info  .list-payment{
+    display: flex;
+    gap: 1rem;
+}
+.footer__localization .disclosure__button{
+    background: black;
+    color: gray;
+}
+.footer__localization .disclosure__list-wrapper{
+    background: black;
+    border: 0.5px solid gray;
+    border-radius: 20px;
+}
+.footer__localization .disclosure__list-wrapper a{
+    color: white;
+}
+
+.custom-footer a{
+    transition: all 0.3s ease;
+}
+.custom-footer a:hover{
+    color:#d03c3f;
+}
+
 @media (max-width:750px) {
     .custom-footer--top-bar{
         display: flex;

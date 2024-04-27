@@ -6,7 +6,7 @@
       {% for i in (1..4) %}
         <span class="social-media-icon">
           {% render 'responsive-picture',
-            desktopImage:section.settings.icon-forloop.index, 
+            desktopImage:section.settings.icon-{{forloop.index}}, 
           %}
         </span>
       {% endfor %} 

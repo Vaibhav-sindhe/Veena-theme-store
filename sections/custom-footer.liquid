@@ -3,26 +3,18 @@
 <div class="custom-footer page-width">
   <div class="custom-footer--top-bar">
     <div class="custom-footer-top-bar--social-media">
-      <span class="social-media-icon">
-        {% render 'responsive-picture',
-          desktopImage:section.settings.icon-1, 
-        %}
-      </span>
-      <span class="social-media-icon">
-        {% render 'responsive-picture',
-          desktopImage:section.settings.icon-2, 
-        %}
-      </span>
-      <span class="social-media-icon">
-        {% render 'responsive-picture',
-          desktopImage:section.settings.icon-3, 
-        %}
-      </span>
-      <span class="social-media-icon">
-        {% render 'responsive-picture',
-          desktopImage:section.settings.icon-4, 
-        %}
-      </span>
+      {% render 'responsive-picture',
+        desktopImage:section.settings.icon-1, 
+      %}
+      {% render 'responsive-picture',
+        desktopImage:section.settings.icon-2, 
+      %}
+      {% render 'responsive-picture',
+        desktopImage:section.settings.icon-3, 
+      %}
+      {% render 'responsive-picture',
+        desktopImage:section.settings.icon-4, 
+      %}
     </div>
     <div class="custom-footer-top-bar--store-image">
       {% render 'responsive-picture',

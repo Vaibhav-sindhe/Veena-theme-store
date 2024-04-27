@@ -34,7 +34,7 @@
       ],
       "settings": {
         "store-image": "shopify:\/\/shop_images\/W_n_Veena.webp",
-        "contact-logo": "shopify:\/\/shop_images\/svgviewer-output_6.svg",
+        "contact-logo": "shopify:\/\/shop_images\/svgviewer-output_9.svg",
         "contact-no": "+0123-456-789",
         "address": "4800 San Mateo Ln NE",
         "store-email": "demo@demo.com",
@@ -42,12 +42,11 @@
         "enable-email-sub": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
-        "show_policy": true,
         "payment_enable": true,
-        "icon-1": "shopify:\/\/shop_images\/svgviewer-output_6.svg",
-        "icon-2": "shopify:\/\/shop_images\/svgviewer-output_8.svg",
-        "icon-3": "shopify:\/\/shop_images\/svgviewer-output_6.svg",
-        "icon-4": "shopify:\/\/shop_images\/svgviewer-output_8.svg"
+        "icon-1": "shopify:\/\/shop_images\/svgviewer-output_7.svg",
+        "icon-2": "shopify:\/\/shop_images\/svgviewer-output_11.svg",
+        "icon-3": "shopify:\/\/shop_images\/svgviewer-output_7.svg",
+        "icon-4": "shopify:\/\/shop_images\/svgviewer-output_11.svg"
       }
     },
     "footer": {

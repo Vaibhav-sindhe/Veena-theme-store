@@ -3,17 +3,26 @@
 <div class="custom-footer page-width">
   <div class="custom-footer--top-bar">
     <div class="custom-footer-top-bar--social-media">
-      {% for i in (1..4) %}
-        <span class="social-media-icon">
-          {% assign url=section.settings.icon-forloop.index %}
-          <script>
-            console.log({{url}});
-          </script>  
-          {% render 'responsive-picture',
-            desktopImage:url, 
-          %}
-        </span>
-      {% endfor %} 
+      <span class="social-media-icon">
+        {% render 'responsive-picture',
+          desktopImage:section.settings.icon-1, 
+        %}
+      </span>
+      <span class="social-media-icon">
+        {% render 'responsive-picture',
+          desktopImage:section.settings.icon-2, 
+        %}
+      </span>
+      <span class="social-media-icon">
+        {% render 'responsive-picture',
+          desktopImage:section.settings.icon-3, 
+        %}
+      </span>
+      <span class="social-media-icon">
+        {% render 'responsive-picture',
+          desktopImage:section.settings.icon-4, 
+        %}
+      </span>
     </div>
     <div class="custom-footer-top-bar--store-image">
       {% render 'responsive-picture',
@@ -27,8 +36,6 @@
       <span>Call us:<p>{{ section.settings.contact-no }}</p></span>
     </div>  
   </div>  
-  
-  
   <div class="custom-footer--bottom"> 
       {% if section.settings.enable-email-sub %} 
         <div class="custom-footer--email-inputContainer">

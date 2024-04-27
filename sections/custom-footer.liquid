@@ -161,7 +161,7 @@
         </localization-form>
       {%- endif -%}
 
-      {% comment %} {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%} {% endcomment %}
+      {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
         <noscript>
           {%- form 'localization', id: 'FooterLanguageFormNoScript', class: 'localization-form' -%}
             <div class="localization-form__select">
@@ -198,7 +198,7 @@
             </div>
           {%- endform -%}
         </localization-form>
-      {% comment %} {%- endif -%} {% endcomment %}
+      {%- endif -%}
     </div>
 
     <div class="custom-footer-bottom-bar--copyright">
@@ -292,7 +292,13 @@
     {
       "type": "checkbox",
       "id": "enable_country_selector",
-      "label": "Countries",
+      "label": "Enable country selector",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_language_selector",
+      "label": "Enable language selector",
       "default": false
     },
     {

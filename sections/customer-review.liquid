@@ -4,6 +4,7 @@
   assign type = section.settings.Slide_animation
   assign pagination = section.settings.show_pagination
   assign perpage = section.settings.perpage
+  assign perMove=section.settings.per-move
   assign gap = section.settings.gap
   assign tabletPerpage=section.settings.tablet-perpage
   assign mobilePerpage=section.settings.mobile-perpage
@@ -14,6 +15,7 @@
           "pagination": {{ pagination }},
           "perPage":{{ perpage }},
           "autoplay":{{ autoPlay }},
+          "perMove": {{ perMove }},
           "gap":{{gap}},
           "breakpoints" : {
             "900": {

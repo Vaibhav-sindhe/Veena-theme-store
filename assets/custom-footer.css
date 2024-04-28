@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-evenly;
 }
-.custom-footer .social-media-icon{
+.custom-footer .icon img{
     height: 2rem;
     width: 2rem;
 }
@@ -74,12 +74,22 @@
     background: black;
 }
 .custom-footer--email-inputContainer .newsletter-form .week-6-email--button{
-    width: 15rem;
-    color: white;
-    padding: 1.7rem 2rem;
-    border-radius: 25px;
+    background: linear-gradient(to right, white 50%, rgb(208, 60, 63) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.4s ease;
     border: none;
-    background:rgb(208, 60, 63);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.custom-footer--email-inputContainer .newsletter-form .week-6-email--button:hover{
+    background-position: left bottom;
+    color: black;
+}
+.custom-footer--email-inputContainer .newsletter-form .week-6-email--button::after{
+    box-shadow: none;
 }
 .newsletter-form__message {
     position: absolute;
@@ -116,10 +126,7 @@
     display: flex;
     align-items: center;
 }
-.custom-footer .icon img{
-    height: 2rem;
-    width: 2rem;
-}
+
 
 
 

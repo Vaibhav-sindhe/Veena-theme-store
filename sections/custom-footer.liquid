@@ -3,22 +3,22 @@
 <div class="custom-footer page-width">
   <div class="custom-footer--top-bar">
     <div class="custom-footer-top-bar--social-media">
-      <span class="social-media-icon">
+      <span class="icon">
         {% render 'responsive-picture',
           desktopImage:section.settings.icon-1, 
         %}
       </span>
-      <span class="social-media-icon">
+      <span class="icon">
         {% render 'responsive-picture',
           desktopImage:section.settings.icon-2, 
         %}
       </span>
-      <span class="social-media-icon">
+      <span class="icon">
         {% render 'responsive-picture',
           desktopImage:section.settings.icon-3, 
         %}
       </span>
-      <span class="social-media-icon">
+      <span class="icon">
         {% render 'responsive-picture',
           desktopImage:section.settings.icon-4, 
         %}
@@ -118,10 +118,10 @@
         <div class="custom-footer-navContainer--block store-info">
           <p class="custom-footer-navContainer-block--heading">Contact Info</p>
           <ul>
-            <li>{% render 'responsive-picture',desktopImage:section.settings.address-icon, %}Address{{ section.settings.address }}</li> 
-            <li>{% render 'responsive-picture',desktopImage:section.settings.contact-logo, %}{{ section.settings.contact-no }}</li> 
-            <li>{% render 'responsive-picture',desktopImage:section.settings.email-icon, %}Email : <a href="mailto:{{section.settings.store-email}}">{{ section.settings.store-email}}</a></li> 
-            <li>{{ section.settings.additional-info }}</li> 
+            <li><span class="icon">{% render 'responsive-picture',desktopImage:section.settings.address-icon, %}</span>Address{{ section.settings.address }}</li> 
+            <li><span class="icon">{% render 'responsive-picture',desktopImage:section.settings.contact-logo, %}</span>{{ section.settings.contact-no }}</li> 
+            <li><span class="icon">{% render 'responsive-picture',desktopImage:section.settings.email-icon, %}</span>Email : <a href="mailto:{{section.settings.store-email}}">{{ section.settings.store-email}}</a></li> 
+            <li><span class="icon">{{ section.settings.additional-info }}</span></li> 
           </ul>  
         </div>  
       </div>

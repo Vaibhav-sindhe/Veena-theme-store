@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-evenly;
 }
-.custom-footer--top-bar .social-media-icon{
+.custom-footer--top-bar .icon{
     height: 2rem;
     width: 2rem;
 }

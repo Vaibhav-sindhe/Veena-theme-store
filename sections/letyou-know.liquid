@@ -10,19 +10,19 @@
 %}
 {%- capture splide_option -%}
       {
-          "type": "{{ type }}",
-          "pagination": {{ pagination }},
-          "perPage":{{ perpage }},
-          "autoplay":{{ autoPlay }},
-          "gap":{{gap}},
-          "breakpoints" : {
-            "900": {
-              "perPage": {{ tabletPerpage }}
-            },
-            "749": {
-              "perPage": {{ mobilePerpage }}
-            }
+        "type": "{{ type }}",
+        "pagination": {{ pagination }},
+        "perPage":{{ perpage }},
+        "autoplay":{{ autoPlay }},
+        "gap":{{gap}},
+        "breakpoints" : {
+          "900": {
+            "perPage": {{ tabletPerpage }}
+          },
+          "749": {
+            "perPage": {{ mobilePerpage }}
           }
+        }
       }
 {% endcapture %}
 {% comment %} <script src="{{ 'custom-slideshow.js' | asset_url }}" defer></script> {% endcomment %}

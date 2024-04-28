@@ -114,8 +114,9 @@
 .store-info li {
     color: gray;
     display: flex;
+    align-items: center;
 }
-.store-info li .icon img{
+.custom-footer .icon img{
     height: 2rem;
     width: 2rem;
 }

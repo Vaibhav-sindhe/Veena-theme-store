@@ -5,6 +5,8 @@
   assign pagination = section.settings.show_pagination
   assign perpage = section.settings.perpage
   assign gap = section.settings.gap
+  assign tabletPerpage=section.settings.tablet-perpage
+  assign mobilePerpage=section.settings.mobile-perpage
 %}
 {%- capture splide_option -%}
       {
@@ -12,7 +14,15 @@
           "pagination": {{ pagination }},
           "perPage":{{ perpage }},
           "autoplay":{{ autoPlay }},
-          "gap":{{gap}}
+          "gap":{{gap}},
+          "breakpoints" : {
+            "900": {
+              "perPage": {{ tabletPerpage }}
+            },
+            "749": {
+              "perPage": {{ mobilePerpage }}
+            }
+          }
       }
   {% endcapture %}
 <div id="customer-review-slider" class="customer-review-wrapper product-slider">
@@ -121,6 +131,24 @@
       "step": 1,
       "label": "Perpage",
       "default": 2
+  },
+  {
+    "type": "range",
+    "id": "tablet-perpage",
+    "min": 1,
+    "max": 3,
+    "step": 1,
+    "label": "Tablet perpage",
+    "default": 2
+  },
+  {
+    "type": "range",
+    "id": "mobile-perpage",
+    "min": 1,
+    "max": 3,
+    "step": 1,
+    "label": "Mobile perpage",
+    "default": 2
   },
   {
       "type": "range",

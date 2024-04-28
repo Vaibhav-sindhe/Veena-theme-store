@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-evenly;
 }
-.custom-footer .icon{
+.custom-footer .social-media-icon{
     height: 2rem;
     width: 2rem;
 }
@@ -114,6 +114,10 @@
 .store-info li {
     color: gray;
     display: flex;
+}
+.store-info li .icon img{
+    height: 2rem;
+    width: 2rem;
 }
 
 

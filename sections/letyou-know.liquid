@@ -12,10 +12,17 @@
           "pagination": {{ pagination }},
           "perPage":{{ perpage }},
           "autoplay":{{ autoPlay }},
-          "gap":{{gap}}
+          "gap":{{gap}},
+          "breakpoints" : {
+            "900": {
+              "perPage":  1
+            },
+            "749": {
+              "perPage": 1
+            }
+          }
       }
 {% endcapture %}
-{% comment %} <script src="{{ 'custom-slideshow.js' | asset_url }}" defer></script> {% endcomment %}
 <div class="letyou_know">
   {% assign blog = section.settings.blog %}
   <div class="letyou_know--heading_container">

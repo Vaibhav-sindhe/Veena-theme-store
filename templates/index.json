@@ -952,9 +952,7 @@
       "type": "demo-productcart",
       "settings": {
         "product_list": [
-          "travel-handy-hiking-zip-pouch",
-          "cotton-style-bucket-hat",
-          "men-winter-jacket"
+          "travel-handy-hiking-zip-pouch"
         ],
         "name": ""
       }

@@ -118,9 +118,9 @@
         <div class="custom-footer-navContainer--block store-info">
           <p class="custom-footer-navContainer-block--heading">Contact Info</p>
           <ul>
-            <li>{{ section.settings.address }}</li> 
-            <li>{{ section.settings.contact-no }}</li> 
-            <li>Email : <a href="mailto:{{section.settings.store-email}}">{{ section.settings.store-email}}</a></li> 
+            <li>{% render 'responsive-picture',desktopImage:section.settings.address-icon, %}Address{{ section.settings.address }}</li> 
+            <li>{% render 'responsive-picture',desktopImage:section.settings.contact-logo, %}{{ section.settings.contact-no }}</li> 
+            <li>{% render 'responsive-picture',desktopImage:section.settings.email-icon, %}Email : <a href="mailto:{{section.settings.store-email}}">{{ section.settings.store-email}}</a></li> 
             <li>{{ section.settings.additional-info }}</li> 
           </ul>  
         </div>  
@@ -282,9 +282,19 @@
       "label": "Contact number"
     },
     {
+      "type": "image_picker",
+      "id": "address-icon",
+      "label": "Address icon"
+    },
+    {
       "type": "text",
       "id": "address",
       "label": "Store address"
+    },
+    {
+      "type": "image_picker",
+      "id": "email-icon",
+      "label": "Email icon"
     },
     {
       "type": "text",

@@ -866,6 +866,7 @@
         "perpage": 3,
         "tablet-perpage": 3,
         "mobile-perpage": 1,
+        "per-move": 1,
         "gap": 15,
         "Slide_animation": "slide"
       }

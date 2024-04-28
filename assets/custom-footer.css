@@ -13,7 +13,11 @@
     border-bottom: 0.1px solid gray;
 }
 .custom-footer--top-bar>div{
-    width: 28rem;
+    width: 30rem;
+}
+.custom-footer--top-bar .custom-footer-top-bar--social-media{
+    display: flex;
+    justify-content: space-evenly;
 }
 .custom-footer--top-bar .social-media-icon{
     height: 2rem;

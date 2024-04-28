@@ -881,6 +881,8 @@
         "show_arrows": true,
         "auto_play_duration": 2000,
         "perpage": 2,
+        "tablet-perpage": 1,
+        "mobile-perpage": 1,
         "gap": 20,
         "Slide_animation": "slide"
       }

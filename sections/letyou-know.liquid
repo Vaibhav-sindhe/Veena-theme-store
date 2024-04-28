@@ -5,8 +5,6 @@
   assign pagination = section.settings.show_pagination
   assign perpage = section.settings.perpage
   assign gap = section.settings.gap
-  assign tabletPerpage=section.settings.tablet-perpage
-  assign mobilePerpage=section.settings.mobile-perpage
 %}
 {%- capture splide_option -%}
       {
@@ -14,15 +12,7 @@
           "pagination": {{ pagination }},
           "perPage":{{ perpage }},
           "autoplay":{{ autoPlay }},
-          "gap":{{gap}},
-          "breakpoints" : {
-            "900": {
-              "perPage": {{ tabletPerpage }}
-            },
-            "749": {
-              "perPage": {{ mobilePerpage }}
-            }
-          }
+          "gap":{{gap}}
       }
 {% endcapture %}
 {% comment %} <script src="{{ 'custom-slideshow.js' | asset_url }}" defer></script> {% endcomment %}

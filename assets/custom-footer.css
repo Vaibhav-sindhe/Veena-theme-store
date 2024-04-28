@@ -116,7 +116,17 @@
 }
 
 
-
+.footer__column {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-top: 0.5px solid gray;
+}
+.footer__column a{
+    color: gray;
+    padding: 0 10px;
+    border-right: 0.5px solid gray;
+}
 
 .custom-footer-bottom-bar--copyright{
     display: flex;

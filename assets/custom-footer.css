@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-evenly;
 }
-.custom-footer--top-bar .icon{
+.custom-footer .icon{
     height: 2rem;
     width: 2rem;
 }

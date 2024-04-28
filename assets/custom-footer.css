@@ -98,11 +98,12 @@
 
 .custom-footer-bottom--navContainer{
     display: flex;
-    gap: 12rem;
+    gap: 10rem;
     align-items: baseline;
     padding-left: 5rem;
 }
 .custom-footer-navContainer--block{
+    width: 15rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -116,13 +117,13 @@
     margin: 0;
 }
 .custom-footer-navContainer--block ul li a{
-    color: gray;
+    color: rgb(255, 255, 255, 0.75 );
     margin-top: 10px;
     font-size: 1.8rem;
     line-height: 5rem;
 }
 .store-info li {
-    color: gray;
+    color: rgb(255, 255, 255, 0.75 );
     display: flex;
     align-items: center;
 }
@@ -137,7 +138,7 @@
     border-top: 0.5px solid gray;
 }
 .footer__column a{
-    color: gray;
+    color: rgb(255, 255, 255, 0.75 );
     padding: 0 10px;
     border-right: 0.5px solid gray;
 }
@@ -149,11 +150,11 @@
     border-top: 0.5px solid gray;
 }
 .custom-footer-bottom-bar--copyright .footer__copyright a{
-    color: gray;
+    color: rgb(255, 255, 255, 0.75 );
     font-size: 1.8rem;
 }
 .custom-footer-bottom-bar--copyright .copyright__content{
-    color: gray;
+    color: rgb(255, 255, 255, 0.75 );
     font-size: 1.8rem;
 }
 .footer__column--info  .list-payment{
@@ -162,17 +163,20 @@
 }
 .footer__localization .disclosure__button{
     background: black;
-    color: gray;
+    color: rgb(255, 255, 255, 0.75 );
 }
 .footer__localization .disclosure__list-wrapper{
     background: black;
     border: 0.5px solid gray;
     border-radius: 20px;
+    width: 17rem;
 }
 .footer__localization .disclosure__list-wrapper a{
     color: white;
 }
-
+.footer__localization .disclosure__item{
+    width: 17rem;
+ }
 .custom-footer a{
     transition: all 0.3s ease;
 }

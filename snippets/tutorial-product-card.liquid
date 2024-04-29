@@ -80,7 +80,7 @@
             {% for variant in product.variants %}
               <option
                 value="{{ variant.id }}"
-                {% if variant.id == current_variant.id %}
+                {% if variant.id == card_product_variant.id %}
                   selected
                 {% endif %}
               >

@@ -245,6 +245,13 @@
               "solid_color_name": "dodgerblue",
               "solid_color": "#1e90ff"
             }
+          },
+          "solid_color_7daXzk": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "firebrick",
+              "solid_color": "#b22222"
+            }
           }
         },
         "block_order": [
@@ -263,7 +270,8 @@
           "solid_color_cnyNKP",
           "solid_color_tGfzMp",
           "solid_color_qGgWbk",
-          "solid_color_izTRPa"
+          "solid_color_izTRPa",
+          "solid_color_7daXzk"
         ],
         "settings": {
           "heading": ""

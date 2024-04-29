@@ -280,6 +280,13 @@
               "solid_color_name": "mediumpurple",
               "solid_color": "#9370db"
             }
+          },
+          "solid_color_6WwT3g": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "mediumseagreen",
+              "solid_color": "#3cb371"
+            }
           }
         },
         "block_order": [
@@ -303,7 +310,8 @@
           "solid_color_UaPXQC",
           "solid_color_BczYn4",
           "solid_color_Gtaar6",
-          "solid_color_x8GFer"
+          "solid_color_x8GFer",
+          "solid_color_6WwT3g"
         ],
         "settings": {
           "heading": ""

@@ -57,41 +57,40 @@
   </div>
   <div class="custom-product-card--info center">
     <div class="custom-product-card--variant-select">
-      {% for option in product.options_with_values %}
-        {% if option.name == 'color' or option.name == 'Color' %}
-          {% for value in option.values %}
-            <input
-              id="custom_variant_radio--{{ forloop.index }}"
-              name="{{ option.name }}"
-              type="radio"
-              value="{{ value }}"
-              data-variant-id="{{ card_product_variant.id }}"
-            >
-            <label for="custom_variant_radio--{{ forloop.index }}">{{ value }}</label>
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
-
-      <!--
-        {% unless product.has_only_default_variant %}
-          <div class="field mt-1">
-            <select name="id" class="product-card__options select__select">
-              {% for variant in product.variants %}
-                <option
-                  value="{{ variant.id }}"
-                  {% if variant.id == current_variant.id %}
-                    selected
-                  {% endif %}
+      {% comment %}
+        {% for option in product.options_with_values %}
+            {% if option.name == 'color' or option.name == 'Color' %}
+              {% for value in option.values %}
+                <input
+                  id="custom_variant_radio--{{ forloop.index }}"
+                  name="{{ option.name }}"
+                  type="radio"
+                  value="{{ value }}"
+                  data-variant-id={{ card_product_variant.id }}
                 >
-                  {{ variant.title }}
-                </option>
+                <label for="custom_variant_radio--{{ forloop.index }}">{{ value }}</label>
               {% endfor %}
-            </select>
-          </div>
-        {% else %}
-          <input type="hidden" name="id" value="{{ current_variant.id }}">
-        {% endunless %}
-      -->
+            {% endif %}
+          {% endfor %}
+      {% endcomment %}
+      {% unless product.has_only_default_variant %}
+        <div class="field mt-1">
+          <select name="id" class="product-card__options select__select">
+            {% for variant in product.variants %}
+              <option
+                value="{{ variant.id }}"
+                {% if variant.id == current_variant.id %}
+                  selected
+                {% endif %}
+              >
+                {{ variant.title }}
+              </option>
+            {% endfor %}
+          </select>
+        </div>
+      {% else %}
+        <input type="hidden" name="id" value="{{ current_variant.id }}">
+      {% endunless %}
     </div>
     <div class="custom-product-card--vendor">
       {{ product.vendor }}

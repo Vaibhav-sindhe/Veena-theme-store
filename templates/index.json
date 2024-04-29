@@ -959,10 +959,12 @@
     "demo_productcart_itU7Fh": {
       "type": "demo-productcart",
       "settings": {
+        "heading": "Heading",
         "product_list": [
-          "travel-handy-hiking-zip-pouch"
+          "travel-handy-hiking-zip-pouch",
+          "men-winter-jacket"
         ],
-        "name": ""
+        "show_view_all": false
       }
     }
   },

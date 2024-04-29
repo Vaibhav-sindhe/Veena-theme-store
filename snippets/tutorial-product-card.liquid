@@ -5,20 +5,20 @@
   {% assign variant_featured_image = product.featured_image %}
 {% endif %}
 <style>
-    .h-full img {
-        width: 100%;
-        height: auto;
-    }
-    .custom-product-card--price-on-sale{
-      text-decoration:line-through;
-      color:red;
-    }
-    .custom-product-card--inventory.low-stock{
-      color:red;
-    }
-    .custom-product-card--inventory.high-stock{
-      color:green;
-    }
+  .h-full img {
+      width: 100%;
+      height: auto;
+  }
+  .custom-product-card--price-on-sale{
+    text-decoration:line-through;
+    color:red;
+  }
+  .custom-product-card--inventory.low-stock{
+    color:red;
+  }
+  .custom-product-card--inventory.high-stock{
+    color:green;
+  }
 </style>
 
 <veena-product-card data-handle="{{ product.handle }}" class="custom-product-card">
@@ -50,27 +50,27 @@
         class="badge badge--top-left color-{{ settings.sale_badge_color_scheme }}"
       >
         {% assign price_diff = card_product_variant.compare_at_price | minus: card_product_variant.price %}
-        {{  }} %off
+        {{ price_diff }} %off
       </span>
     {% endif %}
   </div>
   <div class="custom-product-card--info center">
     <div class="custom-product-card--variant-select">
       {% comment %}
-      {% for option in product.options_with_values %}
-          {% if option.name == 'color' or option.name == 'Color' %}
-            {% for value in option.values %}
-              <input
-                id="custom_variant_radio--{{ forloop.index }}"
-                name="{{ option.name }}"
-                type="radio"
-                value="{{ value }}"
-                data-variant-id={{ card_product_variant.id }}
-              >
-              <label for="custom_variant_radio--{{ forloop.index }}">{{ value }}</label>
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
+        {% for option in product.options_with_values %}
+            {% if option.name == 'color' or option.name == 'Color' %}
+              {% for value in option.values %}
+                <input
+                  id="custom_variant_radio--{{ forloop.index }}"
+                  name="{{ option.name }}"
+                  type="radio"
+                  value="{{ value }}"
+                  data-variant-id={{ card_product_variant.id }}
+                >
+                <label for="custom_variant_radio--{{ forloop.index }}">{{ value }}</label>
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
       {% endcomment %}
       {% unless product.has_only_default_variant %}
         <div class="field mt-1">

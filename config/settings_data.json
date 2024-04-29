@@ -141,18 +141,11 @@
               "solid_color": "#000000"
             }
           },
-          "solid_color_VR8KYi": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "pink",
-              "solid_color": "#ea0de7"
-            }
-          },
           "solid_color_XKq3Dx": {
             "type": "solid-color",
             "settings": {
               "solid_color_name": "blue",
-              "solid_color": "#0061ff"
+              "solid_color": "#0000ff"
             }
           },
           "solid_color_JafHAh": {
@@ -347,7 +340,6 @@
         },
         "block_order": [
           "solid_color_Hq8Dkp",
-          "solid_color_VR8KYi",
           "solid_color_XKq3Dx",
           "solid_color_JafHAh",
           "solid_color_4x3EfM",

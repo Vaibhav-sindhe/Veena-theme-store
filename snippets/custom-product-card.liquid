@@ -19,10 +19,16 @@
           class: 'media media--portrait'
         %}
         <span
-          class="badge badge--top-left color-{{ settings.sale_badge_color_scheme }}"
+          class="badge badge--top-left color-{{ settings.sale_badge_color_scheme }} badge-0"
         >
           {{ discount }} %off
         </span>
+        {% for tag in product.tags %}
+          {% if tag contains 'badge-' %}
+            {% assign badge_text = tag | split: 'badge-' %}
+            <span class="badge badge-{{ forloop.index }}"> {{ badge_text }} </span>
+          {% endif %}
+        {% endfor %}
       </div>
     </a>
   

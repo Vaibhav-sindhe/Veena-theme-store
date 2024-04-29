@@ -252,6 +252,13 @@
               "solid_color_name": "firebrick",
               "solid_color": "#b22222"
             }
+          },
+          "solid_color_UaPXQC": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "floralwhite",
+              "solid_color": "#fffaf0"
+            }
           }
         },
         "block_order": [
@@ -271,7 +278,8 @@
           "solid_color_tGfzMp",
           "solid_color_qGgWbk",
           "solid_color_izTRPa",
-          "solid_color_7daXzk"
+          "solid_color_7daXzk",
+          "solid_color_UaPXQC"
         ],
         "settings": {
           "heading": ""

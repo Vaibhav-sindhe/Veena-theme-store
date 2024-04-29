@@ -89,26 +89,26 @@
         {% if product.vendor %}
           <div class = "product-card__vendor">{{ product.vendor }}</div>
         {% endif %}  
-   
-        <a href="{{ product.url }}" class="product-card__title">{{ product.title }}</a>     
+        
+        {% if product.title %}
+          <a href="{{ product.url }}" class="product-card__title">{{ product.title }}</a>    
+        {% endif %} 
   
         <div class="product-card__prices">
-          {% if product.price_varies %}
-            <span class="product-card__price-amount"> From {{ product.price_min | money_with_currency }}</span>
-          {% else %}
-            <span class="product-card__price-amount">  {{ product.price | money_with_currency }}</span>   
+          {% if current_variant.price %}
+            <span class="product-card__price-amount">  {{ current_variant.price | money_with_currency }}</span>   
           {% endif %}                
 
-          {% if current_variant.compare_at_price > current_variant.price %}
-          <s class="product-card__compareprice">{{ current_variant.compare_at_price | money_without_trailing_zeros }}</s>
+          {% if current_variant.compare_at_price %}
+          <s class="product-card__compareprice">{{ current_variant.compare_at_price | money_with_currency }}</s>
           {% endif %}
         </div>
        
-        {% comment %} {% if current_variant.inventory_quantity > 10 and current_variant.inventory_quantity <= 50 %}
+        {% if current_variant.inventory_quantity > 10 %}
           <span class = "product-card__stock product-card__max-stock">{{ current_variant.inventory_quantity }}  in stock</span>
-        {% elsif current_variant.inventory_quantity < 10 and current_variant.inventory_quantity > 1 %} 
+        {% elsif current_variant.inventory_quantity > 1 %} 
           <span class = "product-card__stock product-card__min-stock">Only {{ current_variant.inventory_quantity }}  units left</span>
-        {% endif %}   {% endcomment %}
+        {% endif %}   
       
     </div>
   

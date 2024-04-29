@@ -322,6 +322,13 @@
               "solid_color_name": "saddlebrown",
               "solid_color": "#8b4513"
             }
+          },
+          "solid_color_rAFk4M": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "teal",
+              "solid_color": "#008080"
+            }
           }
         },
         "block_order": [
@@ -351,7 +358,8 @@
           "solid_color_axx88Q",
           "solid_color_R8NPa7",
           "solid_color_GtydkH",
-          "solid_color_Xd4DUN"
+          "solid_color_Xd4DUN",
+          "solid_color_rAFk4M"
         ],
         "settings": {
           "heading": ""

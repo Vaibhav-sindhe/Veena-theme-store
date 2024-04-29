@@ -34,6 +34,12 @@
 } */
 
 
+.product-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
   .product-card-container{
     padding:0 5rem;
     display:flex;
@@ -44,11 +50,13 @@
     width:30rem;
     object-fit:cover;
     overflow:hidden;
+    border-radius: 20px;
   }
   .product-card__image img{
     height:10rem;
     width:10rem;
     object-fit:cover;
+    border-radius: 20px;
   }
   .product-card__vendor {
     font-size: 14px;

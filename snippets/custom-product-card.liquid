@@ -18,11 +18,13 @@
           desktopImage: featured_image,
           class: 'media media--portrait'
         %}
-        <span
-          class="badge badge--top-left color-{{ settings.sale_badge_color_scheme }} badge-0"
-        >
-          {{ discount }} %off
-        </span>
+        {% if discount %}
+          <span
+            class="badge badge--top-left color-{{ settings.sale_badge_color_scheme }} badge-0"
+          >
+            {{ discount }} %off
+          </span>
+        {% endif %}  
         {% for tag in product.tags %}
           {% if tag contains 'badge-' %}
             {% assign badge_text = tag | split: 'badge-' %}

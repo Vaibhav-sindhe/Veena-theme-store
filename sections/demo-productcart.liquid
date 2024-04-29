@@ -1,11 +1,14 @@
-<div class="product-card-container">
+{% comment %}
+  <div class="product-card-container">
   {% for product in section.settings.product_list %}
-    {% render 'custom-product-card', product: product %}
-  {% endfor %}
-  {% comment %} <button class="generate">Generate</button> {% endcomment %}
-  <div id="appendContainer"></div>
-</div>
-<style>
+    {% render
+       "custom-product-card", product:product
+    %}
+    {% endfor %}
+    {% comment %} <button class="generate">Generate</button> {% endcomment %}
+    <div id="appendContainer"></div>
+  </div>
+  <style>
   .product-card-container{
     padding:0 5rem;
     display:flex;
@@ -305,8 +308,8 @@
       display: none;
     }
   }
-</style>
-<script>
+  </style>
+  <script>
     let btn=document.querySelector(".generate");
     btn.addEventListener("click",()=>{
       console.log("clicked");
@@ -325,76 +328,76 @@
           container.innerHTML = content.innerHTML;
       })
   }
-</script>
-{% schema %}
-{
-  "name": "demo productcart section",
-  "settings": [
-    {
-      "type": "product_list",
-      "id": "product_list",
-      "label": "Product list"
-    },
-    {
-      "type":"text",
-      "id":"name",
-      "label":"name"
-    }
-  ],
-  "presets": [
-    {
-      "name": "demo productcart section"
-    }
-  ]
-}
-{% endschema %}
 
-{% comment %}
-  <script src="{{ 'tutorial-product-card.js' | asset_url }}" defer></script>
-  <script defer src="{{"splide.min.js" | asset_url}}"></script>
-  <link rel="stylesheet" href="{{ "splide.min.css" | asset_url }}">
-  <script src="{{ 'featured-custom-collection.js' | asset_url }}" defer></script>
-  {% assign products = section.settings.product_list %}
-
-  <div class="tutorial page-width">
-    <h3 class="featured-custom-title">{{ section.settings.heading }}</h3>
-    <ul class="grid gri">
-      {% for product in products %}
-        <li class="grid__item grid--4-col-desktop grid--3-col-tablet ">
-          {% render 'tutorial-product-card', product: product %}
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-
+  </script>
   {% schema %}
-  {
-      "name": "Tutorial fc",
-      "tag": "section",
-      "class": "section",
+    {
+      "name": "demo productcart section",
       "settings": [
-          {
-            "type": "text",
-            "id": "heading",
-            "label": "Heading",
-            "default" : "Heading"
-          },
-          {
-              "type": "product_list",
-              "id": "product_list",
-              "label": "Select product"
-          },
-          {
-            "type": "checkbox",
-             "id": "show_view_all",
-              "label": "Show view all"
-          }
+        {
+          "type": "product_list",
+          "id": "product_list",
+          "label": "Product list"
+        },
+        {
+          "type":"text",
+          "id":"name",
+          "label":"name"
+        }
       ],
       "presets": [
-          {
-           "name": "Tutorial fc"
-          }
+        {
+          "name": "demo productcart section"
+        }
       ]
-  }
+    }
   {% endschema %}
 {% endcomment %}
+
+<script src="{{ 'tutorial-product-card.js' | asset_url }}" defer></script>
+<script defer src="{{"splide.min.js" | asset_url}}"></script>
+<link rel="stylesheet" href="{{ "splide.min.css" | asset_url }}">
+<script src="{{ 'featured-custom-collection.js' | asset_url }}" defer></script>
+{% assign products = section.settings.product_list %}
+
+<div class="tutorial page-width">
+  <h3 class="featured-custom-title">{{ section.settings.heading }}</h3>
+  <ul class="grid gri">
+    {% for product in products %}
+      <li class="grid__item grid--4-col-desktop grid--3-col-tablet ">
+        {% render 'tutorial-product-card', product: product %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% schema %}
+{
+    "name": "Tutorial fc",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default" : "Heading"
+        },
+        {
+            "type": "product_list",
+            "id": "product_list",
+            "label": "Select product"
+        },
+        {
+          "type": "checkbox",
+           "id": "show_view_all",
+            "label": "Show view all"
+        }
+    ],
+    "presets": [
+        {
+         "name": "Tutorial fc"
+        }
+    ]
+}
+{% endschema %}

@@ -175,6 +175,20 @@
               "solid_color_name": "moccasin",
               "solid_color": "#fff12e"
             }
+          },
+          "solid_color_TwFwVq": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "limegreen",
+              "solid_color": "#4efc04"
+            }
+          },
+          "solid_color_bjkw8k": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "deeppink",
+              "solid_color": "#ff00fc"
+            }
           }
         },
         "block_order": [
@@ -183,7 +197,9 @@
           "solid_color_XKq3Dx",
           "solid_color_JafHAh",
           "solid_color_4x3EfM",
-          "solid_color_qGTaFL"
+          "solid_color_qGTaFL",
+          "solid_color_TwFwVq",
+          "solid_color_bjkw8k"
         ],
         "settings": {
           "heading": ""

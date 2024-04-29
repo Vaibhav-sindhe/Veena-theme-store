@@ -189,6 +189,13 @@
               "solid_color_name": "deeppink",
               "solid_color": "#ff00fc"
             }
+          },
+          "solid_color_aCB8gq": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "coral",
+              "solid_color": "#fa7d04"
+            }
           }
         },
         "block_order": [
@@ -199,7 +206,8 @@
           "solid_color_4x3EfM",
           "solid_color_qGTaFL",
           "solid_color_TwFwVq",
-          "solid_color_bjkw8k"
+          "solid_color_bjkw8k",
+          "solid_color_aCB8gq"
         ],
         "settings": {
           "heading": ""

@@ -11,7 +11,7 @@ class VeenaProductCard extends HTMLElement {
 
   variantChange(){
     this.selectedVariantId = this.querySelector('[name="id"]').value;
-    let variantUrl = `/products/${this.dataset.handle}?view=custom-product-card&variant=${this.selectedVariantId}`;
+    let variantUrl = `/products/${this.dataset.handle}?view=tutorial-product-card&variant=${this.selectedVariantId}`;
      
     //Fetching for new html
     fetch(variantUrl)

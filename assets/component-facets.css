@@ -1189,3 +1189,19 @@ input.mobile-facets__checkbox {
     padding: 0 1rem 1rem;
   }
 }
+
+
+.facet-checkbox{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.facet-checkbox .color-swatch{
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+.display-none{
+  display: none;
+}

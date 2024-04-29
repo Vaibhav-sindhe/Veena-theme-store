@@ -219,7 +219,7 @@
                                   {% if is_disabled %}
                                     disabled
                                   {% endif %}
-                                >
+                                > 
 
                                 {% if has_visual_display %}
                                   <div class="facets__visual-display-wrapper">
@@ -236,13 +236,14 @@
                                     viewBox="0 0 16 16"
                                     aria-hidden="true"
                                     focusable="false"
+                                    {% if filter.label=='color' or filter.label=='Color' %}class="display-none"{% endif %}
                                   >
                                     <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                   </svg>
 
                                   <svg
                                     aria-hidden="true"
-                                    class="icon icon-checkmark"
+                                    class="icon icon-checkmark {% if filter.label=='color' or filter.label=='Color' %}display-none{% endif %}"
                                     width="1.1rem"
                                     height="0.7rem"
                                     viewBox="0 0 11 7"
@@ -257,7 +258,7 @@
                                   </svg>
                                 {% endif %}
                                 {% comment %} changes {% endcomment %}
-                                <span class="color-swatch--{{ value.label | handle }}"></span>
+                                {% if filter.label=='color' or filter.label=='Color' %}<span class="color-swatch color-swatch--{{ value.label | handle }}"></span>{% endif %}
 
                                 <span class="facet-checkbox__text" aria-hidden="true">
                                   {{- value.label | escape }} ({{ value.count }})</span

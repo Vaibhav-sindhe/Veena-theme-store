@@ -308,6 +308,13 @@
               "solid_color_name": "orchid",
               "solid_color": "#da70d6"
             }
+          },
+          "solid_color_GtydkH": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "peru",
+              "solid_color": "#cd853f"
+            }
           }
         },
         "block_order": [
@@ -335,7 +342,8 @@
           "solid_color_6WwT3g",
           "solid_color_Tagfxr",
           "solid_color_axx88Q",
-          "solid_color_R8NPa7"
+          "solid_color_R8NPa7",
+          "solid_color_GtydkH"
         ],
         "settings": {
           "heading": ""

@@ -79,13 +79,7 @@
             {% for variant in product.variants %}
               <option
                 value="{{ variant.id }}"
-                <!--
-                {% if variant.id == current_variant.id %}
-                  selected
-                {% endif %}
-                --
               >
-                >
                 {{ variant.title }}
               </option>
             {% endfor %}

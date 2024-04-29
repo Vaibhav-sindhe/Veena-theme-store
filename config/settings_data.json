@@ -196,6 +196,13 @@
               "solid_color_name": "coral",
               "solid_color": "#fa7d04"
             }
+          },
+          "solid_color_ddwCx8": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "cornsilk",
+              "solid_color": "#f9f1d9"
+            }
           }
         },
         "block_order": [
@@ -207,7 +214,8 @@
           "solid_color_qGTaFL",
           "solid_color_TwFwVq",
           "solid_color_bjkw8k",
-          "solid_color_aCB8gq"
+          "solid_color_aCB8gq",
+          "solid_color_ddwCx8"
         ],
         "settings": {
           "heading": ""

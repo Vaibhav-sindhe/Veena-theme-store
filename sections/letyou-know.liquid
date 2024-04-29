@@ -1,12 +1,12 @@
 {{ 'letyou-know.css' | asset_url | stylesheet_tag }}
 {% liquid
-  assign autoPlay=section.settings.auto_play
+  assign autoPlay = section.settings.auto_play
   assign type = section.settings.Slide_animation
   assign pagination = section.settings.show_pagination
   assign perpage = section.settings.perpage
   assign gap = section.settings.gap
-  assign tabletPerpage=section.settings.tablet-perpage
-  assign mobilePerpage=section.settings.mobile-perpage
+  assign tabletPerpage = section.settings['tablet-perpage']
+  assign mobilePerpage = section.settings['mobile-perpage']
 %}
 {%- capture splide_option -%}
       {
@@ -28,39 +28,53 @@
 <div class="letyou_know">
   {% assign blog = section.settings.blog %}
   <div class="letyou_know--heading_container">
-    {% if section.settings.heading %}<h1>{{ section.settings.heading }}</h1>{% endif %}
-    {% if blog.url %}<a class="button" href="{{ blog.url }}">Read all</a>{% endif %}
+    {% if section.settings.heading %}
+      <h1>{{ section.settings.heading }}</h1>
+    {% endif %}
+    {% if blog.url -%}
+      <a class="button" href="{{ blog.url }}">Read all</a>
+    {%- endif %}
   </div>
-    <splider-component>
-      <div class="splide" id="letyou-know-splid" data-slider-settings='{{ splide_option }}'>
-        <div class="splide__track">
-          <ul class="splide__list">
-            {% for article in blog.articles %}
-              <li class="splide__slide letyou_know--article ">
-                {% if article.image %}
-                  <div class="letyou_know-article--image_container">
-                    {% render 'responsive-picture', desktopImage: article.image %}
-                  </div>
-                {% endif %}  
-                <div class="letyou_know-article--content">
-                  <div class="letyou_know-article-content--first">
-                    {% if article.tags %}<p class="letyou_know-article-content-first--tags">{{ article.tags }}</p>{% endif %}
-                    {% if article.title %}<p class="letyou_know-article-content-first--title">{{ article.title }}</p>{% endif %}
-                    {% if article.author %}<p class="letyou_know-article-content-first--author">Published by:{{ article.author }}</p>{% endif %}
-                    {% if article.excerpt %}<p class="letyou_know-article-content-first--excerpt">{{ article.excerpt }}</p>{% endif %}
-                  </div>
-                  <div class="letyou_know-article-content--second">
-                    <a href="{{ article.url }}">Read more</a>
-                    {% if article.published_at %}<p>{{ article.published_at | date: '%B %d, %Y' }}</p>{% endif %}
-                  </div>
+  <splider-component>
+    <div class="splide" id="letyou-know-splid" data-slider-settings="{{ splide_option }}">
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for article in blog.articles %}
+            <li class="splide__slide letyou_know--article ">
+              {% if article.image %}
+                <div class="letyou_know-article--image_container">
+                  {% render 'responsive-picture', desktopImage: article.image %}
                 </div>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+              {% endif %}
+              <div class="letyou_know-article--content">
+                <div class="letyou_know-article-content--first">
+                  {% if article.tags %}
+                    <p class="letyou_know-article-content-first--tags">{{ article.tags | join: ' ' }}</p>
+                  {% endif %}
+                  {% if article.title %}
+                    <p class="letyou_know-article-content-first--title">{{ article.title }}</p>
+                  {% endif %}
+                  {% if article.author %}
+                    <p class="letyou_know-article-content-first--author">Published by:{{ article.author }}</p>
+                  {% endif %}
+                  {% if article.excerpt %}
+                    <p class="letyou_know-article-content-first--excerpt">{{ article.excerpt }}</p>
+                  {% endif %}
+                </div>
+                <div class="letyou_know-article-content--second">
+                  <a href="{{ article.url }}">Read more</a>
+                  {% if article.published_at %}
+                    <p>{{ article.published_at | date: '%B %d, %Y' }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
-    </splider-component>
-  </div>
+    </div>
+  </splider-component>
+</div>
 {% schema %}
 {
   "name": "blog list section",

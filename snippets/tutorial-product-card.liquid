@@ -57,55 +57,41 @@
   </div>
   <div class="custom-product-card--info center">
     <div class="custom-product-card--variant-select">
-      {% comment %}
-                {% for product_option in product.options_with_values %}
-            {% if product_option.name == "Color" %}
-                <div class="product-card__option">
-                    <ul class="custom product-card__list">
-                      {% for option_value in product_option.values %}
-                        {% assign isOptionOutOfStock = false %}
+      {% for option in product.options_with_values %}
+        {% if option.name == 'color' or option.name == 'Color' %}
+          {% for value in option.values %}
+            <input
+              id="custom_variant_radio--{{ forloop.index }}"
+              name="{{ option.name }}"
+              type="radio"
+              value="{{ value }}"
+              data-variant-id="{{ card_product_variant.id }}"
+            >
+            <label for="custom_variant_radio--{{ forloop.index }}">{{ value }}</label>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
 
-                        {% if current_variant.inventory_quantity == 0 and product_option.selected_value == option_value %}
-                            {% assign isOptionOutOfStock = true %}
-                        {% endif %}
-
-                        <li data-value={{ option_value }} class="product-card__color-dot item-swatch{% if isOptionOutOfStock %} out-of-stock{% endif %}" style="{% if product_option.selected_value == option_value %}border: 2px solid red;{% endif %}">
-                            <input
-                                id="{{ current_variant.id | append: option_value }}"
-                                type="radio"
-                                name="option-{{ product_option.name | handleize }}"
-                                value="{{ option_value }}"
-                                {% if product_option.selected_value == option_value %}checked{% endif %}
-                            >
-                            <label class="color-swatch--{{ option_value | handleize }}" data-value="{{ option_value }}" for="{{ current_variant.id | append: option_value }}"></label>
-                            {% if isOptionOutOfStock %}
-                                <div class="product-variant-options__cross-line"></div>
-                            {% endif %}
-                        </li>
-                    {% endfor %}
-                    </ul>
-                </div>
-            {% endif %}
-        {% endfor %}
-      {% endcomment %}
-      {% unless product.has_only_default_variant %}
-        <div class="field mt-1">
-          <select name="id" class="product-card__options select__select">
-            {% for variant in product.variants %}
-              <option
-                value="{{ variant.id }}"
-                {% if variant.id == current_variant.id %}
-                  selected
-                {% endif %}
-              >
-                {{ variant.title }}
-              </option>
-            {% endfor %}
-          </select>
-        </div>
-      {% else %}
-        <input type="hidden" name="id" value="{{ current_variant.id }}">
-      {% endunless %}
+      <!--
+        {% unless product.has_only_default_variant %}
+          <div class="field mt-1">
+            <select name="id" class="product-card__options select__select">
+              {% for variant in product.variants %}
+                <option
+                  value="{{ variant.id }}"
+                  {% if variant.id == current_variant.id %}
+                    selected
+                  {% endif %}
+                >
+                  {{ variant.title }}
+                </option>
+              {% endfor %}
+            </select>
+          </div>
+        {% else %}
+          <input type="hidden" name="id" value="{{ current_variant.id }}">
+        {% endunless %}
+      -->
     </div>
     <div class="custom-product-card--vendor">
       {{ product.vendor }}

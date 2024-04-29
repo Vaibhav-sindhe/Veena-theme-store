@@ -80,7 +80,7 @@
             {% for variant in product.variants %}
               <option
                 value="{{ variant.id }}"
-                {% if variant.id == current_variant.id %}
+                {% if variant.id == card_product_variant.id %}
                   selected
                 {% endif %}
               >
@@ -90,7 +90,7 @@
           </select>
         </div>
       {% else %}
-        <input type="hidden" name="id" value="{{ current_variant.id }}">
+        <input type="hidden" name="id" value="{{ card_product_varianT.id }}">
       {% endunless %}
     </div>
 

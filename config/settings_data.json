@@ -287,6 +287,13 @@
               "solid_color_name": "mediumseagreen",
               "solid_color": "#3cb371"
             }
+          },
+          "solid_color_Tagfxr": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "midnightblue",
+              "solid_color": "#191970"
+            }
           }
         },
         "block_order": [
@@ -311,7 +318,8 @@
           "solid_color_BczYn4",
           "solid_color_Gtaar6",
           "solid_color_x8GFer",
-          "solid_color_6WwT3g"
+          "solid_color_6WwT3g",
+          "solid_color_Tagfxr"
         ],
         "settings": {
           "heading": ""

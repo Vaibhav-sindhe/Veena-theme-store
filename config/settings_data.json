@@ -217,6 +217,13 @@
               "solid_color_name": "darkgreen",
               "solid_color": "#086b0e"
             }
+          },
+          "solid_color_cnyNKP": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "darkolivegreen",
+              "solid_color": "#459c3e"
+            }
           }
         },
         "block_order": [
@@ -231,7 +238,8 @@
           "solid_color_aCB8gq",
           "solid_color_ddwCx8",
           "solid_color_7HQNTt",
-          "solid_color_EC3j7Y"
+          "solid_color_EC3j7Y",
+          "solid_color_cnyNKP"
         ],
         "settings": {
           "heading": ""

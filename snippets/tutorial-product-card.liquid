@@ -73,6 +73,7 @@
             {% endif %}
           {% endfor %}
       {% endcomment %}
+
       {% unless product.has_only_default_variant %}
         <div class="field mt-1">
           <select name="id" class="product-card__options select__select">
@@ -92,6 +93,7 @@
         <input type="hidden" name="id" value="{{ current_variant.id }}">
       {% endunless %}
     </div>
+
     <div class="custom-product-card--vendor">
       {{ product.vendor }}
     </div>

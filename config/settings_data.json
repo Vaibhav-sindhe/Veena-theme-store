@@ -301,6 +301,13 @@
               "solid_color_name": "navy",
               "solid_color": "#000080"
             }
+          },
+          "solid_color_R8NPa7": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "orchid",
+              "solid_color": "#da70d6"
+            }
           }
         },
         "block_order": [
@@ -327,7 +334,8 @@
           "solid_color_x8GFer",
           "solid_color_6WwT3g",
           "solid_color_Tagfxr",
-          "solid_color_axx88Q"
+          "solid_color_axx88Q",
+          "solid_color_R8NPa7"
         ],
         "settings": {
           "heading": ""

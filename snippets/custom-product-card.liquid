@@ -95,6 +95,8 @@
           <span class = "product-card__stock product-card__max-stock">{{ current_variant.inventory_quantity }}  in stock</span>
         {% elsif current_variant.inventory_quantity > 1 %} 
           <span class = "product-card__stock product-card__min-stock">Only {{ current_variant.inventory_quantity }}  units left</span>
+        {% elsif current_variant.inventory_quantity ==0 %}
+         <span class = "product-card__stock product-card__min-stock">Out of stock</span>
         {% endif %}   
       
     </div>

@@ -44,7 +44,7 @@
                 {% endif %}  
                 <div class="letyou_know-article--content">
                   <div class="letyou_know-article-content--first">
-                    {% if article.tags %}<p class="letyou_know-article-content-first--tags">{{ article.tags | join:" " }}</p>{% endif %}
+                    {% if article.tags %}<p class="letyou_know-article-content-first--tags">{{ article.tags |  join:" " }}</p>{% endif %}
                     {% if article.title %}<p class="letyou_know-article-content-first--title">{{ article.title }}</p>{% endif %}
                     {% if article.author %}<p class="letyou_know-article-content-first--author">Published by:{{ article.author }}</p>{% endif %}
                     {% if article.excerpt %}<p class="letyou_know-article-content-first--excerpt">{{ article.excerpt }}</p>{% endif %}

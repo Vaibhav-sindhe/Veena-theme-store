@@ -336,6 +336,13 @@
               "solid_color_name": "whitesmoke",
               "solid_color": "#f5f5f5"
             }
+          },
+          "solid_color_gg6pQU": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "pink",
+              "solid_color": "#ffc0cb"
+            }
           }
         },
         "block_order": [
@@ -367,7 +374,8 @@
           "solid_color_Xd4DUN",
           "solid_color_rAFk4M",
           "solid_color_fLCm9e",
-          "solid_color_CVLY7N"
+          "solid_color_CVLY7N",
+          "solid_color_gg6pQU"
         ],
         "settings": {
           "heading": ""

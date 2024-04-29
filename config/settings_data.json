@@ -189,6 +189,55 @@
               "solid_color_name": "deeppink",
               "solid_color": "#ff00fc"
             }
+          },
+          "solid_color_aCB8gq": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "coral",
+              "solid_color": "#fa7d04"
+            }
+          },
+          "solid_color_ddwCx8": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "cornsilk",
+              "solid_color": "#f9f1d9"
+            }
+          },
+          "solid_color_7HQNTt": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "darkblue",
+              "solid_color": "#334fb4"
+            }
+          },
+          "solid_color_EC3j7Y": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "darkgreen",
+              "solid_color": "#086b0e"
+            }
+          },
+          "solid_color_cnyNKP": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "darkolivegreen",
+              "solid_color": "#459c3e"
+            }
+          },
+          "solid_color_tGfzMp": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "darkorange",
+              "solid_color": "#fa8b09"
+            }
+          },
+          "solid_color_qGgWbk": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "darkslategray",
+              "solid_color": "#6e8391"
+            }
           }
         },
         "block_order": [
@@ -199,7 +248,14 @@
           "solid_color_4x3EfM",
           "solid_color_qGTaFL",
           "solid_color_TwFwVq",
-          "solid_color_bjkw8k"
+          "solid_color_bjkw8k",
+          "solid_color_aCB8gq",
+          "solid_color_ddwCx8",
+          "solid_color_7HQNTt",
+          "solid_color_EC3j7Y",
+          "solid_color_cnyNKP",
+          "solid_color_tGfzMp",
+          "solid_color_qGgWbk"
         ],
         "settings": {
           "heading": ""

@@ -294,6 +294,13 @@
               "solid_color_name": "midnightblue",
               "solid_color": "#191970"
             }
+          },
+          "solid_color_axx88Q": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "navy",
+              "solid_color": "#000080"
+            }
           }
         },
         "block_order": [
@@ -319,7 +326,8 @@
           "solid_color_Gtaar6",
           "solid_color_x8GFer",
           "solid_color_6WwT3g",
-          "solid_color_Tagfxr"
+          "solid_color_Tagfxr",
+          "solid_color_axx88Q"
         ],
         "settings": {
           "heading": ""

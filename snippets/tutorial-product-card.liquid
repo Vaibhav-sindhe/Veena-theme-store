@@ -50,7 +50,7 @@
         class="badge badge--top-left color-{{ settings.sale_badge_color_scheme }}"
       >
         {% assign price_diff = card_product_variant.compare_at_price | minus: card_product_variant.price %}
-        {{  }} %off
+        {{ price_diff }} %off
       </span>
     {% endif %}
   </div>

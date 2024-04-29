@@ -329,6 +329,13 @@
               "solid_color_name": "teal",
               "solid_color": "#008080"
             }
+          },
+          "solid_color_fLCm9e": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "white",
+              "solid_color": "#ffffff"
+            }
           }
         },
         "block_order": [
@@ -359,7 +366,8 @@
           "solid_color_R8NPa7",
           "solid_color_GtydkH",
           "solid_color_Xd4DUN",
-          "solid_color_rAFk4M"
+          "solid_color_rAFk4M",
+          "solid_color_fLCm9e"
         ],
         "settings": {
           "heading": ""

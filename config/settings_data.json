@@ -259,6 +259,13 @@
               "solid_color_name": "floralwhite",
               "solid_color": "#fffaf0"
             }
+          },
+          "solid_color_BczYn4": {
+            "type": "solid-color",
+            "settings": {
+              "solid_color_name": "indianred",
+              "solid_color": "#cd5c5c"
+            }
           }
         },
         "block_order": [
@@ -279,7 +286,8 @@
           "solid_color_qGgWbk",
           "solid_color_izTRPa",
           "solid_color_7daXzk",
-          "solid_color_UaPXQC"
+          "solid_color_UaPXQC",
+          "solid_color_BczYn4"
         ],
         "settings": {
           "heading": ""

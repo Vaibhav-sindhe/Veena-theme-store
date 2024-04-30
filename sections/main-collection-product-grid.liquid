@@ -160,10 +160,13 @@
                       "custom-product-card", product:product
                     %}
                   {% else %}
-                    <div class="product-card">
-                      <h1>Hello</h1>
-
+                  <div>
+                    <div class="product-card editorial-image">
+                      {% render 'responsive-picture',
+                        desktopImage:  section.settings.editorial-image, 
+                      %}
                     </div>
+                  </div>  
                   {% endif %}    
                 </li>
               {%- endfor -%}
@@ -389,7 +392,23 @@
       "type": "image_picker",
       "id": "editorial-image",
       "label": "Editorrial image"
+    },
+    {
+      "type": "text",
+      "id": "editorial-preheading",
+      "label": "Editorial preheading"
+    },
+    {
+      "type": "text",
+      "id": "editorial-title",
+      "label": "Editorial Image"
+    },
+    {
+      "type": "text",
+      "id": "editorial-description",
+      "label": "Editorial description"
     }
+
   ]
 }
 {% endschema %}

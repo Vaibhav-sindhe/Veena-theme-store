@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -25,6 +18,14 @@
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
+          }
+        },
+        "inventory_gdHM8W": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
           }
         },
         "quantity_selector": {
@@ -44,29 +45,36 @@
           "settings": {
           }
         },
-        "share": {
-          "type": "share",
+        "complementary_nk399q": {
+          "type": "complementary",
           "settings": {
-            "share_label": "Share"
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "price",
         "variant_picker",
+        "inventory_gdHM8W",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "complementary_nk399q"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_size": "large",
+        "media_size": "medium",
         "constrain_to_viewport": true,
-        "media_fit": "contain",
+        "media_fit": "cover",
         "gallery_layout": "stacked",
         "media_position": "left",
         "image_zoom": "lightbox",
@@ -88,7 +96,7 @@
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false,
         "columns_mobile": "2",
         "padding_top": 36,

@@ -1094,6 +1094,9 @@ input.mobile-facets__checkbox {
   .facets-vertical-form {
     display: flex;
     justify-content: flex-end;
+    background: #f5f5f5;
+    padding: 2rem 1rem;
+    border-radius: 15px;
   }
 
   .product-count-vertical {

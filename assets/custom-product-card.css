@@ -309,3 +309,10 @@
     }
   }
   
+
+  @media screen and (max-width: 767px) {
+    .product-card__image{
+      height:22rem;
+      width:17rem;
+    }
+  }

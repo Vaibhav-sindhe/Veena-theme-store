@@ -96,3 +96,15 @@
     min-height: 20rem;
   }
 }
+
+
+.collection-hero{
+  background: gray;
+  height: 20rem;
+  display: flex;
+}
+.collection-hero__title{
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+}

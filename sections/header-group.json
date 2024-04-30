@@ -60,10 +60,17 @@
         "padding_top": 8,
         "padding_bottom": 8
       }
+    },
+    "custom_bread_crum_7QEGcM": {
+      "type": "custom-bread-crum",
+      "settings": {
+        "heading": ""
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "custom_bread_crum_7QEGcM"
   ]
 }

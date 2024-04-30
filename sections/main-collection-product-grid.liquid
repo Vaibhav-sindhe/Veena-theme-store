@@ -162,7 +162,9 @@
                   {% else %}
                     <div class="product-card">
                       <h1>Hello</h1>
-
+                      {% render 'responsive-picture',
+                        desktopImage:  section.settings.editorial-image, 
+                      %}
                     </div>
                   {% endif %}    
                 </li>

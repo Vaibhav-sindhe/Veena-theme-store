@@ -121,6 +121,7 @@
     margin-top: 10px;
     font-size: 1.8rem;
     line-height: 5rem;
+    text-decoration: none;
 }
 .store-info li {
     color: rgb(255, 255, 255, 0.75 );

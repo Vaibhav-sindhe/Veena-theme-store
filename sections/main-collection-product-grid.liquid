@@ -147,6 +147,31 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
+
+                {% if forloop.index==1 %}
+                  <li
+                    class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    {% if settings.animations_reveal_on_scroll %}
+                      data-cascade
+                      style="--animation-order: {{ forloop.index }};"
+                    {% endif %}
+                  >
+                    <div>
+                      <div class="product-card editorial-image">
+                        {% render 'responsive-picture',
+                          desktopImage:  section.settings.editorial-image, 
+                        %}
+                        <div class="editorial-image--info">
+                          <p>{{ section.settings.editorial-preheading }}</p>
+                          <h2>{{ section.settings.editorial-title }}</h2>
+                          <p>{{ section.settings.editorial-description}}</p>
+                          <a href="/collections" class="button">Show more</a>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li>
+                {% endif %} 
+
                 <li
                   class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                   {% if settings.animations_reveal_on_scroll %}
@@ -154,21 +179,34 @@
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
-                  {% assign index=forloop.index | modulo:5 %}
-                  {% if index !=0    %}
                     {% render
                       "custom-product-card", product:product
                     %}
-                  {% else %}
-                  <div>
-                    <div class="product-card editorial-image">
-                      {% render 'responsive-picture',
-                        desktopImage:  section.settings.editorial-image, 
-                      %}
-                    </div>
-                  </div>  
-                  {% endif %}    
-                </li>
+                </li> 
+                {% assign index=forloop.index | modulo:4 %}
+                {% if index==0 %}
+                  <li
+                    class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    {% if settings.animations_reveal_on_scroll %}
+                      data-cascade
+                      style="--animation-order: {{ forloop.index }};"
+                    {% endif %}
+                  >
+                    <div>
+                      <div class="product-card editorial-image">
+                        {% render 'responsive-picture',
+                          desktopImage:  section.settings.editorial-image, 
+                        %}
+                        <div class="editorial-image--info">
+                          <p>{{ section.settings.editorial-preheading }}</p>
+                          <h2>{{ section.settings.editorial-title }}</h2>
+                          <p>{{ section.settings.editorial-description}}</p>
+                          <a href="/collections" class="button">Show more</a>
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li>
+                {% endif %} 
               {%- endfor -%}
             </ul>
             <div class="pagination-container">

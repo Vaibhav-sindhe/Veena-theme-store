@@ -106,3 +106,47 @@
   border-radius: 10px;
   padding: 0.5rem 1rem;
 }
+.editorial-image{
+  position: relative;
+  height: 80%;
+  width: 100%;
+  border-radius: 20px;
+}
+.editorial-image picture img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.editorial-image--info{
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+.editorial-image--info p{
+  color: white;
+  margin: 10px 0;
+}
+.editorial-image--info h2{
+  margin: 0;
+  color: white;
+  font-weight: 600;
+}
+.editorial-image--info .button{
+  background: white;
+  color: black;
+}
+.editorial-image--info .button:after{
+  box-shadow: none;
+}
+@media (max-width:749px){
+  .editorial-image--info h2{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

@@ -265,7 +265,7 @@
 }
 
 .facets__display {
-  border-width: var(--popup-border-width);
+  border-width: var(--popup-border-width); 
   border-style: solid;
   border-color: rgba(var(--color-foreground), var(--popup-border-opacity));
   border-radius: var(--popup-corner-radius);

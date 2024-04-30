@@ -27,6 +27,14 @@
             "swatch_shape": "circle"
           }
         },
+        "inventory_gdHM8W": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -42,12 +50,6 @@
         "description": {
           "type": "description",
           "settings": {
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
           }
         },
         "complementary_nk399q": {
@@ -69,10 +71,10 @@
         "title",
         "price",
         "variant_picker",
+        "inventory_gdHM8W",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
         "complementary_nk399q"
       ],
       "settings": {

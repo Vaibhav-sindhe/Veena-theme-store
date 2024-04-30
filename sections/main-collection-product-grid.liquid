@@ -154,9 +154,17 @@
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
-                  {% render
-                    "custom-product-card", product:product
-                  %}
+                  {% assign index=forloop.index | modulo:5 %}
+                  {% if index !=0    %}
+                    {% render
+                      "custom-product-card", product:product
+                    %}
+                  {% else %}
+                    <div class="product-card">
+                      <h1>Hello</h1>
+
+                    </div>
+                  {% endif %}    
                 </li>
               {%- endfor -%}
             </ul>
@@ -376,6 +384,11 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "image_picker",
+      "id": "editorial-image",
+      "label": "Editorrial image"
     }
   ]
 }

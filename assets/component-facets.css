@@ -1212,9 +1212,21 @@ input.mobile-facets__checkbox {
 }
 .facet-checkbox__text{
   width: 7rem;
+  color: black;
+  font-weight: 600;
 }
 @media (max-width: 1199px) {
   .list-unstyled {
       grid-template-columns: 100%;
+  }
+}
+
+
+@media (max-width:749px) {
+  .facet-checkbox__text {
+    width: 14rem;
+  }  
+  .mobile-facets__label{
+    gap: 1rem;
   }
 }

@@ -85,6 +85,10 @@ a.pagination__item:hover::after {
   margin: 0;
   width: 50%;
 }
+.pagination__item{
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 .pagination__item--current{
   color: #d03c3f;
 }

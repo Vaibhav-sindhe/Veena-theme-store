@@ -733,7 +733,7 @@
                               </span>
                             {%- endif -%}
                           </button>
-                          <ul class="{{ visual_layout_class }} mobile-facets__list list-unstyled" role="list">
+                          <ul class="{{ visual_layout_class }} mobile-facets__list list-unstyled custom" role="list">
                             {%- liquid
                               assign sorted_values = filter.values
                               # Keep the selected values grouped together when operator is AND
@@ -787,6 +787,7 @@
                                       viewBox="0 0 16 16"
                                       aria-hidden="true"
                                       focusable="false"
+                                      {% if filter.label=='color' or filter.label=='Color' %}class="display-none"{% endif %}
                                     >
                                       <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
                                     </svg>
@@ -803,7 +804,7 @@
                                       <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                   {% endif %}
-
+                                  {% if filter.label=='color' or filter.label=='Color' %}<span class="color-swatch color-swatch--{{ value.label | handle }}"></span>{% endif %}
                                   <span class="facet-checkbox__text" aria-hidden="true">
                                     {{- value.label | escape }} ({{ value.count }})</span
                                   >

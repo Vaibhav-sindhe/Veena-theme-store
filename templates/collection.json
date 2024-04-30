@@ -8,6 +8,12 @@
         "color_scheme": "scheme-3"
       }
     },
+    "custom_bread_crum_GjzrgK": {
+      "type": "custom-bread-crum",
+      "settings": {
+        "heading": ""
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -31,6 +37,7 @@
   },
   "order": [
     "banner",
+    "custom_bread_crum_GjzrgK",
     "product-grid"
   ]
 }

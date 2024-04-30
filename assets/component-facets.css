@@ -1063,6 +1063,7 @@ input.mobile-facets__checkbox {
   .facets__heading--vertical {
     margin: 0 0 1.5rem 0;
     font-size: 2.5rem;
+    font-weight: 600;
   }
 
   .facets__header-vertical {

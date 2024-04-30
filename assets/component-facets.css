@@ -261,6 +261,7 @@
 
 .facets__summary .icon-caret {
   right: 0;
+  transition: 0.5s ease all;
 }
 
 .facets__display {

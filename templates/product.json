@@ -85,6 +85,49 @@
         "padding_bottom": 12
       }
     },
+    "multicolumn_76cY7z": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fUHeHV": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Elegance Redefined<\/strong>",
+            "text": "<p>Discover timeless fashion that seamlessly blends sophistication and modern flair. Our curated collection reflects a commitment to style, quality, and individuality, ensuring you make a statement with every ensemble.<\/p>",
+            "link_label": "Explore Now",
+            "link": "shopify:\/\/collections"
+          }
+        },
+        "column_kbWLHp": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Effortless Casual Couture<\/strong>",
+            "text": "<p>Experience the perfect blend of comfort and style with our casual couture collection. From laid-back essentials to effortlessly chic pieces, redefine casual wear with fashion that allows you to express yourself without compromising on comfort.<\/p>",
+            "link_label": "Check It Now",
+            "link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "column_fUHeHV",
+        "column_kbWLHp"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -106,6 +149,7 @@
   },
   "order": [
     "main",
+    "multicolumn_76cY7z",
     "related-products"
   ]
 }

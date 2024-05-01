@@ -1,8 +1,27 @@
 <div class="custom-grid page-width">
-    <div class=custom-grid--left></div>
+    <div class=custom-grid--left>
+        {% render 'responsive-picture',
+            desktopImage:section.settings.grid-image-1, 
+        %}
+    </div>
     <div class=custom-grid--right>
-        <div></div>
-        <div></div> 
+        <div>
+            {% render 'responsive-picture',
+                desktopImage:section.settings.grid-image-2, 
+            %}
+        </div>
+        <div>
+            <div>
+                {% render 'responsive-picture',
+                    desktopImage:section.settings.grid-image-3, 
+                %}
+            </div>
+            <div>
+                {% render 'responsive-picture',
+                    desktopImage:section.settings.grid-image-4, 
+                %}
+            </div> 
+        </div>
     </div>    
 </div>    
 <style>

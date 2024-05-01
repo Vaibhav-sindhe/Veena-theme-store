@@ -230,32 +230,28 @@
                                     %}
                                   </div>
                                 {% else %}
-                                  <svg
-                                    width="1.6rem"
-                                    height="1.6rem"
-                                    viewBox="0 0 16 16"
-                                    aria-hidden="true"
-                                    focusable="false"
-                                    {% if filter.label=='color' or filter.label=='Color' %}class="display-none"{% endif %}
-                                  >
-                                    <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
-                                  </svg>
+                                <svg 
+                                width="1.6rem" height="1.6rem" 
+                                viewBox="0 0 64 64" version="1.1" 
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                                {% if filter.label=='color' or filter.label=='Color' %}class="display-none"{% endif %}
+                                >
+                                  <title>Circle</title>
+                                  <desc>Created with Sketch.</desc>
+                                  <defs>
+                                  </defs>
+                                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                                      <circle id="Circle" stroke="#6B6C6E" stroke-width="2" sketch:type="MSShapeGroup" cx="32" cy="32" r="31"></circle>
+                                  </g>
+                                </svg>
 
-                                  <svg
-                                    aria-hidden="true"
-                                    class="icon icon-checkmark {% if filter.label=='color' or filter.label=='Color' %}display-none{% endif %}"
-                                    width="1.1rem"
-                                    height="0.7rem"
-                                    viewBox="0 0 11 7"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
-                                      stroke="currentColor"
-                                      stroke-width="1.75"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                  </svg>
+                                <svg 
+                                width="1.6rem" height="1.6rem"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-checkmark {% if filter.label=='color' or filter.label=='Color' %}display-none{% endif %}"
+                                >
+                                  <path fill-rule="evenodd" d="M0 10a10 10 0 1020 0 10 10 0 00-20 0zm15.2-1.8a1 1 0 00-1.4-1.4L9 11.6 6.7 9.3a1 1 0 00-1.4 1.4l3 3c.4.4 1 .4 1.4 0l5.5-5.5z" fill="#000000"/>
+                                </svg>
                                 {% endif %}
                                 {% comment %} changes {% endcomment %}
                                 {% if filter.label=='color' or filter.label=='Color' %}<span class="color-swatch color-swatch--{{ value.label | handle }}"></span>{% endif %}
@@ -781,28 +777,28 @@
                                   {% else %}
                                     <span class="mobile-facets__highlight"></span>
 
-                                    <svg
-                                      width="1.6rem"
-                                      height="1.6rem"
-                                      viewBox="0 0 16 16"
-                                      aria-hidden="true"
-                                      focusable="false"
+                                    <svg 
+                                      width="1.6rem" height="1.6rem" 
+                                      viewBox="0 0 64 64" version="1.1" 
+                                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
                                       {% if filter.label=='color' or filter.label=='Color' %}class="display-none"{% endif %}
-                                    >
-                                      <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
-                                    </svg>
-
-                                    <svg
-                                      aria-hidden="true"
-                                      class="icon icon-checkmark"
-                                      width="1.1rem"
-                                      height="0.7rem"
-                                      viewBox="0 0 11 7"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+                                      >
+                                        <title>Circle</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <defs>
+                                        </defs>
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                                            <circle id="Circle" stroke="#6B6C6E" stroke-width="2" sketch:type="MSShapeGroup" cx="32" cy="32" r="31"></circle>
+                                        </g>
+                                      </svg>
+      
+                                      <svg 
+                                      width="1.6rem" height="1.6rem"
+                                      viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                      class="icon icon-checkmark {% if filter.label=='color' or filter.label=='Color' %}display-none{% endif %}"
+                                      >
+                                        <path fill-rule="evenodd" d="M0 10a10 10 0 1020 0 10 10 0 00-20 0zm15.2-1.8a1 1 0 00-1.4-1.4L9 11.6 6.7 9.3a1 1 0 00-1.4 1.4l3 3c.4.4 1 .4 1.4 0l5.5-5.5z" fill="#000000"/>
+                                      </svg>
                                   {% endif %}
                                   {% if filter.label=='color' or filter.label=='Color' %}<span class="color-swatch color-swatch--{{ value.label | handle }}"></span>{% endif %}
                                   <span class="facet-checkbox__text" aria-hidden="true">

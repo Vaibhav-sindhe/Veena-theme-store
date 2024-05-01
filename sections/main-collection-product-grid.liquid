@@ -165,7 +165,7 @@
                           <p>{{ section.settings.editorial-preheading-1 }}</p>
                           <h2>{{ section.settings.editorial-title-1 }}</h2>
                           <p>{{ section.settings.editorial-description-1}}</p>
-                          <a href="/collections" class="button">Show more</a>
+                          <a href="/collections" class="button">{{section.settings.editorial-button-label-1}}</a>
                         </div> 
                       </div> 
                     </div> 
@@ -201,7 +201,7 @@
                           <p>{{ section.settings.editorial-preheading-2 }}</p>
                           <h2>{{ section.settings.editorial-title-2 }}</h2>
                           <p>{{ section.settings.editorial-description-2}}</p>
-                          <a href="/collections" class="button">Show more</a>
+                          <a href="/collections" class="button">{{ section.settings.editorial-editorial-button-label-2 }}</a>
                         </div> 
                       </div> 
                     </div> 
@@ -429,44 +429,60 @@
     {
       "type": "image_picker",
       "id": "editorial-image-1",
-      "label": "Editorrial image 1"
+      "label": "Editorrial image"
+    },
+    {
+      "type": "header",
+      "content": "First Editorrial image"
     },
     {
       "type": "text",
       "id": "editorial-preheading-1",
-      "label": "Editorial preheading-1"
+      "label": "Editorial preheading"
     },
     {
       "type": "text",
       "id": "editorial-title-1",
-      "label": "Editorial title-1"
+      "label": "Editorial title"
     },
     {
       "type": "text",
       "id": "editorial-description-1",
-      "label": "Editorial description-1"
+      "label": "Editorial description"
     },
-
-
+    {
+      "type": "text",
+      "id": "editorial-button-label-1",
+      "label": "Editorial label"
+    },
+    {
+      "type": "header",
+      "content": "Second Editorrial image"
+    },
     {
       "type": "image_picker",
       "id": "editorial-image-2",
-      "label": "Editorrial image-2"
+      "label": "Editorrial image"
     },
     {
       "type": "text",
       "id": "editorial-preheading-2",
-      "label": "Editorial preheading-2"
+      "label": "Editorial preheading"
     },
     {
       "type": "text",
       "id": "editorial-title-2",
-      "label": "Editorial title-2"
+      "label": "Editorial title"
     },
     {
       "type": "text",
       "id": "editorial-description-2",
-      "label": "Editorial description-2"
+      "label": "Editorial description"
+    },
+    {
+      "type": "text",
+      "id": "editorial-button-label-2",
+      "label": "Editorial label"
     }
 
   ]

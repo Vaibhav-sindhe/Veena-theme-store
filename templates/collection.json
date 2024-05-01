@@ -32,10 +32,14 @@
         "columns_mobile": "2",
         "padding_top": 0,
         "padding_bottom": 36,
-        "editorial-image": "shopify:\/\/shop_images\/download_f7af6794-b9d4-4d07-9806-538af1aa0c7d.webp",
-        "editorial-preheading": "Flash Sale",
-        "editorial-title": "Glamorous Style Showcase",
-        "editorial-description": "Image Description"
+        "editorial-image-1": "shopify:\/\/shop_images\/download_f7af6794-b9d4-4d07-9806-538af1aa0c7d.webp",
+        "editorial-preheading-1": "Flash Sale",
+        "editorial-title-1": "Glamorous Style Showcase",
+        "editorial-description-1": "Image Description",
+        "editorial-image-2": "shopify:\/\/shop_images\/download_462e2010-b04f-4bec-ad08-65f7ee05d73a.webp",
+        "editorial-preheading-2": "Summer Vibes",
+        "editorial-title-2": "Exclusive Offers",
+        "editorial-description-2": ""
       }
     }
   },

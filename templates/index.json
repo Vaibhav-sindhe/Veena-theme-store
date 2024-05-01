@@ -955,19 +955,6 @@
         "heading": "FAQ",
         "description": "Ensure that your FAQs are regularly updated based on common customer queries and changes in your business operations."
       }
-    },
-    "demo_productcart_itU7Fh": {
-      "type": "demo-productcart",
-      "settings": {
-        "heading": "Heading",
-        "product_list": [
-          "travel-handy-hiking-zip-pouch",
-          "men-winter-jacket",
-          "cotton-style-bucket-hat",
-          "nylon-waist-bag"
-        ],
-        "show_view_all": false
-      }
     }
   },
   "order": [
@@ -993,7 +980,6 @@
     "customer_review_3ihimd",
     "letyou_know_8DGxVc",
     "featured_blog_AXCGM8",
-    "custom_faq_section_ALBUqa",
-    "demo_productcart_itU7Fh"
+    "custom_faq_section_ALBUqa"
   ]
 }

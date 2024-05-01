@@ -4,8 +4,10 @@
             desktopImage:section.settings.grid-image-1, 
         %}
         <div class="custom-grid-left--info">
-            hi
-
+            <p>{{ section.settings.preheading-1 }}</p>
+            <h3>{{ section.settings.title-1 }}</h3>
+            <p>{{ section.settings.description-1 }}</p>
+            <a href="/collections" class="button">{{ section.settings.button-label-1 }}</a>
         </div>    
     </div>
     <div class=custom-grid--right>
@@ -71,11 +73,6 @@
 {
   "name": "Grid layout",
   "settings": [
-    {
-        "type": "text",
-        "id": "title",
-        "label": "Title"
-    },
     {
         "type": "header",
         "content": "First grid image"

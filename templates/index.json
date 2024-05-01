@@ -955,6 +955,15 @@
         "heading": "FAQ",
         "description": "Ensure that your FAQs are regularly updated based on common customer queries and changes in your business operations."
       }
+    },
+    "demo_productcart_wLUanx": {
+      "type": "demo-productcart",
+      "settings": {
+        "product_list": [
+          "travel-handy-hiking-zip-pouch"
+        ],
+        "name": ""
+      }
     }
   },
   "order": [
@@ -980,6 +989,7 @@
     "customer_review_3ihimd",
     "letyou_know_8DGxVc",
     "featured_blog_AXCGM8",
-    "custom_faq_section_ALBUqa"
+    "custom_faq_section_ALBUqa",
+    "demo_productcart_wLUanx"
   ]
 }

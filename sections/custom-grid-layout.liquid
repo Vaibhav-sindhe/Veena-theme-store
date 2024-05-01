@@ -4,9 +4,9 @@
             desktopImage:section.settings.grid-image-1, 
         %}
         <div class="custom-grid-left-info-1 info">
-            <p>{{ section.settings.preheading-1 }}</p>
+            <p class="preheading">{{ section.settings.preheading-1 }}</p>
             <h3>{{ section.settings.title-1 }}</h3>
-            <p>{{ section.settings.description-1 }}</p>
+            <p class="description">{{ section.settings.description-1 }}</p>
             <a href="/collections" class="button">{{ section.settings.button-label-1 }}</a>
         </div>    
     </div>
@@ -16,9 +16,9 @@
                 desktopImage:section.settings.grid-image-2, 
             %}
             <div class="custom-grid-right-top-info-2 info">
-                <p>{{ section.settings.preheading-2 }}</p>
+                <p class="preheading">{{ section.settings.preheading-2 }}</p>
                 <h3>{{ section.settings.title-2 }}</h3>
-                <p>{{ section.settings.description-2 }}</p>
+                <p class="description">{{ section.settings.description-2 }}</p>
                 <a href="/collections" class="button">{{ section.settings.button-label-2 }}</a>
             </div>    
         </div>
@@ -28,9 +28,9 @@
                     desktopImage:section.settings.grid-image-3,  
                 %}
                 <div class="custom-grid-right-bottom-left-info-3 info">
-                    <p>{{ section.settings.preheading-3 }}</p>
+                    <p class="preheading">{{ section.settings.preheading-3 }}</p>
                     <h3>{{ section.settings.title-3 }}</h3>
-                    <p>{{ section.settings.description-3 }}</p>
+                    <p class="description">{{ section.settings.description-3 }}</p>
                     <a href="/collections" class="button">{{ section.settings.button-label-3 }}</a>
                 </div>  
             </div> 
@@ -39,9 +39,9 @@
                     desktopImage:section.settings.grid-image-4, 
                 %}
                 <div class="custom-grid-right-bottom-right-info-4 info">
-                    <p>{{ section.settings.preheading-4 }}</p>
+                    <p class="preheading">{{ section.settings.preheading-4 }}</p>
                     <h3>{{ section.settings.title-4 }}</h3>
-                    <p>{{ section.settings.description-4 }}</p>
+                    <p class="description">{{ section.settings.description-4 }}</p>
                     <a href="/collections" class="button">{{ section.settings.button-label-4 }}</a>
                 </div>
             </div> 
@@ -77,10 +77,35 @@
         width:100%;
         height:100%;
         position:absolute;
-        color:white;
         top:0;
         display:flex;
         padding:4rem;
+    }
+    .custom-grid .info .preheading{
+        font-weight:600;
+        font-size:1.7rem;
+    }
+    .custom-grid .info h3{
+        font-size:2.5rem;
+        margin:8px 0 ;
+        font-weight:600;
+    }
+    .custom-grid .info .description + p{
+        width:80%;
+        line-height:20px;
+        font-size:1.5rem;
+    }
+    .custom-grid .info  .button{
+        margin-top:15px;
+    }
+    .custom-grid--left .info .preheading , .custom-grid-right--top .info .preheading {
+        color:#f5f5f5;
+    }
+    .custom-grid--left .info h3 , .custom-grid-right--top .info h3 {
+        color:white;
+    }
+    .custom-grid--left .info .description + p , .custom-grid-right--top .info .description + p {
+        color:#f5f5f5;
     }
     .custom-grid .custom-grid-left-info-1{
         flex-direction:column;

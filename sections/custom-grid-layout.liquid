@@ -3,7 +3,7 @@
         {% render 'responsive-picture',
             desktopImage:section.settings.grid-image-1, 
         %}
-        <div class="custom-grid-left--info">
+        <div class="custom-grid-left-info-1 info">
             <p>{{ section.settings.preheading-1 }}</p>
             <h3>{{ section.settings.title-1 }}</h3>
             <p>{{ section.settings.description-1 }}</p>
@@ -11,15 +11,21 @@
         </div>    
     </div>
     <div class=custom-grid--right>
-        <div>
+        <div class="custom-grid-right--top">
             {% render 'responsive-picture',
                 desktopImage:section.settings.grid-image-2, 
             %}
+            <div class="custom-grid-right-top-info-2 info">
+                <p>{{ section.settings.preheading-2 }}</p>
+                <h3>{{ section.settings.title-3 }}</h3>
+                <p>{{ section.settings.description-4 }}</p>
+                <a href="/collections" class="button">{{ section.settings.button-label-5 }}</a>
+            </div>    
         </div>
         <div class="custom-grid-right--bottom">
             <div>
                 {% render 'responsive-picture',
-                    desktopImage:section.settings.grid-image-3, 
+                    desktopImage:section.settings.grid-image-3,  
                 %}
             </div> 
             <div>
@@ -47,18 +53,33 @@
     .custom-grid--left{
         position:relative;
     }
-    .custom-grid-left--info{
+
+
+    .custom-grid p{
+        margin:0
+    }
+ 
+
+
+    .custom-grid .info{
         width:100%;
         height:100%;
         position:absolute;
+        color:white;
         top:0;
-        border:2px solid white;
         display:flex;
-        align-items:center;
-        justify-content:center;
-
+        padding:4rem;
     }
-
+    .custom-grid .custom-grid-left-info-1{
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content:flex-end;
+    }
+    .custom-grid .custom-grid-right-top-info-2{
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content:center;
+    }
     .custom-grid--right{
         display:flex;
         flex-direction:column;
@@ -103,9 +124,33 @@
         "label": "button-label"
     },
     {
+        "type": "header",
+        "content": "Second grid image"
+    },
+    {
         "type": "image_picker",
         "id": "grid-image-2",
         "label": "Grid image"
+    },
+    {
+        "type": "text",
+        "id": "preheading-2",
+        "label": "Preheading"
+    },
+    {
+        "type": "text",
+        "id": "title-2",
+        "label": "Title"
+    },
+    {
+        "type": "richtext",
+        "id": "description-2",
+        "label": "Description"
+    },
+    {
+        "type": "text",
+        "id": "button-label-2",
+        "label": "button-label"
     },
     {
         "type": "image_picker",

@@ -118,10 +118,10 @@
         "column_kbWLHp": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "<strong>Effortless Casual Couture<\/strong>",
+            "text": "<p>Experience the perfect blend of comfort and style with our casual couture collection. From laid-back essentials to effortlessly chic pieces, redefine casual wear with fashion that allows you to express yourself without compromising on comfort.<\/p>",
+            "link_label": "Check It Now",
+            "link": "shopify:\/\/collections"
           }
         }
       },

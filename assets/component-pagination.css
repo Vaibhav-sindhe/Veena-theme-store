@@ -95,3 +95,8 @@ a.pagination__item:hover::after {
 .pagination__item:hover{
   color: #d03c3f;
 }
+@media (max-width:749px) {
+  .pagination{
+    gap: 12rem;
+  }
+}

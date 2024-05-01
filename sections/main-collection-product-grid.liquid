@@ -192,19 +192,36 @@
                       style="--animation-order: {{ forloop.index }};"
                     {% endif %}
                   >
-                    <div>
-                      <div class="product-card editorial-image">
-                        {% render 'responsive-picture',
-                          desktopImage:  section.settings.editorial-image-2, 
-                        %}
-                        <div class="editorial-image--info">
-                          <p>{{ section.settings.editorial-preheading-2 }}</p>
-                          <h2>{{ section.settings.editorial-title-2 }}</h2>
-                          <p>{{ section.settings.editorial-description-2}}</p>
-                          <a href="/collections" class="button">{{ section.settings.editorial-button-label-2 }}</a>
+
+                    {% if forloop.index==8 %}
+                      <div>
+                        <div class="product-card editorial-image">
+                          {% render 'responsive-picture',
+                            desktopImage:  section.settings.editorial-image-3, 
+                          %}
+                          <div class="editorial-image--info">
+                            <p>{{ section.settings.editorial-preheading-3 }}</p>
+                            <h2>{{ section.settings.editorial-title-3 }}</h2>
+                            <p>{{ section.settings.editorial-description-3}}</p>
+                            <a href="/collections" class="button">{{ section.settings.editorial-button-label-3 }}</a>
+                          </div> 
                         </div> 
                       </div> 
-                    </div> 
+                    {% else %}
+                      <div>
+                        <div class="product-card editorial-image">
+                          {% render 'responsive-picture',
+                            desktopImage:  section.settings.editorial-image-2, 
+                          %}
+                          <div class="editorial-image--info">
+                            <p>{{ section.settings.editorial-preheading-2 }}</p>
+                            <h2>{{ section.settings.editorial-title-2 }}</h2>
+                            <p>{{ section.settings.editorial-description-2}}</p>
+                            <a href="/collections" class="button">{{ section.settings.editorial-button-label-2 }}</a>
+                          </div> 
+                        </div> 
+                      </div> 
+                   {% endif %} 
                   </li>
                 {% endif %} 
               {%- endfor -%}
@@ -482,6 +499,35 @@
     {
       "type": "text",
       "id": "editorial-button-label-2",
+      "label": "Editorial label"
+    },
+    {
+      "type": "header",
+      "content": "Third Editorrial image"
+    },
+    {
+      "type": "image_picker",
+      "id": "editorial-image-3",
+      "label": "Editorrial image"
+    },
+    {
+      "type": "text",
+      "id": "editorial-preheading-3",
+      "label": "Editorial preheading"
+    },
+    {
+      "type": "text",
+      "id": "editorial-title-3",
+      "label": "Editorial title"
+    },
+    {
+      "type": "text",
+      "id": "editorial-description-3",
+      "label": "Editorial description"
+    },
+    {
+      "type": "text",
+      "id": "editorial-button-label-3",
       "label": "Editorial label"
     }
 

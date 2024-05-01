@@ -145,11 +145,22 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "custom_grid_layout_NFQxQR": {
+      "type": "custom-grid-layout",
+      "settings": {
+        "title": "",
+        "grid-image-1": "shopify:\/\/shop_images\/download_52d54c75-7269-4d47-a226-5e16baab0ad8.webp",
+        "grid-image-2": "shopify:\/\/shop_images\/download_17344e3e-2be3-404d-8d2a-11115033b5b8.webp",
+        "grid-image-3": "shopify:\/\/shop_images\/download_ce009906-54ae-4a28-84cb-f31baedec623.webp",
+        "grid-image-4": "shopify:\/\/shop_images\/download_373b720c-7e8e-41ff-8b41-db50503e91f6.webp"
+      }
     }
   },
   "order": [
     "main",
     "multicolumn_76cY7z",
-    "related-products"
+    "related-products",
+    "custom_grid_layout_NFQxQR"
   ]
 }

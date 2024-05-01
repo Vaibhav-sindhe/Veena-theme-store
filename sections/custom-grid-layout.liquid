@@ -153,12 +153,14 @@
     .custom-grid-right--bottom{
         display:flex;
         gap:1rem
-
     }
 
     @media (max-width:749px){
         .custom-grid{
             flex-direction:column;
+        }
+        .custom-grid--left,.custom-grid--right{
+            width:100%;
         }
         .custom-grid-right--bottom{
             flex-direction:column;

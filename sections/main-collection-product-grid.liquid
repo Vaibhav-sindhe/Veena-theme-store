@@ -159,12 +159,12 @@
                     <div>
                       <div class="product-card editorial-image">
                         {% render 'responsive-picture',
-                          desktopImage:  section.settings.editorial-image, 
+                          desktopImage:  section.settings.editorial-image-1, 
                         %}
                         <div class="editorial-image--info">
-                          <p>{{ section.settings.editorial-preheading }}</p>
-                          <h2>{{ section.settings.editorial-title }}</h2>
-                          <p>{{ section.settings.editorial-description}}</p>
+                          <p>{{ section.settings.editorial-preheading-1 }}</p>
+                          <h2>{{ section.settings.editorial-title-1 }}</h2>
+                          <p>{{ section.settings.editorial-description-1}}</p>
                           <a href="/collections" class="button">Show more</a>
                         </div> 
                       </div> 
@@ -195,12 +195,12 @@
                     <div>
                       <div class="product-card editorial-image">
                         {% render 'responsive-picture',
-                          desktopImage:  section.settings.editorial-image, 
+                          desktopImage:  section.settings.editorial-image-2, 
                         %}
                         <div class="editorial-image--info">
-                          <p>{{ section.settings.editorial-preheading }}</p>
-                          <h2>{{ section.settings.editorial-title }}</h2>
-                          <p>{{ section.settings.editorial-description}}</p>
+                          <p>{{ section.settings.editorial-preheading-2 }}</p>
+                          <h2>{{ section.settings.editorial-title-2 }}</h2>
+                          <p>{{ section.settings.editorial-description-2}}</p>
                           <a href="/collections" class="button">Show more</a>
                         </div> 
                       </div> 
@@ -428,23 +428,45 @@
     },
     {
       "type": "image_picker",
-      "id": "editorial-image",
-      "label": "Editorrial image"
+      "id": "editorial-image-1",
+      "label": "Editorrial image 1"
     },
     {
       "type": "text",
-      "id": "editorial-preheading",
-      "label": "Editorial preheading"
+      "id": "editorial-preheading-1",
+      "label": "Editorial preheading-1"
     },
     {
       "type": "text",
-      "id": "editorial-title",
-      "label": "Editorial title"
+      "id": "editorial-title-1",
+      "label": "Editorial title-1"
     },
     {
       "type": "text",
-      "id": "editorial-description",
-      "label": "Editorial description"
+      "id": "editorial-description-1",
+      "label": "Editorial description-1"
+    },
+
+
+    {
+      "type": "image_picker",
+      "id": "editorial-image-2",
+      "label": "Editorrial image-2"
+    },
+    {
+      "type": "text",
+      "id": "editorial-preheading-2",
+      "label": "Editorial preheading-2"
+    },
+    {
+      "type": "text",
+      "id": "editorial-title-2",
+      "label": "Editorial title-2"
+    },
+    {
+      "type": "text",
+      "id": "editorial-description-2",
+      "label": "Editorial description-2"
     }
 
   ]

@@ -22,28 +22,16 @@
                 <a href="/collections" class="button">{{ section.settings.button-label-2 }}</a>
             </div>    
         </div>
-        <div class="custom-grid-right--bottom--left">
+        <div class="custom-grid-right--bottom">
             <div class="custom-grid-right-bottom--left">
                 {% render 'responsive-picture',
                     desktopImage:section.settings.grid-image-3,  
                 %}
-                <div class="custom-grid-right--bottom-left-info-3 info">
-                    <p>{{ section.settings.preheading-3 }}</p>
-                    <h3>{{ section.settings.title-3 }}</h3>
-                    <p>{{ section.settings.description-3 }}</p>
-                    <a href="/collections" class="button">{{ section.settings.button-label-3 }}</a>
-                </div>  
             </div> 
             <div class="custom-grid-right-bottom--right">
                 {% render 'responsive-picture',
                     desktopImage:section.settings.grid-image-4, 
                 %}
-                <div class="custom-grid-right--bottom-right-info-4 info">
-                    <p>{{ section.settings.preheading-4 }}</p>
-                    <h3>{{ section.settings.title-4 }}</h3>
-                    <p>{{ section.settings.description-4 }}</p>
-                    <a href="/collections" class="button">{{ section.settings.button-label-4 }}</a>
-                </div>
             </div> 
         </div>
     </div>    
@@ -62,7 +50,7 @@
         object-fit:cover;
         border-radius:20px;
     }
-    .custom-grid--left , .custom-grid-right--top , .custom-grid-right--bottom--left , .custom-grid-right-bottom--right{
+    .custom-grid--left , .custom-grid-right--top{
         position:relative;
     }
 
@@ -91,11 +79,6 @@
         flex-direction:column;
         align-items:flex-start;
         justify-content:center;
-    }
-    .custom-grid .custom-grid-right--bottom-left-info-3{
-        flex-direction:column;
-        align-items:flex-start;
-        justify-content:flex-start;
     }
     .custom-grid--right{
         display:flex;

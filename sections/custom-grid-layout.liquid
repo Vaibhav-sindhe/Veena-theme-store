@@ -1,4 +1,20 @@
-<h1>{{ section.settings.title }}</h1>
+<div class="custom-grid page-width">
+    <div class=custom-grid--left></div>
+    <div class=custom-grid--right>
+        <div></div>
+        <div></div> 
+    </div>    
+</div>    
+<style>
+    .custom-grid{
+        width:100%;
+        border:2px solid red;
+    }
+    .custom-grid--left,.custom-grid--right{
+        width:50%;
+        border:2px solid black;
+    }
+</style>    
 {% schema %}
 {
   "name": "Grid layout",

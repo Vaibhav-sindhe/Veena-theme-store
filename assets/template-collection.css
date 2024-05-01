@@ -134,7 +134,7 @@
 }
 .editorial-image--info p{
   color: white;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
 }
 .editorial-image--info h2{
   margin: 0;
@@ -144,6 +144,7 @@
 .editorial-image--info .button{
   background: white;
   color: black;
+  margin-top: 10px;
 }
 .editorial-image--info .button:after{
   box-shadow: none;

@@ -1500,19 +1500,6 @@ a.product__text {
 
 
 /* offer varient */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background: lightblue;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .coupon {
   width: 400px;
   height: 200px;

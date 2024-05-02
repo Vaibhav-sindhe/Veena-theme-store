@@ -1555,3 +1555,18 @@ class spliderComponent extends HTMLElement {
   }
 }
 customElements.define("splider-component", spliderComponent);
+
+
+
+document.getElementById('copy-coupon').addEventListener('click', function() {
+  // Get the text you want to copy
+  var couponCode = document.getElementById('coupon-code').textContent;
+
+  // Use the Clipboard API to copy the text
+  navigator.clipboard.writeText(couponCode).then(function() {
+    alert('Coupon code copied to clipboard!');
+  }, function(err) {
+    alert('Failed to copy: ', err);
+  });
+});
+

@@ -11,7 +11,7 @@
         </div>    
     </div>
     <div class=custom-grid--right>
-        <div class="custom-grid-right--top">
+        <div class="custom-grid-right--top imgDiv">
             {% render 'responsive-picture',
                 desktopImage:section.settings.grid-image-2, 
             %}
@@ -53,7 +53,7 @@
         width:100%;
         display:flex;
         gap:1rem;
-        padding:4rem 0;
+        padding:4rem 5rem;
     }
     .custom-grid--left,.custom-grid--right{
         width:50%;
@@ -155,7 +155,10 @@
         display:flex;
         gap:1rem
     }
-
+    .custom-grid--left:hover{
+            transform: scale(1.1);
+            overflow: hidden;
+    }
     @media (max-width:749px){
         .custom-grid{
             flex-direction:column;
@@ -181,6 +184,9 @@
         .custom-grid-right-bottom-right-info-4{  
             align-items:center;
             justify-content:center;    
+        }
+        .custom-grid--left .info .description + p , .custom-grid-right--top .info .description + p {
+            text-align:center;
         }
     }
 </style>    

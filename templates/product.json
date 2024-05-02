@@ -63,6 +63,12 @@
             "image_ratio": "square",
             "enable_quick_add": false
           }
+        },
+        "variant_offer_GhXyG3": {
+          "type": "Variant-offer",
+          "settings": {
+            "offer_title": "hello"
+          }
         }
       },
       "block_order": [
@@ -73,7 +79,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "complementary_nk399q"
+        "complementary_nk399q",
+        "variant_offer_GhXyG3"
       ],
       "settings": {
         "enable_sticky_info": true,

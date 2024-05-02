@@ -459,13 +459,13 @@
               {%- when 'Variant-offer' -%}
                 <div class="coupon">
                   <div class="left">
-                    <div>{{ block.settings.offer_title }}</div>
+                    <div class="coupen-code">{{ block.settings.offer_title }}</div>
                   </div>
                   <div class="center">
                     <div>
                       <h2>{{ product.metafields.custom.product_coupen }}</h2>
                       <h3>Coupon</h3>
-                      <button>Copy</button>
+                      <button id="copy-coupen">Copy</button>
                     </div>
                   </div>
 
@@ -2340,3 +2340,14 @@
   ]
 }
 {% endschema %}
+
+<script>
+   let copyButton=document.getElementById("copy-coupen");
+  copyButton.addEventListener('click', ()=>{
+    navigator.clipboard
+    .readText()
+    .then(
+      (clipText) => (document.querySelector(".coupen-code").innerText = clipText),
+    );
+  })
+</script>

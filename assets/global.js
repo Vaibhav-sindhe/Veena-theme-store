@@ -1331,6 +1331,23 @@ class VariantSelects extends HTMLElement {
         const skuDestination = document.getElementById(
           `Sku-${this.dataset.section}`
         );
+
+
+        //changeing the coupen code
+
+        const coupendestination = document.getElementById(
+          `coupen-code--${this.dataset.section}`
+        );
+        const coupensource = html.getElementById(
+          `coupen-code--${
+            this.dataset.originalSection
+              ? this.dataset.originalSection
+              : this.dataset.section
+          }`
+        );
+
+
+        
         const inventorySource = html.getElementById(
           `Inventory-${
             this.dataset.originalSection

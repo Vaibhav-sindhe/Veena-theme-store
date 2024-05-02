@@ -1,5 +1,11 @@
 {
   "sections": {
+    "custom_bread_crum_aJJqUJ": {
+      "type": "custom-bread-crum",
+      "settings": {
+        "heading": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -57,6 +63,12 @@
             "image_ratio": "square",
             "enable_quick_add": false
           }
+        },
+        "variant_offer_GhXyG3": {
+          "type": "Variant-offer",
+          "settings": {
+            "offer_title": "vaibhav"
+          }
         }
       },
       "block_order": [
@@ -67,7 +79,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "complementary_nk399q"
+        "complementary_nk399q",
+        "variant_offer_GhXyG3"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -173,6 +186,7 @@
     }
   },
   "order": [
+    "custom_bread_crum_aJJqUJ",
     "main",
     "multicolumn_76cY7z",
     "custom_grid_layout_NFQxQR",

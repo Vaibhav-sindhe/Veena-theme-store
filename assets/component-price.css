@@ -68,7 +68,9 @@
 .volume-pricing--sale-badge .price__badge-sale {
   display: inline-block;
 }
-
+.price--on-sale .price__badge-sale{
+  background:#126fd3
+}
 .volume-pricing--sale-badge .price__badge-sale {
   margin-left: 0.5rem;
 }

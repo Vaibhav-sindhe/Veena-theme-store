@@ -454,6 +454,35 @@
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+
+                <!-- offer section -->
+
+              {%- when 'Variant-offer' -%}
+                {% if product.metafields.custom.product_coupen != blank %}
+                  <div class="coupon">
+                    <div class="left">
+                      <div>{{ block.settings.offer_title }}</div>
+                    </div>
+                    <div class="center">
+                      <div>
+                        <!--
+                          <h2 class="coupen-code" id="coupon-code">{{ product.metafields.custom.product_coupen }}</h2>
+                        -->
+                        <h2 class="coupen-code" id="coupen-code-{{ section.id }}">
+                          {{ product.selected_or_first_available_variant.metafields.custom.coupen }}
+                        </h2>
+                        <h3>Coupon</h3>
+                        <button id="copy-coupen">Copy</button>
+                      </div>
+                    </div>
+
+                    <div class="right">
+                      <div>87878521112</div>
+                    </div>
+                  </div>
+                {% endif %}
+                <!-- offer section -->
+
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
@@ -817,6 +846,18 @@
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
+      "limit": 1
+    },
+    {
+      "type": "Variant-offer",
+      "name":"Varient offer",
+      "settings": [
+        {
+          "type":"text",
+          "id": "offer_title",
+          "label":"Offer title"
+        }
+      ],
       "limit": 1
     },
     {

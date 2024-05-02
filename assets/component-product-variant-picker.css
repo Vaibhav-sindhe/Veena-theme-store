@@ -23,7 +23,11 @@ variant-selects {
 }
 
 :is(.product-form__input--pill, .product-form__input--swatch) .form__label {
+<<<<<<< HEAD
   margin-bottom: 2rem;
+=======
+  margin-bottom: 1.5rem;
+>>>>>>> 66fee30018978650c22a62d85e8e1a1f021b2d52
 }
 
 .product-form__input input[type='radio'] {

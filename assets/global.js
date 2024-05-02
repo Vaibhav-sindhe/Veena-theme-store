@@ -1331,6 +1331,28 @@ class VariantSelects extends HTMLElement {
         const skuDestination = document.getElementById(
           `Sku-${this.dataset.section}`
         );
+
+
+        //changeing the coupen code
+
+        const coupendestination = document.getElementById(
+          `coupen-code-${this.dataset.section}`
+        );
+        const coupensource = html.getElementById(
+          `coupen-code-${
+            this.dataset.originalSection
+              ? this.dataset.originalSection
+              : this.dataset.section
+          }`
+        );
+        coupendestination.innerHTML=coupensource.innerHTML;
+
+        //change color name
+
+        let updatedColorName = html.getElementById("color-swatch-name")
+        let oldColorName = document.getElementById("color-swatch-name");
+        oldColorName.innerHTML = updatedColorName.innerHTML;
+        
         const inventorySource = html.getElementById(
           `Inventory-${
             this.dataset.originalSection
@@ -1338,6 +1360,9 @@ class VariantSelects extends HTMLElement {
               : this.dataset.section
           }`
         );
+
+
+        
         const inventoryDestination = document.getElementById(
           `Inventory-${this.dataset.section}`
         );
@@ -1555,3 +1580,17 @@ class spliderComponent extends HTMLElement {
   }
 }
 customElements.define("splider-component", spliderComponent);
+
+
+document.querySelector('#copy-coupen').addEventListener('click', function() {
+  // Get the text you want to copy
+  var couponCode = document.querySelector('.coupen-code').innerText;
+
+  // Use the Clipboard API to copy the text
+  navigator.clipboard.writeText(couponCode).then(function() {
+    alert('Coupon code copied to clipboard!');
+  }, function(err) {
+    alert('Failed to copy: ', err);
+  });
+});
+

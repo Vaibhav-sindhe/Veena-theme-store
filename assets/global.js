@@ -1557,8 +1557,7 @@ class spliderComponent extends HTMLElement {
 customElements.define("splider-component", spliderComponent);
 
 
-
-document.querySelector('#copy-coupon').addEventListener('click', function() {
+document.querySelector('#copy-coupen').addEventListener('click', function() {
   // Get the text you want to copy
   var couponCode = document.getElementById('coupon-code').innerText;
 

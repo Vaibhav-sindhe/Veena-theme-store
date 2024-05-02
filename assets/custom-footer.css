@@ -184,24 +184,6 @@
 .custom-footer a:hover{
     color:#d03c3f;
 }
-.badge-0{
-    position: absolute;
-    top:1rem;
-    left: 1rem;
-}
-.badge-1{
-    position: absolute;
-    top:4rem;
-    left: 1rem;
-    background: red;
-    color: white;
-}
-.badge-2{
-    position: absolute;
-    top:7rem;
-    left: 1rem;
-    background: yellow;
-}
 @media (max-width:750px) {
     .custom-footer--top-bar{
         display: flex;

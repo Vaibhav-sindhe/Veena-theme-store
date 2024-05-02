@@ -70,14 +70,14 @@
 
   .product--medium:not(.product--no-media) .product__media-wrapper,
   .product--small:not(.product--no-media) .product__info-wrapper {
-    max-width: 55%;
-    width: calc(55% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 45%;
+    width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product--medium:not(.product--no-media) .product__info-wrapper,
   .product--small:not(.product--no-media) .product__media-wrapper {
-    max-width: 45%;
-    width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 55%;
+    width: calc(55% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
 
@@ -1605,4 +1605,10 @@ a.product__text {
     transform: rotate(0deg);
     
   }
+}
+
+
+.product__media-item{
+  border-radius: 20px !important;
+  overflow: hidden !important;
 }

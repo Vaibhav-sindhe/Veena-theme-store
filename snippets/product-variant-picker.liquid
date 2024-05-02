@@ -50,7 +50,7 @@
         </fieldset>
       {%- elsif picker_type == 'button' -%}
         <fieldset class="js product-form__input product-form__input--pill">
-          <legend class="form__label" id="color-swatch-name">{{ option.name }}:{{ option.selected_value }}</legend>
+          <legend class="form__label" id="{%if option.name=='Color'%}color-swatch-name{% else %}size-swatch-name{% endif %}" >{{ option.name }}: <span class="varient-value">{{ option.selected_value }}</span></legend>
           {% render 'product-variant-options',
             product: product,
             option: option,

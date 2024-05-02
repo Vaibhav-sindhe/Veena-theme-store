@@ -1335,23 +1335,28 @@ class VariantSelects extends HTMLElement {
 
         //changeing the coupen code
 
-        const coupendestination = document.getElementById(
-          `coupen-code-${this.dataset.section}`
-        );
-        const coupensource = html.getElementById(
-          `coupen-code-${
-            this.dataset.originalSection
-              ? this.dataset.originalSection
-              : this.dataset.section
-          }`
-        );
-        coupendestination.innerHTML=coupensource.innerHTML;
+        // const coupendestination = document.getElementById(
+        //   `coupen-code-${this.dataset.section}`
+        // );
+        // const coupensource = html.getElementById(
+        //   `coupen-code-${
+        //     this.dataset.originalSection
+        //       ? this.dataset.originalSection
+        //       : this.dataset.section
+        //   }`
+        // );
+        // coupendestination.innerHTML=coupensource.innerHTML;
 
         //change color name
 
         let updatedColorName = html.getElementById("color-swatch-name")
         let oldColorName = document.getElementById("color-swatch-name");
         oldColorName.innerHTML = updatedColorName.innerHTML;
+
+        //info change
+        let newSize= html.getElementById("size-swatch-name")
+        let oldSize= document.getElementById("size-swatch-name");
+        oldSize.innerHTML = newSize.innerHTML;
         
         const inventorySource = html.getElementById(
           `Inventory-${
@@ -1359,10 +1364,7 @@ class VariantSelects extends HTMLElement {
               ? this.dataset.originalSection
               : this.dataset.section
           }`
-        );
-
-
-        
+        );        
         const inventoryDestination = document.getElementById(
           `Inventory-${this.dataset.section}`
         );
@@ -1582,15 +1584,15 @@ class spliderComponent extends HTMLElement {
 customElements.define("splider-component", spliderComponent);
 
 
-document.querySelector('#copy-coupen').addEventListener('click', function() {
-  // Get the text you want to copy
-  var couponCode = document.querySelector('.coupen-code').innerText;
+// document.querySelector('#copy-coupen').addEventListener('click', function() {
+//   // Get the text you want to copy
+//   var couponCode = document.querySelector('.coupen-code').innerText;
 
-  // Use the Clipboard API to copy the text
-  navigator.clipboard.writeText(couponCode).then(function() {
-    alert('Coupon code copied to clipboard!');
-  }, function(err) {
-    alert('Failed to copy: ', err);
-  });
-});
+//   // Use the Clipboard API to copy the text
+//   navigator.clipboard.writeText(couponCode).then(function() {
+//     alert('Coupon code copied to clipboard!');
+//   }, function(err) {
+//     alert('Failed to copy: ', err);
+//   });
+// });
 

@@ -1349,17 +1349,17 @@ class VariantSelects extends HTMLElement {
 
         //change color name
 
-        // let updatedColorName = html.getElementById("color-swatch-name")
-        // let oldColorName = document.getElementById("color-swatch-name");
-        // oldColorName.innerHTML = updatedColorName.innerHTML;
+        let updatedColorName = html.getElementById("color-swatch-name")
+        let oldColorName = document.getElementById("color-swatch-name");
+        oldColorName.innerHTML = updatedColorName.innerHTML;
         
-        // const inventorySource = html.getElementById(
-        //   `Inventory-${
-        //     this.dataset.originalSection
-        //       ? this.dataset.originalSection
-        //       : this.dataset.section
-        //   }`
-        // );
+        const inventorySource = html.getElementById(
+          `Inventory-${
+            this.dataset.originalSection
+              ? this.dataset.originalSection
+              : this.dataset.section
+          }`
+        );
 
 
         

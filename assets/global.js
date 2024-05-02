@@ -1559,7 +1559,7 @@ customElements.define("splider-component", spliderComponent);
 
 document.querySelector('#copy-coupen').addEventListener('click', function() {
   // Get the text you want to copy
-  var couponCode = document.querySelector('.coupon-code').innerText;
+  var couponCode = document.querySelector('.coupen-code').innerText;
 
   // Use the Clipboard API to copy the text
   navigator.clipboard.writeText(couponCode).then(function() {

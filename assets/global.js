@@ -1347,7 +1347,11 @@ class VariantSelects extends HTMLElement {
         );
         coupendestination.innerHTML=coupensource.innerHTML;
 
+        //change color name
 
+        let updatedcolorName = html.getElementById("color-swatch-name")
+        let previous = document.getElementById("color-swatch-name");
+        previous.innerHTML = updatedcolorName.innerHTML;
         
         const inventorySource = html.getElementById(
           `Inventory-${

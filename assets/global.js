@@ -1349,9 +1349,9 @@ class VariantSelects extends HTMLElement {
 
         //change color name
 
-        let updatedcolorName = html.getElementById("color-swatch-name")
-        let previous = document.getElementById("color-swatch-name");
-        previous.innerHTML = updatedcolorName.innerHTML;
+        let updatedColorName = html.getElementById("color-swatch-name")
+        let oldColorName = document.getElementById("color-swatch-name");
+        oldColorName.innerHTML = updatedColorName.innerHTML;
         
         const inventorySource = html.getElementById(
           `Inventory-${

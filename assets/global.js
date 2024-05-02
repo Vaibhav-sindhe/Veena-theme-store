@@ -1336,10 +1336,10 @@ class VariantSelects extends HTMLElement {
         //changeing the coupen code
 
         const coupendestination = document.getElementById(
-          `coupen-code--${this.dataset.section}`
+          `coupen-code-${this.dataset.section}`
         );
         const coupensource = html.getElementById(
-          `coupen-code--${
+          `coupen-code-${
             this.dataset.originalSection
               ? this.dataset.originalSection
               : this.dataset.section

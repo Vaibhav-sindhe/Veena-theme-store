@@ -83,6 +83,7 @@ variant-selects {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .product-form__input--pill input[type='radio'] + label .color-swatch{
   display: block;
@@ -188,4 +189,15 @@ variant-selects {
 .varient-value{
   color: black;
   font-weight: 600;
+}
+.cross-on-swatch{
+    z-index: 2;
+    height: 1px;
+    transform: rotate(140deg);
+    border: 1px solid black;
+    /* position: absolute; */
+    /* clip: rect(0 0 0 0);
+    word-wrap: normal !important; */
+    position: absolute;
+    width: 3rem;
 }

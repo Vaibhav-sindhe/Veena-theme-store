@@ -1,5 +1,11 @@
 {
   "sections": {
+    "custom_bread_crum_aJJqUJ": {
+      "type": "custom-bread-crum",
+      "settings": {
+        "heading": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -173,6 +179,7 @@
     }
   },
   "order": [
+    "custom_bread_crum_aJJqUJ",
     "main",
     "multicolumn_76cY7z",
     "custom_grid_layout_NFQxQR",

@@ -1350,7 +1350,7 @@ class VariantSelects extends HTMLElement {
         if (oldcoupen && updatedcoupen) {
           oldcoupen.innerHTML = updatedcoupen.innerHTML;
         }
-        
+
         //change color name
         if (html.getElementById("color-swatch-name")) {
           let updatedColorName = html.getElementById("color-swatch-name");
@@ -1614,4 +1614,95 @@ customElements.define("variant-offer", variantOffer);
 
 
 
+//  pin code checker
+// function checkPin() {
+//   var pin = document.getElementById("pinInput").value;
+//   var resultDisplay = document.getElementById("result");
 
+//   // Validate pin length and numeric value
+//   if (pin.length !== 6 || isNaN(pin)) {
+//       resultDisplay.innerText = "Please enter a valid 6 digit pin code.";
+//       return;
+//   }
+
+//   // Fetch data from API
+//   fetch(`https://api.postalpincode.in/pincode/${pin}`)
+//       .then(response => response.json())
+//       .then(data => {
+//           // Check if pin code exists
+//           if (data[0].Status === "Success") {
+//             console.log(data[0]);
+//               resultDisplay.innerText = "Pin code is valid.";
+//           } else {
+//               resultDisplay.innerText = "Pin code does not exist.";
+//           }
+//       })
+//       .catch(error => {
+//           console.error('Error:', error);
+//           resultDisplay.innerText = "An error occurred while fetching data.";
+//       });
+// }
+
+
+var toastCounter = 1;
+class pincodeChecker extends HTMLElement {
+  constructor() {
+    super();
+    this.resultDisplay = this.querySelector("#result");
+    this.checkbtn=this.querySelector(".checkPin");
+
+    this.checkbtn.addEventListener('click', ()=>{
+      this.checkPin();
+    })
+
+  }
+
+  checkPin() {
+    this.pincode= this.querySelector(".pinInput").value;
+    console.log(this.pincode);
+    if (this.pincode.length !== 6 || isNaN(this.pincode)) {
+      this.resultDisplay.innerText = "Please enter a valid 6 digit pin code.";
+      this.displayToastNotification("Please enter a valid 6 digit pin code", "fa-xmark", "#f39c12", "slide-in-fade-out");
+      return;
+    }
+
+    fetch(`https://api.postalpincode.in/pincode/${this.pincode}`)
+      .then(response => response.json())
+      .then(data => {
+          // Check if pin code exists
+          // console.log(data[0].PostOffice[0].DeliveryStatus)
+          if (data[0].PostOffice[0].DeliveryStatus=== "Delivery") {
+             console.log(data[0]);
+              this.resultDisplay.innerText = "Pin code is valid.";
+              this.displayToastNotification("We deliver at your location", "fa-check", "#27ae60", "slide-in-fade-out");
+          } else {
+              this.resultDisplay.innerText = "Pin code does not exist.";
+              this.displayToastNotification("cant deliver at your location", "fa-xmark", "#c0392b", "slide-in-fade-out");
+          }
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          // this.resultDisplay.innerText = "An error occurred while fetching data.";
+      });
+
+  }
+  
+  displayToastNotification(msg, icon, icon_color, animation) {
+    var class_name = 'toast-' + toastCounter;
+    var new_node = this.querySelector('.master-toast-notification').cloneNode(true);
+    new_node.classList.remove('hide-toast');
+    new_node.classList.remove('master-toast-notification');
+    new_node.classList.add(class_name, 'toast-notification', animation);
+    new_node.querySelector('.toast-msg').innerText = msg;
+    new_node.querySelector('.toast-icon i').className = 'fa-solid ' + icon;
+    new_node.querySelector('.toast-icon').style.backgroundColor = icon_color;
+    this.querySelector('.toasts').appendChild(new_node);
+
+    setTimeout(function() {
+        new_node.remove();
+    }, 3800);
+    toastCounter++;
+}
+
+}
+customElements.define("pincode-checker", pincodeChecker);

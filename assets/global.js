@@ -1670,8 +1670,7 @@ class pincodeChecker extends HTMLElement {
       .then(response => response.json())
       .then(data => {
           // Check if pin code exists
-          // console.log(data[0].PostOffice[0].DeliveryStatus)
-          if (data[0].PostOffice[0].DeliveryStatus=== "Delivery") {
+          if (data[0].PostOffice[0].DeliveryStatus && data[0].PostOffice[0].DeliveryStatus=== "Delivery") {
              console.log(data[0]);
               this.resultDisplay.innerText = "Pin code is valid.";
               this.displayToastNotification("We deliver at your location", "fa-check", "#27ae60", "slide-in-fade-out");

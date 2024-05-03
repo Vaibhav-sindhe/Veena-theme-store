@@ -458,8 +458,9 @@
                 <!-- offer section -->
 
               {%- when 'Variant-offer' -%}
-                {% if product.metafields.custom.product_coupen != blank %}
-                  <div class="coupon">
+                <div id="coupen">
+                {% if product.selected_or_first_available_variant.metafields.custom.coupen !=blank %}
+                  <variant-offer class="coupon">
                     <div class="left">
                       <div>{{ block.settings.offer_title }}</div>
                     </div>
@@ -468,7 +469,7 @@
                         <!--
                           <h2 class="coupen-code" id="coupon-code">{{ product.metafields.custom.product_coupen }}</h2>
                         -->
-                        <h2 class="coupen-code" id="coupen-code-{{ section.id }}">
+                        <h2 class="coupen-code" id="coupen-code-{{ section.id }}" data-code='{{  product.selected_or_first_available_variant.metafields.custom.coupen }}'>
                           {{ product.selected_or_first_available_variant.metafields.custom.coupen }}
                         </h2>
                         <h3>Coupon</h3>
@@ -479,8 +480,9 @@
                     <div class="right">
                       <div>87878521112</div>
                     </div>
-                  </div>
+                  </variant-offer>
                 {% endif %}
+              </div>
                 <!-- offer section -->
 
               {%- when 'buy_buttons' -%}

@@ -409,9 +409,9 @@ class MenuDrawer extends HTMLElement {
 
     openDetailsElement === this.mainDetailsToggle
       ? this.closeMenuDrawer(
-          event,
-          this.mainDetailsToggle.querySelector("summary")
-        )
+        event,
+        this.mainDetailsToggle.querySelector("summary")
+      )
       : this.closeSubmenu(openDetailsElement);
   }
 
@@ -453,9 +453,9 @@ class MenuDrawer extends HTMLElement {
         !reducedMotion || reducedMotion.matches
           ? addTrapFocus()
           : summaryElement.nextElementSibling.addEventListener(
-              "transitionend",
-              addTrapFocus
-            );
+            "transitionend",
+            addTrapFocus
+          );
       }, 100);
     }
   }
@@ -556,9 +556,9 @@ class HeaderDrawer extends MenuDrawer {
     this.header = this.header || document.querySelector(".section-header");
     this.borderOffset =
       this.borderOffset ||
-      this.closest(".header-wrapper").classList.contains(
-        "header-wrapper--border-bottom"
-      )
+        this.closest(".header-wrapper").classList.contains(
+          "header-wrapper--border-bottom"
+        )
         ? 1
         : 0;
     document.documentElement.style.setProperty(
@@ -735,7 +735,7 @@ class SliderComponent extends HTMLElement {
       this.sliderItemsToShow[0].offsetLeft;
     this.slidesPerPage = Math.floor(
       (this.slider.clientWidth - this.sliderItemsToShow[0].offsetLeft) /
-        this.sliderItemOffset
+      this.sliderItemOffset
     );
     this.totalPages = this.sliderItemsToShow.length - this.slidesPerPage + 1;
     this.update();
@@ -1083,9 +1083,9 @@ class SlideshowComponent extends SliderComponent {
     const slideScrollPosition =
       this.slider.scrollLeft +
       this.sliderFirstItemNode.clientWidth *
-        (this.sliderControlLinksArray.indexOf(event.currentTarget) +
-          1 -
-          this.currentPage);
+      (this.sliderControlLinksArray.indexOf(event.currentTarget) +
+        1 -
+        this.currentPage);
     this.slider.scrollTo({
       left: slideScrollPosition,
     });
@@ -1265,9 +1265,9 @@ class VariantSelects extends HTMLElement {
         element.innerText = availableElement
           ? value
           : window.variantStrings.unavailable_with_option.replace(
-              "[value]",
-              value
-            );
+            "[value]",
+            value
+          );
       }
     });
   }
@@ -1299,10 +1299,9 @@ class VariantSelects extends HTMLElement {
       : this.dataset.section;
 
     fetch(
-      `${this.dataset.url}?variant=${requestedVariantId}&section_id=${
-        this.dataset.originalSection
-          ? this.dataset.originalSection
-          : this.dataset.section
+      `${this.dataset.url}?variant=${requestedVariantId}&section_id=${this.dataset.originalSection
+        ? this.dataset.originalSection
+        : this.dataset.section
       }`
     )
       .then((response) => response.text())
@@ -1315,17 +1314,15 @@ class VariantSelects extends HTMLElement {
           `price-${this.dataset.section}`
         );
         const source = html.getElementById(
-          `price-${
-            this.dataset.originalSection
-              ? this.dataset.originalSection
-              : this.dataset.section
+          `price-${this.dataset.originalSection
+            ? this.dataset.originalSection
+            : this.dataset.section
           }`
         );
         const skuSource = html.getElementById(
-          `Sku-${
-            this.dataset.originalSection
-              ? this.dataset.originalSection
-              : this.dataset.section
+          `Sku-${this.dataset.originalSection
+            ? this.dataset.originalSection
+            : this.dataset.section
           }`
         );
         const skuDestination = document.getElementById(
@@ -1334,47 +1331,52 @@ class VariantSelects extends HTMLElement {
 
 
         //changeing the coupen code
-          // const coupendestination = document.getElementById(
-          //   `coupen-code-${this.dataset.section}`
-          // );
-          // const coupensource = html.getElementById(
-          //   `coupen-code-${
-          //     this.dataset.originalSection
-          //       ? this.dataset.originalSection
-          //       : this.dataset.section
-          //   }`
-          // );
-          // coupendestination.innerHTML=coupensource.innerHTML;
-        
+        // const coupendestination = document.getElementById(
+        //   `coupen-code-${this.dataset.section}`
+        // );
+        // const coupensource = html.getElementById(
+        //   `coupen-code-${this.dataset.originalSection
+        //     ? this.dataset.originalSection
+        //     : this.dataset.section
+        //   }`
+        // );
+        // if (coupendestination && coupensource) {
+        //   coupendestination.innerHTML = coupensource.innerHTML;
+        // }
 
+        //change coupen div
+        let updatedcoupen = html.getElementById("coupen");
+        let oldcoupen = document.getElementById("coupen");
+        if (oldcoupen && updatedcoupen) {
+          oldcoupen.innerHTML = updatedcoupen.innerHTML;
+        }
+        
         //change color name
-        if(html.getElementById("color-swatch-name")){
+        if (html.getElementById("color-swatch-name")) {
           let updatedColorName = html.getElementById("color-swatch-name");
           let oldColorName = document.getElementById("color-swatch-name");
           oldColorName.innerHTML = updatedColorName.innerHTML;
-        }  
+        }
         //info change
-        if(html.getElementById("size-swatch-name")){
-          let  newSize= html.getElementById("size-swatch-name");
-          let oldSize= document.getElementById("size-swatch-name");
+        if (html.getElementById("size-swatch-name")) {
+          let newSize = html.getElementById("size-swatch-name");
+          let oldSize = document.getElementById("size-swatch-name");
           oldSize.innerHTML = newSize.innerHTML;
         }
         const inventorySource = html.getElementById(
-          `Inventory-${
-            this.dataset.originalSection
-              ? this.dataset.originalSection
-              : this.dataset.section
+          `Inventory-${this.dataset.originalSection
+            ? this.dataset.originalSection
+            : this.dataset.section
           }`
-        );        
+        );
         const inventoryDestination = document.getElementById(
           `Inventory-${this.dataset.section}`
         );
 
         const volumePricingSource = html.getElementById(
-          `Volume-${
-            this.dataset.originalSection
-              ? this.dataset.originalSection
-              : this.dataset.section
+          `Volume-${this.dataset.originalSection
+            ? this.dataset.originalSection
+            : this.dataset.section
           }`
         );
 
@@ -1382,10 +1384,9 @@ class VariantSelects extends HTMLElement {
           `Price-Per-Item-${this.dataset.section}`
         );
         const pricePerItemSource = html.getElementById(
-          `Price-Per-Item-${
-            this.dataset.originalSection
-              ? this.dataset.originalSection
-              : this.dataset.section
+          `Price-Per-Item-${this.dataset.originalSection
+            ? this.dataset.originalSection
+            : this.dataset.section
           }`
         );
 
@@ -1584,16 +1585,33 @@ class spliderComponent extends HTMLElement {
 }
 customElements.define("splider-component", spliderComponent);
 
+// coupen copy
 
-// document.querySelector('#copy-coupen').addEventListener('click', function() {
-//   // Get the text you want to copy
-//   var couponCode = document.querySelector('.coupen-code').innerText;
+class variantOffer extends HTMLElement {
+  constructor() {
+    super();
+    this.couponCode = this.querySelector('[data-code]').dataset.code;
+    this.copyButton = this.querySelector('#copy-coupen');
 
-//   // Use the Clipboard API to copy the text
-//   navigator.clipboard.writeText(couponCode).then(function() {
-//     alert('Coupon code copied to clipboard!');
-//   }, function(err) {
-//     alert('Failed to copy: ', err);
-//   });
-// });
+    this.copyButton.addEventListener('click', ()=>{
+      this.copyAction();
+    })
+
+  }
+
+  copyAction() {
+
+    // Use the Clipboard API to copy the text
+    navigator.clipboard.writeText(this.couponCode).then(function () {
+      alert('Coupon code copied to clipboard!');
+    }, function (err) {
+      alert('Failed to copy: ', err);
+    });
+  }
+}
+
+customElements.define("variant-offer", variantOffer);
+
+
+
 

@@ -213,6 +213,9 @@
     }      
     .custom-footer--email-inputContainer {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .custom-footer--email-inputContainer .newsletter-form .week-6-email--input {
         width: 20rem;

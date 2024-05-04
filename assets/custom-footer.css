@@ -128,7 +128,9 @@
     display: flex;
     align-items: center;
 }
-
+.custom-footer a{
+    text-decoration: none;
+}
 
 
 

@@ -1357,12 +1357,21 @@ class VariantSelects extends HTMLElement {
           let oldColorName = document.getElementById("color-swatch-name");
           oldColorName.innerHTML = updatedColorName.innerHTML;
         }
-        //info change
+        //size change
         if (html.getElementById("size-swatch-name")) {
           let newSize = html.getElementById("size-swatch-name");
           let oldSize = document.getElementById("size-swatch-name");
           oldSize.innerHTML = newSize.innerHTML;
         }
+        
+        // progress bar change
+        if (html.getElementById("progress-bar")) {
+          let updatedProgressbar = html.getElementById("progress-bar");
+          let oldProgressbar = document.getElementById("progress-bar");
+          oldProgressbar.innerHTML = updatedProgressbar.innerHTML;
+        }
+
+
         const inventorySource = html.getElementById(
           `Inventory-${this.dataset.originalSection
             ? this.dataset.originalSection

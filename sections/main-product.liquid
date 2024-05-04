@@ -187,11 +187,17 @@
 
                 {% comment %} progress bar {% endcomment %}
                 {% assign inventory=product.selected_or_first_available_variant.inventory_quantity %}
+                {% assign upperlimit=product.selected_or_first_available_variant.metafields.custom.inventory_upperlimit %}
+                {% if upperlimit==blank %}
+                  {% assign upperlimit=100 %}
+                {% endif %}  
+
+                {% assign widthpercent=inventory | times : 100 | divided_by:upperlimit  %}
                 <div id="progress-bar">
                 {% if inventory!=0 %}
                 <div class="progress-bar">
                   <span class="in-stock-bar" 
-                    style="width:{{ inventory }}%;  
+                    style="width:{{ widthpercent }}%;  
                     {% if inventory >10 %} background:green; {% else %}background:red;{% endif %}"></span>  
                   <span class="not-in-stock-bar"></span>  
                 </div>

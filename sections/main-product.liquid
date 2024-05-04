@@ -191,7 +191,9 @@
                 {% if upperlimit==blank or upperlimit<inventory %}
                   {% assign upperlimit=100 %}
                 {% endif %}  
-
+               
+                
+              {%- when 'progress-bar' -%}
                 {% assign widthpercent=inventory | times : 100 | divided_by:upperlimit  %}
                 <div id="progress-bar">
                 {% if inventory!=0 %}
@@ -916,6 +918,18 @@
           "type":"text",
           "id": "pincode-title",
           "label":"Pincode title"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "progress-bar",
+      "name":"Progress bar",
+      "settings": [
+        {
+          "type":"text",
+          "id": "progress-bar-title",
+          "label":"progress-bar title"
         }
       ],
       "limit": 1

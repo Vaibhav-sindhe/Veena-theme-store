@@ -188,7 +188,7 @@
                 {% comment %} progress bar {% endcomment %}
                 {% assign inventory=product.selected_or_first_available_variant.inventory_quantity %}
                 {% assign upperlimit=product.selected_or_first_available_variant.metafields.custom.inventory_upperlimit %}
-                {% if upperlimit==blank %}
+                {% if upperlimit==blank or upperlimit<inventory %}
                   {% assign upperlimit=100 %}
                 {% endif %}  
 

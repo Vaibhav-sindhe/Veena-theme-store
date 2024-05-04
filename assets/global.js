@@ -1614,34 +1614,7 @@ customElements.define("variant-offer", variantOffer);
 
 
 
-//  pin code checker
-// function checkPin() {
-//   var pin = document.getElementById("pinInput").value;
-//   var resultDisplay = document.getElementById("result");
-
-//   // Validate pin length and numeric value
-//   if (pin.length !== 6 || isNaN(pin)) {
-//       resultDisplay.innerText = "Please enter a valid 6 digit pin code.";
-//       return;
-//   }
-
-//   // Fetch data from API
-//   fetch(`https://api.postalpincode.in/pincode/${pin}`)
-//       .then(response => response.json())
-//       .then(data => {
-//           // Check if pin code exists
-//           if (data[0].Status === "Success") {
-//             console.log(data[0]);
-//               resultDisplay.innerText = "Pin code is valid.";
-//           } else {
-//               resultDisplay.innerText = "Pin code does not exist.";
-//           }
-//       })
-//       .catch(error => {
-//           console.error('Error:', error);
-//           resultDisplay.innerText = "An error occurred while fetching data.";
-//       });
-// }
+//pin code checker
 
 
 var toastCounter = 1;

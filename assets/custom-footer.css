@@ -194,5 +194,40 @@
     .custom-footer-top-bar--contact span{
         font-size: 1.5rem;
     }
-    
+    .custom-footer--bottom{
+        flex-direction: column;
+    }
+    .custom-footer-bottom--navContainer{
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        padding-left: 0;
+    }
+    .custom-footer-navContainer--block {
+        align-items: center;
+    }  
+    .custom-footer-navContainer--block ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }      
+    .custom-footer--email-inputContainer {
+        width: 100%;
+    }
+    .custom-footer--email-inputContainer .newsletter-form .week-6-email--input {
+        width: 20rem;
+    }
+    .footer__column{
+        flex-direction: column;
+    }    
+    .custom-footer-bottom-bar--copyright{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__column--info .list-payment {
+        padding-left:0 ;
+    }
+    .footer__column a {
+        font-size: 1.2rem;
+    }    
 }

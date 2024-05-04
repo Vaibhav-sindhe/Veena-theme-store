@@ -73,7 +73,7 @@
         "pincode_checker_q6faWE": {
           "type": "pincode-checker",
           "settings": {
-            "pincode-title": ""
+            "pincode-title": "Check the local delivery information"
           }
         }
       },

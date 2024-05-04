@@ -34,6 +34,12 @@
             "show_inventory_quantity": true
           }
         },
+        "progress_bar_ajntRY": {
+          "type": "progress-bar",
+          "settings": {
+            "progress-bar-title": ""
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -82,6 +88,7 @@
         "price",
         "variant_picker",
         "inventory_gdHM8W",
+        "progress_bar_ajntRY",
         "quantity_selector",
         "buy_buttons",
         "description",

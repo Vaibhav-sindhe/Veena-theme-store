@@ -69,6 +69,12 @@
           "settings": {
             "offer_title": "vaibhav"
           }
+        },
+        "pincode_checker_q6faWE": {
+          "type": "pincode-checker",
+          "settings": {
+            "pincode-title": ""
+          }
         }
       },
       "block_order": [
@@ -80,7 +86,8 @@
         "buy_buttons",
         "description",
         "complementary_nk399q",
-        "variant_offer_GhXyG3"
+        "variant_offer_GhXyG3",
+        "pincode_checker_q6faWE"
       ],
       "settings": {
         "enable_sticky_info": true,

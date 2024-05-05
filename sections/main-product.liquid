@@ -536,7 +536,7 @@
 
 
                 {% comment %} custom add to cart {% endcomment %}
-                {% assign product_handles = product.metafields.custom.comp_products| json %}
+                {% assign product_handles = product.metafields.custom.comp_products| parse_json %}
 
                   <div class="custom-add-to-cart">    
                     {% for handle in product_handles %}

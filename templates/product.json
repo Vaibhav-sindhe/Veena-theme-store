@@ -52,6 +52,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "payment_method_A4zPaw": {
+          "type": "payment-method",
+          "settings": {
+            "payment-method-title": "Secure checkout with"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -91,6 +97,7 @@
         "progress_bar_ajntRY",
         "quantity_selector",
         "buy_buttons",
+        "payment_method_A4zPaw",
         "description",
         "complementary_nk399q",
         "variant_offer_GhXyG3",

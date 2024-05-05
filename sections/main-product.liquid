@@ -532,14 +532,7 @@
                     </div>
                   </pincode-checker>
                 <!--pincode checker section-->
-
-
-
-                <form action="/cart/add" method="post">
-                  <input type="hidden" name="id" value="{{product.id }}">
-                  <button type="submit" class="btn btn--small">Add to bag</button>
-                </form>
-                 
+                
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,

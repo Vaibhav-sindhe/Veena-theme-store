@@ -550,6 +550,12 @@
                 {% comment %} {%- endif -%} {% endcomment %}
               <!--payment methods-->
  
+              <!--product details-->
+              <details>
+                <summary>Product details</summary>
+                {{ product.metafields.custom.product_details }}
+              </details>
+              <!--product details-->
 
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',

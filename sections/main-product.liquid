@@ -553,7 +553,12 @@
               <!--product details-->
               <details>
                 <summary>Product details</summary>
-                {{ product.metafields.custom.product_details }}
+                {% assign product_details_json = product.metafields.custom.product_details | json %}
+                {% for block in product_details_json.children %}
+                  {% if block.type == 'paragraph' %}
+                    <p>{% for child in block.children %}{% if child.type == 'text' %}{{ child.value }}{% endif %}{% endfor %}</p>
+                  {% endif %}
+                {% endfor %}
               </details>
               <!--product details-->
 

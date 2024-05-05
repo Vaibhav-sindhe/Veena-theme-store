@@ -99,6 +99,12 @@
           "settings": {
             "pincode-title": "Check the local delivery information"
           }
+        },
+        "available_offers_tbp3bG": {
+          "type": "available-offers",
+          "settings": {
+            "available-offer-title": "Available Offers"
+          }
         }
       },
       "block_order": [
@@ -115,7 +121,8 @@
         "shipping_return_dropdown_7gyFy7",
         "complementary_nk399q",
         "variant_offer_GhXyG3",
-        "pincode_checker_q6faWE"
+        "pincode_checker_q6faWE",
+        "available_offers_tbp3bG"
       ],
       "settings": {
         "enable_sticky_info": true,

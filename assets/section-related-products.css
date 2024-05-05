@@ -4,6 +4,8 @@
 
 .related-products__heading {
   margin: 0 0 3rem;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 
@@ -25,7 +27,8 @@
   background-position: left bottom;
 }
 #related-products .splide__arrow--next {
-  right: 3.5px;
+  right: 25px;
+  top: 22rem;
   border-bottom-right-radius:0 ;
   border-top-right-radius: 0;
 }
@@ -33,11 +36,21 @@
   opacity: 0;
 }
 #related-products .splide__arrow--prev{
-  left: 3.5px;
+  left: 25px;
+  top: 22rem;
   border-bottom-left-radius:0 ;
   border-top-left-radius: 0;
 }
 #related-products .splide__arrow svg {
   fill: white;
   font-size: 10px;
+}
+
+@media (max-width:749px) {
+  #related-products .splide__arrow--next {
+    top: 15rem;
+  } 
+  #related-products .splide__arrow--prev{
+    top: 15rem;
+  }   
 }

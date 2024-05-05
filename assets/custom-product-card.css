@@ -320,8 +320,8 @@
     position: absolute;
     top:7rem;
     left: 1rem;
-    color: white;
     background: black;
+    color: white;
 }
 
   @media screen and (max-width: 750px) {

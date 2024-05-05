@@ -533,10 +533,8 @@
                   </pincode-checker>
                 <!--pincode checker section-->
               <div class="custom-add-to-cart">    
-                  {% for compprd in product.metafields.custom.comp_products %}
-                    {% render "custom-product-card",product:compprd %}
-                  {% endfor %}  
-            </div>
+                {{product.metafields.custom.comp_products }}
+              </div>
                  
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',

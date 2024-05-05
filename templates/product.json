@@ -63,6 +63,18 @@
           "settings": {
           }
         },
+        "product_details_dropdown_aUPwWr": {
+          "type": "product-details-dropdown",
+          "settings": {
+            "product-details-title": "Product details"
+          }
+        },
+        "shipping_return_dropdown_7gyFy7": {
+          "type": "shipping-return-dropdown",
+          "settings": {
+            "shipping-return-title": "Shipping And Return"
+          }
+        },
         "complementary_nk399q": {
           "type": "complementary",
           "settings": {
@@ -87,18 +99,6 @@
           "settings": {
             "pincode-title": "Check the local delivery information"
           }
-        },
-        "product_details_dropdown_aUPwWr": {
-          "type": "product-details-dropdown",
-          "settings": {
-            "product-details-title": "Product details"
-          }
-        },
-        "shipping_return_dropdown_7gyFy7": {
-          "type": "shipping-return-dropdown",
-          "settings": {
-            "shipping-return-title": "Shipping And Return"
-          }
         }
       },
       "block_order": [
@@ -111,11 +111,11 @@
         "buy_buttons",
         "payment_method_A4zPaw",
         "description",
+        "product_details_dropdown_aUPwWr",
+        "shipping_return_dropdown_7gyFy7",
         "complementary_nk399q",
         "variant_offer_GhXyG3",
-        "pincode_checker_q6faWE",
-        "product_details_dropdown_aUPwWr",
-        "shipping_return_dropdown_7gyFy7"
+        "pincode_checker_q6faWE"
       ],
       "settings": {
         "enable_sticky_info": true,

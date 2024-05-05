@@ -307,19 +307,19 @@
     position: absolute;
     top:1rem;
     left: 1rem;
+    background: #d03c3f;
 }
 .badge-1{
     position: absolute;
     top:4rem;
     left: 1rem;
-    background: red;
+    background: green;
     color: white;
 }
 .badge-2{
     position: absolute;
     top:7rem;
     left: 1rem;
-    background: yellow;
 }
 
   @media screen and (max-width: 750px) {

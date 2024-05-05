@@ -532,9 +532,20 @@
                     </div>
                   </pincode-checker>
                 <!--pincode checker section-->
-              <div class="custom-add-to-cart">    
-                {{product.metafields.custom.comp_products[0] }} 
-              </div>
+
+
+
+                {% comment %} custom add to cart {% endcomment %}
+                {% assign product_handles = product.metafields.custom.comp_products| json %}
+
+                  <div class="custom-add-to-cart">    
+                    {% for handle in product_handles %}
+                      {% assign product = all_products[handle] %}
+                      <!-- Now you can display information about each product -->
+                      <h2>{{ product.title }}</h2>
+                    {% endfor %}
+                   </div>
+                {% comment %} custom add to cart {% endcomment %}
                  
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',

@@ -93,6 +93,12 @@
           "settings": {
             "product-details-title": "Product details"
           }
+        },
+        "shipping_return_dropdown_7gyFy7": {
+          "type": "shipping-return-dropdown",
+          "settings": {
+            "shipping-return-title": "Shipping And Return"
+          }
         }
       },
       "block_order": [
@@ -108,7 +114,8 @@
         "complementary_nk399q",
         "variant_offer_GhXyG3",
         "pincode_checker_q6faWE",
-        "product_details_dropdown_aUPwWr"
+        "product_details_dropdown_aUPwWr",
+        "shipping_return_dropdown_7gyFy7"
       ],
       "settings": {
         "enable_sticky_info": true,

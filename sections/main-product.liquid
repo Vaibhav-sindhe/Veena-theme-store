@@ -535,17 +535,10 @@
 
 
 
-                {% comment %} custom add to cart {% endcomment %}
-                {% assign product_handles = product.metafields.custom.comp_products| parse_json %}
-
-                  <div class="custom-add-to-cart">    
-                    {% for handle in product_handles %}
-                      {% assign product = all_products[handle] %}
-                      <!-- Now you can display information about each product -->
-                      <h2>{{ product.title }}</h2>
-                    {% endfor %}
-                   </div>
-                {% comment %} custom add to cart {% endcomment %}
+                <form action="/cart/add" method="post">
+                  <input type="hidden" name="id" value="{{product.id }}">
+                  <button type="submit" class="btn btn--small">Add to bag</button>
+                </form>
                  
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',

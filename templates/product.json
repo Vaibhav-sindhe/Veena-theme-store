@@ -87,6 +87,18 @@
           "settings": {
             "pincode-title": "Check the local delivery information"
           }
+        },
+        "product_details_dropdown_aUPwWr": {
+          "type": "product-details-dropdown",
+          "settings": {
+            "product-details-title": "Product details"
+          }
+        },
+        "shipping_return_dropdown_7gyFy7": {
+          "type": "shipping-return-dropdown",
+          "settings": {
+            "shipping-return-title": "Shipping And Return"
+          }
         }
       },
       "block_order": [
@@ -101,7 +113,9 @@
         "description",
         "complementary_nk399q",
         "variant_offer_GhXyG3",
-        "pincode_checker_q6faWE"
+        "pincode_checker_q6faWE",
+        "product_details_dropdown_aUPwWr",
+        "shipping_return_dropdown_7gyFy7"
       ],
       "settings": {
         "enable_sticky_info": true,

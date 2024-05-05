@@ -230,10 +230,12 @@
 .product__info-container .product__description,
 .product__info-container .icon-with-text {
   margin: 2.5rem 0;
+  color: black;
 }
 
 .product__text {
   margin-bottom: 0;
+  
 }
 
 a.product__text {
@@ -1796,3 +1798,11 @@ a.product__text {
   font-weight: 600;
   color: black;
 }
+
+.quantity{
+  border: 3px solid #f5f5f5;
+  border-radius: 25px;
+}
+.quantity::after{
+  box-shadow: none;
+}  

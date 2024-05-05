@@ -1777,7 +1777,7 @@ a.product__text {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  margin: 5px;
+  margin: 10px;
 }
 .product-payment-method ul li{
   list-style: none;

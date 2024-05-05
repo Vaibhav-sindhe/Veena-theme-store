@@ -52,6 +52,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "available_offers_tbp3bG": {
+          "type": "available-offers",
+          "settings": {
+            "available-offer-title": "Available Offers"
+          }
+        },
         "payment_method_A4zPaw": {
           "type": "payment-method",
           "settings": {
@@ -99,12 +105,6 @@
           "settings": {
             "pincode-title": "Check the local delivery information"
           }
-        },
-        "available_offers_tbp3bG": {
-          "type": "available-offers",
-          "settings": {
-            "available-offer-title": "Available Offers"
-          }
         }
       },
       "block_order": [
@@ -115,14 +115,14 @@
         "progress_bar_ajntRY",
         "quantity_selector",
         "buy_buttons",
+        "available_offers_tbp3bG",
         "payment_method_A4zPaw",
         "description",
         "product_details_dropdown_aUPwWr",
         "shipping_return_dropdown_7gyFy7",
         "complementary_nk399q",
         "variant_offer_GhXyG3",
-        "pincode_checker_q6faWE",
-        "available_offers_tbp3bG"
+        "pincode_checker_q6faWE"
       ],
       "settings": {
         "enable_sticky_info": true,

@@ -533,6 +533,12 @@
                   </pincode-checker>
                 <!--pincode checker section-->
 
+              {% if product.metafields.custom.comp_products %}  
+                  {% for compprd in product.metafields.custom.comp_products %}
+                    {% render "custom-product-card",product:compprd %}
+                  {% endfor %}  
+              {% endif %}
+                 
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,

@@ -49,8 +49,10 @@
 @media (max-width:749px) {
   #related-products .splide__arrow--next {
     top: 15rem;
+    right: 0;
   } 
   #related-products .splide__arrow--prev{
     top: 15rem;
+    left: 0;
   }   
 }

@@ -1784,3 +1784,15 @@ a.product__text {
   width: 4rem;
   height: 2.5rem;
 }
+
+
+
+.product-details , .Shipping-return{
+  color: black;
+  border-bottom:3px solid #f5f5f5 ;
+}
+.product-details--title , .Shipping-return--title{
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: black;
+}

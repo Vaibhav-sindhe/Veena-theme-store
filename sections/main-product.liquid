@@ -564,7 +564,7 @@
                   {{product.metafields.custom.product_details | metafield_tag  }}
                 </details>
               {% endif %}
-              <!--product details--> 
+              <!--product details-->
 
 
               <!--shipping and return-->
@@ -584,6 +584,14 @@
               {% endif %}
               <!--shipping and return-->
               
+
+              <!--Available Offers-->
+              {%- when 'available-offers' -%}
+              <div class="Available Offers">
+                <h3>{{ block.settings.offer-title }}</h3>
+              </div> 
+              <!--Available Offers-->
+
 
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
@@ -1018,6 +1026,18 @@
           "type":"text",
           "id": "shipping-return-title",
           "label":"Shipping return title"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "available-offers",
+      "name":"Offers list",
+      "settings": [
+        {
+          "type":"text",
+          "id": "available-offer-title",
+          "label":"Offer title"
         }
       ],
       "limit": 1

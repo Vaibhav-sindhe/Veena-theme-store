@@ -5,3 +5,39 @@
 .related-products__heading {
   margin: 0 0 3rem;
 }
+
+
+#related-products .splide__arrow {
+  background:rgb(208, 60, 63);
+  opacity: 1;
+  color: white;
+  height: 4rem;
+  width: 4rem;
+  background: linear-gradient(to right, black 50%, rgb(208, 60, 63) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.4s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+#related-products .splide__arrow:hover{
+  background-position: left bottom;
+}
+#related-products .splide__arrow--next {
+  right: 3.5px;
+  border-bottom-right-radius:0 ;
+  border-top-right-radius: 0;
+}
+#related-products .splide__arrow:disabled{
+  opacity: 0;
+}
+#related-products .splide__arrow--prev{
+  left: 3.5px;
+  border-bottom-left-radius:0 ;
+  border-top-left-radius: 0;
+}
+#related-products .splide__arrow svg {
+  fill: white;
+  font-size: 10px;
+}

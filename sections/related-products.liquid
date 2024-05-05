@@ -81,10 +81,9 @@
     {% render 'mask-arch' %}
   {%- endif -%}
 </div> {% endcomment %}
-<div>
+<div class="page-width" id="related-products">
   <product-recommendations
     data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
-    class="page-width"
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
       <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">

@@ -1760,3 +1760,27 @@ a.product__text {
 .out-of-stock{
   color: gray;
 }
+.product-payment-method{
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #f5f5f5;
+  padding: 0 1rem ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-payment-method h2{
+  font-size: 2rem;
+  margin: 0;
+}
+.product-payment-method ul{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+.product-payment-method ul li{
+  list-style: none;
+  width: 4rem;
+  height: 2.5rem;
+}

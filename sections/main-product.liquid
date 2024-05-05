@@ -532,7 +532,25 @@
                     </div>
                   </pincode-checker>
                 <!--pincode checker section-->
-                
+
+                <!--payment methods-->
+                {% comment %} {%- if section.settings.payment_enable -%} {% endcomment %}
+                {%- when 'payment-method' -%}
+                  <div class="product-payment-method">
+                    <h2>{{block.settings.payment-method-title }}</h2>
+                    {% comment %} <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span> {% endcomment %}
+                    <ul class="list list-payment" role="list">
+                      {%- for type in shop.enabled_payment_types -%}
+                        <li class="list-payment__item">
+                          {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                {% comment %} {%- endif -%} {% endcomment %}
+              <!--payment methods-->
+ 
+
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
@@ -930,6 +948,18 @@
           "type":"text",
           "id": "progress-bar-title",
           "label":"progress-bar title"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "payment-method",
+      "name":"Payment method",
+      "settings": [
+        {
+          "type":"text",
+          "id": "payment-method-title",
+          "label":"Payment method title"
         }
       ],
       "limit": 1

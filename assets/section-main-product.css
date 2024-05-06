@@ -1628,6 +1628,7 @@ a.product__text {
   width: 30rem;
   border-radius: 20px;
   padding-left: 2rem;
+  border: 1px solid ;
 }  
 .container{
   position: relative;
@@ -1806,3 +1807,13 @@ a.product__text {
 .quantity::after{
   box-shadow: none;
 }  
+
+
+.container {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+.pincode-checker .field:after{
+  box-shadow: none;
+}

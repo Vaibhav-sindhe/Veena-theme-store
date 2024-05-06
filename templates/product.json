@@ -105,6 +105,12 @@
           "settings": {
             "pincode-title": "Check the local delivery information"
           }
+        },
+        "bundles_hTKk8q": {
+          "type": "bundles",
+          "settings": {
+            "bundle_heading": "Frequently bought together"
+          }
         }
       },
       "block_order": [
@@ -122,7 +128,8 @@
         "shipping_return_dropdown_7gyFy7",
         "complementary_nk399q",
         "variant_offer_GhXyG3",
-        "pincode_checker_q6faWE"
+        "pincode_checker_q6faWE",
+        "bundles_hTKk8q"
       ],
       "settings": {
         "enable_sticky_info": true,

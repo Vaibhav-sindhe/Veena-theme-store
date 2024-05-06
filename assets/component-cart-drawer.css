@@ -413,7 +413,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 .drawer .list-payment{
   display: flex;
   justify-content: space-evenly;
-  padding: 0 3rem;
+  padding: 0 10rem;
 }
 .drawer .list-payment li{
   list-style: none;

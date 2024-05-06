@@ -604,24 +604,15 @@
                           <div class="product-bundle-container">
                               <product-bundle class="product-bundle__grid " data-section-id="{{ section.id }}">
                           {% for product in product.metafields.custom.bundles.value %}
-                              <div class="product-bundle__grid-item product-bundles">
-                              {% render 'custom-product-card',
-                              product: product,
-                              section_id: section.id
-                              %}
                               <input class="bundle-checkbox" data-product-id="{{ product.selected_or_first_available_variant.id }}"
                               value="{{  product.selected_or_first_available_variant.id }}"
                               type="checkbox"
                               >
-                              {% if forloop.index != forloop.length %}
-                                  <span class="addicon">
-                                  +
-                                  </span>
-                              {%  else %}
-                                  <span class="addicon">
-                                      =
-                                  </span>
-                              {% endif %}
+                              <div class="product-bundle__grid-item product-bundles">
+                                  {% render 'custom-product-card',
+                                  product: product,
+                                  section_id: section.id
+                                  %}
                               </div>
                           {% endfor %}
                           <div id="bundle__atc"

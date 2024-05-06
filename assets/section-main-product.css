@@ -1565,7 +1565,7 @@ a.product__text {
   text-align: center;
 }
 
-.right {
+.varient-right {
   width: 120px;
   background-image: radial-gradient(
     circle at 100% 50%,
@@ -1573,7 +1573,7 @@ a.product__text {
     #fff 26px
   );
 }
-.right div {
+.varient-right div {
   font-family: "Libre Barcode 128 Text", cursive;
   font-size: 2.5rem;
   font-weight: 400;

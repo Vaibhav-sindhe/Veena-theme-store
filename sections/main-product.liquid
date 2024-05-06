@@ -512,7 +512,7 @@
 
                 <!--pincode checker section-->
                 {%- when 'pincode-checker' -%}
-                  <pincode-checker class="container">
+                  {% comment %} <pincode-checker class="container">
                     <h3>{{ block.settings.pincode-title }}</h3>
                     <input type="number" class="pinInput" id="pinInput" placeholder="Enter 6 digit pin code">
                     <button class="checkPin button">Check</button>
@@ -530,8 +530,36 @@
                         <div class="toast-progress-bar"></div>
                       </div>
                     </div>
-                  </pincode-checker>
+                  </pincode-checker> {% endcomment %}
                 <!--pincode checker section-->
+
+                
+
+                <!--pincode checker section using google sheets-->
+
+                    <pincode-checker>
+                      <div class="pincode-checker">
+                        <div class="field pincode-checker__field">
+                          <input class="field__input" id="PincodeInput" type="text" name="pincode-input" placeholder="Eg. 560012">
+                          <label class="field__label" for="PincodeInput">Enter Pincode</label>
+                        </div>
+                        <button type="button" class="button pincode-checker__button" name="pincode-submit">Check</button>
+                      </div>
+                      <div class="pincode-message text-body is-hidden" name="pincode-message"></div>
+                    </pincode-checker>
+
+
+                <!--pincode checker section using google sheets-->
+
+
+
+
+
+
+
+
+
+
 
                 <!--payment methods-->
                 {% comment %} {%- if section.settings.payment_enable -%} {% endcomment %}

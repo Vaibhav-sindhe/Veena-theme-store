@@ -15,6 +15,11 @@
   .drawer {
     visibility: hidden;
   }
+  .drawer__header-with-background{
+    padding:2rem 0.5rem;
+    background:#d03c3f;
+  }
+
 </style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
@@ -59,29 +64,30 @@
           {%- endif -%}
         </div>
       {%- endif -%}
-      <div class="drawer__header">
-        <h2 class="drawer__heading">{{ 'sections.cart.title' | t }}</h2>
-        <button
-          class="drawer__close"
-          type="button"
-          onclick="this.closest('cart-drawer').close()"
-          aria-label="{{ 'accessibility.close' | t }}"
-        >
-          {% render 'icon-close' %}
-        </button>
-      </div>
+      <div class="drawer__header-with-background">
+        <div class="drawer__header">
+          <h2 class="drawer__heading">Shopping cart ({{ cart.item_count }})</h2>
+          <button
+            class="drawer__close"
+            type="button"
+            onclick="this.closest('cart-drawer').close()"
+            aria-label="{{ 'accessibility.close' | t }}"
+          >
+            {% render 'icon-close' %}
+          </button>
+        </div>
 
-      {% assign widthpercent=cart.total_price | times : 100 | divided_by:20000  %}
-      <div id="progress-bar">
-        {% if cart.total_price.!=0 %}
-          <div class="progress-bar">
-            <span class="in-stock-bar" 
-              style="width:{{ widthpercent }}%;  
-               background:green;">
-            </span>  
-            <span class="not-in-stock-bar"></span>  
-          </div>
-        {% endif %}
+        {% assign widthpercent=cart.total_price | times : 100 | divided_by:2000000  %}
+        <p>Spent more {{2000000 | minus: cart.total_price | money}} extra for free shipping!</p>
+        <div id="progress-bar">
+            <div class="progress-bar" style="height:0.8rem;background:white;">
+              <span class="in-stock-bar" 
+                style="width:{{ widthpercent }}%;  
+                background:#00d964;height:100%;border-radius:20px">
+              </span>  
+              <span class="not-in-stock-bar"></span>  
+            </div>
+        </div>
       </div>
 
       <cart-drawer-items
@@ -100,7 +106,7 @@
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
                   <thead role="rowgroup">
-                    <tr role="row">
+                    {% comment %} <tr role="row">
                       <th id="CartDrawer-ColumnProductImage" role="columnheader">
                         <span class="visually-hidden">{{ 'sections.cart.headings.image' | t }}</span>
                       </th>
@@ -123,7 +129,7 @@
                       <th id="CartDrawer-ColumnQuantity" role="columnheader">
                         <span class="visually-hidden">{{ 'sections.cart.headings.quantity' | t }}</span>
                       </th>
-                    </tr>
+                    </tr> {% endcomment %}
                   </thead>
 
                   <tbody role="rowgroup">
@@ -527,10 +533,12 @@
             </button>
           </noscript>
 
+          <a href="/cart" class="button">View Cart</a>
           <button
             type="submit"
             id="CartDrawer-Checkout"
-            class="cart__checkout-button button"
+            class="button"
+            {% comment %} class="cart__checkout-button button" {% endcomment %}
             name="checkout"
             form="CartDrawer-Form"
             {% if cart == empty %}
@@ -540,6 +548,22 @@
             {{ 'sections.cart.checkout' | t }}
           </button>
         </div>
+
+
+
+        <div class="product-payment-method">
+          <h2>{{block.settings.payment-method-title }}</h2>
+          <ul class="list list-payment" role="list">
+            {%- for type in shop.enabled_payment_types -%}
+              <li class="list-payment__item">
+                {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+
+
+
       </div>
     </div>
   </div>

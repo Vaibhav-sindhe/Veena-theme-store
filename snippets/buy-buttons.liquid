@@ -60,7 +60,10 @@
           {% endif %}
           class="product-variant-id"
         >
-
+        <!--
+          <label for="engravingText">Engraving</label>
+          <input type="text" id="engravingText" name="properties[Engraving]">
+        -->
         {%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}

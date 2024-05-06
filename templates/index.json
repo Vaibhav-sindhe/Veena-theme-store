@@ -516,7 +516,7 @@
     "featured_custom_collection_z8mRYN": {
       "type": "featured-custom-collection",
       "settings": {
-        "heading": "Heading",
+        "heading": "Featured Collection",
         "collection": "featured-collection",
         "button_label": "See All Product",
         "button_link": "shopify:\/\/collections\/featured-collection"

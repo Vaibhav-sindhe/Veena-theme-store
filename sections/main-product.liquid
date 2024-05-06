@@ -598,33 +598,35 @@
 
               <!--custom add to cart-->
               {% when 'bundles' %}
+                {% if product.metafields.custom.bundles.value!=blank %}
                     <div class="product-bundle-wrapper">
                       <div class="product-bundle">
                           <h2 class="product-bundle__heading">{{ section.settings.bundle_heading }}</h2>
                           <div class="product-bundle-container">
                               <product-bundle class="product-bundle__grid " data-section-id="{{ section.id }}">
-                          {% for product in product.metafields.custom.bundles.value %}
-                              <input class="bundle-checkbox" data-product-id="{{ product.selected_or_first_available_variant.id }}"
-                              value="{{  product.selected_or_first_available_variant.id }}"
-                              type="checkbox"
-                              >
-                              <div class="product-bundle__grid-item product-bundles">
-                                  {% render 'custom-product-card',
-                                  product: product,
-                                  section_id: section.id
-                                  %}
-                              </div>
-                          {% endfor %}
-                          <div id="bundle__atc"
-                          class="button custom-atc__hover-button"
-                          data-product-id="{{ product.id }}"
-                          data-variant-id="{{ product.selected_variant.id }}"
-                          data-section-id="{{ section.id }}"
-                          >Add to cart</div>
-                          </product-bundle>
+                                  {% for product in product.metafields.custom.bundles.value %}
+                                      <input class="bundle-checkbox" data-product-id="{{ product.selected_or_first_available_variant.id }}"
+                                      value="{{  product.selected_or_first_available_variant.id }}"
+                                      type="checkbox"
+                                      >
+                                      <div class="product-bundle__grid-item product-bundles">
+                                          {% render 'custom-product-card',
+                                          product: product,
+                                          section_id: section.id
+                                          %}
+                                      </div>
+                                  {% endfor %}
+                                  <div id="bundle__atc"
+                                  class="button custom-atc__hover-button"
+                                  data-product-id="{{ product.id }}"
+                                  data-variant-id="{{ product.selected_variant.id }}"
+                                  data-section-id="{{ section.id }}"
+                                  >Add to cart</div>
+                              </product-bundle>
+                          </div>
                       </div>
-                  </div>
-              </div>
+                    </div>
+              {% endif %}
             <!--custom add to cart-->
  
               {%- when 'buy_buttons' -%}

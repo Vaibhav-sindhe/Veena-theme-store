@@ -70,6 +70,20 @@
           {% render 'icon-close' %}
         </button>
       </div>
+
+      {% assign widthpercent=cart.total_price | times : 100 | divided_by:20000  %}
+      <div id="progress-bar">
+        {% if cart.total_price.!=0 %}
+          <div class="progress-bar">
+            <span class="in-stock-bar" 
+              style="width:{{ widthpercent }}%;  
+               background:green;">
+            </span>  
+            <span class="not-in-stock-bar"></span>  
+          </div>
+        {% endif %}
+      </div>
+
       <cart-drawer-items
         {% if cart == empty %}
           class=" is-empty"

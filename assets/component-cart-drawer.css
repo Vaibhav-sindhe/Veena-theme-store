@@ -409,3 +409,12 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
     margin-left: 0;
   }
 }
+
+.drawer .list-payment{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 3rem;
+}
+.drawer .list-payment li{
+  list-style: none;
+}

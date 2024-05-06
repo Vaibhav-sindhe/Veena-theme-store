@@ -1817,3 +1817,8 @@ a.product__text {
 .pincode-checker .field:after{
   box-shadow: none;
 }
+@media (max-width:749px) {
+  .pinInput{
+    width: 18rem;
+  }
+}

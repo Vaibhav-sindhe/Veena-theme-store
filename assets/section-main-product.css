@@ -1822,3 +1822,14 @@ a.product__text {
     width: 18rem;
   }
 }
+
+.available-offers--allOffers{
+  padding-left: 0;
+}
+.available-offers--allOffers li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}

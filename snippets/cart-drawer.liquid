@@ -80,10 +80,10 @@
         {% assign widthpercent=cart.total_price | times : 100 | divided_by:2000000  %}
         <p>Spent more {{2000000 | minus: cart.total_price | money}} extra for free shipping!</p>
         <div id="progress-bar">
-            <div class="progress-bar" style="height:0.8rem;background:white;">
+            <div class="progress-bar" style="height:0.8rem;background:white;border-radius: 20px">
               <span class="in-stock-bar" 
                 style="width:{{ widthpercent }}%;  
-                background:#00d964;height:100%;border-radius:20px">
+                background:#00d964;height:100%;border-radius:20px;display:block">
               </span>  
               <span class="not-in-stock-bar"></span>  
             </div>

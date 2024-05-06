@@ -597,7 +597,8 @@
               
 
               <!--custom add to cart-->
-                <div class="product-bundle-wrapper">
+              {% when 'bundles' %}
+                    <div class="product-bundle-wrapper">
                       <div class="product-bundle">
                           <h2 class="product-bundle__heading">{{ section.settings.bundle_heading }}</h2>
                           <div class="product-bundle-container">
@@ -633,7 +634,7 @@
                       </div>
                   </div>
               </div>
-
+            <!--custom add to cart-->
  
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
@@ -1083,6 +1084,19 @@
         }
       ],
       "limit": 1
+    },
+    {
+      "type": "bundles",
+      "name":"Product Bundles",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "bundle_heading",
+          "label": "Bundle Heading",
+          "default": "Frequently bought together"
+        }
+      ]
     },
     {
       "type": "price",

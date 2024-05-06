@@ -51,7 +51,6 @@
         novalidate: 'novalidate',
         data-type: 'add-to-cart-form'
       -%}
-         
         <input
           type="hidden"
           name="id"
@@ -61,8 +60,10 @@
           {% endif %}
           class="product-variant-id"
         >
-        <label for="engravingText">Engraving</label>
-        <input type="text" id="engravingText" name="properties[Engraving]">
+        <!--
+          <label for="engravingText">Engraving</label>
+          <input type="text" id="engravingText" name="properties[Engraving]">
+        -->
         {%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}

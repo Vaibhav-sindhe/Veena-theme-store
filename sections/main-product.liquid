@@ -638,7 +638,7 @@
                     <ul class="product-usp">
                       {% for offer in  product.metafields.custom.product_usp.value %}
                         <li>
-                          {{offer | metafield_tag  }}
+                          {{offer}}
                         </li> 
                       {% endfor %}
                     </ul> 

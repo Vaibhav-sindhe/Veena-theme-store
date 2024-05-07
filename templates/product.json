@@ -111,6 +111,12 @@
           "settings": {
             "bundle_heading": "Frequently bought together"
           }
+        },
+        "pdp_usp_dKz4bR": {
+          "type": "pdp-usp",
+          "settings": {
+            "usp-heading": "heading"
+          }
         }
       },
       "block_order": [
@@ -129,7 +135,8 @@
         "complementary_nk399q",
         "variant_offer_GhXyG3",
         "pincode_checker_q6faWE",
-        "bundles_hTKk8q"
+        "bundles_hTKk8q",
+        "pdp_usp_dKz4bR"
       ],
       "settings": {
         "enable_sticky_info": true,

@@ -156,7 +156,7 @@ cart-items {
 }
 
 .cart__ctas > *:not(noscript:first-child) + * {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .cart__update-button {
@@ -221,6 +221,15 @@ cart-items {
 
   .cart__ctas {
     display: flex;
+    justify-content: center;
     gap: 1rem;
+    margin-top: 15px;
+  }
+  .cart__ctas .button{
+    width: 45%;
+    background: #d03c3f;
+  }
+  .cart__ctas .button::after{
+    box-shadow: none;
   }
 }

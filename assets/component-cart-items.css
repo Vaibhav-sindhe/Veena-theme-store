@@ -145,8 +145,11 @@ cart-remove-button .button:not([disabled]):hover {
 
 @media screen and (min-width: 750px) {
   cart-remove-button .button {
-    min-width: 3.5rem;
-    min-height: 3.5rem;
+    min-width: 5rem;
+    min-height: 5rem;
+    border-radius: 50%;
+    background: #d03c3f;
+    color: white;
   }
 }
 

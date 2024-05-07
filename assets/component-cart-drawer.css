@@ -117,7 +117,7 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 
 .drawer__footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.2);
-  padding: 1.5rem 0;
+  padding: 1.5rem;
 }
 
 cart-drawer-items.is-empty + .drawer__footer {
@@ -222,6 +222,7 @@ cart-drawer-items {
 
 .cart-drawer .cart-item__image {
   max-width: 100%;
+  border-radius: 20px;
 }
 
 .cart-drawer .cart-items thead {
@@ -413,7 +414,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 .drawer .list-payment{
   display: flex;
   justify-content: space-evenly;
-  padding: 0 10rem;
+  padding: 0 8rem;
 }
 .drawer .list-payment li{
   list-style: none;

@@ -631,7 +631,7 @@
               <!--Available Offers-->
               
 
-              <!--custom add to cart-->
+              <!--custom add to cart bundel-->
               {% when 'bundles' %}
                 {% if product.metafields.custom.bundles.value!=blank %}
                     <div class="product-bundle-wrapper">
@@ -662,8 +662,14 @@
                       </div>
                     </div>
               {% endif %}
-            <!--custom add to cart-->
- 
+            <!--custom add to cart bundel-->
+              
+            <!--custom add to cart with quantity and price-->
+              <button class="button">custom add to cart{{product.quantity_price_breaks_configured?}}   {{product.price | money}}</button>
+
+            <!--custom add to cart with quantity and price-->
+
+
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,

@@ -1778,7 +1778,7 @@ a.product__text {
 }
 .product-payment-method ul{
   display: flex;
-  gap: 1rem;
+  gap: 0.3rem;
   flex-wrap: wrap;
   margin: 10px;
 }

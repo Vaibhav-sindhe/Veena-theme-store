@@ -1837,7 +1837,8 @@ a.product__text {
 
 .product-usp-container{
   display: flex;
-  gap: 1rem;
+  justify-content: space-evenly;
+  padding: 0;
 }
 .product-usp-container li{
   list-style: none;

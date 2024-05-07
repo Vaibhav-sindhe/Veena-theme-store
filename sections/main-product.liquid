@@ -636,14 +636,22 @@
 
               <div class="product-usp">
                     <ul class="product-usp-container">
-                      {% for offer in  product.metafields.custom.product_usp.value %}
+                      {% for offer in  product.metafields.custom.product_usp.value%}
                         <li>
                           <div><img src="{{ offer | image_url }}" alt="usp image" width="40" height="40"></div>
-                          <span>Daily deals</span>
                         </li> 
                       {% endfor %}
                     </ul> 
-                  </div>  
+              </div>  
+              <div class="product-usp">
+                <ul class="product-usp-container">
+                  {% for title in product.metafields.custom.product_usp_title%}
+                    <li>
+                       {{ title | metafield_tag }}
+                    </li> 
+                  {% endfor %}
+                </ul> 
+               </div> 
               <!--product usp section-->
 
 

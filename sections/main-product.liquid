@@ -632,6 +632,20 @@
                 {% endif %}
               <!--Available Offers-->
               
+              <!--product usp section-->
+                  <div class="product-usp">
+                    <ul class="product-usp">
+                      {% for offer in  product.metafields.custom.product_usp.value %}
+                        <li>
+                          {{offer | metafield_tag  }}
+                        </li> 
+                      {% endfor %}
+                    </ul> 
+                  </div>  
+              <!--product usp section-->
+
+
+
 
               <!--custom add to cart bundel-->
               {% when 'bundles' %}

@@ -646,12 +646,12 @@
               <div class="product-usp">
                 <ul class="product-usp-container">
 
-                  {{ product.metafields.custom.product_usp_title  }}
-                  {% for title in product.metafields.custom.product_usp_title%}
+                  {{ product.metafields.custom.product_usp_title  | metafield_tag }}
+                  {% comment %} {% for title in product.metafields.custom.product_usp_title%}
                     <li>
                        {{ title }}
                     </li> 
-                  {% endfor %}
+                  {% endfor %} {% endcomment %}
                 </ul> 
                </div> 
               <!--product usp section-->

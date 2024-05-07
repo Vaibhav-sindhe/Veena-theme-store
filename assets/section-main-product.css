@@ -1843,3 +1843,6 @@ a.product__text {
 .product-usp-container li{
   list-style: none;
 }
+.product-usp-container-title li{
+  margin-left:35px ;
+}

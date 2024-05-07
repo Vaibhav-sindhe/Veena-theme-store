@@ -1,10 +1,10 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/vena-logo.jpg",
+    "logo": "shopify:\/\/shop_images\/n_Veena_b3635a79-c3ca-48d6-9179-63c1e5976002.jpg",
     "logo_width": 90,
     "type_header_font": "harmonia_sans_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "harmonia_sans_n4",
     "body_scale": 100,
     "page_width": 1600,
     "spacing_sections": 0,
@@ -115,7 +115,7 @@
     "currency_code_enabled": true,
     "cart_type": "drawer",
     "show_vendor": false,
-    "show_cart_note": true,
+    "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
     "sections": {
@@ -129,256 +129,6 @@
         "type": "main-password-footer",
         "settings": {
           "color_scheme": "scheme-1"
-        }
-      },
-      "swatches": {
-        "type": "swatches",
-        "blocks": {
-          "solid_color_Hq8Dkp": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "black",
-              "solid_color": "#000000"
-            }
-          },
-          "solid_color_XKq3Dx": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "blue",
-              "solid_color": "#0000ff"
-            }
-          },
-          "solid_color_JafHAh": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "lightslategray",
-              "solid_color": "#778899"
-            }
-          },
-          "solid_color_4x3EfM": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "peachpuff",
-              "solid_color": "#d1cd97"
-            }
-          },
-          "solid_color_qGTaFL": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "moccasin",
-              "solid_color": "#ffe4b5"
-            }
-          },
-          "solid_color_TwFwVq": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "limegreen",
-              "solid_color": "#32cd32"
-            }
-          },
-          "solid_color_bjkw8k": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "deeppink",
-              "solid_color": "#ff1493"
-            }
-          },
-          "solid_color_aCB8gq": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "coral",
-              "solid_color": "#ff7f50"
-            }
-          },
-          "solid_color_ddwCx8": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "cornsilk",
-              "solid_color": "#fff8dc"
-            }
-          },
-          "solid_color_7HQNTt": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "darkblue",
-              "solid_color": "#00008b"
-            }
-          },
-          "solid_color_EC3j7Y": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "darkgreen",
-              "solid_color": "#006400"
-            }
-          },
-          "solid_color_cnyNKP": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "darkolivegreen",
-              "solid_color": "#556b2f"
-            }
-          },
-          "solid_color_tGfzMp": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "darkorange",
-              "solid_color": "#ff8c00"
-            }
-          },
-          "solid_color_qGgWbk": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "darkslategray",
-              "solid_color": "#2f4f4f"
-            }
-          },
-          "solid_color_izTRPa": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "dodgerblue",
-              "solid_color": "#1e90ff"
-            }
-          },
-          "solid_color_7daXzk": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "firebrick",
-              "solid_color": "#b22222"
-            }
-          },
-          "solid_color_UaPXQC": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "floralwhite",
-              "solid_color": "#fffaf0"
-            }
-          },
-          "solid_color_BczYn4": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "indianred",
-              "solid_color": "#cd5c5c"
-            }
-          },
-          "solid_color_Gtaar6": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "lightgray",
-              "solid_color": "#d3d3d3"
-            }
-          },
-          "solid_color_x8GFer": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "mediumpurple",
-              "solid_color": "#9370db"
-            }
-          },
-          "solid_color_6WwT3g": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "mediumseagreen",
-              "solid_color": "#3cb371"
-            }
-          },
-          "solid_color_Tagfxr": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "midnightblue",
-              "solid_color": "#191970"
-            }
-          },
-          "solid_color_axx88Q": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "navy",
-              "solid_color": "#000080"
-            }
-          },
-          "solid_color_R8NPa7": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "orchid",
-              "solid_color": "#da70d6"
-            }
-          },
-          "solid_color_GtydkH": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "peru",
-              "solid_color": "#cd853f"
-            }
-          },
-          "solid_color_Xd4DUN": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "saddlebrown",
-              "solid_color": "#8b4513"
-            }
-          },
-          "solid_color_rAFk4M": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "teal",
-              "solid_color": "#008080"
-            }
-          },
-          "solid_color_fLCm9e": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "white",
-              "solid_color": "#ffffff"
-            }
-          },
-          "solid_color_CVLY7N": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "whitesmoke",
-              "solid_color": "#f5f5f5"
-            }
-          },
-          "solid_color_gg6pQU": {
-            "type": "solid-color",
-            "settings": {
-              "solid_color_name": "pink",
-              "solid_color": "#ffc0cb"
-            }
-          }
-        },
-        "block_order": [
-          "solid_color_Hq8Dkp",
-          "solid_color_XKq3Dx",
-          "solid_color_JafHAh",
-          "solid_color_4x3EfM",
-          "solid_color_qGTaFL",
-          "solid_color_TwFwVq",
-          "solid_color_bjkw8k",
-          "solid_color_aCB8gq",
-          "solid_color_ddwCx8",
-          "solid_color_7HQNTt",
-          "solid_color_EC3j7Y",
-          "solid_color_cnyNKP",
-          "solid_color_tGfzMp",
-          "solid_color_qGgWbk",
-          "solid_color_izTRPa",
-          "solid_color_7daXzk",
-          "solid_color_UaPXQC",
-          "solid_color_BczYn4",
-          "solid_color_Gtaar6",
-          "solid_color_x8GFer",
-          "solid_color_6WwT3g",
-          "solid_color_Tagfxr",
-          "solid_color_axx88Q",
-          "solid_color_R8NPa7",
-          "solid_color_GtydkH",
-          "solid_color_Xd4DUN",
-          "solid_color_rAFk4M",
-          "solid_color_fLCm9e",
-          "solid_color_CVLY7N",
-          "solid_color_gg6pQU"
-        ],
-        "settings": {
-          "heading": ""
         }
       }
     },
@@ -410,7 +160,7 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#242833",
+          "background": "#d03c3f",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",

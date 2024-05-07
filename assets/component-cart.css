@@ -152,7 +152,7 @@ cart-items {
 }
 
 .cart__ctas button {
-  /* width: 100%; */
+  width: 100%;
 }
 
 .cart__ctas > *:not(noscript:first-child) + * {

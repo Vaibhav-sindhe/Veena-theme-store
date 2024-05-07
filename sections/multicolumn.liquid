@@ -127,7 +127,7 @@
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
-                    class="link animate-arrow button"
+                    class="link animate-arrow"
                     {% if block.settings.link == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
@@ -135,7 +135,8 @@
                     {% endif %}
                   >
                     {{- block.settings.link_label | escape -}}
-                  </a>
+                    <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a
+                  >
                 {%- endif -%}
               </div>
             </div>

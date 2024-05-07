@@ -14,45 +14,45 @@
 </style>
 {% schema %}
 {
-    "name":"Swatches",
-    "settings": [
+  "name": "Swatches",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "solid color",
+      "type": "solid-color",
+      "settings": [
         {
-            "type": "text",
-            "id": "heading",
-            "label": "Heading"
-        }
-    ],
-    "blocks": [
+          "type": "text",
+          "id": "solid_color_name",
+          "label": "Solid color name"
+        },
         {
-            "name":"solid color",
-            "type": "solid-color",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "solid_color_name",
-                    "label": "Solid color name"
-                },
-                {
-                    "type": "color",
-                    "id": "solid_color",
-                    "label": "Solid color"
-                },
-                {
-                    "type": "header",
-                    "content": "Add image for swatch"
-                },
-                {
-                    "type": "image_picker",
-                    "id": "swatch-image",
-                    "label": "Swatch image"
-                }
-            ]
-        }
-    ],
-    "presets": [
+          "type": "color",
+          "id": "solid_color",
+          "label": "Solid color"
+        },
         {
-          "name": "Swatches"
+          "type": "header",
+          "content": "Add image for swatch"
+        },
+        {
+          "type": "image_picker",
+          "id": "swatch-image",
+          "label": "Swatch image"
         }
       ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Swatches"
+    }
+  ]
 }
 {% endschema %}

@@ -1,17 +1,17 @@
 {
   "sections": {
-    "custom_bread_crum_aJJqUJ": {
-      "type": "custom-bread-crum",
-      "settings": {
-        "heading": ""
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
         "title": {
           "type": "title",
           "settings": {
+          }
+        },
+        "variant_offer_qrWb6K": {
+          "type": "variant-offer",
+          "settings": {
+            "offer_title": "Sale123456"
           }
         },
         "price": {
@@ -26,20 +26,6 @@
             "swatch_shape": "circle"
           }
         },
-        "inventory_gdHM8W": {
-          "type": "inventory",
-          "settings": {
-            "text_style": "body",
-            "inventory_threshold": 10,
-            "show_inventory_quantity": true
-          }
-        },
-        "progress_bar_ajntRY": {
-          "type": "progress-bar",
-          "settings": {
-            "progress-bar-title": ""
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -52,89 +38,32 @@
             "show_gift_card_recipient": true
           }
         },
-        "available_offers_tbp3bG": {
-          "type": "available-offers",
-          "settings": {
-            "available-offer-title": "Available Offers"
-          }
-        },
-        "payment_method_A4zPaw": {
-          "type": "payment-method",
-          "settings": {
-            "payment-method-title": "Secure checkout with"
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
           }
         },
-        "product_details_dropdown_aUPwWr": {
-          "type": "product-details-dropdown",
+        "share": {
+          "type": "share",
           "settings": {
-            "product-details-title": "Product details"
-          }
-        },
-        "shipping_return_dropdown_7gyFy7": {
-          "type": "shipping-return-dropdown",
-          "settings": {
-            "shipping-return-title": "Shipping And Return"
-          }
-        },
-        "complementary_nk399q": {
-          "type": "complementary",
-          "settings": {
-            "block_heading": "Pairs well with",
-            "make_collapsible_row": false,
-            "icon": "price_tag",
-            "product_list_limit": 10,
-            "products_per_page": 3,
-            "pagination_style": "counter",
-            "image_ratio": "square",
-            "enable_quick_add": false
-          }
-        },
-        "variant_offer_GhXyG3": {
-          "type": "Variant-offer",
-          "settings": {
-            "offer_title": "vaibhav"
-          }
-        },
-        "pincode_checker_q6faWE": {
-          "type": "pincode-checker",
-          "settings": {
-            "pincode-title": "Check the local delivery information"
-          }
-        },
-        "bundles_hTKk8q": {
-          "type": "bundles",
-          "settings": {
-            "bundle_heading": "Frequently bought together"
+            "share_label": "Share"
           }
         }
       },
       "block_order": [
         "title",
+        "variant_offer_qrWb6K",
         "price",
         "variant_picker",
-        "inventory_gdHM8W",
-        "progress_bar_ajntRY",
         "quantity_selector",
         "buy_buttons",
-        "available_offers_tbp3bG",
-        "payment_method_A4zPaw",
         "description",
-        "product_details_dropdown_aUPwWr",
-        "shipping_return_dropdown_7gyFy7",
-        "complementary_nk399q",
-        "variant_offer_GhXyG3",
-        "pincode_checker_q6faWE",
-        "bundles_hTKk8q"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_size": "medium",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "cover",
         "gallery_layout": "stacked",
@@ -143,72 +72,60 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 12,
+        "padding_top": 36,
         "padding_bottom": 12
       }
     },
-    "multicolumn_76cY7z": {
-      "type": "multicolumn",
+    "custom_multcolumn_wyqrT4": {
+      "type": "custom-multcolumn",
       "blocks": {
-        "column_fUHeHV": {
+        "column_KCRgqa": {
           "type": "column",
           "settings": {
-            "title": "<strong>Elegance Redefined<\/strong>",
-            "text": "<p>Discover timeless fashion that seamlessly blends sophistication and modern flair. Our curated collection reflects a commitment to style, quality, and individuality, ensuring you make a statement with every ensemble.<\/p>",
-            "link_label": "Explore Now",
-            "link": "shopify:\/\/collections"
+            "title": "Elegance Redefined",
+            "content": "Discover timeless fashion that seamlessly blends sophistication and modern flair. Our curated collection reflects a commitment to style, quality, and individuality, ensuring you make a statement with every ensemble.  Our curated collection reflects a commitment",
+            "button_text": "Explore Now",
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
-        "column_kbWLHp": {
+        "column_jbMfb8": {
           "type": "column",
           "settings": {
-            "title": "<strong>Effortless Casual Couture<\/strong>",
-            "text": "<p>Experience the perfect blend of comfort and style with our casual couture collection. From laid-back essentials to effortlessly chic pieces, redefine casual wear with fashion that allows you to express yourself without compromising on comfort.<\/p>",
-            "link_label": "Check It Now",
-            "link": "shopify:\/\/collections"
+            "title": "Effortless Casual Couture",
+            "content": "Experience the perfect blend of comfort and style with our casual couture collection. From laid-back essentials to effortlessly chic pieces, redefine casual wear with fashion that allows you to express yourself without compromising on comfort.",
+            "button_text": "Check It Now",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
       "block_order": [
-        "column_fUHeHV",
-        "column_kbWLHp"
+        "column_KCRgqa",
+        "column_jbMfb8"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "heading": "",
+        "description": ""
       }
     },
-    "custom_grid_layout_NFQxQR": {
-      "type": "custom-grid-layout",
+    "custom_gird_layout_jVktqk": {
+      "type": "custom-gird-layout",
       "settings": {
-        "grid-image-1": "shopify:\/\/shop_images\/download_52d54c75-7269-4d47-a226-5e16baab0ad8.webp",
+        "grid-image-1": "shopify:\/\/shop_images\/1_d1ac205b-b4a5-40db-a149-92f268adee32.webp",
         "preheading-1": "Unveil Your Inner Grace",
         "title-1": "Timeless Elegance",
         "description-1": "<p>Explore a collection that transcends trends, embracing timeless pieces that exude sophistication. Elevate your style with our curated selection designed to stand the test of time.<\/p>",
         "button-label-1": "Shop Now",
-        "grid-image-2": "shopify:\/\/shop_images\/download_17344e3e-2be3-404d-8d2a-11115033b5b8.webp",
+        "grid-image-2": "shopify:\/\/shop_images\/2_7a4f3b90-123c-4ddb-8516-50ad7a441487.webp",
         "preheading-2": "Free-Spirited Fashion Finds",
         "title-2": "Boho Chic Vibes",
         "description-2": "<p>Immerse yourself in the world of bohemian charm. From flowy silhouettes to vibrant patterns.<\/p>",
         "button-label-2": "Explore More",
-        "grid-image-3": "shopify:\/\/shop_images\/download_ce009906-54ae-4a28-84cb-f31baedec623.webp",
+        "grid-image-3": "shopify:\/\/shop_images\/4_d6084ff2-c86b-4f52-b59b-0c92b864e4ae.webp",
         "preheading-3": "Modern Minimalism",
         "title-3": "Simplicity Redefined",
         "description-3": "",
         "button-label-3": "Shop Now",
-        "grid-image-4": "shopify:\/\/shop_images\/download_373b720c-7e8e-41ff-8b41-db50503e91f6.webp",
+        "grid-image-4": "shopify:\/\/shop_images\/3_5f501b6a-db8f-4b53-b9ca-c2aa1ee96dd3.webp",
         "preheading-4": "Elegance Redefined",
         "title-4": "Modern Minimalist Trends",
         "description-4": "",
@@ -217,38 +134,38 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
-        "products_to_show": 8,
+        "products_to_show": 4,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
-        "show_vendor": true,
+        "show_vendor": false,
         "show_rating": false,
         "auto_play": false,
         "show_pagination": false,
-        "show_arrows": true,
+        "show_arrows": false,
         "auto_play_duration": 2000,
-        "perpage": 4,
-        "tablet-perpage": 3,
+        "perpage": 2,
+        "tablet-perpage": 2,
         "mobile-perpage": 2,
-        "per-move": 1,
-        "gap": 15,
+        "per-move": 2,
+        "gap": 5,
         "Slide_animation": "slide",
         "columns_mobile": "2",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 28
       }
     }
   },
   "order": [
-    "custom_bread_crum_aJJqUJ",
     "main",
-    "multicolumn_76cY7z",
-    "custom_grid_layout_NFQxQR",
+    "custom_multcolumn_wyqrT4",
+    "custom_gird_layout_jVktqk",
     "related-products"
   ]
 }

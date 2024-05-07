@@ -1,16 +1,19 @@
-#captivating-slider{
+#captivating-slider {
     padding: 5rem;
 }
-.captivating-splide-item{
+
+.captivating-splide-item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.captivating-section-heading{
+
+.captivating-section-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .captivating-section-heading--button {
     background: linear-gradient(to right, black 50%, rgb(208, 60, 63) 50%);
     background-size: 200% 100%;
@@ -22,30 +25,36 @@
     cursor: pointer;
     text-decoration: none;
 }
+
 .captivating-section-heading--button:hover {
     background-position: left bottom;
 }
-.captivating-section-heading--button:after{
+
+.captivating-section-heading--button:after {
     box-shadow: none;
 }
-.captivating-section-heading{
+
+.captivating-section-heading {
     font-weight: 800;
 }
-.captivating--image-container{
+
+.captivating--image-container {
     height: 34rem;
     width: 26rem;
     object-fit: cover;
     border-radius: 10px;
     overflow: hidden;
 }
-.captivating--image-container img{
+
+.captivating--image-container img {
     height: 100%;
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
     transition: all ease-in-out 0.5s;
 }
-.captivating--content{
+
+.captivating--content {
     position: absolute;
     height: 34rem;
     width: 26rem;
@@ -56,36 +65,44 @@
     justify-content: center;
     gap: 1.5rem;
 }
-.captivating-splide-item:hover .captivating--image-container img{
+
+.captivating-splide-item:hover .captivating--image-container img {
     transform: scale(1.1);
     overflow: hidden;
+
 }
-.captivating-content--title{
+
+.captivating-content--title {
     color: white;
     font-size: 2.5rem;
     transition: all ease-in-out 0.3s;
     cursor: pointer;
     text-decoration: none;
 }
-.captivating-content--button{
+
+.captivating-content--button {
     background: none;
     color: white;
     border: 0.5px solid white;
     transition: all ease-in-out 0.3s;
     cursor: pointer;
 }
-.captivating-content--button:hover{
+
+.captivating-content--button:hover {
     color: rgb(208, 60, 63);
 }
-.captivating-content--title:hover{
+
+.captivating-content--title:hover {
     color: rgb(208, 60, 63);
 
 }
-.captivating-content--button:after{
+
+.captivating-content--button:after {
     box-shadow: none;
 }
+
 #captivating-slider .splide__arrow {
-    background:rgb(208, 60, 63);
+    background: rgb(208, 60, 63);
     opacity: 1;
     color: white;
     height: 4rem;
@@ -98,68 +115,83 @@
     cursor: pointer;
     text-decoration: none;
 }
-#captivating-slider .splide__arrow:hover{
+
+#captivating-slider .splide__arrow:hover {
     background-position: left bottom;
 }
+
 #captivating-slider .splide__arrow--next {
     right: 3.5px;
-    border-bottom-right-radius:0 ;
+    border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
-#captivating-slider .splide__arrow:disabled{
+
+#captivating-slider .splide__arrow:disabled {
     opacity: 0;
 }
-#captivating-slider .splide__arrow--prev{
+
+#captivating-slider .splide__arrow--prev {
     left: 3.5px;
-    border-bottom-left-radius:0 ;
+    border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
+
 #captivating-slider .splide__arrow svg {
     fill: white;
     font-size: 10px;
 }
+
 @media (max-width:480px) {
-    .captivating-section-heading{
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 1.2rem;
+    .captivating-section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1.2rem;
     }
-    .captivating-section-heading h1{
+
+    .captivating-section-heading h1 {
         margin: 8px 0;
         font-size: 2.5rem;
     }
-    .captivating-section-heading--button{
+
+    .captivating-section-heading--button {
         min-width: 10px;
         min-height: 10px;
         height: 4rem;
         width: 10rem;
     }
-    #captivating-slider{
+
+    #captivating-slider {
         padding: 1.8rem;
     }
-    .captivating--image-container{
+
+    .captivating--image-container {
         height: 24rem;
         width: 15rem;
     }
-    .captivating--image-container img{
+
+    .captivating--image-container img {
         height: 24rem;
         width: 15rem;
     }
-    .captivating--content{
+
+    .captivating--content {
         height: 24rem;
         width: 15rem;
     }
-    .captivating-content--title{
+
+    .captivating-content--title {
         font-size: 1.8rem;
     }
-    .captivating-content--button{
+
+    .captivating-content--button {
         min-width: 10px;
         min-height: 10px;
-        padding:10px;
+        padding: 10px;
         width: 10rem;
     }
+
     #captivating-slider .splide__arrow {
         height: 3rem;
         width: 3rem;
-    }    
+    }
 }

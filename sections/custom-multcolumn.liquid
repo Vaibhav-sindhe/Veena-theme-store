@@ -1,0 +1,113 @@
+<section class="custom-multi-column-section">
+  <div class="container">
+    <h2>{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.description }}</p>
+    <div class="columns-wrapper">
+      {% for block in section.blocks %}
+        <div class="column">
+          <div class="mm-heading">{{ block.settings.title }}</div>
+          <div class="mm-description">{{ block.settings.content }}</div>
+          <a href="{{ block.settings.button_link }}" class="button">{{ block.settings.button_text }}</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+  .custom-multi-column-section .container {
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    background-color: #f5f5f5;
+  }
+
+  .mm-description {
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+  }
+
+  .custom-multi-column-section .columns-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .mm-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .custom-multi-column-section .column {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Multi-Column",
+  "settings": [
+    {
+      "id": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Our Featured Products"
+    },
+    {
+      "id": "description",
+      "type": "textarea",
+      "label": "Description",
+      "default": "Check out our most popular products below!"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "settings": [
+        {
+          "id": "title",
+          "type": "text",
+          "label": "Title",
+          "default": "Column Title"
+        },
+        {
+          "id": "content",
+          "type": "textarea",
+          "label": "Content",
+          "default": "Some description about this column"
+        },
+        {
+          "id": "button_text",
+          "type": "text",
+          "label": "Button Text",
+          "default": "Learn More"
+        },
+        {
+          "id": "button_link",
+          "type": "url",
+          "label": "Button Link",
+          "default": "/collections/all"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom multicolumn"
+    }
+  ]
+}
+{% endschema %}

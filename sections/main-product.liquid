@@ -634,25 +634,25 @@
               
               <!--product usp section-->
               {%- when 'usp-heading' -%}
-              <div class="product-usp">
-                    <ul class="product-usp-container product-usp-container-images ">
-                      {% for offer in  product.metafields.custom.product_usp.value%}
+                  <div class="product-usp">
+                        <ul class="product-usp-container product-usp-container-images ">
+                          {% for offer in  product.metafields.custom.product_usp.value%}
+                            <li>
+                              <img src="{{ offer | image_url }}" alt="usp image" width="40" height="40">
+                            </li> 
+                          {% endfor %}
+                        </ul> 
+                  </div>  
+                  <div class="product-usp">
+                    <ul class="product-usp-container product-usp-container-title">
+
+                      {% for title in product.metafields.custom.product_usp_title.value%}
                         <li>
-                          <img src="{{ offer | image_url }}" alt="usp image" width="40" height="40">
+                          {{ title }}
                         </li> 
                       {% endfor %}
                     </ul> 
-              </div>  
-              <div class="product-usp">
-                <ul class="product-usp-container product-usp-container-title">
-
-                  {% for title in product.metafields.custom.product_usp_title.value%}
-                    <li>
-                       {{ title }}
-                    </li> 
-                  {% endfor %}
-                </ul> 
-               </div> 
+                  </div> 
               <!--product usp section-->
 
 

@@ -633,6 +633,7 @@
               <!--Available Offers-->
               
               <!--product usp section-->
+                <p>Hello world</p>
                   <div class="product-usp">
                     <ul class="product-usp">
                       {% for offer in  product.metafields.custom.product_usp.value %}
@@ -681,7 +682,7 @@
             <!--custom add to cart bundel-->
               
             <!--custom add to cart with quantity and price-->
-              <button class="button">custom add to cart{  {{product.price | money}}</button>
+              {% comment %} <button class="button">custom add to cart  {{product.price | money}}</button> {% endcomment %}
 
             <!--custom add to cart with quantity and price-->
 

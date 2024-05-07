@@ -633,6 +633,7 @@
               <!--Available Offers-->
               
               <!--product usp section-->
+              {%- when 'usp-heading' -%}
               <div class="product-usp">
                     <ul class="product-usp-container product-usp-container-images ">
                       {% for offer in  product.metafields.custom.product_usp.value%}
@@ -1157,6 +1158,18 @@
           "default": "Frequently bought together"
         }
       ]
+    },
+    {
+      "type": "pdp-usp",
+      "name":"USP",
+      "settings": [
+        {
+          "type":"text",
+          "id": "usp-heading",
+          "label":"USP heading"
+        }
+      ],
+      "limit": 1
     },
     {
       "type": "price",

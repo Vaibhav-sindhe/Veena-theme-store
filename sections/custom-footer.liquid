@@ -4,101 +4,92 @@
   <div class="custom-footer--top-bar">
     <div class="custom-footer-top-bar--social-media">
       <span class="icon">
-        {% render 'responsive-picture',
-          desktopImage:section.settings.icon-1, 
-        %}
+        {% render 'responsive-picture', desktopImage: section.settings['icon-1'] %}
       </span>
       <span class="icon">
-        {% render 'responsive-picture',
-          desktopImage:section.settings.icon-2, 
-        %}
+        {% render 'responsive-picture', desktopImage: section.settings['icon-2'] %}
       </span>
       <span class="icon">
-        {% render 'responsive-picture',
-          desktopImage:section.settings.icon-3, 
-        %}
+        {% render 'responsive-picture', desktopImage: section.settings['icon-3'] %}
       </span>
       <span class="icon">
-        {% render 'responsive-picture',
-          desktopImage:section.settings.icon-4, 
-        %}
+        {% render 'responsive-picture', desktopImage: section.settings['icon-4'] %}
       </span>
     </div>
     <div class="custom-footer-top-bar--store-image">
-      {% render 'responsive-picture',
-        desktopImage:section.settings.store-image, 
-      %}
-    </div>  
+      {% render 'responsive-picture', desktopImage: section.settings['store-image'] %}
+    </div>
     <div class="custom-footer-top-bar--contact">
-      {% render 'responsive-picture',
-        desktopImage:section.settings.contact-logo, 
-      %}
-      <span>Call us:<p>{{ section.settings.contact-no }}</p></span>
-    </div>  
-  </div>  
-  <div class="custom-footer--bottom"> 
-      {% if section.settings.enable-email-sub %} 
-        <div class="custom-footer--email-inputContainer">
-                <h3 class="custom-footer-email-inputContainer-heading">SIGN UP TO OUR NEWSLETTER</h3>
-                <p>Visit the website offering the newsletter and follow their sign-up instructions</p>
-                {% form 'customer', class: 'newsletter-form' %}
-                  <input type="hidden" name="contact[tags]" value="newsletter">
-                  <div>
-                      <input
-                      id="NewsletterForm--{{ section.id }}"
-                      type="email"
-                      name="contact[email]"
-                      class="week-6-email--input"
-                      placeholder="Email address"
-                      value="{{ form.email }}"
-                      aria-required="true"
-                      autocorrect="off"
-                      autocapitalize="off"
-                      autocomplete="email"
-                      {% if form.errors %}
-                          autofocus
-                          aria-invalid="true"
-                          aria-describedby="Newsletter-error--{{ section.id }}"
-                      {% elsif form.posted_successfully? %}
-                          aria-describedby="Newsletter-success--{{ section.id }}"
-                      {% endif %}
-                      required
-                      >
-                  </div>
-                      <button
-                      type="submit"
-                      class="button week-6-email--button "
-                      name="commit"
-                      id="Subscribe"
-                      aria-label="{{ 'newsletter.button_label' | t }}"
-                      >
-                      Subscribe
-                      </button>
-                  {%- if form.errors -%}
-                      <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
-                      {%- render 'icon-error' -%}
-                      {{- form.errors.translated_fields.email | capitalize }}
-                      {{ form.errors.messages.email -}}
-                      </small>
-                  {%- endif -%}
-                  {%- if form.posted_successfully? -%}
-                  <h3
-                      class="newsletter-form__message newsletter-form__message--success form__message"
-                      id="Newsletter-success--{{ section.id }}"
-                      tabindex="-1"
-                      autofocus
-                  >
-                      {% render 'icon-success' -%}
-                      {{- 'newsletter.success' | t }}
-                  </h3>
-                  {%- endif -%}
-                  {% endform %} 
-                <p>By subscribing you agree to with our Privacy Policy</p>
-        </div>
-      {% endif %}
-      <div class="custom-footer-bottom--navContainer">
-        {% for block in section.blocks %}
-          <div class="custom-footer-navContainer--block">
+      {% render 'responsive-picture', desktopImage: section.settings['contact-logo'] %}
+      <span
+        >Call us:
+        <p>{{ section.settings['contact-no'] }}</p>
+      </span>
+    </div>
+  </div>
+  <div class="custom-footer--bottom">
+    {% if section.settings['enable-email-sub'] %}
+      <div class="custom-footer--email-inputContainer">
+        <h3 class="custom-footer-email-inputContainer-heading">SIGN UP TO OUR NEWSLETTER</h3>
+        <p>Visit the website offering the newsletter and follow their sign-up instructions</p>
+        {% form 'customer', class: 'newsletter-form' %}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <div>
+            <input
+              id="NewsletterForm--{{ section.id }}"
+              type="email"
+              name="contact[email]"
+              class="week-6-email--input"
+              placeholder="Email address"
+              value="{{ form.email }}"
+              aria-required="true"
+              autocorrect="off"
+              autocapitalize="off"
+              autocomplete="email"
+              {% if form.errors %}
+                autofocus
+                aria-invalid="true"
+                aria-describedby="Newsletter-error--{{ section.id }}"
+              {% elsif form.posted_successfully? %}
+                aria-describedby="Newsletter-success--{{ section.id }}"
+              {% endif %}
+              required
+            >
+          </div>
+          <button
+            type="submit"
+            class="button week-6-email--button "
+            name="commit"
+            id="Subscribe"
+            aria-label="{{ 'newsletter.button_label' | t }}"
+          >
+            Subscribe
+          </button>
+          {%- if form.errors -%}
+            <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+              {%- render 'icon-error' -%}
+              {{- form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email -}}
+            </small>
+          {%- endif -%}
+          {%- if form.posted_successfully? -%}
+            <h3
+              class="newsletter-form__message newsletter-form__message--success form__message"
+              id="Newsletter-success--{{ section.id }}"
+              tabindex="-1"
+              autofocus
+            >
+              {% render 'icon-success' -%}
+              {{- 'newsletter.success' | t }}
+            </h3>
+          {%- endif -%}
+        {% endform %}
+        <p>By subscribing you agree to with our Privacy Policy</p>
+      </div>
+    {% endif %}
+    <div class="custom-footer-bottom--navContainer">
+      {% for block in section.blocks %}
+        <div class="custom-footer-navContainer--block">
           <p class="custom-footer-navContainer-block--heading">{{ block.settings.title }}</p>
           {%- if block.settings.list != blank -%}
             <ul>
@@ -112,32 +103,39 @@
                 </li>
               {%- endfor -%}
             </ul>
-          {% endif %} 
-          </div> 
-        {% endfor %}  
-        <div class="custom-footer-navContainer--block store-info">
-          <p class="custom-footer-navContainer-block--heading">Contact Info</p>
-          <ul>
-            <li><span class="icon">{% render 'responsive-picture',desktopImage:section.settings.address-icon, %}</span>Address{{ section.settings.address }}</li> 
-            <li><span class="icon">{% render 'responsive-picture',desktopImage:section.settings.contact-logo, %}</span>{{ section.settings.contact-no }}</li> 
-            <li><span class="icon">{% render 'responsive-picture',desktopImage:section.settings.email-icon, %}</span>Email : <a href="mailto:{{section.settings.store-email}}">{{ section.settings.store-email}}</a></li> 
-            <li><span class="icon">{{ section.settings.additional-info }}</span></li> 
-          </ul>  
-        </div>  
+          {% endif %}
+        </div>
+      {% endfor %}
+      <div class="custom-footer-navContainer--block store-info">
+        <p class="custom-footer-navContainer-block--heading">Contact Info</p>
+        <ul>
+          <li>
+            <span class="icon">{% render 'responsive-picture', desktopImage: section.settings['address-icon'] %}</span
+            >Address{{ section.settings.address }}
+          </li>
+          <li>
+            <span class="icon">{% render 'responsive-picture', desktopImage: section.settings['contact-logo'] %}</span>
+            {{- section.settings['contact-no'] }}
+          </li>
+          <li>
+            <span class="icon">{% render 'responsive-picture', desktopImage: section.settings['email-icon'] %}</span
+            >Email : <a href="mailto:{{section.settings.store-email}}">{{ section.settings['store-email'] }}</a>
+          </li>
+          <li>
+            <span class="icon">{{ section.settings['additional-info'] }}</span>
+          </li>
+        </ul>
       </div>
+    </div>
   </div>
 
-
-
-
-  
   <div class="custom-footer--bottom-bar">
     <div class="footer__column footer__localization isolate">
       <div>
         <a href="/policies/refund-policy">Refund policy</a>
         <a href="/policies/privacy-policy">Privacy policy</a>
         <a href="/policies/terms-of-service">Terms of service</a>
-      </div>  
+      </div>
       <div>
         {%- if section.settings.enable_language_selector and localization.available_languages.size > 0 -%}
           <noscript>
@@ -221,17 +219,17 @@
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
         <small class="copyright__content">{{ powered_by_link }}</small>
-          <ul class="policies list-unstyled">
-            {%- for policy in shop.policies -%}
-              {%- if policy != blank -%}
-                <li>
-                  <small class="copyright__content"
-                    ><a href="{{ policy.url }}">{{ policy.title }}</a></small
-                  >
-                </li>
-              {%- endif -%}
-            {%- endfor -%}
-          </ul>
+        <ul class="policies list-unstyled">
+          {%- for policy in shop.policies -%}
+            {%- if policy != blank -%}
+              <li>
+                <small class="copyright__content"
+                  ><a href="{{ policy.url }}">{{ policy.title }}</a></small
+                >
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
       </div>
       <div class="footer__column footer__column--info">
         {%- if section.settings.payment_enable -%}
@@ -247,13 +245,9 @@
           </div>
         {%- endif -%}
       </div>
-    </div>  
-  </div>  
-
-
-
-</div>  
-
+    </div>
+  </div>
+</div>
 
 {% schema %}
 {
@@ -360,15 +354,15 @@
       "name": "Footer block",
       "settings": [
         {
-            "type": "text",
-            "id": "title",
-            "label": "Title",
-            "placeholder": "Contact"
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "placeholder": "Contact"
         },
         {
-            "type": "link_list",
-            "id": "list",
-            "label": "options"
+          "type": "link_list",
+          "id": "list",
+          "label": "options"
         }
       ]
     }

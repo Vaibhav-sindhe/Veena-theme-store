@@ -1,24 +1,27 @@
 {{ 'bottom-banner.css' | asset_url | stylesheet_tag }}
-<div class="banner-content" page-width >
-{% comment %} <div class="first-section" page-width > {% endcomment %}
-        {%for block in section.blocks %}
-            <div class="banner-content--image-container">
-            {% comment %} <div class="first-section-block--img-container"> {% endcomment %}
-                {% render 'responsive-picture',
-                    desktopImage: block.settings.image_desktop,
-                    mobileImage: block.settings.image_mobile
-                %}
-            </div>
-            {% comment %} <div class="first-section-block--content"> {% endcomment %}
-            <div class="banner-content--text-container">
-                <ul><li> {{ block.settings.pre_heading }}</li></ul>
-                <h3>{{ block.settings.title }}</h3>
-                <p>{{ block.settings.description }}</p>
-                <a class="button" href="{{ block.settings.button_link }}"><span>{{ block.settings.button_label }}</span></a>
-            </div>
-        {% endfor %}
+<div class="banner-content" page-width>
+  {% comment %} <div class="first-section" page-width > {% endcomment %}
+  {% for block in section.blocks %}
+    <div class="banner-content--image-container">
+      {% comment %} <div class="first-section-block--img-container"> {% endcomment %}
+      {% render 'responsive-picture',
+        desktopImage: block.settings.image_desktop,
+        mobileImage: block.settings.image_mobile
+      %}
+    </div>
+    {% comment %} <div class="first-section-block--content"> {% endcomment %}
+    <div class="banner-content--text-container">
+      <ul>
+        <li>{{ block.settings.pre_heading }}</li>
+      </ul>
+      <h3>{{ block.settings.title }}</h3>
+      <p>{{ block.settings.description }}</p>
+      <a class="button" href="{{ block.settings.button_link }}"
+        ><span>{{ block.settings.button_label }}</span></a
+      >
+    </div>
+  {% endfor %}
 </div>
-
 
 {% schema %}
 {
@@ -63,11 +66,11 @@
           "label": "Title"
         },
         {
-            "type": "richtext",
-            "id": "description",
-            "label": "Description",
-            "default": "<p>Business Formal Choices</p>"
-           },
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Business Formal Choices</p>"
+        },
         {
           "type": "text",
           "id": "button_label",
@@ -89,4 +92,3 @@
   ]
 }
 {% endschema %}
-

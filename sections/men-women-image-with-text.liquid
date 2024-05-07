@@ -1,27 +1,28 @@
 {{ 'men-women-image-with-text.css' | asset_url | stylesheet_tag }}
-<div class="men-women-banner-content" page-width >
-    {%for block in section.blocks %}
-        <div class="men-women-section" page-width >
-            
-                <div class="men-women-banner-content--image-container">
-                {% comment %} <div class="first-section-block--img-container"> {% endcomment %}
-                    {% render 'responsive-picture',
-                        desktopImage: block.settings.image_desktop,
-                        mobileImage: block.settings.image_mobile
-                    %}
-                </div>
-                {% comment %} <div class="first-section-block--content"> {% endcomment %}
-                <div class="men-women-banner-content--text-container">
-                    <ul><li>  &#x2022{{ block.settings.pre_heading }}</li></ul>
-                    <h3>{{ block.settings.title }}</h3>
-                    <p>{{ block.settings.description }}</p>
-                    <a class="button" href="{{ block.settings.button_link }}"><span>{{ block.settings.button_label }}</span></a>
-                </div>
-            
+<div class="men-women-banner-content" page-width>
+  {% for block in section.blocks %}
+    <div class="men-women-first-section" page-width>
+      <div class="men-women-banner-content--image-container">
+        {% comment %} <div class="first-section-block--img-container"> {% endcomment %}
+        {% render 'responsive-picture',
+          desktopImage: block.settings.image_desktop,
+          mobileImage: block.settings.image_mobile
+        %}
+      </div>
+      {% comment %} <div class="first-section-block--content"> {% endcomment %}
+      <div class="men-women-banner-content--text-container">
+        <ul>
+          <li>&#x2022{{ block.settings.pre_heading }}</li>
+        </ul>
+        <h3>{{ block.settings.title }}</h3>
+        <p>{{ block.settings.description }}</p>
+        <a class="button" href="{{ block.settings.button_link }}"
+          ><span>{{ block.settings.button_label }}</span></a
+        >
+      </div>
     </div>
-{% endfor %}
+  {% endfor %}
 </div>
-
 
 {% schema %}
 {

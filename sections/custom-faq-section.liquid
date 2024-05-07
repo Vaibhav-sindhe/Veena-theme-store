@@ -1,53 +1,58 @@
-{{ 'custom-faq.css' | asset_url | stylesheet_tag }}
+{{ 'custom-faq-section.css' | asset_url | stylesheet_tag }}
 
-<div class="custom-faq">
-    <div class="custom-faq-heading-container"><h1 class="custom-faq-heading-container--heading">{{ section.settings.heading }}</h1><p  class="custom-faq-heading-container--description">{{ section.settings.description }}</p></div>
-    <div class="custom-faq--container">
-        {% for block in section.blocks %}
-            <div class="custom-faq-container--block">
-                <details >
-                    <summary><div class="custom-faq-container-block--question"><h5>{{ forloop.index }} . {{ block.settings.question }}</h5><span class="toggle-icon">+</span></div></summary>
-                    <div class="custom-faq-container-block--answer">{{ block.settings.answer }}</div>
-                </details>
+<div class="faq-section">
+  <h1 class="faq-section__heading">{{ section.settings.heading }}</h1>
+  <p class="faq-section__description">
+    Ensure that your FAQs are regularly updated based on common customer queries and changes in your business
+    operations.
+  </p>
+  <div class="faq-section__container">
+    {% for block in section.blocks %}
+      <div class="faq-container__block">
+        <details>
+          <summary>
+            <div class="faq-block__question">
+              <h5>{{ block.settings.question }}</h5>
+              <span class="question__toggle-icon">+</span>
             </div>
-        {% endfor %}   
-    </div>    
-</div> 
-
+          </summary>
+          <div class="faq-block__answer">{{ block.settings.answer }}</div>
+        </details>
+      </div>
+    {% endfor %}
+  </div>
+</div>
 
 <script>
-    let summaries = document.querySelectorAll('details summary');
-    let previous=null;
-    let previousIcon=null;
-    let i=0;
-    summaries.forEach(function(summary) {
-        summary.addEventListener('click', function() {
-            var icon = summary.querySelector('.toggle-icon');
+  let summaries = document.querySelectorAll('details summary');
+  let previous = null;
+  let previousIcon = null;
+  summaries.forEach(function (summary) {
+    summary.addEventListener('click', function () {
+      var icon = summary.querySelector('.question__toggle-icon');
 
-
-            if(previous==summary.parentNode){
-                previous.open=previous.open;
-            }
-            else{
-                if(previous){
-                    previous.open=false;
-                    previousIcon.textContent="+"
-                }
-                previous=summary.parentNode;
-                previousIcon=icon;
-            }
-            if (summary.parentNode.open) {
-                icon.textContent = '+';
-            } else {
-                icon.textContent = '-';
-            }
-        });
+      if (previous == summary.parentNode) {
+        previous.open = previous.open;
+      } else {
+        if (previous) {
+          previous.open = false;
+          previousIcon.textContent = '+';
+        }
+        previous = summary.parentNode;
+        previousIcon = icon;
+      }
+      if (summary.parentNode.open) {
+        icon.textContent = '+';
+      } else {
+        icon.textContent = '-';
+      }
     });
+  });
 </script>
 
 {% schema %}
 {
-  "name": "custom-faq section",
+  "name": "FAQ custom section",
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -59,32 +64,25 @@
       "id": "heading",
       "label": "Heading",
       "default": "FAQ"
-    },
-    {
-      "type": "text",
-      "id": "description",
-      "label": "Description",
-      "default": "Description"
-      }    
-
+    }
   ],
   "blocks": [
     {
-      "type": "custom-faq-block",
-      "name": "custom-faq-block",
+      "type": "assignment-faq-block",
+      "name": "assignment-faq-block",
       "settings": [
         {
-           "type": "text",
-           "id": "question",
-           "label": "question",
-           "default": "Business Formal Choices"
-          },
-          {
-           "type": "richtext",
-           "id": "answer",
-           "label": "answer",
-           "default": "<p>Yes Business Formal Choices</p>"
-          }
+          "type": "text",
+          "id": "question",
+          "label": "question",
+          "default": "Business Formal Choices"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "answer",
+          "default": "<p>Yes Business Formal Choices</p>"
+        }
       ]
     }
   ],

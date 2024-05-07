@@ -2,97 +2,87 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
-    "week_6_7wV7K6": {
-      "type": "week-6",
+    "assignmet_week6_FCKzdi": {
+      "type": "assignmet-week6",
       "blocks": {
-        "slide_VTm83t": {
-          "type": "Slide",
+        "slider_card_YcByMK": {
+          "type": "slider_card",
           "settings": {
-            "productImage": "shopify://shop_images/3c925eb803f7e78c0ac68f2596c8e058_a692c407-6c20-4ba7-87e7-d8aa264cfd2f.jpg",
-            "authorImage": "shopify://shop_images/d79701ab8c86c3f9d226d6384ec13c8d_140e9b03-ef64-42ad-8ccf-5597f517c75f.jpg",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
-            "authorName": "Mr. John Doe",
-            "authorTitle": "clients",
-            "card-bg": "",
-            "card-active-bg": ""
+            "active_card_bg": "#c02b2b",
+            "card_bg": "#f4dfe2",
+            "testimonial_text": "This is a testimonial about how great the product is.",
+            "main_image": "shopify:\/\/shop_images\/Rectangle_56.webp",
+            "author_image": "shopify:\/\/shop_images\/5_8692d143-4fac-48d0-9ba7-4bf86ec25a15.webp",
+            "author_name": "Fahad",
+            "author_title": "Verified Buyer"
           }
         },
-        "slide_QHWFHe": {
-          "type": "Slide",
+        "slider_card_zp9dJ9": {
+          "type": "slider_card",
           "settings": {
-            "productImage": "shopify://shop_images/images.jpg",
-            "authorImage": "shopify://shop_images/48fd745fbd3a6ce8ce273f8b6fb14567_b7fa9c6a-4c35-45c0-a609-c09aef9a3274.jpg",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
-            "authorName": "Mr. John Doe",
-            "authorTitle": "clients",
-            "card-bg": "",
-            "card-active-bg": ""
+            "active_card_bg": "#c02b2b",
+            "card_bg": "#f4dfe2",
+            "testimonial_text": "This is a testimonial about how great the product is.",
+            "main_image": "shopify:\/\/shop_images\/Rectangle_55.webp",
+            "author_image": "shopify:\/\/shop_images\/4_e6c9abf8-cab4-4c51-8b5c-b87f6878ea97.webp",
+            "author_name": "Jane Doe",
+            "author_title": "Rishabh"
           }
         },
-        "slide_x9XG6m": {
-          "type": "Slide",
+        "slider_card_qzeKk9": {
+          "type": "slider_card",
           "settings": {
-            "productImage": "shopify://shop_images/images_a5161b4a-aed6-4079-a966-d0723ba7e90e.jpg",
-            "authorImage": "shopify://shop_images/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
-            "authorName": "Mr. John Doe",
-            "authorTitle": "clients",
-            "card-bg": "",
-            "card-active-bg": ""
+            "active_card_bg": "#c02b2b",
+            "card_bg": "#f4dfe2",
+            "testimonial_text": "This is a testimonial about how great the product is.",
+            "main_image": "shopify:\/\/shop_images\/1_677b86eb-ee13-4e0f-9252-459e593c6461.webp",
+            "author_image": "shopify:\/\/shop_images\/1_2db38707-707e-4fd6-ab12-35397e8935de.webp",
+            "author_name": "Jhonny",
+            "author_title": "CEO"
           }
         },
-        "slide_BwB7F3": {
-          "type": "Slide",
+        "slider_card_HGDRp9": {
+          "type": "slider_card",
           "settings": {
-            "productImage": "shopify://shop_images/download.jpg",
-            "authorImage": "shopify://shop_images/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
-            "testimonialText": "<p>“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “</p>",
-            "authorName": "Mr. John Doe",
-            "authorTitle": "clients",
-            "card-bg": "",
-            "card-active-bg": ""
+            "active_card_bg": "#c02b2b",
+            "card_bg": "#f4dfe2",
+            "testimonial_text": "This is a testimonial about how great the product is.",
+            "main_image": "shopify:\/\/shop_images\/6_513ac5e7-ac24-44c7-9f9b-ef77c28af7c0.webp",
+            "author_image": "shopify:\/\/shop_images\/2_0b300886-b49e-4ef1-a786-f0b7f7ab2f2d.webp",
+            "author_name": "Jack",
+            "author_title": "CTO"
           }
         }
       },
       "block_order": [
-        "slide_VTm83t",
-        "slide_QHWFHe",
-        "slide_x9XG6m",
-        "slide_BwB7F3"
+        "slider_card_YcByMK",
+        "slider_card_zp9dJ9",
+        "slider_card_qzeKk9",
+        "slider_card_HGDRp9"
       ],
       "settings": {
-        "heading": "Testimonials",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "color-bg": "",
-        "auto_play": false,
-        "show_pagination": true,
-        "show_arrows": false,
-        "auto_play_duration": 2000,
-        "perpage": 1,
-        "Slide_animation": "slide",
-        "padding_top": 30,
-        "padding_bottom": 30
+        "section_background": "#ffe2e2",
+        "section_padding": 20,
+        "section_heading": "Our Customers' Stories",
+        "section_description": "Hear what our customers have to say about their experiences."
       }
     },
-    "week_6_email_6bnr8e": {
-      "type": "week-6-email",
+    "newsletterass_4Gr8N6": {
+      "type": "newsletterass",
       "settings": {
-        "heading": "Subscribe to our Newsletter",
-        "button_label": "Subscribe",
-        "padding_top": 40,
-        "padding_bottom": 40
+        "newsletter_title": "Subscribe to our newsletter",
+        "submit_label": "Subscribe"
       }
     }
   },
   "order": [
     "main",
-    "week_6_7wV7K6",
-    "week_6_email_6bnr8e"
+    "assignmet_week6_FCKzdi",
+    "newsletterass_4Gr8N6"
   ]
 }

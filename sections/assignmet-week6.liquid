@@ -1,0 +1,188 @@
+{{ 'splide.min.css' | asset_url | stylesheet_tag }}
+{{ 'assignment-week6.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'splide.min.js' | asset_url }}" defer></script>
+
+<!-- Slider Section -->
+{% if customer %}
+  <section
+    class="slider-section"
+    style="background-color: {{ section.settings.section_background }}; padding: {{ section.settings.section_padding }}px;"
+  >
+    <!-- Main Image Container -->
+    <div class="main-image-container">
+      <img
+        src="{{ section.blocks.first.settings.main_image | img_url: '1024x768' }}"
+        alt="Main Image"
+        id="main-image"
+        width="300"
+        height="300"
+      >
+    </div>
+
+    <!-- Container for Text and Testimonials -->
+    <div class="container">
+      <div class="testi-heading">{{ section.settings.section_heading }}</div>
+      <div class="testi-subheading">{{ section.settings.section_description }}</div>
+
+      <!-- Splide Slider for Testimonials -->
+      <div class="splide" id="testimonial-slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for block in section.blocks %}
+              <li class="splide__slide" data-main-image="{{ block.settings.main_image | img_url: '1024x768' }}">
+                <div class="card" style="background-color: {{ block.settings.card_bg }};">
+                  <div class="test-text">{{ block.settings.testimonial_text }}</div>
+                  <div class="author-block">
+                    <img
+                      src="{{ block.settings.author_image | img_url: '300x300' }}"
+                      alt="{{ block.settings.author_name }}"
+                      width="300"
+                      height="300"
+                    >
+                    <div>
+                      <div>{{ block.settings.author_name }}</div>
+                      <span>{{ block.settings.author_title }}</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+{% else %}
+  <div class="login-prompt-container">
+    <div class="login-prompt" style="text-align: center; margin-top: 20px;">
+      <p>Please log in to view this section.</p>
+      <a href="/account/login" class="btn btn-primary">Login</a>
+    </div>
+  </div>
+{% endif %}
+
+{% style %}
+{% endstyle %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var splide = new Splide('#testimonial-slider', {
+      type: 'loop',
+      pagination: true,
+      perPage: 1.5,
+      perMove: 1,
+      breakpoints: {
+        640: {
+          perPage: 1,
+        },
+      },
+    }).mount();
+
+    // Function to update the main image based on the active slide
+    function updateMainImage() {
+      var activeSlide = splide.Components.Elements.list.children[splide.index];
+      var newImageUrl = activeSlide.getAttribute('data-main-image');
+      document.getElementById('main-image').src = newImageUrl;
+    }
+
+    // Update main image on initial load
+    updateMainImage();
+
+    // Update main image whenever the active slide changes
+    splide.on('moved', updateMainImage);
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Slider Section",
+  "tag": "section",
+  "class": "slider-section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Section Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section Padding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 20,
+      "unit": "px"
+    },
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Our Customers' Stories"
+    },
+    {
+      "type": "textarea",
+      "id": "section_description",
+      "label": "Section Description",
+      "default": "Hear what our customers have to say about their experiences."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slider_card",
+      "name": "Slider Card",
+      "settings": [
+        {
+          "type": "color",
+          "id": "active_card_bg",
+          "label": "Active Card Background Color",
+          "default": "#F0F0F0"
+        },
+        {
+          "type": "color",
+          "id": "card_bg",
+          "label": "Card Background Color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "textarea",
+          "id": "testimonial_text",
+          "label": "Testimonial Text",
+          "default": "This is a testimonial about how great the product is."
+        },
+        {
+          "type": "image_picker",
+          "id": "main_image",
+          "label": "Main Image",
+          "info": "Changes with current slide"
+        },
+        {
+          "type": "image_picker",
+          "id": "author_image",
+          "label": "Author Image",
+          "info": "Optional - leave empty if not used"
+        },
+        {
+          "type": "text",
+          "id": "author_name",
+          "label": "Author Name",
+          "default": "Jane Doe"
+        },
+        {
+          "type": "text",
+          "id": "author_title",
+          "label": "Author Title",
+          "default": "Verified Buyer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

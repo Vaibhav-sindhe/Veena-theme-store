@@ -409,9 +409,9 @@ class MenuDrawer extends HTMLElement {
 
     openDetailsElement === this.mainDetailsToggle
       ? this.closeMenuDrawer(
-        event,
-        this.mainDetailsToggle.querySelector("summary")
-      )
+          event,
+          this.mainDetailsToggle.querySelector("summary")
+        )
       : this.closeSubmenu(openDetailsElement);
   }
 
@@ -453,9 +453,9 @@ class MenuDrawer extends HTMLElement {
         !reducedMotion || reducedMotion.matches
           ? addTrapFocus()
           : summaryElement.nextElementSibling.addEventListener(
-            "transitionend",
-            addTrapFocus
-          );
+              "transitionend",
+              addTrapFocus
+            );
       }, 100);
     }
   }
@@ -556,9 +556,9 @@ class HeaderDrawer extends MenuDrawer {
     this.header = this.header || document.querySelector(".section-header");
     this.borderOffset =
       this.borderOffset ||
-        this.closest(".header-wrapper").classList.contains(
-          "header-wrapper--border-bottom"
-        )
+      this.closest(".header-wrapper").classList.contains(
+        "header-wrapper--border-bottom"
+      )
         ? 1
         : 0;
     document.documentElement.style.setProperty(
@@ -735,7 +735,7 @@ class SliderComponent extends HTMLElement {
       this.sliderItemsToShow[0].offsetLeft;
     this.slidesPerPage = Math.floor(
       (this.slider.clientWidth - this.sliderItemsToShow[0].offsetLeft) /
-      this.sliderItemOffset
+        this.sliderItemOffset
     );
     this.totalPages = this.sliderItemsToShow.length - this.slidesPerPage + 1;
     this.update();
@@ -1083,9 +1083,9 @@ class SlideshowComponent extends SliderComponent {
     const slideScrollPosition =
       this.slider.scrollLeft +
       this.sliderFirstItemNode.clientWidth *
-      (this.sliderControlLinksArray.indexOf(event.currentTarget) +
-        1 -
-        this.currentPage);
+        (this.sliderControlLinksArray.indexOf(event.currentTarget) +
+          1 -
+          this.currentPage);
     this.slider.scrollTo({
       left: slideScrollPosition,
     });
@@ -1120,6 +1120,8 @@ class VariantSelects extends HTMLElement {
       this.updateShareUrl();
     }
   }
+
+  
 
   updateOptions() {
     this.options = Array.from(
@@ -1265,9 +1267,9 @@ class VariantSelects extends HTMLElement {
         element.innerText = availableElement
           ? value
           : window.variantStrings.unavailable_with_option.replace(
-            "[value]",
-            value
-          );
+              "[value]",
+              value
+            );
       }
     });
   }
@@ -1299,9 +1301,10 @@ class VariantSelects extends HTMLElement {
       : this.dataset.section;
 
     fetch(
-      `${this.dataset.url}?variant=${requestedVariantId}&section_id=${this.dataset.originalSection
-        ? this.dataset.originalSection
-        : this.dataset.section
+      `${this.dataset.url}?variant=${requestedVariantId}&section_id=${
+        this.dataset.originalSection
+          ? this.dataset.originalSection
+          : this.dataset.section
       }`
     )
       .then((response) => response.text())
@@ -1314,68 +1317,27 @@ class VariantSelects extends HTMLElement {
           `price-${this.dataset.section}`
         );
         const source = html.getElementById(
-          `price-${this.dataset.originalSection
-            ? this.dataset.originalSection
-            : this.dataset.section
+          `price-${
+            this.dataset.originalSection
+              ? this.dataset.originalSection
+              : this.dataset.section
           }`
         );
         const skuSource = html.getElementById(
-          `Sku-${this.dataset.originalSection
-            ? this.dataset.originalSection
-            : this.dataset.section
+          `Sku-${
+            this.dataset.originalSection
+              ? this.dataset.originalSection
+              : this.dataset.section
           }`
         );
         const skuDestination = document.getElementById(
           `Sku-${this.dataset.section}`
         );
-
-
-        //changeing the coupen code
-        // const coupendestination = document.getElementById(
-        //   `coupen-code-${this.dataset.section}`
-        // );
-        // const coupensource = html.getElementById(
-        //   `coupen-code-${this.dataset.originalSection
-        //     ? this.dataset.originalSection
-        //     : this.dataset.section
-        //   }`
-        // );
-        // if (coupendestination && coupensource) {
-        //   coupendestination.innerHTML = coupensource.innerHTML;
-        // }
-
-        //change coupen div
-        let updatedcoupen = html.getElementById("coupen");
-        let oldcoupen = document.getElementById("coupen");
-        if (oldcoupen && updatedcoupen) {
-          oldcoupen.innerHTML = updatedcoupen.innerHTML;
-        }
-
-        //change color name
-        if (html.getElementById("color-swatch-name")) {
-          let updatedColorName = html.getElementById("color-swatch-name");
-          let oldColorName = document.getElementById("color-swatch-name");
-          oldColorName.innerHTML = updatedColorName.innerHTML;
-        }
-        //size change
-        if (html.getElementById("size-swatch-name")) {
-          let newSize = html.getElementById("size-swatch-name");
-          let oldSize = document.getElementById("size-swatch-name");
-          oldSize.innerHTML = newSize.innerHTML;
-        }
-        
-        // progress bar change
-        if (html.getElementById("progress-bar")) {
-          let updatedProgressbar = html.getElementById("progress-bar");
-          let oldProgressbar = document.getElementById("progress-bar");
-          oldProgressbar.innerHTML = updatedProgressbar.innerHTML;
-        }
-
-
         const inventorySource = html.getElementById(
-          `Inventory-${this.dataset.originalSection
-            ? this.dataset.originalSection
-            : this.dataset.section
+          `Inventory-${
+            this.dataset.originalSection
+              ? this.dataset.originalSection
+              : this.dataset.section
           }`
         );
         const inventoryDestination = document.getElementById(
@@ -1383,9 +1345,10 @@ class VariantSelects extends HTMLElement {
         );
 
         const volumePricingSource = html.getElementById(
-          `Volume-${this.dataset.originalSection
-            ? this.dataset.originalSection
-            : this.dataset.section
+          `Volume-${
+            this.dataset.originalSection
+              ? this.dataset.originalSection
+              : this.dataset.section
           }`
         );
 
@@ -1393,9 +1356,10 @@ class VariantSelects extends HTMLElement {
           `Price-Per-Item-${this.dataset.section}`
         );
         const pricePerItemSource = html.getElementById(
-          `Price-Per-Item-${this.dataset.originalSection
-            ? this.dataset.originalSection
-            : this.dataset.section
+          `Price-Per-Item-${
+            this.dataset.originalSection
+              ? this.dataset.originalSection
+              : this.dataset.section
           }`
         );
 
@@ -1575,10 +1539,88 @@ class ProductRecommendations extends HTMLElement {
 
 customElements.define("product-recommendations", ProductRecommendations);
 
-// Custom slider component using splide.js
-/*
- For more changes : https://splidejs.com/
-*/
+
+class ProductCard extends HTMLElement {
+  constructor() {
+    super();
+    this.productHandle = this.dataset.productHandle;
+    this.sectionId = this.dataset.sectionId;
+    if (this.querySelector("script")) {
+      this.variantData = JSON.parse(this.querySelector("script").textContent);
+    }
+    this.addEventListener("change", this.onOptionChange);
+  }
+  onOptionChange() {
+    console.log("clicked");
+    console.log("product-handle", this.productHandle);
+    console.log("variant data", this.variantData);
+    this.selectedOptions = Array.from(
+      this.querySelectorAll('input[type="radio"]:checked'),
+      (input) => input.value
+    );
+    console.log("selectedoption", this.selectedOptions);
+    this.currentVariant = this.variantData.find(
+      (item) =>
+        JSON.stringify(item.options) == JSON.stringify(this.selectedOptions)
+    );
+    console.log("variantdata", this.variantData);
+    console.log("current variant", this.currentVariant);
+    this.getUpdatedCard();
+  }
+  getUpdatedCard() {
+    //   const url = `/products/${this.productHandle}?variant=${this.currentVariant.id}&section_id=custom-product-card`;
+    const url = `/products/${this.productHandle}?view=product-card&variant=${this.currentVariant.id}`;
+    console.log(url);
+    fetch(url)
+      .then((response) => response.text())
+      .then((responseText) => {
+        const html = new DOMParser().parseFromString(responseText, "text/html");
+        console.log("html", html);
+        // this.innerHTML = html.querySelector(
+        //   `[data-product-handle="${this.productHandle}"]`
+        // ).innerHTML;
+        this.innerHTML = html.querySelector("product-card").innerHTML;
+      });
+  }
+}
+customElements.define("product-card", ProductCard);
+
+document.getElementById('three-cols').addEventListener('click', function () {
+  console.log('Changing to three columns');
+  const container = document.getElementById('product-grid');
+  container.className = 'custom-product-grid-columns three-cols'; // Sets the container to 3 columns
+
+  // Remove one-col-card class and reset to default or specific class for three columns
+  const cards = document.querySelectorAll('.product-card');
+  cards.forEach(card => {
+    card.className = 'product-card three-col-card'; // Set this to whatever class is needed for 3 cols
+  });
+});
+
+document.getElementById('four-cols').addEventListener('click', function () {
+  console.log('Changing to four columns');
+  const container = document.getElementById('product-grid');
+  container.className = 'custom-product-grid-columns four-cols'; // Sets the container to 4 columns
+
+  // Remove one-col-card class and reset to default or specific class for four columns
+  const cards = document.querySelectorAll('.product-card');
+  cards.forEach(card => {
+    card.className = 'product-card four-col-card'; // Set this to whatever class is needed for 4 cols
+  });
+});
+
+document.getElementById('one-cols').addEventListener('click', function () {
+  console.log('Changing to one column');
+  const container = document.getElementById('product-grid');
+  container.className = 'custom-product-grid-columns one-cols'; // Sets the container to 1 column
+
+  // Apply one-col-card class for one column layout
+  const cards = document.querySelectorAll('.product-card');
+  cards.forEach(card => {
+    card.className = 'product-card one-col-card';
+  });
+});
+
 
 class spliderComponent extends HTMLElement {
   constructor() {
@@ -1594,251 +1636,3 @@ class spliderComponent extends HTMLElement {
 }
 customElements.define("splider-component", spliderComponent);
 
-// coupen copy
-
-class variantOffer extends HTMLElement {
-  constructor() {
-    super();
-    this.couponCode = this.querySelector('[data-code]').dataset.code;
-    this.copyButton = this.querySelector('#copy-coupen');
-
-    this.copyButton.addEventListener('click', ()=>{
-      this.copyAction();
-    })
-
-  }
-
-  copyAction() {
-
-    // Use the Clipboard API to copy the text
-    navigator.clipboard.writeText(this.couponCode).then(function () {
-      alert('Coupon code copied to clipboard!');
-    }, function (err) {
-      alert('Failed to copy: ', err);
-    });
-  }
-}
-
-customElements.define("variant-offer", variantOffer);
-
-
-
-//pin code checker
-
-
-// var toastCounter = 1;
-// class pincodeChecker extends HTMLElement {
-//   constructor() {
-//     super();
-//     this.resultDisplay = this.querySelector("#result");
-//     this.checkbtn=this.querySelector(".checkPin");
-
-//     this.checkbtn.addEventListener('click', ()=>{
-//       this.checkPin();
-//     })
-
-//   }
-
-//   checkPin() {
-//     this.pincode= this.querySelector(".pinInput").value;
-//     console.log(this.pincode);
-//     if (this.pincode.length !== 6 || isNaN(this.pincode)) {
-//       this.resultDisplay.innerText = "Please enter a valid 6 digit pin code.";
-//       this.displayToastNotification("Please enter a valid 6 digit pin code", "fa-xmark", "#f39c12", "slide-in-fade-out");
-//       return;
-//     }
-
-//     fetch(`https://api.postalpincode.in/pincode/${this.pincode}`)
-//       .then(response => response.json())
-//       .then(data => {
-//           // Check if pin code exists
-//           if (data[0].Status === "Success" && data[0].PostOffice[0].DeliveryStatus=== "Delivery") {
-//              console.log(data[0]);
-//               this.resultDisplay.innerText = "Pin code is valid.";
-//               this.displayToastNotification("We deliver at your location", "fa-check", "#27ae60", "slide-in-fade-out");
-//           } else {
-//               this.resultDisplay.innerText = "Pin code does not exist.";
-//               this.displayToastNotification("cant deliver at your location", "fa-xmark", "#c0392b", "slide-in-fade-out");
-//           }
-//       })
-//       .catch(error => {
-//           console.error('Error:', error);
-//           // this.resultDisplay.innerText = "An error occurred while fetching data.";
-//       });
-
-//   }
-  
-//   displayToastNotification(msg, icon, icon_color, animation) {
-//     var class_name = 'toast-' + toastCounter;
-//     var new_node = this.querySelector('.master-toast-notification').cloneNode(true);
-//     new_node.classList.remove('hide-toast');
-//     new_node.classList.remove('master-toast-notification');
-//     new_node.classList.add(class_name, 'toast-notification', animation);
-//     new_node.querySelector('.toast-msg').innerText = msg;
-//     new_node.querySelector('.toast-icon i').className = 'fa-solid ' + icon;
-//     new_node.querySelector('.toast-icon').style.backgroundColor = icon_color;
-//     this.querySelector('.toasts').appendChild(new_node);
-
-//     setTimeout(function() {
-//         new_node.remove();
-//     }, 3800);
-//     toastCounter++;
-// }
-
-// }
-// customElements.define("pincode-checker", pincodeChecker);
-
-
-
-//custom add to cart
-class ProductBundle extends HTMLElement {
-  constructor() {
-      super();
-      this.addEventListener('click', this.bundleAddtocart)
-      this.sectionId = this.dataset.sectionId
-  }
-  bundleAddtocart() {
-      console.log(this.querySelectorAll('.bundle-checkbox'));
-      this.products = []
-      this.querySelectorAll('.bundle-checkbox').forEach((element) => {
-          if (element.checked == true) {
-              console.log(element);
-              this.products.push(element.value)
-              console.log(this.products);
-          }
-      })
-      const handleClick = () => {
-          this.addToCart(this.products);
-      };
-      document.querySelector('#bundle__atc').addEventListener('click', handleClick);
-  }
-  addToCart(variants) {
-      let cart=document.querySelector('cart-notification') || document.querySelector('cart-drawer');
-      let formData = {
-          "items": variants.map((variantId) =>
-          (
-              {
-                  "id": variantId,
-                  "quantity": 1,
-              }
-          )),
-          "sections": cart.getSectionsToRender().map((section) => section.id)
-      }
-      console.log(formData);
-      fetch(window.Shopify.routes.root + 'cart/add.js', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData),
-      })
-          .then(response => {
-              return response.json();
-          })
-          .then(response=>
-              {
-                  cart.renderContents(response);
-              })
-          .catch((error) => {
-              console.error('Error:', error);
-          });
-  }
-}
-customElements.define('product-bundle', ProductBundle);
-
-
-//new pin code checker
-class PincodeChecker extends HTMLElement {
-  constructor() {
-    super();
-    this.pincodeJson = {};
-    this.sheetKey = '19fCO3qn_yd_G-jHg9aCzzbbr92LoBGCB7d_Sa4ydA1A';
-    this.apiKey = 'AIzaSyDStJxbRVwk7eZyggjJ32CyH5vSswfft8A';
-    this.pincodeInput = this.querySelector('[name="pincode-input"]');
-    this.pincodeSubmitBtn = this.querySelector('[name="pincode-submit"]');
-    this.pincodeMessage = this.querySelector('[name="pincode-message"]');
-    this.sheetUrl = "https://sheets.googleapis.com/v4/spreadsheets/" + this.sheetKey + "/values/Sheet1?key=" + this.apiKey;
-      
-    this.getPincodeJson();
-    this.pincodeSubmitBtn.addEventListener('click', this.validatePincode.bind(this));
-    //COSMETICS :: CLEAR INPUT ON CLICK :: ALLOW ONLY NUMBERS
-    this.pincodeInput.addEventListener('click', this.clearInput.bind(this));
-    this.pincodeInput.addEventListener('keypress', function(e) {
-      if (e.which < 48 || e.which > 57 || e.target.value.length === 6) 
-        e.preventDefault();
-    });
-  }
-
-  getPincodeJson() {
-    if (sessionStorage.getItem("pincodeData") === null) {
-      fetch(this.sheetUrl)
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(data) {
-        let sheetData = JSON.stringify(data.values);
-        sessionStorage.setItem("pincodeData", sheetData);        
-      })
-      .catch(function(error) {
-        console.error('Error:', error);
-      });
-    }
-  }
-  
-  validatePincode() {
-    if(this.pincodeInput.value.length === 6) {      
-      this.pincodeJson = JSON.parse(sessionStorage.getItem("pincodeData"));
-      this.jsonResult = {
-        pincodeServiceable: 'No',
-        codAvailable: 'No',
-        deliveryMessage: ''
-      };
-
-      for (let i=0; i<this.pincodeJson.length; i++) {
-        if (this.pincodeJson[i] && this.pincodeJson[i][0] == this.pincodeInput.value) {
-          this.jsonResult.pincodeServiceable = this.pincodeJson[i][1];
-          this.jsonResult.codAvailable = this.pincodeJson[i][2];
-          this.jsonResult.deliveryMessage = this.pincodeJson[i][3];   
-          break;
-        }
-      }
-
-      if(this.jsonResult.pincodeServiceable.toLowerCase() == 'yes') {
-        let successHtml = '<ul>';
-        successHtml += '<li>Service is available to your location</li>';
-
-        if(this.jsonResult.codAvailable.toLowerCase() == 'yes') {
-          successHtml += '<li>COD is available</li>';
-        }
-        if(this.jsonResult.deliveryMessage != '') {
-          successHtml += '<li>'+ this.jsonResult.deliveryMessage +'</li>';
-        }          
-        successHtml += '</ul>';
-
-        this.pincodeMessage.innerHTML = successHtml;
-        this.pincodeMessage.classList.add('is-success');
-        this.pincodeMessage.classList.remove('is-error', 'is-hidden');
-      } 
-      else {
-        //IF THE ENTERED PINCODE DOESN'T MATCH WITH THE SHEET PINCODES OR UNSERVICEABLE
-        this.pincodeMessage.innerHTML = 'Service is not available to your location. Please try with an alternative pincode!';
-        this.pincodeMessage.classList.add('is-error');
-        this.pincodeMessage.classList.remove('is-success', 'is-hidden');
-      }
-    } 
-    else {
-      //IF THE PINCODE IS NOT 6 DIGITS
-      this.pincodeMessage.innerHTML = 'Please enter a valid 6 digit pincode!!';
-      this.pincodeMessage.classList.add('is-error');
-      this.pincodeMessage.classList.remove('is-success', 'is-hidden');
-    }  
-  }
-
-  clearInput() {
-    this.pincodeInput.value = '';
-    this.pincodeMessage.classList.add('is-hidden');
-    this.pincodeMessage.classList.remove('is-success', 'is-error');
-  }
-}
-
-customElements.define('pincode-checker', PincodeChecker);

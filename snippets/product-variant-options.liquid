@@ -24,7 +24,7 @@
 
   assign product_form_id = 'product-form-' | append: section.id
 -%}
-<div class="all-varient-options">
+
 {%- for value in option.values -%}
   {%- liquid
     assign option_disabled = true
@@ -61,8 +61,8 @@
   {%- endcapture -%}
 
   {%- capture label_unavailable %}
-    <span class="{% if option.name=='Color'%} cross-on-swatch {% endif %} label-unavailable">
-      {% comment %} {{- 'products.product.variant_sold_out_or_unavailable' | t -}} {% endcomment %}
+    <span class="visually-hidden label-unavailable">
+      {{- 'products.product.variant_sold_out_or_unavailable' | t -}}
     </span>
   {%- endcapture %}
 
@@ -96,16 +96,15 @@
         class="disabled"
       {% endif %}
     >
-    <label  for="{{ input_id }}" class="custom {% if option.name!="Color"%}size-div{% endif %}">
-      {% if option.name!="Color"  %}
+    <label for="{{ input_id }}" class="custom {% if option.name!="Color"%}size-div{% endif %}">
+      {% if option.name != 'Color' %}
         {{ value -}}
       {% else %}
-       <span class="color-swatch color-swatch--{{ value | handle }}"></span>
+        <span class="color-swatch color-swatch--{{ value | handle }}" style="display:block"></span>
       {% endif %}
- 
       {{ label_unavailable }}
- 
     </label>
+
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
       value="{{ value | escape }}"
@@ -124,4 +123,14 @@
     </option>
   {%- endif -%}
 {%- endfor -%}
-</div>
+
+<style>
+  .custom .color-swatch {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+  }
+</style>

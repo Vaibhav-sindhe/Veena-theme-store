@@ -633,13 +633,13 @@
               <!--Available Offers-->
               
               <!--product usp section-->
+              <span>{{product.metafields.custom.product_usp_title.value[0] }}</span>
 
               <div class="product-usp">
                     <ul class="product-usp-container">
                       {% for offer in  product.metafields.custom.product_usp.value%}
                         <li>
                           <img src="{{ offer | image_url }}" alt="usp image" width="40" height="40">
-                          <span>{{product.metafields.custom.product_usp_title.value[{{forloop.index}}] }}</span>
                         </li> 
                       {% endfor %}
                     </ul> 

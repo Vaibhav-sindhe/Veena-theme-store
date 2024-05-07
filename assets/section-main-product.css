@@ -1835,7 +1835,7 @@ a.product__text {
 }
 
 
-.product-usp-container ul{
+.product-usp-container{
   display: flex;
   gap: 1rem;
 }

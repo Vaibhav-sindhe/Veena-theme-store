@@ -1833,3 +1833,12 @@ a.product__text {
   gap: 1rem;
   font-size: 1.5rem;
 }
+
+
+.product-usp-container{
+  display: flex;
+  gap: 1rem;
+}
+.product-usp-container li{
+  list-style: none;
+}

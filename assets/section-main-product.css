@@ -1837,11 +1837,16 @@ a.product__text {
 
 .product-usp-container{
   display: flex;
-  justify-content: space-evenly;
   padding: 0;
+}
+.product-usp-container-images{
+  justify-content: space-around;
 }
 .product-usp-container li{
   list-style: none;
+}
+.product-usp-container-title{
+  justify-content: space-between;
 }
 .product-usp-container-title li{
   margin-left:35px ;

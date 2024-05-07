@@ -633,8 +633,6 @@
               <!--Available Offers-->
               
               <!--product usp section-->
-              <span>{{product.metafields.custom.product_usp_title.value[0] }}</span>
-
               <div class="product-usp">
                     <ul class="product-usp-container">
                       {% for offer in  product.metafields.custom.product_usp.value%}
@@ -645,7 +643,7 @@
                     </ul> 
               </div>  
               <div class="product-usp">
-                <ul class="product-usp-container">
+                <ul class="product-usp-container product-usp-container">
 
                   {% for title in product.metafields.custom.product_usp_title.value%}
                     <li>

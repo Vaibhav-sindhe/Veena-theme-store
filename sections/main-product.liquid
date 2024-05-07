@@ -638,7 +638,7 @@
                     <ul class="product-usp">
                       {% for offer in  product.metafields.custom.product_usp.value %}
                         <li>
-                          {% comment %} <img url="{{ offer | image_url }}" alt="usp image" width="3rem" height="3rem"> {% endcomment %}
+                          <img src="{{ offer | image_url }}" alt="usp image" width="3rem" height="3rem">
                           {{ offer }}
                         </li> 
                       {% endfor %}

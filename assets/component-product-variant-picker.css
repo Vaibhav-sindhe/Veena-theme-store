@@ -201,3 +201,11 @@ variant-selects {
     position: absolute;
     width: 3rem;
 }
+
+.product-usp-container{
+  display: flex;
+  gap: 1rem;
+}
+.product-usp-container li{
+  list-style: none;
+}

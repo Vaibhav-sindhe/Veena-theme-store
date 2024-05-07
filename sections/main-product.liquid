@@ -633,6 +633,8 @@
               <!--Available Offers-->
               
               <!--product usp section-->
+              {%- when 'pdp-usp' -%}
+                <div>
                   <div class="product-usp">
                         <ul class="product-usp-container product-usp-container-images ">
                           {% for offer in  product.metafields.custom.product_usp.value%}
@@ -652,6 +654,7 @@
                       {% endfor %}
                     </ul> 
                   </div> 
+                </div>  
               <!--product usp section-->
 
 

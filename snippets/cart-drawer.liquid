@@ -32,7 +32,35 @@
     display:block"
   }
   
-
+  .drawer .container {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .drawer .cart-count-down-timer{
+    padding:0 6rem;
+  }
+  .drawer .cart-count-down-timer h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+  }
+  .drawer .cart-count-down-timer ul{
+    background:#f5f5f5;
+    border-radius:20px
+  }
+  .drawer .cart-count-down-timer li {
+    display: inline-block;
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 2em;
+    text-transform: uppercase;
+  }
+  
+  .drawer .cart-count-down-timer li span {
+    display: block;
+    font-size: 2.5rem;
+  }
 </style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
@@ -77,6 +105,7 @@
           {%- endif -%}
         </div>
       {%- endif -%}
+      {% if cart.item_count !=0 %}
       <div class="drawer__header-with-background">
         <div class="drawer__header">
           <h2 class="drawer__heading">Shopping cart ({{ cart.item_count }})</h2>
@@ -136,6 +165,7 @@
             </div>
         </div>
       </div>
+      {% endif %}
 
       <cart-drawer-items
         {% if cart == empty %}
@@ -176,9 +206,64 @@
                       <th id="CartDrawer-ColumnQuantity" role="columnheader">
                         <span class="visually-hidden">{{ 'sections.cart.headings.quantity' | t }}</span>
                       </th>
-                    </tr> {% endcomment %}
+                    </tr>  {% endcomment %}
+                   <div class="container">
+                      <div id="countdown" class="cart-count-down-timer">
+                        <ul>
+                          <li><span id="cart-days"></span>days</li>
+                          <li><span id="cart-hours"></span>Hours</li>
+                          <li><span id="cart-minutes"></span>Minutes</li>
+                          <li><span id="cart-seconds"></span>Seconds</li>
+                        </ul>
+                      </div>
+                    </div>
+                 <script>
+                      (function () {
+                        const second = 1000,
+                              minute = second * 60,
+                              hour = minute * 60,
+                              day = hour * 24;
+                      
+                        //I'm adding this section so I don't have to keep updating this pen every year :-)
+                        //remove this if you don't need it
+                        let today = new Date(),
+                            dd = String(today.getDate()).padStart(2, "0"),
+                            mm = String(today.getMonth() + 1).padStart(2, "0"),
+                            yyyy = today.getFullYear(),
+                            nextYear = yyyy + 1,
+                            dayMonth = "07/28/",
+                            birthday = dayMonth + yyyy;
+                        
+                        today = mm + "/" + dd + "/" + yyyy;
+                        if (today > birthday) {
+                          birthday = dayMonth + nextYear;
+                        }
+                        //end
+                        
+                        const countDown = new Date(birthday).getTime(),
+                            x = setInterval(function() {    
+                      
+                              const now = new Date().getTime(),
+                                    distance = countDown - now;
+                      
+                              document.getElementById("cart-days").innerText = Math.floor(distance / (day)),
+                                document.getElementById("cart-hours").innerText = Math.floor((distance % (day)) / (hour)),
+                                document.getElementById("cart-minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                                document.getElementById("cart-seconds").innerText = Math.floor((distance % (minute)) / second);
+                      
+                              //do something later when date is reached
+                              if (distance < 0) {
+                                document.getElementById("headline").innerText = "It's my birthday!";
+                                document.getElementById("countdown").style.display = "none";
+                                document.getElementById("content").style.display = "block";
+                                clearInterval(x);
+                              }
+                              //seconds
+                            }, 0)
+                        }());
+                    </script> 
                   </thead>
-
+              
                   <tbody role="rowgroup">
                     {%- for item in cart.items -%}
                       <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row">

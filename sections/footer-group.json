@@ -2,8 +2,58 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_footer_9rc8KU": {
+      "type": "custom-footer",
+      "blocks": {
+        "footer_block_M7GjpV": {
+          "type": "footer-block",
+          "settings": {
+            "title": "Quick links",
+            "list": "quick-links"
+          }
+        },
+        "footer_block_8UFLgC": {
+          "type": "footer-block",
+          "settings": {
+            "title": "Information",
+            "list": "information"
+          }
+        },
+        "footer_block_DtJ4cz": {
+          "type": "footer-block",
+          "settings": {
+            "title": "Extras",
+            "list": "extra"
+          }
+        }
+      },
+      "block_order": [
+        "footer_block_M7GjpV",
+        "footer_block_8UFLgC",
+        "footer_block_DtJ4cz"
+      ],
+      "settings": {
+        "store-image": "shopify:\/\/shop_images\/W_n_Veena.webp",
+        "contact-logo": "shopify:\/\/shop_images\/svgviewer-output_9.svg",
+        "contact-no": "+0123-456-789",
+        "address-icon": "shopify:\/\/shop_images\/svgviewer-output_17.svg",
+        "address": "4800 San Mateo Ln NE",
+        "email-icon": "shopify:\/\/shop_images\/svgviewer-output_18.svg",
+        "store-email": "demo@demo.com",
+        "additional-info": "Find a nearest Store location",
+        "enable-email-sub": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "icon-1": "shopify:\/\/shop_images\/svgviewer-output_7.svg",
+        "icon-2": "shopify:\/\/shop_images\/svgviewer-output_19.svg",
+        "icon-3": "shopify:\/\/shop_images\/svgviewer-output_20.svg",
+        "icon-4": "shopify:\/\/shop_images\/svgviewer-output_11.svg"
+      }
+    },
     "footer": {
       "type": "footer",
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
@@ -21,6 +71,7 @@
     }
   },
   "order": [
+    "custom_footer_9rc8KU",
     "footer"
   ]
 }

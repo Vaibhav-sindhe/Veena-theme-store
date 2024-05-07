@@ -1,5 +1,106 @@
 {
   "sections": {
+    "hero_slider_DJLNRU": {
+      "type": "hero-slider",
+      "blocks": {
+        "slide_dkHGtU": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/1.webp",
+            "heading": "Women's Apparel",
+            "description": "Elevate your wardrobe with our limited-time fashion offer!",
+            "button_label": "Explore Now",
+            "button_link": "shopify:\/\/collections",
+            "text_alignment": "center",
+            "content_position": "center"
+          }
+        },
+        "slide_pRdBfP": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/download_18878673-abc0-46a1-8c73-831a25238876.webp",
+            "heading": "Trendy Classics",
+            "description": "Discover Signature Look: Fashion Forward and Fabulous!",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections",
+            "text_alignment": "center",
+            "content_position": "center"
+          }
+        },
+        "slide_ajtFnT": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/download_f09de8bc-4995-45fd-99ce-0eb67071be1e.webp",
+            "heading": "Modern Elegance",
+            "description": "Step into the World of Style with the Latest Fashion Trends Unveiled!",
+            "button_label": "Explore Now",
+            "button_link": "shopify:\/\/collections",
+            "text_alignment": "center",
+            "content_position": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_dkHGtU",
+        "slide_pRdBfP",
+        "slide_ajtFnT"
+      ],
+      "settings": {
+      }
+    },
+    "animated_rich_text_TxFtP9": {
+      "type": "animated-rich-text",
+      "settings": {
+        "small_heading": "What You Wear",
+        "description": "Fashion Emerges As A Universal",
+        "button_label": "Explore More",
+        "button_link": "shopify:\/\/collections"
+      }
+    },
+    "custom_slideshow_9x8xx6": {
+      "type": "custom-slideshow",
+      "blocks": {
+        "slide_YYXGmV": {
+          "type": "Slide",
+          "settings": {
+            "heading": "Womens",
+            "button_laberl": "Explore more",
+            "button_link": "#"
+          }
+        },
+        "slide_iqqnDH": {
+          "type": "Slide",
+          "settings": {
+            "heading": "Fashion",
+            "button_laberl": "Explore more",
+            "button_link": "#"
+          }
+        },
+        "slide_iVqhFj": {
+          "type": "Slide",
+          "settings": {
+            "heading": "slide show",
+            "button_laberl": "Explore more",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "slide_YYXGmV",
+        "slide_iqqnDH",
+        "slide_iVqhFj"
+      ],
+      "disabled": true,
+      "settings": {
+        "auto_play": true,
+        "show_pagination": true,
+        "show_arrows": true,
+        "auto_play_duration": 2000,
+        "Slide_animation": "slide",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "slideshow_DChLY6": {
       "type": "slideshow",
       "blocks": {
@@ -63,6 +164,7 @@
         "slide_YpRyFx",
         "slide_ECnakm"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -74,91 +176,120 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "rich_text_7XM76V": {
-      "type": "rich-text",
+    "custom_section_ehRQ73": {
+      "type": "custom-section",
       "blocks": {
-        "text_4xbpU7": {
-          "type": "text",
+        "custom_block_WMrdJB": {
+          "type": "custom-block",
           "settings": {
-            "text": "<p>What You Wear<\/p>"
-          }
-        },
-        "heading_zriPjT": {
-          "type": "heading",
-          "settings": {
-            "heading": "Fashion Emerges As A Universal <a href=\"https:\/\/veena-theme-fashion.myshopify.com\/collections\" title=\"All collections\">Language<\/a>",
-            "heading_size": "h1"
-          }
-        },
-        "button_mC3tMr": {
-          "type": "button",
-          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4264.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_4264.jpg",
+            "pre_heading": "Women's",
+            "title": "<h3>Women's Clothing Collection<\/h3>",
             "button_label": "Explore",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "custom_block_JgU8rc": {
+          "type": "custom-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Rectangle_4265.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_4265.jpg",
+            "pre_heading": "Fashion",
+            "title": "<h3>Women's Sustainable Style Hub<\/h3>",
+            "button_label": "Explore",
+            "button_link": "shopify:\/\/collections"
           }
         }
       },
       "block_order": [
-        "text_4xbpU7",
-        "heading_zriPjT",
-        "button_mC3tMr"
+        "custom_block_WMrdJB",
+        "custom_block_JgU8rc"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "heading": "Business Formal Choices"
       }
     },
-    "multicolumn_77xRBA": {
-      "type": "multicolumn",
+    "captivating_collection_DA9fLL": {
+      "type": "captivating-collection",
       "blocks": {
-        "column_HbQNRH": {
-          "type": "column",
+        "captivating_block_KJVLrg": {
+          "type": "captivating-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4264.jpg",
-            "title": "Women's",
-            "text": "<h3>Women's Clothing Collection<\/h3>",
-            "link_label": "",
-            "link": ""
+            "collection": "accessories",
+            "title": "Accessories",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/accessories"
           }
         },
-        "column_Cx86D6": {
-          "type": "column",
+        "captivating_block_hPVt73": {
+          "type": "captivating-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4265.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "collection": "mens-jacket",
+            "title": "Men's Jacket",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/mens-jacket"
+          }
+        },
+        "captivating_block_PMYMpw": {
+          "type": "captivating-block",
+          "settings": {
+            "collection": "shoes",
+            "title": "Shoes",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/shoes"
+          }
+        },
+        "captivating_block_AFM64E": {
+          "type": "captivating-block",
+          "settings": {
+            "collection": "handbags",
+            "title": "Handbags",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/handbags"
+          }
+        },
+        "captivating_block_pniQVU": {
+          "type": "captivating-block",
+          "settings": {
+            "collection": "best-selling",
+            "title": "Best Selling",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/t-shirt"
+          }
+        },
+        "captivating_block_7xCBbi": {
+          "type": "captivating-block",
+          "settings": {
+            "collection": "t-shirt",
+            "title": "T shirt",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/t-shirt"
           }
         }
       },
       "block_order": [
-        "column_HbQNRH",
-        "column_Cx86D6"
+        "captivating_block_KJVLrg",
+        "captivating_block_hPVt73",
+        "captivating_block_PMYMpw",
+        "captivating_block_AFM64E",
+        "captivating_block_pniQVU",
+        "captivating_block_7xCBbi"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "Captivating Collection",
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": true,
+        "auto_play_duration": 2000,
+        "perpage": 5,
+        "tablet-perpage": 3,
+        "mobile-perpage": 2,
+        "per-move": 1,
+        "gap": 5,
+        "Slide_animation": "slide",
+        "button_label": "View  All",
+        "button_link": "shopify:\/\/collections"
       }
     },
     "collection_list_neQ7DV": {
@@ -167,31 +298,37 @@
         "featured_collection_RXUHbk": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "accessories"
           }
         },
         "featured_collection_Xmxd6R": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "mens-jacket"
           }
         },
         "featured_collection_XNFhLt": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "shoes"
           }
         },
         "featured_collection_KVJ7mz": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "handbags"
           }
         },
         "featured_collection_WFfggW": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "best-selling"
+          }
+        },
+        "featured_collection_znB4aK": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "t-shirt"
           }
         }
       },
@@ -200,8 +337,10 @@
         "featured_collection_Xmxd6R",
         "featured_collection_XNFhLt",
         "featured_collection_KVJ7mz",
-        "featured_collection_WFfggW"
+        "featured_collection_WFfggW",
+        "featured_collection_znB4aK"
       ],
+      "disabled": true,
       "settings": {
         "title": "Captivating Collection",
         "heading_size": "h1",
@@ -243,6 +382,79 @@
         "padding_bottom": 36
       }
     },
+    "marquee_collections_HDpU8k": {
+      "type": "marquee-collections",
+      "blocks": {
+        "custom_block_Bj7Vcr": {
+          "type": "custom-block",
+          "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_4.svg",
+            "pre_heading": "MEN'S CLOTHING COLLECTION",
+            "button_label": "Explore",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "custom_block_egW9rM": {
+          "type": "custom-block",
+          "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_4.svg",
+            "pre_heading": "WOMEN'S CLOTHING COLLECTION",
+            "button_label": "Explore",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "custom_block_BtrVm3": {
+          "type": "custom-block",
+          "settings": {
+            "image_collection": "shopify:\/\/shop_images\/svgviewer-output_5.svg",
+            "pre_heading": "NEW COLLECTION",
+            "button_label": "GRAB THIS OFFER",
+            "button_link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "custom_block_Bj7Vcr",
+        "custom_block_egW9rM",
+        "custom_block_BtrVm3"
+      ],
+      "settings": {
+        "heading": "Marquee Collections"
+      }
+    },
+    "men_women_image_with_text_A6rQxL": {
+      "type": "men-women-image-with-text",
+      "blocks": {
+        "custom_block_n8A44j": {
+          "type": "custom-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/download_55c8d8a7-47f2-42ee-a6be-d84df8ecfe2f.webp",
+            "image_mobile": "shopify:\/\/shop_images\/download_55c8d8a7-47f2-42ee-a6be-d84df8ecfe2f.webp",
+            "pre_heading": "Men's",
+            "title": "<h3>Introducing Our Distinguished Men's Clothing Collection<\/h3>",
+            "button_label": "Explore",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "custom_block_9E6Edr": {
+          "type": "custom-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/download_79f5c510-77e3-4ffb-bc85-fa60eb87d506.webp",
+            "pre_heading": "Women's",
+            "title": "<h3>Elevate Your Wardrobe With Our Women's Clothing Collection<\/h3>",
+            "button_label": "Explore",
+            "button_link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "custom_block_n8A44j",
+        "custom_block_9E6Edr"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "multicolumn_MY6e9w": {
       "type": "multicolumn",
       "blocks": {
@@ -271,6 +483,7 @@
         "column_D8ajQJ",
         "column_DHyhC4"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -288,16 +501,38 @@
         "padding_bottom": 36
       }
     },
+    "custom_countdown_timer_48gxrq": {
+      "type": "custom-countdown-timer",
+      "settings": {
+        "heading": "Our Women's Clothing Collection.",
+        "description": "<p>where fashion meets flair, and every outfit becomes a statement.<\/p>",
+        "button_label": "View All",
+        "button_link": "shopify:\/\/collections",
+        "text_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_custom_collection_z8mRYN": {
+      "type": "featured-custom-collection",
+      "settings": {
+        "heading": "Featured Collection",
+        "collection": "featured-collection",
+        "button_label": "See All Product",
+        "button_link": "shopify:\/\/collections\/featured-collection"
+      }
+    },
     "featured_collection_UNa7Fy": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
-        "products_to_show": 4,
+        "collection": "featured-collection",
+        "products_to_show": 25,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
@@ -306,7 +541,7 @@
         "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
@@ -316,32 +551,61 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_EMx8mq": {
-      "type": "featured-collection",
+    "usp_section_7dQ83b": {
+      "type": "usp-section",
+      "blocks": {
+        "usp_block_HcxGpN": {
+          "type": "usp-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/svgviewer-output.svg",
+            "heading": "Daily deals",
+            "description": "<p>that bring a touch of excitement to your everyday shopping<strong> <\/strong>experience<strong>.<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "usp_block_hMKU8F": {
+          "type": "usp-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/svgviewer-output_1.svg",
+            "heading": "Return Shipping",
+            "description": "<p>Business<strong> <\/strong>Formal<strong> <\/strong>Choicesreturn<strong> <\/strong>shipping costs unless the item received is damaged, defective<strong>,<\/strong> or incorrect.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "usp_block_eWUyJy": {
+          "type": "usp-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/svgviewer-output_2.svg",
+            "heading": "secure payment",
+            "description": "<p>We accept a variety of secure payment methods, including major credit cards.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "usp_block_jEJHzc": {
+          "type": "usp-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/svgviewer-output_3.svg",
+            "heading": "Help center",
+            "description": "<p>Absolutely, providing 24\/7 support is a great way to enhance customer satisfaction.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "usp_block_HcxGpN",
+        "usp_block_hMKU8F",
+        "usp_block_eWUyJy",
+        "usp_block_jEJHzc"
+      ],
+      "custom_css": [
+
+      ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": ""
       }
     },
     "multicolumn_aGEbGn": {
@@ -362,7 +626,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/svgviewer-output_1.svg",
             "title": "Return Shipping",
-            "text": "<p>return shipping costs unless the item received is damaged, defective, or incorrect.<\/p>",
+            "text": "<p><strong>return shipping costs unless the <\/strong>item received is damaged, defective, <strong>or incorrect.<\/strong><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -394,6 +658,7 @@
         "column_XqtRFd",
         "column_T9BTXV"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -464,6 +729,29 @@
         "padding_bottom": 36
       }
     },
+    "bottom_banner_a4zm9F": {
+      "type": "bottom-banner",
+      "blocks": {
+        "custom_block_zGcQej": {
+          "type": "custom-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/4_0d5cc573-820a-4e7b-8f22-af8438216522.webp",
+            "image_mobile": "shopify:\/\/shop_images\/4_0d5cc573-820a-4e7b-8f22-af8438216522.webp",
+            "pre_heading": "Introduce",
+            "title": "<h3>We Believe in the Power of Fashion<\/h3>",
+            "description": "<p>fashion emerges as the universal language that speaks volumes without words.<\/p>",
+            "button_label": "Show More",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "custom_block_zGcQej"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "image_banner_kaJN3D": {
       "type": "image-banner",
       "blocks": {
@@ -498,74 +786,110 @@
         "text_wPm8Uz",
         "buttons_6LgbmT"
       ],
+      "disabled": true,
       "settings": {
+        "image": "shopify:\/\/shop_images\/4_cc27b61c-7007-4489-97f1-e5a520261c92.webp",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
     },
-    "multicolumn_63kjQy": {
-      "type": "multicolumn",
+    "customer_review_3ihimd": {
+      "type": "customer-review",
       "blocks": {
-        "column_mpk3my": {
-          "type": "column",
+        "review_block_kPBkbN": {
+          "type": "review-block",
           "settings": {
-            "title": "Emma Watson",
-            "text": "<p>\"Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story. My followers can't get enough. His empathy, patience and expertise in fostering a positive environment is truly commendable.\"<\/p>",
-            "link_label": "",
-            "link": ""
+            "image_desktop": "shopify:\/\/shop_images\/1_2db38707-707e-4fd6-ab12-35397e8935de.webp",
+            "name": "Emma Watson",
+            "designation": "Fashion Blogger",
+            "description": "<p>\"Absolutely love the trendy collection! The quality is unmatched, and each piece tells a unique style story. My followers can't get enough. His empathy, patience and expertise in fostering a positive environment is truly commendable.\"<\/p>"
           }
         },
-        "column_QKbWQK": {
-          "type": "column",
+        "review_block_HxpTyk": {
+          "type": "review-block",
           "settings": {
-            "title": "James Harper",
-            "text": "<p>\"As a fashion editor, I've seen it all. This store stands out with its curated selection and attention to detail. The clothing is not just fashion; it's art in motion. His effective communication and ability to motivate and guide the sales team is second to none.\"<\/p>",
-            "link_label": "",
-            "link": ""
+            "image_desktop": "shopify:\/\/shop_images\/2_0b300886-b49e-4ef1-a786-f0b7f7ab2f2d.webp",
+            "name": "James Harper",
+            "designation": "Fashion Editor",
+            "description": "<p>\"As a fashion editor, I've seen it all. This store stands out with its curated selection and attention to detail. The clothing is not just fashion; it's art in motion. His effective communication and ability to motivate and guide the sales team is second to none.\"<\/p>"
           }
         },
-        "column_nrheeQ": {
-          "type": "column",
+        "review_block_Eem4r3": {
+          "type": "review-block",
           "settings": {
-            "title": "<strong>Sarah Mitchell<\/strong>",
-            "text": "<p>\"A go-to destination for my clients. The diversity in styles is impressive, catering to every taste. The quality and elegance never disappoint. Her quick response and innovative solutions make him an invaluable asset to our team.\"<\/p>",
-            "link_label": "",
-            "link": ""
+            "image_desktop": "shopify:\/\/shop_images\/3_b85a25e7-eff6-49ab-9fc7-ecdf71bb4ef1.webp",
+            "name": "Sarah Mitchell",
+            "designation": "Stylist",
+            "description": "<p>\"A go-to destination for my clients. The diversity in styles is impressive, catering to every taste. The quality and elegance never disappoint. Her quick response and innovative solutions make him an invaluable asset to our team.\"<\/p>"
+          }
+        },
+        "review_block_ixdKAk": {
+          "type": "review-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/4_e6c9abf8-cab4-4c51-8b5c-b87f6878ea97.webp",
+            "name": "Alex Rodriguez",
+            "designation": "Fashion Enthusiast",
+            "description": "<p>\"Being a fashion enthusiast, I'm always on the lookout for unique pieces. This store exceeds expectations with its exceptional customer service. Her attention to detail, and ability to meet deadlines have made every project a success.\"<\/p>"
+          }
+        },
+        "review_block_RHyrVM": {
+          "type": "review-block",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/5_b78ea225-2e52-4f93-8a24-3db56ef117ee.webp",
+            "name": "Grace Turner",
+            "designation": "Influencer",
+            "description": "<p>\"Obsessed with my recent purchases! The store's fashion-forward approach aligns perfectly with my style. The pieces are Instagram-worthy. His commitment to resolving issues have greatly contributed to our customer satisfaction levels.\"<\/p>"
           }
         }
       },
       "block_order": [
-        "column_mpk3my",
-        "column_QKbWQK",
-        "column_nrheeQ"
+        "review_block_kPBkbN",
+        "review_block_HxpTyk",
+        "review_block_Eem4r3",
+        "review_block_ixdKAk",
+        "review_block_RHyrVM"
       ],
       "settings": {
-        "title": "Our Customers Review",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "Our Customers Review",
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": true,
+        "auto_play_duration": 2000,
+        "perpage": 3,
+        "tablet-perpage": 3,
+        "mobile-perpage": 1,
+        "per-move": 1,
+        "gap": 15,
+        "Slide_animation": "slide"
+      }
+    },
+    "letyou_know_8DGxVc": {
+      "type": "letyou-know",
+      "settings": {
+        "heading": "Let You Know",
+        "blog": "veena-blog",
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": true,
+        "auto_play_duration": 2000,
+        "perpage": 2,
+        "tablet-perpage": 2,
+        "mobile-perpage": 1,
+        "gap": 20,
+        "Slide_animation": "slide"
       }
     },
     "featured_blog_AXCGM8": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h1",
@@ -581,92 +905,81 @@
         "padding_bottom": 36
       }
     },
-    "collapsible_content_HqAnQH": {
-      "type": "collapsible-content",
+    "custom_faq_section_ALBUqa": {
+      "type": "custom-faq-section",
       "blocks": {
-        "collapsible_row_Gq6WzU": {
-          "type": "collapsible_row",
+        "custom_faq_block_YcH3ay": {
+          "type": "custom-faq-block",
           "settings": {
-            "heading": "1. How can I track my order?",
-            "icon": "none",
-            "row_content": "<p>Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and location of your package through our shipping carrier's website.<\/p>",
-            "page": ""
+            "question": "How can I track my order?",
+            "answer": "<p>Once your order has been processed and shipped, you will receive a confirmation email with a tracking number. You can use this tracking number to monitor the status and location of your package through our shipping carrier's website.<\/p>"
           }
         },
-        "collapsible_row_DfYPEe": {
-          "type": "collapsible_row",
+        "custom_faq_block_L7Cigz": {
+          "type": "custom-faq-block",
           "settings": {
-            "heading": "2.What is your return policy?",
-            "icon": "none",
-            "row_content": "<p>We offer a hassle-free return policy. If you're not completely satisfied with your purchase, you can return it within 30 days for a full refund or exchange. Please visit our Returns & Exchanges page for more details on the process and any eligibility criteria.<\/p>",
-            "page": ""
+            "question": "What is your return policy?",
+            "answer": "<p>We offer a hassle-free return policy. If you're not completely satisfied with your purchase, you can return it within 30 days for a full refund or exchange. Please visit our Returns & Exchanges page for more details on the process and any eligibility criteria.<\/p>"
           }
         },
-        "collapsible_row_cr8QcN": {
-          "type": "collapsible_row",
+        "custom_faq_block_3azGz6": {
+          "type": "custom-faq-block",
           "settings": {
-            "heading": "3. Are the product images accurate representations of the items?",
-            "icon": "none",
-            "row_content": "<p>Yes, we strive to provide accurate and high-quality images of our products. However, please note that colors may vary slightly due to differences in monitor settings. If you have any specific questions about a product, feel free to contact our customer support team.<\/p>",
-            "page": ""
+            "question": "Are the product images accurate representations of the items?",
+            "answer": "<p>Yes, we strive to provide accurate and high-quality images of our products. However, please note that colors may vary slightly due to differences in monitor settings. If you have any specific questions about a product, feel free to contact our customer support team.<\/p>"
           }
         },
-        "collapsible_row_VePFDp": {
-          "type": "collapsible_row",
+        "custom_faq_block_Jn9tHw": {
+          "type": "custom-faq-block",
           "settings": {
-            "heading": "4. How do I determine my size?",
-            "icon": "none",
-            "row_content": "<p>To find the right size, please refer to our detailed size guide available on each product page. Measurements may vary by product, so it's essential to check the specific sizing information provided. If you have further questions or need assistance, our customer support team is here to help.<\/p>",
-            "page": ""
+            "question": "How do I determine my size?",
+            "answer": "<p>To find the right size, please refer to our detailed size guide available on each product page. Measurements may vary by product, so it's essential to check the specific sizing information provided. If you have further questions or need assistance, our customer support team is here to help.<\/p>"
           }
         },
-        "collapsible_row_FTzP9n": {
-          "type": "collapsible_row",
+        "custom_faq_block_jp6bfD": {
+          "type": "custom-faq-block",
           "settings": {
-            "heading": "5. What payment methods do you accept?",
-            "icon": "none",
-            "row_content": "<p>We accept a variety of payment methods, including major credit cards (Visa, MasterCard, American Express), PayPal, and other secure payment options. During the checkout process, you can choose the payment method that suits you best.<\/p>",
-            "page": ""
+            "question": "What payment methods do you accept?",
+            "answer": "<p>We accept a variety of payment methods, including major credit cards (Visa, MasterCard, American Express), PayPal, and other secure payment options. During the checkout process, you can choose the payment method that suits you best.<\/p>"
           }
         }
       },
       "block_order": [
-        "collapsible_row_Gq6WzU",
-        "collapsible_row_DfYPEe",
-        "collapsible_row_cr8QcN",
-        "collapsible_row_VePFDp",
-        "collapsible_row_FTzP9n"
+        "custom_faq_block_YcH3ay",
+        "custom_faq_block_L7Cigz",
+        "custom_faq_block_3azGz6",
+        "custom_faq_block_Jn9tHw",
+        "custom_faq_block_jp6bfD"
       ],
       "settings": {
-        "caption": "",
         "heading": "FAQ",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "description": "Ensure that your FAQs are regularly updated based on common customer queries and changes in your business operations."
       }
     }
   },
   "order": [
+    "hero_slider_DJLNRU",
+    "animated_rich_text_TxFtP9",
+    "custom_slideshow_9x8xx6",
     "slideshow_DChLY6",
-    "rich_text_7XM76V",
-    "multicolumn_77xRBA",
+    "custom_section_ehRQ73",
+    "captivating_collection_DA9fLL",
     "collection_list_neQ7DV",
     "featured_collection_aFRbqt",
+    "marquee_collections_HDpU8k",
+    "men_women_image_with_text_A6rQxL",
     "multicolumn_MY6e9w",
+    "custom_countdown_timer_48gxrq",
+    "featured_custom_collection_z8mRYN",
     "featured_collection_UNa7Fy",
-    "featured_collection_EMx8mq",
+    "usp_section_7dQ83b",
     "multicolumn_aGEbGn",
     "multicolumn_EmEHwx",
+    "bottom_banner_a4zm9F",
     "image_banner_kaJN3D",
-    "multicolumn_63kjQy",
+    "customer_review_3ihimd",
+    "letyou_know_8DGxVc",
     "featured_blog_AXCGM8",
-    "collapsible_content_HqAnQH"
+    "custom_faq_section_ALBUqa"
   ]
 }

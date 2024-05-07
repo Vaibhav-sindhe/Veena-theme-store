@@ -225,3 +225,35 @@
     display: list-item;
   }
 }
+
+
+
+
+.multicolumn{
+  background: #f5f5f5;  
+}
+.multicolumn-card__info{
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.multicolumn .inline-richtext{
+  font-size: 2rem;
+}
+.animate-arrow{
+  background: linear-gradient(to right,rgb(208, 60, 63) 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.4s ease;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.multicolumn .animate-arrow:after{
+  box-shadow: none;
+}
+.multicolumn .animate-arrow:hover {
+  background-position: left bottom;
+}

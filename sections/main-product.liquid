@@ -136,15 +136,15 @@
                   id="Inventory-{{ section.id }}"
                   role="status"
                 >
+                  <span class="{% if product.selected_or_first_available_variant.inventory_quantity==0 %} out-of-stock {% elsif product.selected_or_first_available_variant.inventory_quantity>10 %}in-stock {% else %} not-in-stock{% endif %}">
                   {%- if product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
                     {%- if product.selected_or_first_available_variant.inventory_quantity > 0 -%}
                       {%- if product.selected_or_first_available_variant.inventory_quantity
                           <= block.settings.inventory_threshold
                       -%}
-                        <svg width="15" height="15" aria-hidden="true">
-                          <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(238,148,65, 0.3)"/>
-                          <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(238,148,65)"/>
-                        </svg>
+                      <svg fill="#ff0000" width="15" height="15" viewBox="0 0 15 15" version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14,7.5c0,3.5899-2.9101,6.5-6.5,6.5S1,11.0899,1,7.5S3.9101,1,7.5,1S14,3.9101,14,7.5z"/>
+                      </svg>
                         {%- if block.settings.show_inventory_quantity -%}
                           {{-
                             'products.product.inventory_low_stock_show_count'
@@ -154,10 +154,9 @@
                           {{- 'products.product.inventory_low_stock' | t -}}
                         {%- endif -%}
                       {%- else -%}
-                        <svg width="15" height="15" aria-hidden="true">
-                          <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(62,214,96, 0.3)"/>
-                          <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(62,214,96)"/>
-                        </svg>
+                      <svg fill="#008a00" width="12" height="12" viewBox="0 0 15 15" version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14,7.5c0,3.5899-2.9101,6.5-6.5,6.5S1,11.0899,1,7.5S3.9101,1,7.5,1S14,3.9101,14,7.5z"/>
+                      </svg>
                         {%- if block.settings.show_inventory_quantity -%}
                           {{-
                             'products.product.inventory_in_stock_show_count'
@@ -175,15 +174,39 @@
                         </svg>
                         {{- 'products.product.inventory_out_of_stock_continue_selling' | t -}}
                       {%- else -%}
-                        <svg width="15" height="15" aria-hidden="true">
-                          <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(200,200,200, 0.3)"/>
-                          <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(200,200,200)"/>
-                        </svg>
+                      <svg fill="gray" width="12" height="12" viewBox="0 0 15 15" version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14,7.5c0,3.5899-2.9101,6.5-6.5,6.5S1,11.0899,1,7.5S3.9101,1,7.5,1S14,3.9101,14,7.5z"/>
+                      </svg>
                         {{- 'products.product.inventory_out_of_stock' | t -}}
                       {%- endif -%}
                     {%- endif -%}
                   {%- endif -%}
+                  </span>
                 </p>
+
+
+                {% comment %} progress bar {% endcomment %}
+                {% assign inventory=product.selected_or_first_available_variant.inventory_quantity %}
+                {% assign upperlimit=product.selected_or_first_available_variant.metafields.custom.inventory_upperlimit %}
+                {% if upperlimit==blank or upperlimit<inventory %}
+                  {% assign upperlimit=100 %}
+                {% endif %}  
+               
+                
+              {%- when 'progress-bar' -%}
+                {% assign widthpercent=inventory | times : 100 | divided_by:upperlimit  %}
+                <div id="progress-bar">
+                {% if inventory!=0 %}
+                <div class="progress-bar">
+                  <span class="in-stock-bar" 
+                    style="width:{{ widthpercent }}%;  
+                    {% if inventory >10 %} background:green; {% else %}background:red;{% endif %}"></span>  
+                  <span class="not-in-stock-bar"></span>  
+                </div>
+                {% endif %}
+              </div>
+
+
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
@@ -454,6 +477,193 @@
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+
+                <!-- offer section -->
+
+              {%- when 'Variant-offer' -%}
+                <div id="coupen">
+                {% if product.selected_or_first_available_variant.metafields.custom.coupen !=blank %}
+                  <variant-offer class="coupon">
+                    <div class="left">
+                      <div>{{ block.settings.offer_title }}</div>
+                    </div>
+                    <div class="center">
+                      <div>
+                        <!--
+                          <h2 class="coupen-code" id="coupon-code">{{ product.metafields.custom.product_coupen }}</h2>
+                        -->
+                        <h2 class="coupen-code" id="coupen-code-{{ section.id }}" data-code='{{  product.selected_or_first_available_variant.metafields.custom.coupen }}'>
+                          {{ product.selected_or_first_available_variant.metafields.custom.coupen }}
+                        </h2>
+                        <h3>Coupon</h3>
+                        <button id="copy-coupen">Copy</button>
+                      </div>
+                    </div>
+
+                    <div class="varient-right">
+                      <div>87878521112</div>
+                    </div>
+                  </variant-offer>
+                {% endif %}
+              </div>
+                <!-- offer section -->
+
+
+
+                <!--pincode checker section-->
+                {% comment %} {%- when 'pincode-checker' -%} {% endcomment %}
+                  {% comment %} <pincode-checker class="container">
+                    <h3>{{ block.settings.pincode-title }}</h3>
+                    <input type="number" class="pinInput" id="pinInput" placeholder="Enter 6 digit pin code">
+                    <button class="checkPin button">Check</button>
+                    <p id="result"></p>
+
+                    <div class="toasts"></div>
+                    <div class="master-toast-notification hide-toast">
+                      <div class="toast-content">
+                        <div class="toast-icon">
+                          <i class="fa-solid"></i>
+                        </div>
+                        <div class="toast-msg"></div>
+                      </div>
+                      <div class="toast-progress">
+                        <div class="toast-progress-bar"></div>
+                      </div>
+                    </div>
+                  </pincode-checker> {% endcomment %}
+                <!--pincode checker section-->
+
+                
+
+                <!--pincode checker section using google sheets-->
+                {%- when 'pincode-checker' -%}
+                    <pincode-checker>
+                      <h3>{{ block.settings.pincode-title }}</h3>
+                      <div class="pincode-checker container">
+                        <div>
+                          <input class="pinInput" id="PincodeInput" type="text" name="pincode-input" placeholder="Enter Pincode">
+                          {% comment %} <label class="field__label" for="PincodeInput">Enter Pincode</label> {% endcomment %}
+                        </div>
+                        <button type="button" class="button pincode-checker__button" name="pincode-submit">Check</button>
+                      </div>
+                      <div class="pincode-message text-body is-hidden" name="pincode-message"></div>
+                    </pincode-checker>
+
+
+                <!--pincode checker section using google sheets-->
+
+
+
+
+
+
+
+
+
+
+
+                <!--payment methods-->
+                {% comment %} {%- if section.settings.payment_enable -%} {% endcomment %}
+                {%- when 'payment-method' -%}
+                  <div class="product-payment-method">
+                    <h2>{{block.settings.payment-method-title }}</h2>
+                    {% comment %} <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span> {% endcomment %}
+                    <ul class="list list-payment" role="list">
+                      {%- for type in shop.enabled_payment_types -%}
+                        <li class="list-payment__item">
+                          {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                {% comment %} {%- endif -%} {% endcomment %}
+              <!--payment methods-->
+ 
+              <!--product details-->
+              {%- when 'product-details-dropdown' -%}
+              {% if product.metafields.custom.product_details!=blank %}  
+                <details class="product-details">
+                  <summary class="product-details--title">
+                    <svg class="icon icon-accordion" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                      <path d="M7.63356 11.3048L7.5176 11.294C6.03849 11.1571 5.29894 11.0885 5.06402 10.5732C4.82911 10.0581 5.25496 9.43836 6.10668 8.19914L9.57517 3.15246C10.1378 2.33379 10.41921.92446 10.6618 2.01151C10.9044 2.09854 10.8718 2.59709 10.8065 3.5942L10.6098 6.60011C10.5504 7.50746 10.5207 7.96113 10.7767 8.26644C11.0327 8.57175 11.4773 8.61292 12.3664 8.69524L12.4824 8.70598C13.9615 8.84293 14.7011 8.91141 14.936 9.42665C15.1709 9.94194 14.745 10.5616 13.8933 11.8008L10.4248 16.8475C9.86215 17.6661 9.58082 18.0755 9.33819 17.9885C9.09556 17.9014 9.12819 17.4029 9.19346 16.4058L9.39021 13.3999C9.4496 12.4925 9.4793 12.0389 9.22331 11.7335C8.96733 11.4282 8.52274 11.3871 7.63356 11.3048Z"></path>
+                    </svg>
+                    {{block.settings.product-details-title}}
+                    {% render "icon-caret" %}
+                  </summary>
+                  {{product.metafields.custom.product_details | metafield_tag  }}
+                </details>
+              {% endif %}
+              <!--product details-->
+
+
+              <!--shipping and return-->
+              {%- when 'shipping-return-dropdown' -%}
+                {% if product.metafields.custom.product_details!=blank %}  
+                  <details class="Shipping-return">
+                  <summary class="Shipping-return--title">
+                    <svg class="icon icon-accordion" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                      <path d="M18.5 1.5H1.5L1.5 18.5H18.5V1.5ZM1.5 0.5C0.947715 0.5 0.5 0.947715 0.5 1.5V18.5C0.5 19.0523 0.947715 19.5 1.5 19.5H18.5C19.0523 19.5 19.5 19.0523 19.5 18.5V1.5C19.5 0.947715 19.0523 0.5 18.5 0.5H1.5Z" fill-rule="evenodd"></path>
+                      <path d="M14.9975 6.09084C15.201 6.27746 15.2147 6.59375 15.0281 6.79728L8.91631 13.4627C8.82231 13.5652 8.68987 13.6239 8.55079 13.6247C8.41172 13.6256 8.27857 13.5684 8.18335 13.4671L4.99513 10.0731C4.80606 9.87179 4.81596 9.55536 5.01723 9.3663C5.21849 9.17723 5.53492 9.18713 5.72399 9.3884L8.54335 12.3897L14.291 6.12145C14.4776 5.91791 14.7939 5.90421 14.9975 6.09084Z"></path>
+                    </svg>
+                    {{block.settings.shipping-return-title}}
+                    {% render "icon-caret" %}
+                  </summary>
+                  {{product.metafields.custom.product_details | metafield_tag  }}
+                </details>
+              {% endif %}
+              <!--shipping and return-->
+              
+
+              <!--Available Offers-->
+              {%- when 'available-offers' -%}
+              <div class="available-offers">
+                <h3>{{ block.settings.available-offer-title}}</h3>
+                <ul class="available-offers--allOffers">
+                  {% for offer in  product.metafields.custom.available_offer.value %}
+                    <li>
+                      <svg class="icon icon-accordion" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#008a00">
+                      <path d="M22.194,9.023L13.177,.006,4.9,.903l.215,1.988,7.325-.793,8.34,8.339c.296,.296,.296,.777-.012,1.084l-.962,.994L11.099,3.808,1.962,5.057,.953,14.18l9.013,9.012c.521,.521,1.213,.808,1.95,.808s1.43-.287,1.962-.819l6.244-6.449c.665-.665,.916-1.588,.759-2.451l1.314-1.357c1.075-1.076,1.075-2.826,0-3.901Zm-16.194,.977c-.552,0-1-.448-1-1,0-.552,.448-1,1-1,.552,0,1,.448,1,1s-.448,1-1,1Z"></path>                  
+                      </svg>{{offer | metafield_tag }}
+                    </li> 
+                  {% endfor %}
+                </ul> 
+              </div> 
+              <!--Available Offers-->
+              
+
+              <!--custom add to cart-->
+              {% when 'bundles' %}
+                {% if product.metafields.custom.bundles.value!=blank %}
+                    <div class="product-bundle-wrapper">
+                      <div class="product-bundle">
+                          <h2 class="product-bundle__heading">{{ section.settings.bundle_heading }}</h2>
+                          <div class="product-bundle-container">
+                              <product-bundle class="product-bundle__grid " data-section-id="{{ section.id }}">
+                                  {% for product in product.metafields.custom.bundles.value %}
+                                      <input class="bundle-checkbox" data-product-id="{{ product.selected_or_first_available_variant.id }}"
+                                      value="{{  product.selected_or_first_available_variant.id }}"
+                                      type="checkbox"
+                                      >
+                                      <div class="product-bundle__grid-item product-bundles">
+                                          {% render 'custom-product-card',
+                                          product: product,
+                                          section_id: section.id
+                                          %}
+                                      </div>
+                                  {% endfor %}
+                                  <div id="bundle__atc"
+                                  class="button custom-atc__hover-button"
+                                  data-product-id="{{ product.id }}"
+                                  data-variant-id="{{ product.selected_variant.id }}"
+                                  data-section-id="{{ section.id }}"
+                                  >Add to cart</div>
+                              </product-bundle>
+                          </div>
+                      </div>
+                    </div>
+              {% endif %}
+            <!--custom add to cart-->
+ 
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
@@ -818,6 +1028,103 @@
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
       "limit": 1
+    },
+    {
+      "type": "Variant-offer",
+      "name":"Varient offer",
+      "settings": [
+        {
+          "type":"text",
+          "id": "offer_title",
+          "label":"Offer title"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "pincode-checker",
+      "name":"Pincode checker",
+      "settings": [
+        {
+          "type":"text",
+          "id": "pincode-title",
+          "label":"Pincode title"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "progress-bar",
+      "name":"Progress bar",
+      "settings": [
+        {
+          "type":"text",
+          "id": "progress-bar-title",
+          "label":"progress-bar title"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "payment-method",
+      "name":"Payment method",
+      "settings": [
+        {
+          "type":"text",
+          "id": "payment-method-title",
+          "label":"Payment method title"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "product-details-dropdown",
+      "name":"Product details dropdown",
+      "settings": [
+        {
+          "type":"text",
+          "id": "product-details-title",
+          "label":"Product details title"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "shipping-return-dropdown",
+      "name":"Shipping return dropdown",
+      "settings": [
+        {
+          "type":"text",
+          "id": "shipping-return-title",
+          "label":"Shipping return title"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "available-offers",
+      "name":"Offers list",
+      "settings": [
+        {
+          "type":"text",
+          "id": "available-offer-title",
+          "label":"Offer title"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "bundles",
+      "name":"Product Bundles",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "bundle_heading",
+          "label": "Bundle Heading",
+          "default": "Frequently bought together"
+        }
+      ]
     },
     {
       "type": "price",

@@ -261,10 +261,11 @@
 
 .facets__summary .icon-caret {
   right: 0;
+  transition: 0.5s ease all;
 }
 
 .facets__display {
-  border-width: var(--popup-border-width);
+  border-width: var(--popup-border-width); 
   border-style: solid;
   border-color: rgba(var(--color-foreground), var(--popup-border-opacity));
   border-radius: var(--popup-corner-radius);
@@ -403,9 +404,9 @@
 .facet-checkbox .icon-checkmark {
   visibility: hidden;
   position: absolute;
-  left: 0.3rem;
+  /* left: 0.3rem; */
   z-index: 5;
-  top: 1.4rem;
+  /* top: 1.4rem; */
 }
 
 .facet-checkbox > input[type='checkbox']:checked ~ .icon-checkmark {
@@ -933,8 +934,8 @@ input.mobile-facets__checkbox {
 
 .mobile-facets__label .icon-checkmark {
   position: absolute;
-  top: 1.9rem;
-  left: 2.8rem;
+  /* top: 1.9rem;
+  left: 2.8rem; */
   visibility: hidden;
 }
 
@@ -1061,7 +1062,8 @@ input.mobile-facets__checkbox {
 
   .facets__heading--vertical {
     margin: 0 0 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
   }
 
   .facets__header-vertical {
@@ -1091,7 +1093,10 @@ input.mobile-facets__checkbox {
 
   .facets-vertical-form {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; 
+    background: #f5f5f5;
+    padding: 2rem 1rem;
+    border-radius: 15px;
   }
 
   .product-count-vertical {
@@ -1187,5 +1192,46 @@ input.mobile-facets__checkbox {
 
   .facets-vertical .active-facets__button-remove {
     padding: 0 1rem 1rem;
+  }
+}
+
+
+.facet-checkbox{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.facet-checkbox .color-swatch{
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+.display-none{
+  display: none;
+}
+.list-unstyled{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+}
+.facet-checkbox__text{
+  width: 7rem;
+  color: black;
+  font-weight: 600;
+}
+@media (max-width: 1199px) {
+  .list-unstyled {
+      grid-template-columns: 100%;
+  }
+}
+
+
+@media (max-width:749px) {
+  .facet-checkbox__text {
+    width: 14rem;
+  }  
+  .mobile-facets__label{
+    gap: 1rem;
   }
 }

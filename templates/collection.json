@@ -4,33 +4,55 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
+        "show_collection_image": true,
+        "color_scheme": "scheme-3"
+      }
+    },
+    "custom_bread_crum_GjzrgK": {
+      "type": "custom-bread-crum",
+      "settings": {
+        "heading": ""
       }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
+        "products_per_page": 12,
+        "columns_desktop": 3,
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
+        "show_secondary_image": true,
+        "show_vendor": true,
         "show_rating": false,
         "enable_quick_add": false,
         "enable_filtering": true,
-        "filter_type": "horizontal",
+        "filter_type": "vertical",
         "enable_sorting": true,
         "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "editorial-image-1": "shopify:\/\/shop_images\/download_f7af6794-b9d4-4d07-9806-538af1aa0c7d.webp",
+        "editorial-preheading-1": "Flash Sale",
+        "editorial-title-1": "Glamorous Style Showcase",
+        "editorial-description-1": "Image Description",
+        "editorial-button-label-1": "Explore More",
+        "editorial-image-2": "shopify:\/\/shop_images\/download_462e2010-b04f-4bec-ad08-65f7ee05d73a.webp",
+        "editorial-preheading-2": "Summer Vibes",
+        "editorial-title-2": "Exclusive Offers",
+        "editorial-description-2": "",
+        "editorial-button-label-2": "Shop Now",
+        "editorial-image-3": "shopify:\/\/shop_images\/download_2eba86c0-bb88-4e7e-b92b-dc2d1d80556c.webp",
+        "editorial-preheading-3": "Runway Ready",
+        "editorial-title-3": "Trendy Fashion Finds",
+        "editorial-description-3": "",
+        "editorial-button-label-3": "Explore Now"
       }
     }
   },
   "order": [
     "banner",
+    "custom_bread_crum_GjzrgK",
     "product-grid"
   ]
 }

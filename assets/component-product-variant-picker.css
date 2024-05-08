@@ -89,6 +89,7 @@ variant-selects {
   display: block;
   height: 3rem;
   width: 3rem;
+  border: 1px solid #cdcccc;
 }
 .product-form__input--pill input[type='radio'] + label:before {
   content: '';

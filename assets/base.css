@@ -115,6 +115,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 .utility-bar__grid.page-width {
   padding-left: 3rem;
   padding-right: 3rem;
+  background: #d03c3f;
 }
 
 @media screen and (min-width: 750px) {
@@ -2280,6 +2281,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   margin: 0;
   letter-spacing: 0.1rem;
   min-height: 3.8rem;
+  color: white;
 }
 
 .announcement-bar-slider--fade-in-next .announcement-bar__message,

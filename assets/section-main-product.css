@@ -1580,7 +1580,7 @@ a.product__text {
   transform: rotate(-90deg);
 }
 
-.center h2 {
+#coupen .center h2 {
   background: #000;
   color: gold;
   padding: 0 10px;

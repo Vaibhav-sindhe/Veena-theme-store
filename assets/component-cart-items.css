@@ -113,6 +113,7 @@ cart-items .title-wrapper-with-link {
 .product-option {
   font-size: 1.4rem;
   word-break: break-word;
+  color: black;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
 }
 
@@ -155,8 +156,9 @@ cart-remove-button .button:not([disabled]):hover {
 }
 
 cart-remove-button .icon-remove {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 4.5rem;
+  width: 2.4rem;
+  cursor: pointer;
 }
 
 .cart-item .loading__spinner {
@@ -357,4 +359,9 @@ cart-remove-button .icon-remove {
   .cart-items .quantity-popover__info-button {
     padding-left: 1.5rem;
   }
+}
+.underlined-link{
+  text-decoration: underline!important;
+  color: black;
+  font-weight: bolder;
 }

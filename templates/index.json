@@ -955,6 +955,77 @@
         "heading": "FAQ",
         "description": "Ensure that your FAQs are regularly updated based on common customer queries and changes in your business operations."
       }
+    },
+    "custom_hotspot_JyABBV": {
+      "type": "custom-hotspot",
+      "blocks": {
+        "image_card_DyBk3L": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_46e8cdd2-0a3d-4ab2-87ee-3ecb7fb86b39.webp",
+            "heading": "Women's Winter Clothes",
+            "description": "Welcome the season in style with our Women's Winter Clothes Collection – where warmth meets sophistication.",
+            "button_link": "shopify:\/\/collections",
+            "button_label": "Discover More",
+            "hotspot1_label": "",
+            "hotspot1_product_name": "Women's Casual Sweaters",
+            "hotspot1_product_price": "2,300",
+            "hotspot1_image": "shopify:\/\/shop_images\/3_6efbf5ad-22a7-420f-abfe-a318be074bef.webp",
+            "hotspot1_top": "20",
+            "hotspot1_left": "40",
+            "hotspot2_label": "",
+            "hotspot2_product_name": "",
+            "hotspot2_product_price": "",
+            "hotspot2_top": "",
+            "hotspot2_left": ""
+          }
+        },
+        "image_card_Bfzgr4": {
+          "type": "image_card",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "button_link": "",
+            "button_label": "",
+            "hotspot1_label": "",
+            "hotspot1_product_name": "",
+            "hotspot1_product_price": "",
+            "hotspot1_top": "",
+            "hotspot1_left": "",
+            "hotspot2_label": "",
+            "hotspot2_product_name": "",
+            "hotspot2_product_price": "",
+            "hotspot2_top": "",
+            "hotspot2_left": ""
+          }
+        },
+        "image_card_yedcR8": {
+          "type": "image_card",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "button_link": "",
+            "button_label": "",
+            "hotspot1_label": "",
+            "hotspot1_product_name": "",
+            "hotspot1_product_price": "",
+            "hotspot1_top": "",
+            "hotspot1_left": "",
+            "hotspot2_label": "",
+            "hotspot2_product_name": "",
+            "hotspot2_product_price": "",
+            "hotspot2_top": "",
+            "hotspot2_left": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_card_DyBk3L",
+        "image_card_Bfzgr4",
+        "image_card_yedcR8"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -980,6 +1051,7 @@
     "customer_review_3ihimd",
     "letyou_know_8DGxVc",
     "featured_blog_AXCGM8",
-    "custom_faq_section_ALBUqa"
+    "custom_faq_section_ALBUqa",
+    "custom_hotspot_JyABBV"
   ]
 }

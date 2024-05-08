@@ -1851,3 +1851,14 @@ a.product__text {
 .product-usp-container-title li{
   margin-left:35px ;
 }
+
+.shopify-payment-button__button{
+  background: #d03c3f;
+}
+.shopify-payment-button__button::after{
+  box-shadow: none;
+}
+.product-form__buttons .product-form__submit{
+  background: black;
+  color: white;
+}

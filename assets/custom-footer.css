@@ -186,6 +186,16 @@
 .custom-footer a:hover{
     color:#d03c3f;
 }
+@media (max-width:1300px) {
+    .custom-footer-bottom--navContainer {
+        gap: 2rem;
+    }
+    .custom-footer--email-inputContainer {
+        width: 28%;
+    }.custom-footer--email-inputContainer .newsletter-form .week-6-email--input {
+        width: 15rem;
+    }
+}    
 @media (max-width:750px) {
     .custom-footer--top-bar{
         display: flex;

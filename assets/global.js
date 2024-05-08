@@ -1371,6 +1371,13 @@ class VariantSelects extends HTMLElement {
           oldProgressbar.innerHTML = updatedProgressbar.innerHTML;
         }
 
+        //cart footer progress bar
+        if (html.getElementById("cart-footer-progress-bar")) {
+          let updatedCartProgressbar = html.getElementById("cart-footer-progress-bar");
+          let oldCartProgressbar = document.getElementById("cart-footer-progress-bar");
+          oldCartProgressbar.innerHTML = updatedCartProgressbar.innerHTML;
+        }
+
         //custom add to cart
         if (html.getElementById("custom-add-toCart")) {
           let updatedCustomAddToCart = html.getElementById("custom-add-toCart");

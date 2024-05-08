@@ -226,10 +226,24 @@ cart-items {
     margin-top: 15px;
   }
   .cart__ctas .button{
-    width: 45%;
-    background: #d03c3f;
+    width: 100%;
   }
   .cart__ctas .button::after{
     box-shadow: none;
   }
+}
+
+.quantity-popover-container .quantity{
+  border: 1px solid gray;
+  border-radius: 25px;
+}
+.quantity-popover-container .quantity:after{
+  content: none;
+}
+.cart__footer .cart__note .text-area{
+  border: 1px solid gray;
+  border-radius: 20px 20px 0 20px;
+}
+.cart__footer .cart__note::after{
+  content: none;
 }

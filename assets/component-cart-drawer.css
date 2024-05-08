@@ -186,7 +186,7 @@ cart-drawer {
 }
 
 .cart-drawer thead {
-  display: inline-table;
+  /* display: inline-table; */
   width: 100%;
 }
 
@@ -226,7 +226,7 @@ cart-drawer-items {
 }
 
 .cart-drawer .cart-items thead {
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .cart-drawer .cart-items thead th:first-child,

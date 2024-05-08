@@ -1006,20 +1006,23 @@
         "image_card_yedcR8": {
           "type": "image_card",
           "settings": {
-            "heading": "",
-            "description": "",
-            "button_link": "",
-            "button_label": "",
+            "image": "shopify:\/\/shop_images\/download_c4bf6643-c71c-452b-9369-7b08ed28c70c.webp",
+            "heading": "Women's Outdoor Clothes Collection",
+            "description": "Embrace the beauty of nature with gear that complements your adventurous spirit.",
+            "button_link": "shopify:\/\/collections",
+            "button_label": "Discover more",
             "hotspot1_label": "",
-            "hotspot1_product_name": "",
-            "hotspot1_product_price": "",
-            "hotspot1_top": "",
-            "hotspot1_left": "",
+            "hotspot1_product_name": "Womens Oversized Hoodie",
+            "hotspot1_product_price": "Rs. 2,200.00",
+            "hotspot1_image": "shopify:\/\/shop_images\/6_966e54cb-1cb1-47a0-aa3b-e3493f2544cd.webp",
+            "hotspot1_top": "20",
+            "hotspot1_left": "40",
             "hotspot2_label": "",
-            "hotspot2_product_name": "",
-            "hotspot2_product_price": "",
-            "hotspot2_top": "",
-            "hotspot2_left": ""
+            "hotspot2_product_name": "Classic Baseball Hat",
+            "hotspot2_product_price": "Rs. 1,700.00",
+            "hotspot2_image": "shopify:\/\/shop_images\/3_2ab5bfd2-9069-4f3b-a3a4-c4d036277704.webp",
+            "hotspot2_top": "40",
+            "hotspot2_left": "30"
           }
         }
       },

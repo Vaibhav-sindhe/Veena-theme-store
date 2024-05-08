@@ -984,20 +984,23 @@
         "image_card_Bfzgr4": {
           "type": "image_card",
           "settings": {
-            "heading": "",
-            "description": "",
-            "button_link": "",
-            "button_label": "",
+            "image": "shopify:\/\/shop_images\/download_84e46842-2d38-4ba2-88ff-0ff52f3f924e.webp",
+            "heading": "Our Men's Winter Clothes",
+            "description": "welcome to our Men's Winter Clothes Collection, where every piece is a statement in comfort and style.",
+            "button_link": "shopify:\/\/collections",
+            "button_label": "Discover More",
             "hotspot1_label": "",
-            "hotspot1_product_name": "",
-            "hotspot1_product_price": "",
-            "hotspot1_top": "",
-            "hotspot1_left": "",
+            "hotspot1_product_name": "Men's Winter Hooded Jacket",
+            "hotspot1_product_price": "Rs. 3,500.00",
+            "hotspot1_image": "shopify:\/\/shop_images\/3_f5cab6a2-88ad-4d0c-acfe-6e7ec8353339.webp",
+            "hotspot1_top": "20",
+            "hotspot1_left": "60",
             "hotspot2_label": "",
-            "hotspot2_product_name": "",
-            "hotspot2_product_price": "",
-            "hotspot2_top": "",
-            "hotspot2_left": ""
+            "hotspot2_product_name": "Men Solid Casual Jacket",
+            "hotspot2_product_price": "Rs. 3,400.00",
+            "hotspot2_image": "shopify:\/\/shop_images\/15_f2035755-4e2c-4549-b8b9-699c4bcd981f.webp",
+            "hotspot2_top": "40",
+            "hotspot2_left": "30"
           }
         },
         "image_card_yedcR8": {

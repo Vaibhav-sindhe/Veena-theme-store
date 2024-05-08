@@ -159,3 +159,10 @@
     width:17rem;
   }
 }
+
+@media (max-width:1500px){
+  #ProductGridContainer .product-card__image{
+    height:27rem;
+    width:22rem;
+  }
+}

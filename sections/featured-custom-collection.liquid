@@ -16,19 +16,6 @@
     }
     document.addEventListener('DOMContentLoaded', function () {
 
-   
-
-        {% comment %} var productItems = document.querySelectorAll('.product-container-item');
-
-    productItems.forEach(function (item) {
-        var newTag = item.querySelector('.new-tag');
-        var discountTag = item.querySelector('.discount-tag');
-
-        if (!newTag) {
-            discountTag.classList.add('no-new-tag');
-        }
-    }); {% endcomment %}
-
 
         // Initialize Splide sliders
         var splide1 = new Splide('#splide-1', {
@@ -93,147 +80,11 @@
 
 
 </script>
+<div class="page-width">
 <div class="featured-custom-title-bar">
     <h3 class="featured-custom-title">{{ section.settings.heading }}</h3>
     <a class="featured-custom-button"> {{ section.settings.button_label }} </a>
 </div>
-
-{% comment %} <div class="featured-custom-collection-container">
-
-    <div class="product-container">
-              {% assign collection = collections[section.settings.collection] %}
-        {% if collection %}
-            {% for product in collection.products %}    
-
-                <div class="product-container-item" onmouseover="showSecondImage(this)" onmouseout="showFirstImage(this)">
-                    
-                    {% if product.compare_at_price > product.price %}
-                        {% assign regular_price = product.price %}
-                            {% assign compared_price = product.compare_at_price %}
-                            {% assign discount = compared_price | minus: regular_price %}
-                            {% assign discount_percent = discount | times: 100 | divided_by: compared_price %}
-                        <div class="tag discount-tag">{{ discount_percent | round }}% off</div> <!-- Discount tag -->
-                    {% endif %}
-                    <div class="tag new-tag">New</div> <!-- New tag -->
-                    {% comment %} <img class="product-img" src="{{ product.featured_image.src | image_url }}" alt="{{ product.title }}" width=300 height=300/> {% endcomment %}
-                    <div class="image-container">
-                        <img class="product-img" src="{{ product.images[0].src | image_url }}" alt="{{ product.title }}" width=300 height=300/>
-                        <img class="product-img second-image" src="{{ product.images[1].src | image_url }}" alt="{{ product.title }}" width=300 height=300/>
-                    </div>
-                    <a href="{{ product.url }}" class="quick-look-tag">Quick Look</a> <!-- Quick Look tag -->
-
-                    <div class="product-container-details">
-                        {% assign colorOption = false %}
-                        {% for option in product.options %}
-                            {% if option.name == 'Color' %}
-                                {% assign colorOption = true %}
-                                <div class="color-variants">
-                                    <p>Select Color:</p>
-                                    {% for variant in product.variants %}
-                                        {% if variant.option1 == option.values[0] %}
-                                            <input type="radio" id="color-{{ variant.id }}" name="color-{{ product.id }}" value="{{ variant.option1 }}" {% if forloop.first %}checked{% endif %}>
-                                            <label for="color-{{ variant.id }}" style="background-color: {{ variant.option1 }};"></label>
-                                        {% endif %}
-                                    {% endfor %}
-                                </div>
-                            {% endif %}
-                        
-                        {% endfor %}
-        
-        {% unless colorOption %}
-            <p>No color variants available</p>
-        {% endunless %}
-
-                        <p class="vendor-name">{{ product.vendor }}</p>
-                        <h3 class="product-name">{{ product.title }}</h3>
-                        <p class="price">
-                            <span class="product-price">{{ product.price | money }}</span>
-                            {% if product.compare_at_price > product.price %}
-                                <span class="compared-price">{{ product.compare_at_price | money }}</span>
-                            {% endif %}
-                        </p>
-                        <p class="stock">{{ product.variants.first.inventory_quantity }} in stock</p>
-                                </div>
-                </div>
-
-            {% endfor %}
-
-
-        {% else %}
-            <p class="no-products-message">No products found in the selected collection.</p>
-        {% endif %}
-    </div>
-
-</div>  {% endcomment %}
-
-{% comment %} with single row splide {% endcomment %}
-
-{% comment %} <div class="featured-custom-collection-container">
-
-    <div class="splide"> <!-- Container for Splide slider -->
-        <div class="splide__track">
-            <ul class="splide__list">
-                {% assign collection = collections[section.settings.collection] %}
-                {% if collection %}
-                    {% for product in collection.products %}
-                        <li class="splide__slide product-container-item" onmouseover="showSecondImage(this)" onmouseout="showFirstImage(this)">
-                            <!-- Product HTML content -->
-                            {% if product.compare_at_price > product.price %}
-                                {% assign regular_price = product.price %}
-                                    {% assign compared_price = product.compare_at_price %}
-                                    {% assign discount = compared_price | minus: regular_price %}
-                                    {% assign discount_percent = discount | times: 100 | divided_by: compared_price %}
-                                <div class="tag discount-tag">{{ discount_percent | round }}% off</div> <!-- Discount tag -->
-                            {% endif %}
-                            <div class="tag new-tag">New</div> <!-- New tag -->
-                            {% comment %} <img class="product-img" src="{{ product.featured_image.src | image_url }}" alt="{{ product.title }}" width=300 height=300/> {% endcomment %}
-                            <div class="image-container">
-                                <img class="product-img" src="{{ product.images[0].src | image_url }}" alt="{{ product.title }}" width=300 height=300/>
-                                <img class="product-img second-image" src="{{ product.images[1].src | image_url }}" alt="{{ product.title }}" width=300 height=300/>
-                            </div>
-                            <a href="{{ product.url }}" class="quick-look-tag">Quick Look</a> <!-- Quick Look tag -->
-        
-                            <div class="product-container-details">
-                                {% assign colorOption = false %}
-                                {% for option in product.options %}
-                                    {% if option.name == 'Color' %}
-                                        {% assign colorOption = true %}
-                                        <div class="color-variants">
-                                            <p>Select Color:</p>
-                                            {% for variant in product.variants %}
-                                                {% if variant.option1 == option.values[0] %}
-                                                    <input type="radio" id="color-{{ variant.id }}" name="color-{{ product.id }}" value="{{ variant.option1 }}" {% if forloop.first %}checked{% endif %}>
-                                                    <label for="color-{{ variant.id }}" style="background-color: {{ variant.option1 }};"></label>
-                                                {% endif %}
-                                            {% endfor %}
-                                        </div>
-                                    {% endif %}
-                                
-                                {% endfor %}
-                
-        
-                                <p class="vendor-name">{{ product.vendor }}</p>
-                                <h3 class="product-name">{{ product.title }}</h3>
-                                <p class="price">
-                                    <span class="product-price">{{ product.price | money }}</span>
-                                    {% if product.compare_at_price > product.price %}
-                                        <span class="compared-price">{{ product.compare_at_price | money }}</span>
-                                    {% endif %}
-                                </p>
-                                <p class="stock">{{ product.variants.first.inventory_quantity }} in stock</p>
-                                        </div>
-                        </li>
-                    {% endfor %}
-                {% else %}
-                    <p class="no-products-message">No products found in the selected collection.</p>
-                {% endif %}
-            </ul>
-        </div>
-    </div>
-
-</div>
- {% endcomment %}
-
  <div class="featured-custom-collection-container">
 
     <div class="splide" id="splide-1">
@@ -346,7 +197,7 @@
     </div>
 
 </div>
-
+</div>
 
 
 

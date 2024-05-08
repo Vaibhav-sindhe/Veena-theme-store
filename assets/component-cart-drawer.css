@@ -415,7 +415,15 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   display: flex;
   justify-content: space-evenly;
   padding: 0 8rem;
+  margin: 10px 0 0 0 ;
 }
 .drawer .list-payment li{
   list-style: none;
+}
+.drawer .field:after{
+  content: none;
+}
+.drawer #CartDrawer-Note{
+  border: 1px solid black;
+  border-radius: 20px 20px 0 20px;
 }

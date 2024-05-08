@@ -356,6 +356,7 @@
     },
     "featured_collection_aFRbqt": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "New Arrivals",
         "heading_size": "h1",

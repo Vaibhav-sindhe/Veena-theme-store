@@ -356,6 +356,7 @@
     },
     "featured_collection_aFRbqt": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "New Arrivals",
         "heading_size": "h1",
@@ -676,6 +677,84 @@
         "padding_bottom": 28
       }
     },
+    "custom_hotspot_JyABBV": {
+      "type": "custom-hotspot",
+      "blocks": {
+        "image_card_DyBk3L": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_46e8cdd2-0a3d-4ab2-87ee-3ecb7fb86b39.webp",
+            "heading": "Women's Winter Clothes",
+            "description": "Welcome the season in style with our Women's Winter Clothes Collection – where warmth meets sophistication.",
+            "button_link": "shopify:\/\/collections",
+            "button_label": "Discover More",
+            "hotspot1_label": "",
+            "hotspot1_product_name": "Women's Casual Sweaters",
+            "hotspot1_product_price": "2,300",
+            "hotspot1_image": "shopify:\/\/shop_images\/3_6efbf5ad-22a7-420f-abfe-a318be074bef.webp",
+            "hotspot1_top": "20",
+            "hotspot1_left": "60",
+            "hotspot2_label": "",
+            "hotspot2_product_name": "Women Solid Casual Jacket",
+            "hotspot2_product_price": "Rs. 2,300.00",
+            "hotspot2_image": "shopify:\/\/shop_images\/5_42f9c5f4-bef7-4e8d-9582-fb4e71ef98f0.webp",
+            "hotspot2_top": "60",
+            "hotspot2_left": "30"
+          }
+        },
+        "image_card_Bfzgr4": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_84e46842-2d38-4ba2-88ff-0ff52f3f924e.webp",
+            "heading": "Our Men's Winter Clothes",
+            "description": "welcome to our Men's Winter Clothes Collection, where every piece is a statement in comfort and style.",
+            "button_link": "shopify:\/\/collections",
+            "button_label": "Discover More",
+            "hotspot1_label": "",
+            "hotspot1_product_name": "Men's Winter Hooded Jacket",
+            "hotspot1_product_price": "Rs. 3,500.00",
+            "hotspot1_image": "shopify:\/\/shop_images\/3_f5cab6a2-88ad-4d0c-acfe-6e7ec8353339.webp",
+            "hotspot1_top": "20",
+            "hotspot1_left": "60",
+            "hotspot2_label": "",
+            "hotspot2_product_name": "Men Solid Casual Jacket",
+            "hotspot2_product_price": "Rs. 3,400.00",
+            "hotspot2_image": "shopify:\/\/shop_images\/15_f2035755-4e2c-4549-b8b9-699c4bcd981f.webp",
+            "hotspot2_top": "40",
+            "hotspot2_left": "30"
+          }
+        },
+        "image_card_yedcR8": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_c4bf6643-c71c-452b-9369-7b08ed28c70c.webp",
+            "heading": "Women's Outdoor Clothes",
+            "description": "Embrace the beauty of nature with gear that complements your adventurous spirit.Women's Outdoor Clothes",
+            "button_link": "shopify:\/\/collections",
+            "button_label": "Discover more",
+            "hotspot1_label": "",
+            "hotspot1_product_name": "Womens Oversized Hoodie",
+            "hotspot1_product_price": "Rs. 2,200.00",
+            "hotspot1_image": "shopify:\/\/shop_images\/6_966e54cb-1cb1-47a0-aa3b-e3493f2544cd.webp",
+            "hotspot1_top": "20",
+            "hotspot1_left": "40",
+            "hotspot2_label": "",
+            "hotspot2_product_name": "Classic Baseball Hat",
+            "hotspot2_product_price": "Rs. 1,700.00",
+            "hotspot2_image": "shopify:\/\/shop_images\/3_2ab5bfd2-9069-4f3b-a3a4-c4d036277704.webp",
+            "hotspot2_top": "40",
+            "hotspot2_left": "30"
+          }
+        }
+      },
+      "block_order": [
+        "image_card_DyBk3L",
+        "image_card_Bfzgr4",
+        "image_card_yedcR8"
+      ],
+      "settings": {
+      }
+    },
     "multicolumn_EmEHwx": {
       "type": "multicolumn",
       "blocks": {
@@ -712,6 +791,7 @@
         "column_RcMyjC",
         "column_Kbcayk"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -955,84 +1035,6 @@
         "heading": "FAQ",
         "description": "Ensure that your FAQs are regularly updated based on common customer queries and changes in your business operations."
       }
-    },
-    "custom_hotspot_JyABBV": {
-      "type": "custom-hotspot",
-      "blocks": {
-        "image_card_DyBk3L": {
-          "type": "image_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_46e8cdd2-0a3d-4ab2-87ee-3ecb7fb86b39.webp",
-            "heading": "Women's Winter Clothes",
-            "description": "Welcome the season in style with our Women's Winter Clothes Collection – where warmth meets sophistication.",
-            "button_link": "shopify:\/\/collections",
-            "button_label": "Discover More",
-            "hotspot1_label": "",
-            "hotspot1_product_name": "Women's Casual Sweaters",
-            "hotspot1_product_price": "2,300",
-            "hotspot1_image": "shopify:\/\/shop_images\/3_6efbf5ad-22a7-420f-abfe-a318be074bef.webp",
-            "hotspot1_top": "20",
-            "hotspot1_left": "60",
-            "hotspot2_label": "",
-            "hotspot2_product_name": "Women Solid Casual Jacket",
-            "hotspot2_product_price": "Rs. 2,300.00",
-            "hotspot2_image": "shopify:\/\/shop_images\/5_42f9c5f4-bef7-4e8d-9582-fb4e71ef98f0.webp",
-            "hotspot2_top": "60",
-            "hotspot2_left": "30"
-          }
-        },
-        "image_card_Bfzgr4": {
-          "type": "image_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_84e46842-2d38-4ba2-88ff-0ff52f3f924e.webp",
-            "heading": "Our Men's Winter Clothes",
-            "description": "welcome to our Men's Winter Clothes Collection, where every piece is a statement in comfort and style.",
-            "button_link": "shopify:\/\/collections",
-            "button_label": "Discover More",
-            "hotspot1_label": "",
-            "hotspot1_product_name": "Men's Winter Hooded Jacket",
-            "hotspot1_product_price": "Rs. 3,500.00",
-            "hotspot1_image": "shopify:\/\/shop_images\/3_f5cab6a2-88ad-4d0c-acfe-6e7ec8353339.webp",
-            "hotspot1_top": "20",
-            "hotspot1_left": "60",
-            "hotspot2_label": "",
-            "hotspot2_product_name": "Men Solid Casual Jacket",
-            "hotspot2_product_price": "Rs. 3,400.00",
-            "hotspot2_image": "shopify:\/\/shop_images\/15_f2035755-4e2c-4549-b8b9-699c4bcd981f.webp",
-            "hotspot2_top": "40",
-            "hotspot2_left": "30"
-          }
-        },
-        "image_card_yedcR8": {
-          "type": "image_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/download_c4bf6643-c71c-452b-9369-7b08ed28c70c.webp",
-            "heading": "Women's Outdoor Clothes Collection",
-            "description": "Embrace the beauty of nature with gear that complements your adventurous spirit.",
-            "button_link": "shopify:\/\/collections",
-            "button_label": "Discover more",
-            "hotspot1_label": "",
-            "hotspot1_product_name": "Womens Oversized Hoodie",
-            "hotspot1_product_price": "Rs. 2,200.00",
-            "hotspot1_image": "shopify:\/\/shop_images\/6_966e54cb-1cb1-47a0-aa3b-e3493f2544cd.webp",
-            "hotspot1_top": "20",
-            "hotspot1_left": "40",
-            "hotspot2_label": "",
-            "hotspot2_product_name": "Classic Baseball Hat",
-            "hotspot2_product_price": "Rs. 1,700.00",
-            "hotspot2_image": "shopify:\/\/shop_images\/3_2ab5bfd2-9069-4f3b-a3a4-c4d036277704.webp",
-            "hotspot2_top": "40",
-            "hotspot2_left": "30"
-          }
-        }
-      },
-      "block_order": [
-        "image_card_DyBk3L",
-        "image_card_Bfzgr4",
-        "image_card_yedcR8"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
@@ -1052,13 +1054,13 @@
     "featured_collection_UNa7Fy",
     "usp_section_7dQ83b",
     "multicolumn_aGEbGn",
+    "custom_hotspot_JyABBV",
     "multicolumn_EmEHwx",
     "bottom_banner_a4zm9F",
     "image_banner_kaJN3D",
     "customer_review_3ihimd",
     "letyou_know_8DGxVc",
     "featured_blog_AXCGM8",
-    "custom_faq_section_ALBUqa",
-    "custom_hotspot_JyABBV"
+    "custom_faq_section_ALBUqa"
   ]
 }

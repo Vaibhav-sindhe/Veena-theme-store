@@ -67,7 +67,7 @@
                   {%- endfor -%}
                 </ul>
                 {% for item in blocks %}
-                  {% if link.title == 'Trends' %}
+                  {% if link.title == '{{ megamenu_name }}' %}
                     <img
                       src="{{ item.settings.megamenu_image | image_url }}"
                       height="200"

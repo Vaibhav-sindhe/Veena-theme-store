@@ -22,7 +22,7 @@
   id="main-cart-footer"
   data-id="{{ section.id }}"
 >
-  <div class="page-width">
+  <div class="page-width"> 
     <div class="cart__footer isolate section-{{ section.id }}-padding">
       {%- if settings.show_cart_note -%}
         <cart-note class="cart__note field">
@@ -180,6 +180,26 @@
       document.querySelector('#cart').submit();
     });
   });
+
+
+  {% comment %} fetch(`/cart?section_id=${document.querySelector('#main-cart-footer[data-id]').dataset.id}`)
+  .then(response => response.text())
+  .then(htmlString => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlString, 'text/html');
+    console.log(doc);
+    const progressBar = doc.querySelector('#cart-footer-progress-bar');
+    console.log(progressBar)
+     // change dom 
+
+    let updatedCartProgressbar = doc.getElementById("cart-footer-progress-bar");
+    let oldCartProgressbar = document.getElementById("cart-footer-progress-bar");
+    oldCartProgressbar.innerHTML = updatedCartProgressbar.innerHTML;
+    
+  })
+  .catch(error => {
+    console.error('Error fetching or parsing the HTML:', error);
+  }); {% endcomment %}
 </script>
 
 {% schema %}

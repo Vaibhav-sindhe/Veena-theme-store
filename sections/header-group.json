@@ -52,10 +52,26 @@
             "megamenu_name": "Trends",
             "megamenu_image": "shopify:\/\/shop_images\/download_373b720c-7e8e-41ff-8b41-db50503e91f6.webp"
           }
+        },
+        "image_7cV3gK": {
+          "type": "Image",
+          "settings": {
+            "megamenu_name": "Trends",
+            "megamenu_image": "shopify:\/\/shop_images\/download_ce009906-54ae-4a28-84cb-f31baedec623.webp"
+          }
+        },
+        "image_gPdVUQ": {
+          "type": "Image",
+          "settings": {
+            "megamenu_name": "Trends",
+            "megamenu_image": "shopify:\/\/shop_images\/5_210cb5ae-faca-41ed-9656-1bac3386c5e2.webp"
+          }
         }
       },
       "block_order": [
-        "image_w4EbxV"
+        "image_w4EbxV",
+        "image_7cV3gK",
+        "image_gPdVUQ"
       ],
       "settings": {
         "logo_position": "middle-center",

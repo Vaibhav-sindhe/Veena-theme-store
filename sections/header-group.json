@@ -45,6 +45,18 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "image_w4EbxV": {
+          "type": "Image",
+          "settings": {
+            "megamenu_name": "",
+            "megamenu_image": "shopify:\/\/shop_images\/download_373b720c-7e8e-41ff-8b41-db50503e91f6.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_w4EbxV"
+      ],
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",

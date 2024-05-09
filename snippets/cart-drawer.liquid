@@ -166,6 +166,7 @@
 
         </div>
       {%- endif -%}
+
       {% if cart.item_count !=0 %}
       <div class="drawer__header-with-background">
         <div class="drawer__header">
@@ -726,11 +727,15 @@
             </button>
           </noscript>
 
-          <a href="/cart" class="button">View Cart</a>
+          {% comment %} <a href="/cart" class="button">View Cart</a> {% endcomment %}
+          <a href="/cart" class="button-slide-red">
+            <span class="button-slide-label">View Cart</span>
+          </a>
+          <span class="button-slide-red">
           <button
             type="submit"
             id="CartDrawer-Checkout"
-            class="button"
+            class="button-slide-label Cart-drawer-checkout"
             {% comment %} class="cart__checkout-button button" {% endcomment %}
             name="checkout"
             form="CartDrawer-Form"
@@ -740,6 +745,7 @@
           >
             {{ 'sections.cart.checkout' | t }}
           </button>
+          </span>
         </div>
 
 

@@ -427,3 +427,8 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   border: 1px solid black;
   border-radius: 20px 20px 0 20px;
 }
+.Cart-drawer-checkout{
+  border: none;
+  background: none;
+  color: white;
+}

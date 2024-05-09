@@ -32,7 +32,11 @@
       </div>
       <div class="hotspot-card-heading">{{ block.settings.heading }}</div>
       <div class="hotspot-card-desc">{{ block.settings.description }}</div>
-      <a href="{{ block.settings.button_link }}" class="button">{{ block.settings.button_label }}</a>
+      {% comment %} <a href="{{ block.settings.button_link }}" class="button">{{ block.settings.button_label }}</a> {% endcomment %}
+
+      <a href="{{ block.settings.button_link }}" class="button-slide-black">
+        <span class="button-slide-label">{{ block.settings.button_label }}</span>
+      </a>
     </div>
   {% endfor %}
 </div>

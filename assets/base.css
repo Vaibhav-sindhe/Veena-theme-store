@@ -3516,3 +3516,110 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+
+
+
+
+
+.button-slide-red{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #D03C3F;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.6s;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 55px;
+}
+.button-slide-red:hover {
+  color: #fff;
+}
+.button-slide-red::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transition: left 0.4s ease;
+  border-radius: 50px;
+}
+.button-slide-red:hover::before {
+  left: 0;
+}
+.button-slide-label {
+  z-index: 10;
+  position: relative;
+}
+@media screen and (max-width: 762px) {
+  .button-slide-red {
+      font-size: 12px;
+      width: 100px;
+      height: 40px;
+      margin-top: 0.8rem;
+  }
+}
+.button-slide-red {
+  text-decoration: none;
+}
+
+
+
+.button-slide-black{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.6s;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 55px;
+}
+.button-slide-black:hover {
+  color: #fff;
+}
+.button-slide-black::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #D03C3F;
+  transition: left 0.4s ease;
+  border-radius: 50px;
+}
+.button-slide-black:hover::before {
+  left: 0;
+}
+.button-slide-label {
+  z-index: 10;
+  position: relative;
+}
+@media screen and (max-width: 762px) {
+  .button-slide-black {
+      font-size: 12px;
+      width: 100px;
+      height: 40px;
+      margin-top: 0.8rem;
+  }
+}
+.button-slide-black {
+  text-decoration: none;
+}

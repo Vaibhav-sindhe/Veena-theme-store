@@ -136,6 +136,21 @@
         {{ form.errors.messages.password }}.
       </span>
     {%- endif -%}
+
+    <label for="AccountType">Designation</label>
+    <select name="customer[tags]" id="AccountType" class="input-full" required="">
+      <option value="" disabled="" selected="">Designation</option>            
+      <option value="B2B">B2B</option>
+      <option value="B2C">B2C</option>
+      <option value="D2C">D2C</option>
+    </select>
+
+
+    <div class="tmc-agree">
+      <input type="checkbox">
+      <span class="tmc-agree-label">By Clicking , I am confirming that I have read and agree with the <a href="/policies/terms-of-service">Terms and Conditons</a></span>
+    </div>
+
     <button>
       {{ 'customer.register.submit' | t }}
     </button>

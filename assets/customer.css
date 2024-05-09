@@ -896,3 +896,18 @@ li[data-address] > h2 {
     width: 100%;
   }
 }
+
+.tmc-agree{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.tmc-agree-label{
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+.tmc-agree-label a{
+  font-size: 1rem;
+  color: #d03c3f;
+}

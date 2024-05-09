@@ -32,7 +32,9 @@
 <div id="captivating-slider" class="product-slider" >
   <div class="captivating-section-heading">
     <h1 class="captivating-section-heading">{{ section.settings.heading }}</h1>
-    <a class="button captivating-section-heading--button" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+    <a href="{{ section.settings.button_link }}" class="button-slide-red">
+      <span class="button-slide-label">{{ section.settings.button_label }}</span>
+    </a>
   </div>
   <splider-component>
     <div class="splide" data-slider-settings='{{ splide_option }}'>

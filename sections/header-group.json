@@ -63,7 +63,8 @@
         "image_gPdVUQ": {
           "type": "Image",
           "settings": {
-            "megamenu_name": ""
+            "megamenu_name": "Trends",
+            "megamenu_image": "shopify:\/\/shop_images\/5_210cb5ae-faca-41ed-9656-1bac3386c5e2.webp"
           }
         }
       },

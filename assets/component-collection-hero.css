@@ -88,13 +88,21 @@
   .collection-hero--with-image .collection-hero__text-wrapper {
     padding: 4rem 2rem 4rem 0;
     flex-basis: 50%;
+    z-index: 1;
   }
 
   .collection-hero__image-container {
     align-self: stretch;
     flex: 1 0 50%;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
     min-height: 20rem;
+    z-index: 0.8;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  .collection-hero__image-container img{
+    opacity: 0.5;
   }
 }
 

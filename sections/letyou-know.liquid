@@ -29,7 +29,11 @@
   {% assign blog = section.settings.blog %}
   <div class="letyou_know--heading_container">
     {% if section.settings.heading %}<h1>{{ section.settings.heading }}</h1>{% endif %}
-    {% if blog.url %}<a class="button" href="{{ blog.url }}">Read all</a>{% endif %}
+    {% if blog.url %}
+      <a href="{{ blog.url }}" class="button-slide-black">
+        <span class="button-slide-label">Read all</span>
+      </a>
+  {% endif %}
   </div>
     <splider-component>
       <div class="splide" id="letyou-know-splid" data-slider-settings='{{ splide_option }}'>

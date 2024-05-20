@@ -1,5 +1,11 @@
 {
   "sections": {
+    "custom_bread_crum_VbBLrP": {
+      "type": "custom-bread-crum",
+      "settings": {
+        "heading": ""
+      }
+    },
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
@@ -34,6 +40,7 @@
     }
   },
   "order": [
+    "custom_bread_crum_VbBLrP",
     "cart-items",
     "cart-footer"
   ]

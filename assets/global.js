@@ -1371,6 +1371,25 @@ class VariantSelects extends HTMLElement {
           oldProgressbar.innerHTML = updatedProgressbar.innerHTML;
         }
 
+        //cart footer progress bar
+        if (html.getElementById("cart-footer-progress-bar")) {
+          let updatedCartProgressbar = html.getElementById("cart-footer-progress-bar");
+          let oldCartProgressbar = document.getElementById("cart-footer-progress-bar");
+          oldCartProgressbar.innerHTML = updatedCartProgressbar.innerHTML;
+        }
+
+        //custom add to cart
+        if (html.getElementById("custom-add-toCart")) {
+          let updatedCustomAddToCart = html.getElementById("custom-add-toCart");
+          let oldCustomAddToCart = document.getElementById("custom-add-toCart");
+          oldCustomAddToCart.innerHTML = updatedCustomAddToCart.innerHTML;
+        }
+        const customaddButtonUpdated = html.getElementById("custom-add-toCart");
+        this.toggleAddButton(
+          customaddButtonUpdated ? customaddButtonUpdated.hasAttribute("disabled") : true,
+          window.variantStrings.soldOut
+        );
+
 
         const inventorySource = html.getElementById(
           `Inventory-${this.dataset.originalSection

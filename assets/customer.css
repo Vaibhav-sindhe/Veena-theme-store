@@ -753,3 +753,161 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
 }
+
+
+
+.customer .signup-mail-title{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: black;
+}
+.customer .newsletter-form{
+  margin-top: 10px;
+}
+.customer .newsletter-form .field{
+  height: 4.9rem;
+  border-radius: 0 25px 25px 0;
+  border: 1px solid black;
+}
+.customer .newsletter-form .field:after{
+  content: none;
+}
+
+.customer .field #Subscribe{
+  margin: 0;
+  border-radius: 0 25px 25px 0;
+  background: #005BAA;
+}
+.customer .field button:after{
+  box-shadow: none;
+}
+#email-label{
+  position: none;
+}
+
+
+/* acount page */
+.custom-account-page{
+  padding: 5rem ;
+}
+.custom-account-page table{
+   border-radius: 20px;
+}  
+.custom-account-page .tab-content .tab {
+  display: none;
+}
+.custom-account-page .custom-account ,.tabs{
+  display: flex;
+  gap: 5rem;
+}
+
+.custom-account-page .tab-links{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 2rem;
+}
+.custom-account-page .tab-links li  {
+  height: 3rem;
+  background: #005baa;
+  list-style: none;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  color: #000;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+.custom-account-page .tab-links li.active{
+  background:#005BAA;
+  color: white;
+} 
+.custom-account-page .tab-content{
+  width: 70%;
+  padding:0 4rem;
+}
+
+.custom-account-page .profile-title{
+  margin-top: 0;
+}
+.tab-content .tab {
+  display: none;
+}
+.tab-content .tab.active {
+  display: flex;
+  flex-direction: column;
+}
+.add-address{
+  background: #005BAA;
+}
+.add-address::after{
+  box-shadow: none;
+}
+.show{
+  display: none;
+}
+.all-address{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 10px;
+}
+.all-address div{
+  padding: 1rem;
+  border-radius: 20px;
+  width: 45%;
+  border: 1px solid gray;
+}
+.custom-account-page #AddAddress .field{
+  content: none;
+}
+.custom-account-page .customer:not(.account):not(.order){
+  max-width: 90rem;
+} 
+.custom-account-page .save-address-button-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.custom-account-page .save-address-button-div .save-address-button-div--save{
+  width: 20rem;
+  background: #005baa;
+}
+.custom-account-page .save-address-button-div .save-address-button-div--save::after{
+  box-shadow: none;
+}
+.custom-account-page .save-address-button-div .save-address-button-div--cancle{
+  border: none;
+}
+.custom-account-page .save-address-button-div .save-address-button-div--cancle::after{
+  box-shadow: none;
+}
+#custom-address-form{
+  padding: 0;
+}
+@media (max-width:749px) {
+  .all-address{
+    flex-direction: column;
+  }
+  .all-address div{
+    width: 100%;
+  }
+}
+
+.tmc-agree{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.tmc-agree-label{
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+.tmc-agree-label a{
+  font-size: 1rem;
+  color: #d03c3f;
+}

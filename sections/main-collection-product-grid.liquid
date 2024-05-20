@@ -41,6 +41,19 @@
           id="main-collection-filters"
           data-id="{{ section.id }}"
         >
+          <a href="/collections" class="facets-collections-list--collection-wraper">Shop</a>
+          <details>
+            <summary class="facets-collections-list--collection-wraper">Trends {% render "icon-caret" %}</summary>
+            <div class="facets-collections-list">
+              {% for collection in collections %}
+                <a href="{{collection.url}}" class="facets-collections-list--collection">{{collection.title}}</a>
+              {% endfor %}  
+            </div>
+          </details>
+          <a href="#" class="facets-collections-list--collection-wraper">Men's</a>
+          <a href="#" class="facets-collections-list--collection-wraper">Women's</a>
+          <a href="/blogs/veena-blog" class="facets-collections-list--collection-wraper">Blog</a>
+          <a href="/pages/contact" class="facets-collections-list--collection-wraper">contact</a>
           {% render 'facets',
             results: collection,
             enable_filtering: section.settings.enable_filtering,

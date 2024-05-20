@@ -4,7 +4,6 @@
   Usage:
   {% render 'header-mega-menu' %}
 {% endcomment %}
-
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
@@ -67,6 +66,16 @@
                     </li>
                   {%- endfor -%}
                 </ul>
+                {% for item in blocks %}
+                  {% if link.title == 'Trends' %}
+                    <img
+                      src="{{ item.settings.megamenu_image | image_url }}"
+                      height="200"
+                      width="200"
+                    >
+                  {% endif %}
+               {% endfor %} 
+      
               </div>
             </details>
           </header-menu>

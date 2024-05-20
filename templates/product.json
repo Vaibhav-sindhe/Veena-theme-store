@@ -52,6 +52,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "pdp_usp_dKz4bR": {
+          "type": "pdp-usp",
+          "settings": {
+            "usp-heading": ""
+          }
+        },
         "available_offers_tbp3bG": {
           "type": "available-offers",
           "settings": {
@@ -121,6 +127,7 @@
         "progress_bar_ajntRY",
         "quantity_selector",
         "buy_buttons",
+        "pdp_usp_dKz4bR",
         "available_offers_tbp3bG",
         "payment_method_A4zPaw",
         "description",

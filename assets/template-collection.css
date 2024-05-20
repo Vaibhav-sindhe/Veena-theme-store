@@ -159,3 +159,35 @@
     width:17rem;
   }
 }
+
+@media (max-width:1500px){
+  #ProductGridContainer .product-card__image{
+    height:27rem;
+    width:22rem;
+  }
+}
+
+.facets-collections-list{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem; 
+  border: 1.5px solid #f5f5f5;
+  border-radius: 0 0 20px 20px;
+}
+.facets-collections-list--collection-wraper{
+  display: block;
+  width: 100%;
+  color: black;
+  background: #f5f5f5;
+  margin-top: 10px;
+  padding: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.facets-collections-list--collection{
+  text-decoration: none;
+  color: black;
+}
+.facets-collections-list--collection:hover, .facets-collections-list--collection-wraper:hover{
+  color: #d03c3f;
+}
